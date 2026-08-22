@@ -1,0 +1,169 @@
+.registerPage{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px 20px;
+
+    background:#f8fafc;
+
+}
+
+.registerCard{
+
+    width:100%;
+
+    max-width:480px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.registerCard h1{
+
+    text-align:center;
+
+    margin:0 0 10px;
+
+    color:#111827;
+
+    font-size:32px;
+
+}
+
+.registerSubtitle{
+
+    text-align:center;
+
+    color:#6b7280;
+
+    line-height:1.5;
+
+    margin-bottom:30px;
+
+}
+
+.registerCard form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.registerCard input{
+
+    width:100%;
+
+    box-sizing:border-box;
+
+    padding:14px 16px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+.registerCard input:focus{
+
+    border-color:#0d8cff;
+
+    box-shadow:0 0 0 3px rgba(13,140,255,.1);
+
+}
+
+.registerCard button{
+
+    margin-top:5px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#0d8cff;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+.registerCard button:hover{
+
+    background:#006ed8;
+
+}
+
+.registerCard button:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+}
+
+.registerMessage{
+
+    margin:0;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    background:#fee2e2;
+
+    color:#b91c1c;
+
+    text-align:center;
+
+}
+
+.loginLink{
+
+    text-align:center;
+
+    margin:25px 0 0;
+
+    color:#666;
+
+}
+
+.loginLink a{
+
+    color:#0d8cff;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+}
+
+.loginLink a:hover{
+
+    text-decoration:underline;
+
+}

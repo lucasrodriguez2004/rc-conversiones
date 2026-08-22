@@ -1,0 +1,56 @@
+.topbar{
+
+    background:#0f172a;
+    color:white;
+
+    padding:10px 8%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    font-size:14px;
+
+}
+
+.left{
+
+    display:flex;
+
+    gap:15px;
+
+    align-items:center;
+
+}
+
+.left span{
+
+    color:#666;
+
+}
+
+.right{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.right a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.right a:hover{
+
+    color:#0d8cff;
+
+}

@@ -1,0 +1,173 @@
+.catalog{
+
+    padding:120px 7%;
+
+    background:#f6f8fb;
+
+}
+
+.catalog h2{
+
+    text-align:center;
+
+    font-size:48px;
+
+    margin-bottom:12px;
+
+    color:#12356e;
+
+}
+
+.catalog p{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:60px;
+
+    font-size:18px;
+
+}
+
+.catalogGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}
+
+.catalogCard{
+
+    background:white;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.catalogCard:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.18);
+
+}
+
+.catalogImage{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.catalogImage img{
+
+    width:100%;
+
+    height:270px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.catalogCard:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(7,27,65,.55);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.catalogCard:hover .overlay{
+
+    opacity:1;
+
+}
+
+.overlay button{
+
+    background:#1976d2;
+
+    color:white;
+
+    border:none;
+
+    padding:16px 28px;
+
+    border-radius:40px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.overlay button:hover{
+
+    background:#2196f3;
+
+}
+
+.catalogInfo{
+
+    padding:25px;
+
+}
+
+.catalogInfo h3{
+
+    font-size:24px;
+
+    color:#143c80;
+
+    margin-bottom:10px;
+
+}
+
+.catalogInfo span{
+
+    color:#777;
+
+    font-size:16px;
+
+}

@@ -1,0 +1,137 @@
+.presupuestos {
+
+    padding: 40px;
+
+    background: #f8fafc;
+
+    min-height: 100vh;
+
+}
+
+.presupuestosHeader {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+
+}
+
+.presupuestosHeader h2 {
+
+    margin: 0;
+
+    font-size: 32px;
+
+    color: #111827;
+
+}
+
+.presupuestosHeader p {
+
+    margin-top: 8px;
+
+    color: #6b7280;
+
+}
+
+.actualizar {
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #0d8cff;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+}
+
+.actualizar:hover {
+
+    background: #006ed8;
+
+}
+
+.sinPresupuestos {
+
+    background: white;
+
+    padding: 50px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.06);
+
+}
+
+.sinPresupuestos h3 {
+
+    margin-bottom: 10px;
+
+}
+
+.sinPresupuestos p {
+
+    color: #6b7280;
+
+}
+
+.presupuestosTabla {
+
+    background: white;
+
+    border-radius: 15px;
+
+    overflow-x: auto;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.06);
+
+}
+
+.presupuestosTabla table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+.presupuestosTabla th {
+
+    text-align: left;
+
+    padding: 18px;
+
+    background: #f1f5f9;
+
+    color: #374151;
+
+}
+
+.presupuestosTabla td {
+
+    padding: 18px;
+
+    border-top: 1px solid #e5e7eb;
+
+    color: #4b5563;
+
+}
+
+.presupuestosTabla td strong {
+
+    color: #0d8cff;
+
+}

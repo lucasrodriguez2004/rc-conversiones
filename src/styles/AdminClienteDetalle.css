@@ -1,0 +1,1548 @@
+.adminClienteDetalle {
+
+    min-height:100vh;
+
+    padding:50px 7%;
+
+    background:#f8fafc;
+
+}
+
+
+.volverClientes {
+
+    border:none;
+
+    background:transparent;
+
+    color:#0d8cff;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    padding:0;
+
+    margin-bottom:30px;
+
+}
+
+
+.clienteDetalleHeader {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:16px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,.06);
+
+}
+
+
+.clienteId {
+
+    color:#0d8cff;
+
+    font-weight:700;
+
+    font-size:14px;
+
+}
+
+
+.clienteDetalleHeader h1 {
+
+    margin:8px 0;
+
+    font-size:34px;
+
+    color:#111827;
+
+}
+
+
+.clienteDetalleHeader p {
+
+    margin:0;
+
+    color:#6b7280;
+
+}
+
+
+.estadoVerificado,
+.estadoPendiente {
+
+    display:inline-block;
+
+    padding:9px 14px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+
+.estadoVerificado {
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+}
+
+
+.estadoPendiente {
+
+    background:#fef3c7;
+
+    color:#a16207;
+
+}
+
+
+.datosCliente {
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:20px;
+
+    margin-top:25px;
+
+}
+
+
+.datoCliente {
+
+    background:white;
+
+    padding:22px;
+
+    border-radius:14px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,.04);
+
+}
+
+
+.datoCliente span {
+
+    display:block;
+
+    color:#6b7280;
+
+    font-size:13px;
+
+    margin-bottom:7px;
+
+}
+
+
+.datoCliente strong {
+
+    color:#111827;
+
+    word-break:break-word;
+
+}
+
+
+.resumenCliente {
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap:20px;
+
+    margin-top:25px;
+
+}
+
+
+.resumenCliente > div {
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:14px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,.04);
+
+}
+
+
+.resumenCliente span {
+
+    display:block;
+
+    color:#6b7280;
+
+    margin-bottom:8px;
+
+}
+
+
+.resumenCliente strong {
+
+    font-size:27px;
+
+    color:#0d8cff;
+
+}
+
+
+.historialCliente {
+
+    margin-top:40px;
+
+}
+
+
+.historialCliente h2 {
+
+    color:#111827;
+
+    margin-bottom:20px;
+
+}
+
+
+.historialLista {
+
+    display:grid;
+
+    gap:20px;
+
+}
+
+
+.historialCard {
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:16px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0,0,0,.05);
+
+}
+
+
+.historialHeader {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding-bottom:18px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+
+.codigoPresupuesto {
+
+    display:block;
+
+    color:#0d8cff;
+
+    font-weight:700;
+
+    margin-bottom:4px;
+
+}
+
+
+.historialHeader small {
+
+    color:#9ca3af;
+
+}
+
+
+.estadoPresupuesto {
+
+    padding:7px 12px;
+
+    border-radius:20px;
+
+    background:#f1f5f9;
+
+    color:#475569;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+
+.estadoPresupuesto.aprobado {
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+}
+
+
+.estadoPresupuesto.rechazado {
+
+    background:#fee2e2;
+
+    color:#b91c1c;
+
+}
+
+
+.estadoPresupuesto.en-revisión {
+
+    background:#dbeafe;
+
+    color:#1d4ed8;
+
+}
+
+
+.productosHistorial {
+
+    padding:18px 0;
+
+}
+
+
+.productoHistorial {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:10px 0;
+
+    border-bottom:1px solid #f3f4f6;
+
+}
+
+
+.productoHistorial span {
+
+    color:#374151;
+
+}
+
+
+.productoHistorial strong {
+
+    color:#6b7280;
+
+}
+
+
+.historialTotal {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding-top:18px;
+
+    border-top:2px solid #eee;
+
+}
+
+
+.historialTotal span {
+
+    font-weight:600;
+
+    color:#374151;
+
+}
+
+
+.historialTotal strong {
+
+    font-size:22px;
+
+    color:#0d8cff;
+
+}
+
+
+.sinHistorial {
+
+    background:white;
+
+    padding:40px;
+
+    text-align:center;
+
+    border-radius:16px;
+
+}
+
+
+.sinHistorial p {
+
+    color:#6b7280;
+
+}
+
+
+.detalleError {
+
+    background:#fee2e2;
+
+    color:#b91c1c;
+
+    padding:20px;
+
+    border-radius:10px;
+
+}
+
+
+@media (max-width:800px) {
+
+    .adminClienteDetalle {
+
+        padding:30px 5%;
+
+    }
+
+
+    .clienteDetalleHeader {
+
+        flex-direction:column;
+
+    }
+
+
+    .datosCliente {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .resumenCliente {
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+.estadoPresupuestoSelect {
+
+    border:none;
+
+    padding:8px 12px;
+
+    border-radius:20px;
+
+    background:#f1f5f9;
+
+    color:#475569;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+
+.estadoPresupuestoSelect:focus {
+
+    outline:2px solid #0d8cff;
+
+}
+
+
+.estadoPresupuestoSelect:disabled {
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+}
+.adminClienteDetalle {
+
+    max-width:1200px;
+
+    margin:0 auto;
+
+    padding:40px 25px;
+
+}
+
+
+.volverClientes {
+
+    border:none;
+
+    background:transparent;
+
+    color:#0d8cff;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    margin-bottom:25px;
+
+}
+
+
+.clienteHeader {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0,0,0,.05);
+
+}
+
+
+.clienteAvatar {
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#0d8cff;
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+
+.clienteHeader h1 {
+
+    margin:0;
+
+    color:#111827;
+
+}
+
+
+.clienteHeader p {
+
+    margin:5px 0 0;
+
+    color:#64748b;
+
+}
+
+
+.clienteVerificado,
+.clienteNoVerificado {
+
+    margin-left:auto;
+
+    padding:8px 14px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+
+.clienteVerificado {
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+}
+
+
+.clienteNoVerificado {
+
+    background:#fef3c7;
+
+    color:#92400e;
+
+}
+
+
+.clienteDatos {
+
+    background:white;
+
+    padding:30px;
+
+    margin-top:25px;
+
+    border-radius:18px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0,0,0,.05);
+
+}
+
+
+.clienteDatos h2 {
+
+    margin-top:0;
+
+}
+
+
+.clienteDatosGrid {
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap:25px;
+
+}
+
+
+.clienteDatosGrid span {
+
+    display:block;
+
+    color:#94a3b8;
+
+    font-size:13px;
+
+    margin-bottom:6px;
+
+}
+
+
+.clienteDatosGrid strong {
+
+    color:#111827;
+
+}
+
+
+.clienteResumen {
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap:20px;
+
+    margin-top:25px;
+
+}
+
+
+.clienteResumen > div {
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0,0,0,.05);
+
+}
+
+
+.clienteResumen span {
+
+    display:block;
+
+    color:#64748b;
+
+    margin-bottom:8px;
+
+}
+
+
+.clienteResumen strong {
+
+    font-size:28px;
+
+    color:#111827;
+
+}
+
+
+.clienteHistorial {
+
+    background:white;
+
+    padding:30px;
+
+    margin-top:25px;
+
+    border-radius:18px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0,0,0,.05);
+
+}
+
+
+.clienteHistorial h2 {
+
+    margin:0;
+
+}
+
+
+.clienteHistorialHeader p {
+
+    color:#64748b;
+
+}
+
+
+.historialHeader,
+.historialFila {
+
+    display:grid;
+
+    grid-template-columns:
+        1.3fr
+        1fr
+        1fr
+        1fr
+        1fr;
+
+    gap:20px;
+
+    align-items:center;
+
+}
+
+
+.historialHeader {
+
+    padding:15px;
+
+    border-bottom:1px solid #e5e7eb;
+
+    color:#94a3b8;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+}
+
+
+.historialFila {
+
+    padding:18px 15px;
+
+    border-bottom:1px solid #f1f5f9;
+
+    color:#475569;
+
+}
+
+
+.historialFila strong {
+
+    color:#111827;
+
+}
+
+
+.historialFila button {
+
+    border:none;
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    padding:8px 12px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+
+.estadoCliente {
+
+    width:max-content;
+
+    padding:6px 10px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+
+.estadoCliente.pendiente {
+
+    background:#fef3c7;
+
+    color:#92400e;
+
+}
+
+
+.estadoCliente.en-revisión {
+
+    background:#dbeafe;
+
+    color:#1d4ed8;
+
+}
+
+
+.estadoCliente.aprobado {
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+}
+
+
+.estadoCliente.rechazado {
+
+    background:#fee2e2;
+
+    color:#b91c1c;
+
+}
+
+
+.sinHistorial {
+
+    padding:35px;
+
+    text-align:center;
+
+    color:#64748b;
+
+}
+
+
+.clienteError {
+
+    background:#fee2e2;
+
+    color:#b91c1c;
+
+    padding:20px;
+
+    border-radius:12px;
+
+}
+
+
+@media (max-width:800px) {
+
+    .clienteDatosGrid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .historialTabla {
+
+        overflow-x:auto;
+
+    }
+
+
+    .historialHeader,
+    .historialFila {
+
+        min-width:750px;
+
+    }
+
+}
+
+
+@media (max-width:550px) {
+
+    .clienteHeader {
+
+        flex-wrap:wrap;
+
+    }
+
+
+    .clienteVerificado,
+    .clienteNoVerificado {
+
+        margin-left:0;
+
+    }
+
+
+    .clienteDatosGrid {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .clienteResumen {
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+.adminClientes {
+
+    max-width:1400px;
+
+    margin:0 auto;
+
+    padding:40px 25px;
+
+}
+
+
+.adminClientesHeader {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+
+.adminClientesHeader h1 {
+
+    margin:0;
+
+    color:#111827;
+
+    font-size:32px;
+
+}
+
+
+.adminClientesHeader p {
+
+    color:#64748b;
+
+    margin-top:8px;
+
+}
+
+
+.cantidadClientes {
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:100px;
+
+    padding:15px;
+
+    background:white;
+
+    border-radius:14px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,.05);
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+
+.cantidadClientes span {
+
+    font-size:12px;
+
+    color:#64748b;
+
+    font-weight:500;
+
+}
+
+
+.clientesBuscador {
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    margin-bottom:20px;
+
+}
+
+
+.clientesBuscador input {
+
+    width:100%;
+
+    box-sizing:border-box;
+
+    padding:14px 16px;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    outline:none;
+
+}
+
+
+.clientesBuscador input:focus {
+
+    border-color:#0d8cff;
+
+}
+
+
+.clientesTabla {
+
+    background:white;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0,0,0,.05);
+
+}
+
+
+.clientesTablaHeader,
+.clienteFila {
+
+    display:grid;
+
+    grid-template-columns:
+        1.5fr
+        1.7fr
+        1fr
+        .9fr
+        1fr
+        .9fr;
+
+    gap:20px;
+
+    align-items:center;
+
+}
+
+
+.clientesTablaHeader {
+
+    padding:16px 20px;
+
+    background:#f8fafc;
+
+    color:#64748b;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+}
+
+
+.clienteFila {
+
+    padding:18px 20px;
+
+    border-top:1px solid #f1f5f9;
+
+    color:#475569;
+
+}
+
+
+.clienteNombre {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+
+.clienteMiniAvatar {
+
+    width:42px;
+
+    height:42px;
+
+    flex-shrink:0;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    font-weight:700;
+
+}
+
+
+.clienteNombre strong {
+
+    display:block;
+
+    color:#111827;
+
+}
+
+
+.clienteNombre small {
+
+    display:block;
+
+    margin-top:3px;
+
+    color:#94a3b8;
+
+}
+
+
+.estadoVerificado,
+.estadoPendiente {
+
+    display:inline-block;
+
+    padding:6px 10px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+
+.estadoVerificado {
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+}
+
+
+.estadoPendiente {
+
+    background:#fef3c7;
+
+    color:#92400e;
+
+}
+
+
+.verCliente {
+
+    border:none;
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    padding:9px 13px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+
+.verCliente:hover {
+
+    background:#dbeafe;
+
+}
+
+
+.clientesError {
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    border-radius:10px;
+
+    background:#fee2e2;
+
+    color:#b91c1c;
+
+}
+
+
+.sinClientes {
+
+    background:white;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+    border-radius:16px;
+
+}
+
+
+.sinClientes h2 {
+
+    color:#111827;
+
+}
+
+
+.sinClientes p {
+
+    color:#64748b;
+
+}
+
+
+@media (max-width:1000px) {
+
+    .clientesTabla {
+
+        overflow-x:auto;
+
+    }
+
+
+    .clientesTablaHeader,
+    .clienteFila {
+
+        min-width:1100px;
+
+    }
+
+}
+
+
+@media (max-width:600px) {
+
+    .adminClientesHeader {
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+}
+/* ==========================================
+   RESUMEN DEL CLIENTE
+========================================== */
+
+.resumenCliente {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(150px, 1fr));
+
+    gap: 14px;
+
+    margin: 24px 0;
+}
+
+.resumenCliente > div {
+    padding: 18px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+
+.resumenCliente span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #64748b;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.resumenCliente strong {
+    color: #111827;
+
+    font-size: 22px;
+}
+
+
+/* ==========================================
+   CABECERA HISTORIAL
+========================================== */
+
+.historialClienteHeader {
+    margin-bottom: 20px;
+}
+
+.historialClienteHeader h2 {
+    margin: 0 0 5px;
+}
+
+.historialClienteHeader p {
+    margin: 0;
+
+    color: #64748b;
+}
+
+
+/* ==========================================
+   ESTADO DEL TICKET
+========================================== */
+
+.estadoClienteTicket {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 7px 11px;
+
+    border-radius: 999px;
+
+    background: #f1f5f9;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.estadoClienteTicket.pendiente {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+.estadoClienteTicket.contactado {
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+.estadoClienteTicket.en-revisión {
+    background: #fefce8;
+    color: #a16207;
+}
+
+.estadoClienteTicket.aprobado {
+    background: #f0fdf4;
+    color: #15803d;
+}
+
+.estadoClienteTicket.rechazado {
+    background: #fef2f2;
+    color: #b91c1c;
+}
+
+
+/* ==========================================
+   FECHA
+========================================== */
+
+.fechaTicketCliente {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+    margin: 14px 0;
+    padding-bottom: 14px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.fechaTicketCliente span {
+    color: #64748b;
+}
+
+
+/* ==========================================
+   CAMBIAR ESTADO
+========================================== */
+
+.estadoClienteBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-top: 18px;
+    padding-top: 16px;
+
+    border-top: 1px solid #e5e7eb;
+}
+
+.estadoClienteBox > span {
+    color: #64748b;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.estadoPresupuestoSelect {
+    padding: 9px 12px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+
+    background: white;
+
+    font-family: inherit;
+
+    cursor: pointer;
+}
+
+
+/* ==========================================
+   ACCIONES
+========================================== */
+
+.accionesClienteTicket {
+    margin-top: 15px;
+}
+
+.accionesClienteTicket button {
+    width: 100%;
+
+    padding: 11px 15px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #111827;
+    color: white;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.accionesClienteTicket button:hover {
+    background: #000000;
+}
+
+
+@media (max-width: 650px) {
+
+    .estadoClienteBox {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .estadoPresupuestoSelect {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,568 @@
+.miCuentaPage {
+    min-height: 100vh;
+    padding: 100px 8%;
+    background: #f8fafc;
+}
+
+.miCuentaContainer {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.cuentaHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.cuentaHeader h1 {
+    margin: 0;
+    font-size: 40px;
+    color: #111827;
+}
+
+.cuentaHeader p {
+    margin-top: 8px;
+    color: #6b7280;
+    font-size: 18px;
+}
+
+.cerrarSesion {
+    border: none;
+    background: #ef4444;
+    color: white;
+
+    padding: 12px 20px;
+    border-radius: 10px;
+
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.cerrarSesion:hover {
+    background: #dc2626;
+}
+
+/* ==========================================
+   DATOS
+========================================== */
+
+.datosCliente {
+    background: white;
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+
+    margin-bottom: 30px;
+}
+
+.datosCliente h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.datosGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.datosGrid div {
+    background: #f8fafc;
+    padding: 18px;
+    border-radius: 12px;
+}
+
+.datosGrid span {
+    display: block;
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.datosGrid strong {
+    color: #111827;
+}
+
+.cuentaVerificada {
+    color: #15803d !important;
+}
+
+/* ==========================================
+   TICKETS
+========================================== */
+
+.presupuestosSection {
+    background: white;
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.presupuestosHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.presupuestosHeader h2 {
+    margin: 0;
+}
+
+.presupuestosHeader p {
+    color: #6b7280;
+    margin: 7px 0 0;
+}
+
+.presupuestosHeader span {
+    color: #6b7280;
+}
+
+.presupuestosLista {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.presupuestoCard {
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+    padding: 22px;
+}
+
+.presupuestoTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 18px;
+    border-bottom: 1px solid #eee;
+}
+
+.presupuestoTop span {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.presupuestoTop h3 {
+    margin: 5px 0 0;
+    color: #0d8cff;
+}
+
+.estadoPresupuesto {
+    background: #fff7ed;
+    color: #ea580c !important;
+
+    padding: 7px 12px;
+    border-radius: 20px;
+
+    font-size: 13px !important;
+}
+
+.estadoPendiente {
+    background: #fff7ed !important;
+    color: #c2410c !important;
+}
+
+.estadoRevision {
+    background: #dbeafe !important;
+    color: #1d4ed8 !important;
+}
+
+.estadoAprobado {
+    background: #dcfce7 !important;
+    color: #15803d !important;
+}
+
+.estadoRechazado {
+    background: #fee2e2 !important;
+    color: #b91c1c !important;
+}
+
+/* ==========================================
+   AVISO DEL TICKET
+========================================== */
+
+.ticketNotice {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    margin: 18px 0;
+    padding: 14px 16px;
+
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+
+    border-radius: 10px;
+}
+
+.ticketNotice strong {
+    font-size: 14px;
+    color: #1f2937;
+}
+
+.ticketNotice span {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #64748b;
+}
+
+/* ==========================================
+   INFORMACIÓN DEL TICKET
+========================================== */
+
+.presupuestoInfo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    padding: 20px 0;
+}
+
+.presupuestoInfo span {
+    display: block;
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.presupuestoInfo strong {
+    font-size: 18px;
+    color: #111827;
+}
+
+.ticketFecha {
+    color: #111827;
+}
+
+/* ==========================================
+   PRODUCTOS
+========================================== */
+
+.productosPresupuesto {
+    border-top: 1px solid #eee;
+    padding-top: 18px;
+}
+
+.productosPresupuesto h4 {
+    margin: 0 0 12px;
+}
+
+.productoPresupuesto {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 8px 0;
+
+    color: #4b5563;
+}
+
+/* ==========================================
+   SIN TICKETS
+========================================== */
+
+.sinPresupuestos {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.sinPresupuestos h3 {
+    margin-bottom: 10px;
+}
+
+.sinPresupuestos p {
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+.volverCatalogo {
+    display: inline-block;
+
+    background: #0d8cff;
+    color: white;
+
+    padding: 12px 20px;
+    border-radius: 10px;
+
+    text-decoration: none;
+}
+
+.estado {
+    text-align: center;
+    padding: 40px;
+    color: #6b7280;
+}
+
+/* ==========================================
+   CELULAR
+========================================== */
+
+@media (max-width: 700px) {
+
+    .miCuentaPage {
+        padding: 70px 20px;
+    }
+
+    .cuentaHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .cuentaHeader h1 {
+        font-size: 32px;
+    }
+
+    .datosGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .presupuestosHeader {
+        align-items: flex-start;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .presupuestoInfo {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+}
+.detalleEstado.contactado {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.estadoContactado {
+    background: #fef3c7 !important;
+    color: #92400e !important;
+}
+.historialCliente {
+    margin-top: 22px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.historialCliente h4 {
+    margin: 0 0 18px;
+    color: #111827;
+}
+
+.historialClienteTimeline {
+    position: relative;
+}
+
+.historialClienteTimeline::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 5px;
+    bottom: 5px;
+    width: 2px;
+    background: #e5e7eb;
+}
+
+.historialClienteItem {
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 14px;
+
+    padding-bottom: 18px;
+}
+
+.historialClienteItem:last-child {
+    padding-bottom: 0;
+}
+
+.historialClientePunto {
+    position: relative;
+    z-index: 2;
+
+    width: 14px;
+    height: 14px;
+
+    flex-shrink: 0;
+
+    margin-top: 3px;
+
+    border-radius: 50%;
+
+    background: #cbd5e1;
+    border: 3px solid white;
+    box-shadow: 0 0 0 1px #cbd5e1;
+}
+
+.historialClientePunto.actual {
+    background: #0d8cff;
+    box-shadow: 0 0 0 1px #0d8cff;
+}
+
+.historialClienteContenido {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.historialClienteContenido strong {
+    color: #111827;
+    font-size: 14px;
+}
+
+.historialClienteContenido span {
+    color: #6b7280;
+    font-size: 12px;
+}
+
+.historialClienteVacio {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.ticketAprobado {
+    background: #f0fdf4 !important;
+    border-color: #bbf7d0 !important;
+}
+
+.ticketAprobado strong {
+    color: #15803d !important;
+}
+
+.ticketAprobado span {
+    color: #166534 !important;
+}
+
+.ticketRechazado {
+    background: #fef2f2 !important;
+    border-color: #fecaca !important;
+}
+
+.ticketRechazado strong {
+    color: #b91c1c !important;
+}
+
+.ticketRechazado span {
+    color: #991b1b !important;
+}
+/* ==========================================
+   PROGRESO DEL TICKET
+========================================== */
+
+.ticketProgreso {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 8px;
+
+    margin: 22px 0;
+    padding: 20px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.ticketPaso {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 8px;
+
+    text-align: center;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.ticketPasoCirculo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+
+    border: 2px solid #cbd5e1;
+    border-radius: 50%;
+
+    background: white;
+    color: #94a3b8;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.ticketPaso.completado {
+    color: #111827;
+}
+
+.ticketPaso.completado .ticketPasoCirculo {
+    border-color: #111827;
+
+    background: #111827;
+    color: white;
+}
+
+.ticketPaso.actual .ticketPasoCirculo {
+    transform: scale(1.1);
+
+    box-shadow:
+        0 0 0 4px
+        rgba(17, 24, 39, 0.08);
+}
+
+
+/* ==========================================
+   PRODUCTOS
+========================================== */
+
+.productoPresupuesto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.productoPresupuesto > div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.productoPresupuesto small {
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 650px) {
+
+    .ticketProgreso {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}

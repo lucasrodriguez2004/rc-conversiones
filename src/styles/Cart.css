@@ -1,0 +1,140 @@
+.cartOverlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    z-index:9998;
+}
+
+.cart{
+    position:fixed;
+    top:0;
+    right:-430px;
+    width:420px;
+    max-width:100%;
+    height:100vh;
+    background:#f8fafc;
+    box-shadow:-10px 0 40px rgba(0,0,0,.18);
+    transition:right .35s ease;
+    z-index:9999;
+    display:flex;
+    flex-direction:column;
+}
+
+.cart.open{
+    right:0;
+}
+
+.cartHeader{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px;
+    border-bottom:1px solid #ececec;
+}
+
+.cartHeader h2{
+    margin:0;
+    color:#0d8cff;
+}
+
+.closeCart{
+    background:none;
+    border:none;
+    font-size:24px;
+    cursor:pointer;
+}
+
+.empty{
+    text-align:center;
+    margin-top:60px;
+    color:#777;
+}
+
+.cartItem{
+    display:flex;
+    gap:15px;
+    padding:18px 20px;
+    border-bottom:1px solid #f0f0f0;
+}
+
+.cartItem img{
+    width:80px;
+    height:80px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.cartInfo{
+    flex:1;
+}
+
+.cartInfo h4{
+    margin:0 0 8px;
+}
+
+.cartInfo p{
+    margin:0;
+    color:#666;
+}
+
+.cartInfo strong{
+    display:block;
+    margin-top:8px;
+    color:#0d8cff;
+}
+
+.deleteItem{
+    background:#ef4444;
+    color:white;
+    border:none;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+.cartFooter{
+    margin-top:auto;
+    padding:22px;
+    border-top:1px solid #ececec;
+}
+
+.cartFooter h3{
+    margin:0;
+    color:#666;
+}
+
+.cartFooter h2{
+    margin:8px 0 20px;
+    color:#0d8cff;
+}
+
+.sendOrder{
+    width:100%;
+    padding:15px;
+    background:#25D366;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    margin-bottom:10px;
+}
+
+.clearCart{
+    width:100%;
+    padding:15px;
+    background:#ef4444;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.sendOrder:hover{
+    background:#1fb85a;
+}
+
+.clearCart:hover{
+    background:#dc2626;
+}

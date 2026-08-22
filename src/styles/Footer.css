@@ -1,0 +1,33 @@
+footer{
+
+background:#111;
+
+padding:70px;
+
+color:white;
+
+text-align:center;
+
+}
+
+.footerContent{
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+.footerContent h2{
+
+margin-bottom:20px;
+
+}
+
+.footerContent p{
+
+margin-top:15px;
+
+opacity:.8;
+
+}

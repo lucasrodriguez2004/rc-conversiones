@@ -1,0 +1,483 @@
+/* =========================================
+   PRODUCT TABLE
+========================================= */
+
+.productTable {
+    width: 100%;
+    margin-top: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 28px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================================
+   CABECERA
+========================================= */
+
+.productHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.productHeader h2 {
+    margin: 0 0 6px;
+    font-size: 26px;
+    color: #1f2937;
+}
+
+.productHeader p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* =========================================
+   BOTÓN NUEVO PRODUCTO
+========================================= */
+
+.newProductBtn {
+    border: none;
+    background: #111827;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.newProductBtn:hover {
+    background: #000000;
+    transform: translateY(-1px);
+}
+
+/* =========================================
+   BUSCADOR
+========================================= */
+
+.searchInput {
+    width: 100%;
+    max-width: 420px;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    margin-bottom: 25px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 9px;
+
+    background: #f9fafb;
+    color: #111827;
+
+    font-size: 14px;
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+.searchInput:focus {
+    border-color: #111827;
+    background: #ffffff;
+}
+
+/* =========================================
+   FORMULARIO
+========================================= */
+
+.productForm {
+    margin-bottom: 30px;
+    padding: 25px;
+
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+}
+
+.productForm h3 {
+    margin: 0 0 22px;
+    font-size: 20px;
+    color: #1f2937;
+}
+
+/* =========================================
+   GRID FORMULARIO
+========================================= */
+
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+/* =========================================
+   CAMPOS
+========================================= */
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 18px;
+}
+
+.formGroup label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.formGroup input,
+.formGroup textarea,
+.productForm input,
+.productForm textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 12px 13px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+
+    background: #ffffff;
+    color: #111827;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus,
+.productForm input:focus,
+.productForm textarea:focus {
+    border-color: #111827;
+    box-shadow: 0 0 0 3px rgba(17, 24, 39, 0.06);
+}
+
+.formGroup textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* =========================================
+   INPUT DE IMAGEN
+========================================= */
+
+.productForm input[type="file"] {
+    padding: 10px;
+    cursor: pointer;
+    background: #ffffff;
+}
+
+.selectedFile {
+    margin: 8px 0 0;
+    font-size: 13px;
+    color: #374151;
+}
+
+/* =========================================
+   IMAGEN ACTUAL
+========================================= */
+
+.currentImage {
+    margin-top: 15px;
+}
+
+.currentImage p {
+    margin: 0 0 8px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.currentImage img {
+    width: 130px;
+    height: 100px;
+
+    object-fit: contain;
+
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   PRODUCTO DESTACADO
+========================================= */
+
+.featuredCheck {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    margin: 5px 0 20px;
+
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+
+    cursor: pointer;
+}
+
+.featuredCheck input {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+
+/* =========================================
+   BOTONES FORMULARIO
+========================================= */
+
+.formButtons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.saveBtn,
+.cancelBtn {
+    border: none;
+    border-radius: 8px;
+
+    padding: 11px 18px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.saveBtn {
+    background: #111827;
+    color: #ffffff;
+}
+
+.saveBtn:hover {
+    background: #000000;
+}
+
+.saveBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.cancelBtn {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.cancelBtn:hover {
+    background: #d1d5db;
+}
+
+/* =========================================
+   CONTENEDOR TABLA
+========================================= */
+
+.tableContainer {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* =========================================
+   TABLA
+========================================= */
+
+.productTable table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.productTable thead {
+    background: #f3f4f6;
+}
+
+.productTable th {
+    padding: 14px 12px;
+
+    text-align: left;
+
+    font-size: 12px;
+    font-weight: 700;
+    color: #4b5563;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.productTable td {
+    padding: 14px 12px;
+
+    font-size: 14px;
+    color: #374151;
+
+    border-bottom: 1px solid #f0f0f0;
+
+    vertical-align: middle;
+}
+
+.productTable tbody tr {
+    transition: 0.15s ease;
+}
+
+.productTable tbody tr:hover {
+    background: #fafafa;
+}
+
+/* =========================================
+   IMAGEN PRODUCTO
+========================================= */
+
+.productImage {
+    width: 70px;
+    height: 60px;
+
+    object-fit: contain;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.noImage {
+    width: 70px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f3f4f6;
+
+    border: 1px dashed #d1d5db;
+    border-radius: 8px;
+
+    color: #9ca3af;
+
+    font-size: 11px;
+    text-align: center;
+}
+
+/* =========================================
+   BOTÓN EDITAR
+========================================= */
+
+.editBtn {
+    border: none;
+
+    background: #e5e7eb;
+    color: #1f2937;
+
+    padding: 8px 12px;
+
+    border-radius: 7px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    margin-right: 7px;
+
+    transition: 0.2s ease;
+}
+
+.editBtn:hover {
+    background: #d1d5db;
+}
+
+/* =========================================
+   BOTÓN ELIMINAR
+========================================= */
+
+.deleteBtn {
+    border: none;
+
+    background: #fee2e2;
+    color: #b91c1c;
+
+    padding: 8px 12px;
+
+    border-radius: 7px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.deleteBtn:hover {
+    background: #fecaca;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .productTable {
+        padding: 18px;
+        border-radius: 12px;
+    }
+
+    .productHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .newProductBtn {
+        width: 100%;
+    }
+
+    .formGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .searchInput {
+        max-width: 100%;
+    }
+
+    .productForm {
+        padding: 18px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .productTable {
+        padding: 14px;
+    }
+
+    .productHeader h2 {
+        font-size: 21px;
+    }
+
+    .formButtons {
+        flex-direction: column;
+    }
+
+    .saveBtn,
+    .cancelBtn {
+        width: 100%;
+    }
+
+}

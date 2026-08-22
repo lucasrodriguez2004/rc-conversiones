@@ -1,0 +1,42 @@
+.whyChoose{
+    padding:90px 8%;
+    background:#ffffff;
+}
+
+.whyChoose h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.whyGrid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.whyCard{
+    background:#f8f8f8;
+    border-radius:18px;
+    padding:35px;
+    text-align:center;
+    transition:.3s;
+}
+
+.whyCard:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.whyCard span{
+    font-size:50px;
+}
+
+.whyCard h3{
+    margin:20px 0 10px;
+}
+
+.whyCard p{
+    color:#666;
+    line-height:1.6;
+}

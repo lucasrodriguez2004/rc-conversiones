@@ -1,0 +1,51 @@
+# Dependencias
+node_modules/
+server/node_modules/
+
+# Builds
+dist/
+server/dist/
+
+# Variables privadas
+.env
+.env.*
+!.env.example
+!.env.production.example
+
+server/.env
+server/.env.*
+!server/.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+
+# Backups generados durante desarrollo
+_backup_api_*/
+_backup_*/
+backup/
+
+# Auditorías y scripts temporales
+auditoria-produccion.txt
+auditar-produccion.cjs
+migrar-api.cjs
+
+# Caché
+.cache/
+.vite/
+
+# Archivos temporales
+*.tmp
+*.temp

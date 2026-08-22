@@ -1,0 +1,271 @@
+.adminClientes {
+
+    min-height:100vh;
+
+    padding:50px 7%;
+
+    background:#f8fafc;
+
+}
+
+
+.adminClientesHeader {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+
+.adminClientesHeader h1 {
+
+    margin:0;
+
+    font-size:36px;
+
+    color:#111827;
+
+}
+
+
+.adminClientesHeader p {
+
+    margin-top:8px;
+
+    color:#6b7280;
+
+}
+
+
+.reloadClientes {
+
+    border:none;
+
+    background:#0d8cff;
+
+    color:white;
+
+    padding:12px 20px;
+
+    border-radius:9px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+}
+
+
+.reloadClientes:hover {
+
+    background:#006ed8;
+
+}
+
+
+.tablaClientes {
+
+    background:white;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,.06);
+
+}
+
+
+.tablaClientesHeader,
+.clienteFila {
+
+    display:grid;
+
+    grid-template-columns:
+        1.4fr
+        1.5fr
+        1fr
+        .8fr;
+
+    gap:20px;
+
+    align-items:center;
+
+    padding:18px 22px;
+
+}
+
+
+.tablaClientesHeader {
+
+    background:#f1f5f9;
+
+    color:#475569;
+
+    font-weight:700;
+
+    font-size:14px;
+
+}
+
+
+.clienteFila {
+
+    border-top:1px solid #eef2f7;
+
+    color:#374151;
+
+}
+
+
+.clienteNombre {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+}
+
+
+.clienteNombre strong {
+
+    color:#111827;
+
+}
+
+
+.clienteNombre small {
+
+    color:#9ca3af;
+
+}
+
+
+.verificado,
+.noVerificado {
+
+    display:inline-block;
+
+    padding:6px 10px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+
+.verificado {
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+}
+
+
+.noVerificado {
+
+    background:#fef3c7;
+
+    color:#a16207;
+
+}
+
+
+.sinClientes {
+
+    background:white;
+
+    padding:50px;
+
+    text-align:center;
+
+    border-radius:16px;
+
+}
+
+
+.sinClientes p {
+
+    color:#6b7280;
+
+}
+
+
+.clientesError {
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    border-radius:10px;
+
+    background:#fee2e2;
+
+    color:#b91c1c;
+
+}
+
+
+@media (max-width:800px) {
+
+    .adminClientes {
+
+        padding:30px 5%;
+
+    }
+
+
+    .adminClientesHeader {
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+
+    .tablaClientes {
+
+        overflow-x:auto;
+
+    }
+
+
+    .tablaClientesHeader,
+    .clienteFila {
+
+        min-width:750px;
+
+    }
+
+}
+.clienteFilaClickable {
+
+    cursor:pointer;
+
+    transition:
+        background .2s ease;
+
+}
+
+
+.clienteFilaClickable:hover {
+
+    background:#f8fafc;
+
+}

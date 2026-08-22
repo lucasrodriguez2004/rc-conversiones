@@ -1,0 +1,1255 @@
+.adminPresupuestos {
+
+    min-height:100vh;
+
+    padding:50px 7%;
+
+    background:#f8fafc;
+
+}
+
+
+.adminPresupuestosHeader {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+
+.adminPresupuestosHeader h1 {
+
+    margin:0;
+
+    font-size:36px;
+
+    color:#111827;
+
+}
+
+
+.adminPresupuestosHeader p {
+
+    margin-top:8px;
+
+    color:#6b7280;
+
+}
+
+
+.reloadButton {
+
+    border:none;
+
+    background:#0d8cff;
+
+    color:white;
+
+    padding:12px 20px;
+
+    border-radius:9px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+}
+
+
+.reloadButton:hover {
+
+    background:#006ed8;
+
+}
+
+
+.presupuestosLista {
+
+    display:grid;
+
+    gap:25px;
+
+}
+
+
+.presupuestoCard {
+
+    background:white;
+
+    border-radius:16px;
+
+    padding:25px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,.07);
+
+}
+
+
+.presupuestoHeader {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    padding-bottom:20px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+
+.presupuestoCodigo {
+
+    display:inline-block;
+
+    margin-bottom:8px;
+
+    color:#0d8cff;
+
+    font-weight:700;
+
+    font-size:14px;
+
+}
+
+
+.presupuestoHeader h2 {
+
+    margin:0;
+
+    font-size:22px;
+
+    color:#111827;
+
+}
+
+
+.estadoSelect {
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    padding:10px 14px;
+
+    background:white;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+
+.clienteDatos {
+
+    display:flex;
+
+    gap:50px;
+
+    padding:20px 0;
+
+}
+
+
+.clienteDatos div {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:5px;
+
+}
+
+
+.clienteDatos strong {
+
+    color:#6b7280;
+
+    font-size:13px;
+
+}
+
+
+.clienteDatos span {
+
+    color:#111827;
+
+}
+
+
+.productosPresupuesto {
+
+    border-top:1px solid #eee;
+
+    padding-top:20px;
+
+}
+
+
+.productosPresupuesto h3 {
+
+    margin-top:0;
+
+    color:#374151;
+
+}
+
+
+.productoPresupuesto {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:10px 0;
+
+    border-bottom:1px solid #f3f4f6;
+
+}
+
+
+.productoPresupuesto span {
+
+    color:#374151;
+
+}
+
+
+.productoPresupuesto strong {
+
+    color:#6b7280;
+
+}
+
+
+.presupuestoTotal {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:20px;
+
+    padding-top:20px;
+
+    border-top:2px solid #eee;
+
+}
+
+
+.presupuestoTotal span {
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#374151;
+
+}
+
+
+.presupuestoTotal strong {
+
+    font-size:25px;
+
+    color:#0d8cff;
+
+}
+
+
+.noPresupuestos {
+
+    background:white;
+
+    padding:50px;
+
+    text-align:center;
+
+    border-radius:16px;
+
+}
+
+
+.noPresupuestos h3 {
+
+    margin-bottom:8px;
+
+}
+
+
+.noPresupuestos p {
+
+    color:#6b7280;
+
+}
+
+
+.adminError {
+
+    color:#dc2626;
+
+}
+
+
+@media (max-width:700px) {
+
+    .adminPresupuestos {
+
+        padding:30px 5%;
+
+    }
+
+
+    .adminPresupuestosHeader {
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+
+    .presupuestoHeader {
+
+        flex-direction:column;
+
+    }
+
+
+    .clienteDatos {
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+}
+.adminPresupuestos {
+
+    min-height:100vh;
+
+    padding:50px 7%;
+
+    background:#f8fafc;
+
+}
+
+
+.adminPresupuestosHeader {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+
+.adminPresupuestosHeader h1 {
+
+    margin:0;
+
+    font-size:36px;
+
+    color:#111827;
+
+}
+
+
+.adminPresupuestosHeader p {
+
+    color:#6b7280;
+
+}
+
+
+.actualizarPresupuestos {
+
+    border:none;
+
+    background:#0d8cff;
+
+    color:white;
+
+    padding:12px 20px;
+
+    border-radius:9px;
+
+    cursor:pointer;
+
+}
+
+
+.filtrosPresupuestos {
+
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:20px;
+
+}
+
+
+.filtrosPresupuestos input {
+
+    flex:1;
+
+    padding:14px;
+
+    border:1px solid #dbe1e8;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+}
+
+
+.filtrosPresupuestos select {
+
+    padding:14px;
+
+    border:1px solid #dbe1e8;
+
+    border-radius:10px;
+
+    background:white;
+
+}
+
+
+.contadorPresupuestos {
+
+    margin-bottom:20px;
+
+    color:#64748b;
+
+}
+
+
+.presupuestosError {
+
+    background:#fee2e2;
+
+    color:#b91c1c;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    margin-bottom:20px;
+
+}
+
+
+.listaPresupuestos {
+
+    display:grid;
+
+    gap:20px;
+
+}
+
+
+.presupuestoAdminCard {
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:16px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0,0,0,.05);
+
+}
+
+
+.presupuestoAdminTop {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding-bottom:18px;
+
+    border-bottom:1px solid #edf0f3;
+
+}
+
+
+.codigoAdmin {
+
+    display:block;
+
+    color:#0d8cff;
+
+    font-weight:700;
+
+}
+
+
+.presupuestoAdminTop small {
+
+    color:#9ca3af;
+
+}
+
+
+.badgeEstado {
+
+    padding:7px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    background:#f1f5f9;
+
+    color:#475569;
+
+}
+
+
+.badgeEstado.aprobado {
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+}
+
+
+.badgeEstado.rechazado {
+
+    background:#fee2e2;
+
+    color:#b91c1c;
+
+}
+
+
+.badgeEstado.en-revisión {
+
+    background:#dbeafe;
+
+    color:#1d4ed8;
+
+}
+
+
+.datosPresupuestoAdmin {
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap:20px;
+
+    padding:20px 0;
+
+}
+
+
+.datosPresupuestoAdmin span {
+
+    display:block;
+
+    color:#64748b;
+
+    font-size:13px;
+
+    margin-bottom:6px;
+
+}
+
+
+.datosPresupuestoAdmin strong {
+
+    color:#111827;
+
+}
+
+
+.totalAdmin {
+
+    color:#0d8cff !important;
+
+    font-size:19px;
+
+}
+
+
+.accionesPresupuesto {
+
+    border-top:1px solid #edf0f3;
+
+    padding-top:18px;
+
+}
+
+
+.accionesPresupuesto button {
+
+    border:none;
+
+    background:#111827;
+
+    color:white;
+
+    padding:10px 16px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+
+.sinPresupuestos {
+
+    background:white;
+
+    padding:50px;
+
+    text-align:center;
+
+    border-radius:16px;
+
+}
+
+
+.sinPresupuestos p {
+
+    color:#6b7280;
+
+}
+
+
+@media (max-width:800px) {
+
+    .adminPresupuestos {
+
+        padding:30px 5%;
+
+    }
+
+
+    .adminPresupuestosHeader {
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+
+    }
+
+
+    .filtrosPresupuestos {
+
+        flex-direction:column;
+
+    }
+
+
+    .datosPresupuestoAdmin {
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+.nuevasSolicitudes {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    margin-bottom: 22px;
+    padding: 16px 18px;
+
+    background: #fff7ed;
+    border: 1px solid #fed7aa;
+    border-radius: 10px;
+
+    color: #9a3412;
+}
+
+.nuevasSolicitudes strong {
+    font-size: 15px;
+}
+
+.nuevasSolicitudes span {
+    font-size: 13px;
+}
+
+.ticketNuevo {
+    border-left: 4px solid #f59e0b;
+}
+
+.nuevoTicketBadge {
+    display: inline-block;
+
+    margin-bottom: 12px;
+    padding: 5px 9px;
+
+    border-radius: 6px;
+
+    background: #f59e0b;
+    color: white;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+.avisoAtencion {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    margin: 18px 0;
+    padding: 14px 16px;
+
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+}
+
+.avisoAtencion strong {
+    font-size: 14px;
+    color: #1f2937;
+}
+
+.avisoAtencion span {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #64748b;
+}
+/* ==========================================
+   NOTA INTERNA EN LA LISTA
+========================================== */
+
+.notaAdminResumen {
+    margin: 18px 0;
+    padding: 14px 16px;
+
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+.notaAdminResumen span {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #64748b;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.notaAdminResumen p {
+    margin: 0;
+
+    color: #334155;
+
+    font-size: 14px;
+    line-height: 1.5;
+
+    white-space: pre-wrap;
+}
+.marcarContactadoBtn {
+    width: 100%;
+
+    margin: 16px 0;
+    padding: 12px 16px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #111827;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.marcarContactadoBtn:hover:not(:disabled) {
+    background: #000;
+}
+
+.marcarContactadoBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+/* ==========================================
+   FILTRO ACTIVO
+========================================== */
+
+.filtroActivoPresupuestos {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin: 12px 0 18px;
+    padding: 10px 14px;
+
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+
+    font-size: 13px;
+}
+
+.filtroActivoPresupuestos span {
+    color: #64748b;
+}
+
+.filtroActivoPresupuestos strong {
+    color: #111827;
+}
+
+.filtroActivoPresupuestos button {
+    margin-left: auto;
+
+    border: none;
+    background: transparent;
+
+    color: #2563eb;
+
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.filtroActivoPresupuestos button:hover {
+    text-decoration: underline;
+}
+/* ==========================================
+   CONTACTO EN LISTADO DE TICKETS
+========================================== */
+
+.contactoResumenTicket {
+    display: grid;
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+
+    margin-top: 16px;
+}
+
+.contactoResumenTicket > div {
+    padding: 13px 14px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+}
+
+.contactoResumenTicket span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #64748b;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+.contactoResumenTicket strong {
+    color: #111827;
+
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   AVISO SIN CONTACTAR
+========================================== */
+
+.sinContactoAviso {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+
+    margin-top: 12px;
+    padding: 12px 14px;
+
+    background: #fff7ed;
+
+    border: 1px solid #fed7aa;
+    border-radius: 9px;
+}
+
+.sinContactoAviso strong {
+    color: #c2410c;
+
+    font-size: 13px;
+}
+
+.sinContactoAviso span {
+    color: #9a3412;
+
+    font-size: 12px;
+}
+
+
+/* ==========================================
+   REGISTRAR CONTACTO
+========================================== */
+
+.registrarContactoListaBtn {
+    width: 100%;
+
+    margin-top: 12px;
+    padding: 11px 15px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.registrarContactoListaBtn:hover:not(:disabled) {
+    background: #1d4ed8;
+}
+
+.registrarContactoListaBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+@media (max-width: 650px) {
+
+    .contactoResumenTicket {
+        grid-template-columns: 1fr;
+    }
+
+}
+.alertaSinContactarLista {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 14px;
+    padding: 14px 16px;
+
+    border: 1px solid #fed7aa;
+    border-radius: 10px;
+
+    background: #fff7ed;
+
+    color: #9a3412;
+
+    text-align: left;
+    cursor: pointer;
+}
+
+.alertaSinContactarLista strong {
+    font-size: 14px;
+}
+
+.alertaSinContactarLista span {
+    font-size: 12px;
+}
+
+.alertaSinContactarLista:hover {
+    background: #ffedd5;
+}
+/* ==========================================
+   ÚLTIMO MEDIO DE CONTACTO
+========================================== */
+
+.contactoResumenTicketTres {
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+}
+
+.ultimoMedioContacto {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+}
+
+.ultimoMedioContacto > span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+
+    font-size: 17px;
+}
+
+
+@media (max-width: 900px) {
+
+    .contactoResumenTicketTres {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .contactoResumenTicketTres {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* ==========================================
+   SEGUIMIENTOS EN LISTA DE TICKETS
+========================================== */
+
+.alertaSeguimientoLista {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 12px;
+    padding: 14px 16px;
+
+    border-radius: 10px;
+
+    text-align: left;
+
+    cursor: pointer;
+}
+
+.alertaSeguimientoLista strong {
+    font-size: 14px;
+}
+
+.alertaSeguimientoLista span {
+    font-size: 12px;
+}
+
+.alertaSeguimientoVencidoLista {
+    border: 1px solid #fecaca;
+
+    background: #fef2f2;
+    color: #b91c1c;
+}
+
+.alertaSeguimientoVencidoLista:hover {
+    background: #fee2e2;
+}
+
+.alertaSeguimientoHoyLista {
+    border: 1px solid #bfdbfe;
+
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+.alertaSeguimientoHoyLista:hover {
+    background: #dbeafe;
+}
+
+
+/* ==========================================
+   TICKET CON SEGUIMIENTO
+========================================== */
+
+.ticketSeguimientoVencido {
+    border-color: #fecaca;
+}
+
+.seguimientoListaBadge {
+    display: inline-flex;
+
+    margin-bottom: 12px;
+    padding: 6px 9px;
+
+    border-radius: 7px;
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.seguimientoListaBadge.vencido {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.seguimientoListaBadge.hoy {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+
+/* ==========================================
+   RESUMEN SEGUIMIENTO
+========================================== */
+
+.seguimientoResumenLista {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-top: 14px;
+    padding: 12px 14px;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+
+    background: #f8fafc;
+}
+
+.seguimientoResumenLista span {
+    color: #64748b;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.seguimientoResumenLista strong {
+    color: #334155;
+
+    font-size: 13px;
+}
+
+.seguimientoResumenLista.hoy {
+    border-color: #bfdbfe;
+
+    background: #eff6ff;
+}
+
+.seguimientoResumenLista.hoy strong {
+    color: #1d4ed8;
+}
+
+.seguimientoResumenLista.vencido {
+    border-color: #fecaca;
+
+    background: #fef2f2;
+}
+
+.seguimientoResumenLista.vencido strong {
+    color: #b91c1c;
+}
+
+
+@media (max-width: 650px) {
+
+    .alertaSeguimientoLista,
+    .seguimientoResumenLista {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
+/* ==========================================
+   COMPLETAR SEGUIMIENTO AL CONTACTAR
+========================================== */
+
+.completarSeguimientoContacto {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 11px;
+
+    margin: 15px 0;
+    padding: 13px 14px;
+
+    border: 1px solid #bfdbfe;
+    border-radius: 10px;
+
+    background: #eff6ff;
+
+    cursor: pointer;
+}
+
+.completarSeguimientoContacto input {
+    width: 17px;
+    height: 17px;
+
+    flex-shrink: 0;
+
+    margin-top: 2px;
+
+    cursor: pointer;
+}
+
+.completarSeguimientoContacto > span {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.completarSeguimientoContacto strong {
+    color: #1d4ed8;
+
+    font-size: 13px;
+}
+
+.completarSeguimientoContacto small {
+    color: #475569;
+
+    font-size: 12px;
+    line-height: 1.5;
+}
