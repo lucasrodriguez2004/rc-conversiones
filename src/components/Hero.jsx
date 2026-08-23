@@ -8,9 +8,7 @@ export default function Hero() {
 
             <div className="heroContent">
 
-                <span className="badge">
-                    RC CONVERSIONES
-                </span>
+                
 
                 <h1>
                     Todo para equipar tu

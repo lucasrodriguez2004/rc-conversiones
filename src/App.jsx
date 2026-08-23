@@ -27,6 +27,7 @@ import AdminPresupuestoDetalle from "./components/AdminPresupuestoDetalle";
 import AdminClientes from "./components/AdminClientes";
 import AdminClienteDetalle from "./components/AdminClienteDetalle";
 import ProductTable from "./components/ProductTable";
+import CategoriaProductos from "./components/CategoriaProductos";
 function Inicio() {
 
     const [busqueda, setBusqueda] = useState("");
@@ -182,7 +183,11 @@ function App() {
         </AdminProtectedRoute>
     }
 />
-        </Routes>
+            <Route
+        path="/categoria/:slug"
+        element={<CategoriaProductos />}
+    />
+</Routes>
     );
 }
 

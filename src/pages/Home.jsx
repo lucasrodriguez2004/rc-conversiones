@@ -1,4 +1,4 @@
-import TopBar from "../components/TopBar";
+
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Categories from "../components/Categories";
@@ -13,8 +13,7 @@ import WhatsAppButton from "../components/WhatsAppButton";
 export default function Home() {
   return (
     <>
-      <TopBar />
-      <Navbar />
+<Navbar />
       <Hero />
       <Categories />
       <FeaturedProducts />

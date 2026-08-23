@@ -8,6 +8,7 @@ import {
 import App from "./App";
 
 import "./styles/global.css";
+import "./styles/rc-theme.css";
 
 import {
     CartProvider

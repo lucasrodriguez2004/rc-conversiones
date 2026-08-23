@@ -1,0 +1,615 @@
+/* =====================================================
+   RC CONVERSIONES - TEMA VISUAL PRINCIPAL
+   Paleta institucional: azul + blanco
+   Este archivo se importa AL FINAL para unificar estilos.
+===================================================== */
+
+:root{
+    --rc-blue:#0d8cff;
+    --rc-blue-2:#0876d7;
+    --rc-navy:#0b2f64;
+    --rc-navy-2:#123e78;
+    --rc-sky:#eaf5ff;
+    --rc-sky-2:#f5faff;
+    --rc-white:#ffffff;
+    --rc-text:#122a46;
+    --rc-muted:#6f8299;
+    --rc-border:#dfe8f2;
+    --rc-shadow:0 16px 42px rgba(15,52,94,.10);
+    --rc-radius:22px;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    color:var(--rc-text);
+    background:#fff;
+    font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+button,
+input,
+select,
+textarea{
+    font:inherit;
+}
+
+/* ---------------- NAVBAR ---------------- */
+
+.navbar{
+    max-width:1540px;
+    background:linear-gradient(
+        135deg,
+        rgba(10,43,92,.94),
+        rgba(13,54,109,.92)
+    ) !important;
+    border:1px solid rgba(255,255,255,.10) !important;
+    box-shadow:0 18px 55px rgba(4,25,56,.22) !important;
+}
+
+.navbar .search{
+    min-height:44px;
+    padding-left:13px;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:999px;
+    background:rgba(255,255,255,.07);
+    color:#a9c9eb;
+}
+
+.navbar .search input{
+    background:transparent !important;
+    padding-left:0 !important;
+}
+
+.navbar .cartIcon{
+    background:linear-gradient(135deg,#1699ff,#0878d8) !important;
+    box-shadow:0 8px 20px rgba(13,140,255,.25);
+}
+
+.navbar .login{
+    font-weight:700;
+}
+
+/* ---------------- HERO ---------------- */
+
+.hero,
+#inicio{
+    position:relative;
+    isolation:isolate;
+}
+
+.hero::before,
+#inicio::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:-1;
+    pointer-events:none;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(4,24,53,.72) 0%,
+            rgba(6,33,70,.48) 48%,
+            rgba(4,25,55,.28) 100%
+        );
+}
+
+.hero h1,
+#inicio h1{
+    max-width:900px;
+    letter-spacing:-2px;
+    text-shadow:0 6px 25px rgba(0,0,0,.24);
+}
+
+.hero p,
+#inicio p{
+    max-width:760px;
+    line-height:1.65;
+}
+
+/* Botones típicos del hero, sin tocar botones administrativos */
+.hero button,
+.hero a[class*="btn"],
+#inicio > div button,
+#inicio > div a[class*="btn"]{
+    border-radius:14px;
+}
+
+/* ---------------- CATEGORÍAS ---------------- */
+
+.categories{
+    padding:90px clamp(20px,5vw,72px);
+    background:
+        radial-gradient(circle at 10% 10%,rgba(13,140,255,.07),transparent 27%),
+        #fff;
+}
+
+.categoriesHeader{
+    max-width:760px;
+    margin:0 auto 40px;
+    text-align:center;
+}
+
+.categoriesHeader > span{
+    display:inline-block;
+    margin-bottom:10px;
+    color:var(--rc-blue);
+    font-size:12px;
+    font-weight:900;
+    letter-spacing:.16em;
+}
+
+.categoriesHeader h2,
+.categories > h2{
+    margin:0;
+    color:var(--rc-navy);
+    font-size:clamp(30px,4vw,44px);
+    letter-spacing:-1.3px;
+}
+
+.categoriesHeader p{
+    margin:14px auto 0;
+    color:var(--rc-muted);
+    line-height:1.7;
+}
+
+.categories .grid{
+    width:min(1380px,100%);
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:20px;
+}
+
+.categories .card{
+    min-width:0;
+    padding:0;
+    overflow:hidden;
+    text-align:left;
+    border:1px solid var(--rc-border);
+    border-radius:20px;
+    background:#fff;
+    box-shadow:0 10px 28px rgba(21,61,104,.07);
+    cursor:pointer;
+    transition:
+        transform .22s ease,
+        box-shadow .22s ease,
+        border-color .22s ease;
+}
+
+.categories .card:hover{
+    transform:translateY(-5px);
+    border-color:#b9dafa;
+    box-shadow:0 19px 45px rgba(21,61,104,.14);
+}
+
+.categoryImage{
+    height:180px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    background:linear-gradient(180deg,#f9fbfe,#edf5fd);
+}
+
+.categories .card img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    padding:18px;
+    transition:transform .28s ease;
+}
+
+.categories .card:hover img{
+    transform:scale(1.045);
+}
+
+.categories .info{
+    padding:20px;
+}
+
+.categories .info h3{
+    margin:0;
+    color:var(--rc-navy);
+    font-size:18px;
+}
+
+.categories .info p{
+    min-height:42px;
+    margin:8px 0 17px;
+    color:var(--rc-muted);
+    font-size:13px;
+    line-height:1.55;
+}
+
+.categories .info > span{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    color:var(--rc-blue-2);
+    font-size:13px;
+    font-weight:800;
+}
+
+.categories .info > span b{
+    font-size:18px;
+    transition:transform .2s ease;
+}
+
+.categories .card:hover .info > span b{
+    transform:translateX(4px);
+}
+
+/* ---------------- PRODUCTOS / CATÁLOGOS ---------------- */
+
+.catalog,
+.featured{
+    padding:84px clamp(20px,5vw,72px);
+    background:var(--rc-sky-2);
+}
+
+.catalog h2,
+.featured h2{
+    color:var(--rc-navy);
+}
+
+.productGrid,
+.productsGrid,
+.catalogGrid{
+    gap:22px;
+}
+
+.productCard,
+.product-card,
+.catalogCard{
+    border:1px solid var(--rc-border) !important;
+    border-radius:20px !important;
+    background:#fff !important;
+    box-shadow:0 10px 28px rgba(18,54,95,.07) !important;
+    overflow:hidden;
+    transition:.22s ease !important;
+}
+
+.productCard:hover,
+.product-card:hover,
+.catalogCard:hover{
+    transform:translateY(-4px);
+    box-shadow:0 18px 42px rgba(18,54,95,.13) !important;
+}
+
+.productCard img,
+.product-card img,
+.catalogCard img{
+    background:#f8fbff;
+}
+
+.productCard button,
+.product-card button,
+.catalogCard button{
+    border-radius:12px;
+}
+
+/* ---------------- WHY / ABOUT / NEWSLETTER ---------------- */
+
+.whyChooseUs,
+.why-choose-us,
+.why,
+.about{
+    background:#fff;
+}
+
+.whyChooseUs,
+.why-choose-us,
+.why,
+.about,
+.newsletter{
+    padding-top:82px;
+    padding-bottom:82px;
+}
+
+.newsletter{
+    background:linear-gradient(135deg,#092d61,#0d5cae);
+    color:#fff;
+}
+
+/* ---------------- CONTACTO ---------------- */
+
+.contact{
+    position:relative;
+    padding:90px clamp(20px,5vw,72px);
+    background:
+        radial-gradient(circle at 90% 0%,rgba(13,140,255,.10),transparent 32%),
+        #f5faff;
+    text-align:center;
+}
+
+.contact > h2{
+    margin:0;
+    color:var(--rc-navy);
+    font-size:clamp(30px,4vw,42px);
+    letter-spacing:-1px;
+}
+
+.contact > p{
+    max-width:690px;
+    margin:12px auto 30px;
+    color:var(--rc-muted);
+    line-height:1.65;
+}
+
+.contact form{
+    width:min(760px,100%);
+    margin:0 auto;
+    padding:30px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    text-align:left;
+    background:#fff;
+    border:1px solid var(--rc-border);
+    border-radius:24px;
+    box-shadow:var(--rc-shadow);
+}
+
+.contact input,
+.contact select,
+.contact textarea{
+    width:100%;
+    min-height:50px;
+    padding:13px 15px;
+    border:1px solid #d9e4ef;
+    border-radius:13px;
+    outline:none;
+    background:#fbfdff;
+    color:var(--rc-text);
+    transition:.18s ease;
+}
+
+.contact input:focus,
+.contact select:focus,
+.contact textarea:focus{
+    border-color:#78bdf8;
+    background:#fff;
+    box-shadow:0 0 0 4px rgba(13,140,255,.10);
+}
+
+.contact textarea{
+    grid-column:1 / -1;
+    resize:vertical;
+}
+
+.contact form > button{
+    grid-column:1 / -1;
+    min-height:52px;
+    border:0;
+    border-radius:14px;
+    background:linear-gradient(135deg,var(--rc-blue),#0871cf);
+    color:#fff;
+    font-weight:800;
+    cursor:pointer;
+    box-shadow:0 10px 24px rgba(13,140,255,.22);
+    transition:.2s ease;
+}
+
+.contact form > button:hover{
+    transform:translateY(-1px);
+    box-shadow:0 14px 30px rgba(13,140,255,.28);
+}
+
+/* ---------------- FOOTER ---------------- */
+
+.footer,
+footer{
+    background:#082957;
+    color:#dfeeff;
+}
+
+.footer a,
+footer a{
+    color:#dfeeff;
+}
+
+.footer a:hover,
+footer a:hover{
+    color:#fff;
+}
+
+/* ---------------- PÁGINAS DE CATEGORÍA ---------------- */
+
+.categoriaProductosPage{
+    background:#f5faff !important;
+}
+
+.categoriaProductosHero{
+    background:linear-gradient(135deg,#092d61,#0d5cae) !important;
+}
+
+.categoriaProductoCard{
+    border-color:var(--rc-border) !important;
+}
+
+.categoriaProductoPie button,
+.categoriaVacia button{
+    background:linear-gradient(135deg,var(--rc-blue),#0871cf) !important;
+}
+
+/* ---------------- CLIENTE / LOGIN ---------------- */
+
+.loginPage,
+.registerPage,
+.verificarPage,
+.miCuentaPage{
+    background:
+        radial-gradient(circle at top right,rgba(13,140,255,.10),transparent 30%),
+        #f5faff !important;
+}
+
+.loginCard,
+.registerCard{
+    border:1px solid var(--rc-border) !important;
+    box-shadow:var(--rc-shadow) !important;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media(max-width:1100px){
+    .categories .grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+}
+
+@media(max-width:760px){
+    .categories,
+    .catalog,
+    .featured,
+    .contact{
+        padding-left:16px;
+        padding-right:16px;
+    }
+
+    .categories .grid{
+        grid-template-columns:1fr;
+    }
+
+    .categoryImage{
+        height:210px;
+    }
+
+    .contact form{
+        padding:20px;
+        grid-template-columns:1fr;
+    }
+
+    .contact textarea,
+    .contact form > button{
+        grid-column:1;
+    }
+}
+
+
+/* =====================================================
+   RC CONVERSIONES - MARCA NAVBAR SIN IMAGEN
+===================================================== */
+
+.rcBrandWrap{
+    width:235px;
+    min-width:235px;
+    display:flex;
+    align-items:center;
+}
+
+.rcBrand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    color:#fff;
+    user-select:none;
+}
+
+.rcBrandMonogram{
+    width:52px;
+    height:44px;
+    flex:0 0 52px;
+    display:grid;
+    place-items:center;
+    border-radius:13px;
+    background:linear-gradient(
+        135deg,
+        #1699ff,
+        #0876d7
+    );
+    color:#fff;
+    font-size:19px;
+    line-height:1;
+    font-weight:900;
+    font-style:italic;
+    letter-spacing:-1px;
+    box-shadow:
+        0 8px 20px rgba(13,140,255,.28),
+        inset 0 1px 0 rgba(255,255,255,.22);
+    border:1px solid rgba(255,255,255,.16);
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+.rcBrandText{
+    min-width:0;
+    display:flex;
+    flex-direction:column;
+    gap:3px;
+    line-height:1;
+}
+
+.rcBrandText strong{
+    color:#fff;
+    font-size:15px;
+    font-weight:900;
+    letter-spacing:.085em;
+    white-space:nowrap;
+}
+
+.rcBrandText small{
+    color:#9fcaf1;
+    font-size:8px;
+    font-weight:700;
+    letter-spacing:.075em;
+    white-space:nowrap;
+}
+
+.rcBrand:hover .rcBrandMonogram{
+    transform:translateY(-1px);
+    box-shadow:
+        0 11px 25px rgba(13,140,255,.34),
+        inset 0 1px 0 rgba(255,255,255,.25);
+}
+
+.rcBrand:hover .rcBrandText strong{
+    color:#eaf5ff;
+}
+
+/* Oculta cualquier estilo viejo de logo que haya quedado */
+.navbar .logo{
+    display:none !important;
+}
+
+@media(max-width:1050px){
+    .rcBrandWrap{
+        width:auto;
+        min-width:auto;
+    }
+
+    .rcBrandText{
+        display:none;
+    }
+}
+
+@media(max-width:620px){
+    .rcBrandMonogram{
+        width:46px;
+        height:40px;
+        flex-basis:46px;
+        font-size:17px;
+    }
+}
+
+
+/* OCULTAR ETIQUETA ROJA SUPERIOR RC */
+.topBar,
+.topbar,
+.top-bar,
+.rcTopBar,
+.rc-topbar {
+    display: none !important;
+}

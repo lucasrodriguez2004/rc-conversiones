@@ -1,76 +1,104 @@
+import { useNavigate } from "react-router-dom";
 import "../styles/Categories.css";
 
 const categories = [
-  {
-    title: "Energía Solar",
-    description: "Paneles solares, kits y accesorios.",
-    image: "/images/categories/panelsolar.jpg", // TU FOTO
-  },
-  {
-    title: "Heladeras 12V / 24V",
-    description: "Bajo mesada y portátiles hasta 290 litros.",
-    image: "/images/categories/heladera.webp", // FOTO DE EJEMPLO (después la cambiamos)
-  },
-  {
-    title: "Baterías de Litio",
-    description: "Baterías de litio, gel y accesorios.",
-    image: "/images/categories/baterias.png", // TU FOTO
-  },
-  {
-    title: "Reguladores Solares",
-    description: "PWM y MPPT.",
-    image: "/images/categories/reguladores.png", // TU FOTO
-  },
-  {
-    title: "Calefacción",
-    description: "Calefones y calefacción para motorhomes.",
-    image: "/images/categories/caldera.png", // TU FOTO
-  },
-  {
-    title: "Interior para Motorhomes",
-    description: "Bachas, mesas, sanitarios y accesorios.",
-    image: "/images/categories/interior.webp",
-  },
-  {
-    title: "Ventilación",
-    description: "Claraboyas, extractores y rejillas.",
-    image: "/images/categories/extractor.jpg",
-  },
-  {
-    title: "Grifería y Canillas",
-    description: "Canillas y duchadores para motorhomes.",
-    image: "/images/categories/griferia.jpeg",
-  },
+    {
+        title: "Energía Solar",
+        description: "Paneles, reguladores y soluciones para autonomía.",
+        image: "/images/categories/panelsolar.jpg",
+        slug: "energia-solar"
+    },
+    {
+        title: "Heladeras",
+        description: "Refrigeración 12V / 24V para cada viaje.",
+        image: "/images/categories/heladera.webp",
+        slug: "heladeras"
+    },
+    {
+        title: "Baterías",
+        description: "Litio, gel y almacenamiento de energía.",
+        image: "/images/categories/baterias.png",
+        slug: "baterias"
+    },
+    {
+        title: "Reguladores",
+        description: "Controladores PWM y MPPT.",
+        image: "/images/categories/reguladores.png",
+        slug: "reguladores"
+    },
+    {
+        title: "Calefacción",
+        description: "Calefones y climatización para motorhomes.",
+        image: "/images/categories/caldera.png",
+        slug: "calefaccion"
+    },
+    {
+        title: "Accesorios",
+        description: "Interior, equipamiento y soluciones prácticas.",
+        image: "/images/categories/interior.webp",
+        slug: "accesorios"
+    },
+    {
+        title: "Ventilación",
+        description: "Claraboyas, extractores y circulación de aire.",
+        image: "/images/categories/extractor.jpg",
+        slug: "ventilacion"
+    },
+    {
+        title: "Grifería",
+        description: "Canillas, duchadores y accesorios de agua.",
+        image: "/images/categories/griferia.jpeg",
+        slug: "griferia"
+    }
 ];
 
 export default function Categories() {
-  return (
-    <section id="categorias" className="categories">
+    const navigate = useNavigate();
 
-      <h2>Nuestras Categorías</h2>
-
-      <div className="grid">
-
-        {categories.map((cat) => (
-
-          <div className="card" key={cat.title}>
-
-            <img src={cat.image} alt={cat.title} />
-
-            <div className="info">
-
-              <h3>{cat.title}</h3>
-
-              <button>Ver Productos</button>
-
+    return (
+        <section
+            id="categorias"
+            className="categories"
+        >
+            <div className="categoriesHeader">
+                <span>CATÁLOGO</span>
+                <h2>Categorías principales</h2>
+                <p>
+                    Elegí una categoría y encontrá el equipamiento
+                    que necesitás para tu motorhome.
+                </p>
             </div>
 
-          </div>
+            <div className="grid">
+                {categories.map((cat) => (
+                    <button
+                        type="button"
+                        className="card"
+                        key={cat.slug}
+                        onClick={() =>
+                            navigate(
+                                `/categoria/${cat.slug}`
+                            )
+                        }
+                    >
+                        <div className="categoryImage">
+                            <img
+                                src={cat.image}
+                                alt={cat.title}
+                            />
+                        </div>
 
-        ))}
-
-      </div>
-
-    </section>
-  );
+                        <div className="info">
+                            <h3>{cat.title}</h3>
+                            <p>{cat.description}</p>
+                            <span>
+                                Ver productos
+                                <b aria-hidden="true">→</b>
+                            </span>
+                        </div>
+                    </button>
+                ))}
+            </div>
+        </section>
+    );
 }
