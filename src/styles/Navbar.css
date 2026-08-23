@@ -1,315 +1,585 @@
 .navbar{
-
     position:fixed;
-
     top:20px;
-
     left:50%;
-
     transform:translateX(-50%);
-
     width:92%;
-
     height:82px;
-
     background:rgba(15,40,85,.88);
-
     backdrop-filter:blur(18px);
-
     border:1px solid rgba(255,255,255,.08);
-
     border-radius:22px;
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
     padding:0 28px;
-
     z-index:1000;
-
     box-shadow:0 18px 45px rgba(0,0,0,.28);
-
 }
 
 .logo{
-
     width:220px;
-
     display:flex;
-
     align-items:center;
-
 }
 
 .logo img{
-
     width:170px;
-
     height:auto;
-
     transition:.30s;
-
 }
 
 .logo img:hover{
-
     transform:scale(1.06);
-
 }
 
 nav{
-
     display:flex;
-
+    align-items:center;
     gap:40px;
-
 }
 
-nav a{
+/* ==========================================
+   LINKS/BOTONES PRINCIPALES DEL NAVBAR
+========================================== */
 
+.navLinkButton,
+.categoriasTrigger{
+    border:0;
+    padding:0;
+    margin:0;
+    background:transparent;
     color:white;
-
-    text-decoration:none;
-
+    font-family:inherit;
     font-weight:600;
-
     font-size:17px;
-
-    transition:.25s;
-
+    line-height:1;
+    cursor:pointer;
     position:relative;
-
-}
-
-nav a:hover{
-
-    color:#58a6ff;
-
-}
-
-nav a::after{
-
-    content:"";
-
-    position:absolute;
-
-    left:0;
-
-    bottom:-6px;
-
-    width:0;
-
-    height:2px;
-
-    background:#58a6ff;
-
     transition:.25s;
-
 }
 
-nav a:hover::after{
+.navLinkButton:hover,
+.navLinkButton:focus-visible,
+.categoriasTrigger:hover,
+.categoriasTrigger:focus-visible{
+    color:#58a6ff;
+    outline:none;
+}
 
+/* Línea azul animada debajo de Inicio / Productos / Contacto */
+.navLinkButton::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:0;
+    height:2px;
+    background:#58a6ff;
+    transition:.25s;
+}
+
+.navLinkButton:hover::after,
+.navLinkButton:focus-visible::after{
     width:100%;
-
 }
+
+/* ==========================================
+   MENÚ DESPLEGABLE DE CATEGORÍAS
+========================================== */
+
+.navCategorias{
+    position:relative;
+    height:82px;
+    display:flex;
+    align-items:center;
+}
+
+.categoriasTrigger{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.categoriasTrigger svg{
+    width:11px;
+    height:11px;
+    transition:transform .25s ease;
+}
+
+.navCategorias:hover .categoriasTrigger,
+.navCategorias:focus-within .categoriasTrigger{
+    color:#58a6ff;
+}
+
+.navCategorias:hover .categoriasTrigger svg,
+.navCategorias:focus-within .categoriasTrigger svg{
+    transform:rotate(180deg);
+}
+
+.categoriasMenu{
+    position:absolute;
+    top:72px;
+    left:50%;
+    transform:translate(-50%, 10px);
+    width:245px;
+    padding:10px;
+    border-radius:16px;
+    background:rgba(8,27,58,.98);
+    border:1px solid rgba(255,255,255,.12);
+    box-shadow:0 24px 55px rgba(0,0,0,.38);
+    backdrop-filter:blur(18px);
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+    transition:
+        opacity .18s ease,
+        transform .18s ease,
+        visibility .18s ease;
+}
+
+.categoriasMenu::before{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    top:-18px;
+    height:18px;
+}
+
+.navCategorias:hover .categoriasMenu,
+.navCategorias:focus-within .categoriasMenu{
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+    transform:translate(-50%, 0);
+}
+
+.categoriasMenuTitulo{
+    padding:8px 12px 10px;
+    color:#8da6c7;
+    font-size:12px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+}
+
+.categoriasMenu button{
+    width:100%;
+    border:0;
+    background:transparent;
+    color:#f5f8ff;
+    padding:11px 12px;
+    border-radius:10px;
+    text-align:left;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.18s ease;
+}
+
+.categoriasMenu button:hover,
+.categoriasMenu button:focus-visible{
+    background:rgba(88,166,255,.14);
+    color:#69b2ff;
+    outline:none;
+    padding-left:16px;
+}
+
+/* ==========================================
+   LADO DERECHO
+========================================== */
 
 .navbarRight{
-
     display:flex;
-
     align-items:center;
-
     gap:15px;
+}
 
+.search{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#0b1624;
 }
 
 .search input{
-
     width:240px;
-
     height:44px;
-
     border:none;
-
     outline:none;
-
     border-radius:30px;
-
     background:rgba(255,255,255,.08);
-
     color:white;
-
     padding:0 20px;
-
     font-size:15px;
-
 }
 
 .search input::placeholder{
-
     color:#d2d8e4;
-
 }
 
 .cartIcon{
-
     width:48px;
-
     height:48px;
-
     border:none;
-
     border-radius:50%;
-
     background:#1976d2;
-
     color:white;
-
     font-size:20px;
-
     cursor:pointer;
-
     position:relative;
-
     transition:.25s;
-
 }
 
 .cartIcon:hover{
-
     transform:translateY(-2px);
-
     background:#2196f3;
-
 }
 
 .cartIcon span{
-
     position:absolute;
-
     top:-6px;
-
     right:-6px;
-
     background:#ff3b30;
-
     color:white;
-
     width:20px;
-
     height:20px;
-
     border-radius:50%;
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     font-size:11px;
-
     font-weight:bold;
-
 }
 
 .login{
-
     height:46px;
-
     padding:0 22px;
-
     border-radius:30px;
-
     border:1px solid rgba(255,255,255,.15);
-
     background:rgba(255,255,255,.05);
-
     color:white;
-
     display:flex;
-
     align-items:center;
-
     gap:10px;
-
     cursor:pointer;
-
     transition:.25s;
-
     font-size:15px;
-
 }
 
 .login:hover{
-
     background:white;
-
     color:#143c80;
-
 }
 
 @media(max-width:1100px){
-
     .search{
-
         display:none;
-
     }
-
 }
 
 @media(max-width:900px){
-
     nav{
-
         display:none;
-
     }
 
     .logo{
-
         width:auto;
+    }
+}
 
+/* RC CATALOGO - MENU SCROLL */
+.categoriasMenu{
+    max-height: min(70vh, 620px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+}
+
+
+/* ===== RC MEGA MENU CATEGORIAS ===== */
+
+/*
+   Desktop: panel grande sin el scroll angosto anterior.
+   Todas las categorías y subcategorías aparecen organizadas
+   en columnas.
+*/
+
+.navCategorias{
+    position:static !important;
+}
+
+.categoriasTrigger.activo{
+    color:#58a6ff;
+}
+
+.categoriasTrigger.activo svg{
+    transform:rotate(180deg);
+}
+
+.categoriasMenu{
+    display:none !important;
+}
+
+.megaCategoriasBackdrop{
+    position:fixed;
+    inset:0;
+    z-index:970;
+    background:rgba(4,18,39,.34);
+    backdrop-filter:blur(2px);
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+    transition:.2s ease;
+}
+
+.megaCategoriasBackdrop.visible{
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+}
+
+.megaCategorias{
+    position:fixed;
+    top:116px;
+    left:50%;
+    width:min(96vw,1680px);
+    z-index:980;
+    transform:
+        translate(-50%,-18px)
+        scale(.985);
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+    transition:
+        opacity .22s ease,
+        transform .22s ease,
+        visibility .22s ease;
+}
+
+.megaCategorias.abierto{
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+    transform:
+        translate(-50%,0)
+        scale(1);
+}
+
+.megaCategoriasInner{
+    padding:25px 28px 27px;
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:24px;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(8,33,73,.985),
+            rgba(8,47,94,.985)
+        );
+    box-shadow:
+        0 34px 90px rgba(0,0,0,.35);
+    color:white;
+}
+
+.megaCategoriasHeader{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:24px;
+    padding-bottom:18px;
+    margin-bottom:18px;
+    border-bottom:1px solid rgba(255,255,255,.10);
+}
+
+.megaCategoriasHeader > div:first-child > span{
+    display:block;
+    margin-bottom:6px;
+    color:#5fb3ff;
+    font-size:10px;
+    font-weight:900;
+    letter-spacing:.16em;
+}
+
+.megaCategoriasHeader h2{
+    margin:0;
+    color:#fff;
+    font-size:25px;
+    letter-spacing:-.6px;
+}
+
+.megaCategoriasHeader p{
+    margin:6px 0 0;
+    color:#a8c3df;
+    font-size:13px;
+}
+
+.megaCategoriasAcciones{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.megaVerTodos,
+.megaCerrar{
+    border:1px solid rgba(255,255,255,.14);
+    background:rgba(255,255,255,.08);
+    color:white;
+    cursor:pointer;
+    transition:.18s ease;
+}
+
+.megaVerTodos{
+    min-height:40px;
+    padding:0 16px;
+    border-radius:12px;
+    font-size:13px;
+    font-weight:800;
+}
+
+.megaCerrar{
+    width:40px;
+    height:40px;
+    display:grid;
+    place-items:center;
+    border-radius:12px;
+}
+
+.megaVerTodos:hover,
+.megaCerrar:hover{
+    background:#fff;
+    color:#0b3e78;
+}
+
+.megaCategoriasColumns{
+    column-count:6;
+    column-gap:22px;
+}
+
+.megaCategoriaGrupo{
+    display:inline-block;
+    width:100%;
+    break-inside:avoid;
+    margin:0 0 17px;
+    vertical-align:top;
+}
+
+.megaCategoriaTitulo{
+    width:100%;
+    padding:0 0 7px;
+    border:0;
+    border-bottom:1px solid rgba(103,183,255,.25);
+    background:transparent;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    text-align:left;
+    cursor:pointer;
+    font-size:13px;
+    font-weight:900;
+    letter-spacing:.015em;
+}
+
+.megaCategoriaTitulo span{
+    color:#56adff;
+    transition:transform .18s ease;
+}
+
+.megaCategoriaTitulo:hover{
+    color:#69b8ff;
+}
+
+.megaCategoriaTitulo:hover span{
+    transform:translateX(3px);
+}
+
+.megaSubcategorias{
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:1px;
+    padding-top:5px;
+}
+
+.megaSubcategorias button{
+    width:100%;
+    padding:4px 5px;
+    border:0;
+    border-radius:6px;
+    background:transparent;
+    color:#b8cee4;
+    text-align:left;
+    cursor:pointer;
+    font-size:11px;
+    line-height:1.25;
+    transition:.15s ease;
+}
+
+.megaSubcategorias button:hover{
+    padding-left:9px;
+    background:rgba(88,166,255,.10);
+    color:#fff;
+}
+
+@media(max-width:1450px){
+    .megaCategoriasColumns{
+        column-count:5;
     }
 
-}
-.userMenu {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    .megaSubcategorias button{
+        font-size:10.5px;
+    }
 }
 
-.accountButton {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    color: #111827;
-    font-weight: 600;
-    padding: 10px 14px;
-    border-radius: 8px;
-    transition: .3s;
+@media(max-width:1180px){
+    .megaCategoriasColumns{
+        column-count:4;
+    }
+
+    .megaCategorias{
+        top:110px;
+    }
 }
 
-.accountButton:hover {
-    background: #f1f5f9;
-    color: #0d8cff;
+/*
+   En móvil es imposible mostrar 100+ subcategorías al mismo
+   tiempo sin superar la pantalla; ahí sí se permite desplazamiento.
+*/
+@media(max-width:900px){
+    .megaCategorias{
+        top:92px;
+        width:calc(100vw - 20px);
+        max-height:calc(100dvh - 105px);
+        overflow-y:auto;
+    }
+
+    .megaCategoriasInner{
+        padding:20px;
+    }
+
+    .megaCategoriasColumns{
+        column-count:2;
+    }
 }
 
-.logoutButton {
-    border: none;
-    background: #ef4444;
-    color: white;
-    padding: 10px 14px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 14px;
+@media(max-width:600px){
+    .megaCategoriasHeader{
+        align-items:flex-start;
+    }
+
+    .megaCategoriasHeader p{
+        display:none;
+    }
+
+    .megaCategoriasHeader h2{
+        font-size:20px;
+    }
+
+    .megaCategoriasColumns{
+        column-count:1;
+    }
 }
 
-.logoutButton:hover {
-    background: #dc2626;
-}
+/* ===== FIN RC MEGA MENU CATEGORIAS ===== */

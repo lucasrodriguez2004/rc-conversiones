@@ -1,245 +1,360 @@
 import "../styles/Navbar.css";
-
 import {
     FaShoppingCart,
     FaUser,
-    FaSearch
+    FaSearch,
+    FaChevronDown,
+    FaTimes
 } from "react-icons/fa";
-
-import { useNavigate, Link } from "react-router-dom";
-
+import {
+    useEffect,
+    useRef,
+    useState
+} from "react";
+import { useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext";
-
+import { CATALOGO_CATEGORIAS } from "../data/catalogoCategorias";
 
 export default function Navbar({
-    busqueda,
+    busqueda = "",
     setBusqueda,
     abrirCarrito
 }) {
-
     const navigate = useNavigate();
-
     const { carrito } = useCart();
 
+    const [menuAbierto, setMenuAbierto] =
+        useState(false);
 
-    // ==========================================
-    // CLIENTE LOGUEADO
-    // ==========================================
-
-    const clienteGuardado =
-        localStorage.getItem("cliente");
-
-    let cliente = null;
-
-    if (clienteGuardado) {
-
-        try {
-
-            cliente = JSON.parse(
-                clienteGuardado
-            );
-
-        } catch {
-
-            localStorage.removeItem(
-                "cliente"
-            );
-
-        }
-
-    }
-
-
-    // ==========================================
-    // CANTIDAD DEL CARRITO
-    // ==========================================
+    const menuRef = useRef(null);
 
     const cantidad = carrito.reduce(
-
         (total, item) =>
             total + Number(item.cantidad || 0),
-
         0
-
     );
 
+    useEffect(() => {
+        function cerrarAlTocarAfuera(event) {
+            if (
+                menuRef.current &&
+                !menuRef.current.contains(event.target)
+            ) {
+                setMenuAbierto(false);
+            }
+        }
 
-    // ==========================================
-    // CERRAR SESIÓN
-    // ==========================================
+        function cerrarConEscape(event) {
+            if (event.key === "Escape") {
+                setMenuAbierto(false);
+            }
+        }
 
-    function cerrarSesion() {
-
-        localStorage.removeItem(
-            "cliente"
+        document.addEventListener(
+            "mousedown",
+            cerrarAlTocarAfuera
         );
 
-        navigate("/login");
+        document.addEventListener(
+            "keydown",
+            cerrarConEscape
+        );
 
+        return () => {
+            document.removeEventListener(
+                "mousedown",
+                cerrarAlTocarAfuera
+            );
+
+            document.removeEventListener(
+                "keydown",
+                cerrarConEscape
+            );
+        };
+    }, []);
+
+    function irInicio(hash = "") {
+        setMenuAbierto(false);
+
+        if (window.location.pathname === "/") {
+            if (hash) {
+                document
+                    .getElementById(hash)
+                    ?.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+            } else {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            }
+            return;
+        }
+
+        navigate(hash ? `/#${hash}` : "/");
     }
 
+    function irCategoria(slug) {
+        setMenuAbierto(false);
+        navigate(`/categoria/${slug}`);
+    }
+
+    function irSubcategoria(
+        categoriaSlug,
+        subcategoria
+    ) {
+        setMenuAbierto(false);
+
+        navigate(
+            `/categoria/${categoriaSlug}?subcategoria=${encodeURIComponent(
+                subcategoria
+            )}`
+        );
+    }
 
     return (
-
-        <header className="navbar">
-
-
-            {/* ============================= */}
-            {/* LOGO */}
-            {/* ============================= */}
-
-            <div className="logo">
-
-                <Link to="/">
-
-                    <img
-                        src="/images/logo.png"
-                        alt="RC Conversiones"
-                    />
-
-                </Link>
-
-            </div>
-
-
-            {/* ============================= */}
-            {/* NAVEGACIÓN */}
-            {/* ============================= */}
-
-            <nav>
-
-                <Link to="/">
-                    Inicio
-                </Link>
-
-                <a href="#productos">
-                    Productos
-                </a>
-
-                <a href="#categorias">
-                    Categorías
-                </a>
-
-                <a href="#contacto">
-                    Contacto
-                </a>
-
-            </nav>
-
-
-            {/* ============================= */}
-            {/* PARTE DERECHA */}
-            {/* ============================= */}
-
-            <div className="navbarRight">
-
-
-                {/* ============================= */}
-                {/* BUSCADOR */}
-                {/* ============================= */}
-
-                <div className="search">
-
-                    <FaSearch />
-
-                    <input
-                        type="text"
-                        placeholder="Buscar productos..."
-                        value={busqueda}
-                        onChange={(e) =>
-                            setBusqueda(
-                                e.target.value
-                            )
-                        }
-                    />
-
-                </div>
-
-
-                {/* ============================= */}
-                {/* CARRITO */}
-                {/* ============================= */}
-
-                <button
-                    className="cartIcon"
-                    onClick={abrirCarrito}
-                    type="button"
-                    aria-label="Abrir carrito"
-                >
-
-                    <FaShoppingCart />
-
-                    {cantidad > 0 && (
-
-                        <span>
-                            {cantidad}
+        <>
+            <header className="navbar">
+                <div className="rcBrandWrap">
+                    <a
+                        href="/"
+                        className="rcBrand"
+                        aria-label="RC Conversiones - Inicio"
+                    >
+                        <span className="rcBrandMonogram">
+                            RC
                         </span>
 
-                    )}
+                        <span className="rcBrandText">
+                            <strong>
+                                CONVERSIONES
+                            </strong>
 
-                </button>
+                            <small>
+                                EQUIPAMIENTO PARA MOTORHOMES
+                            </small>
+                        </span>
+                    </a>
+                </div>
 
+                <nav>
+                    <button
+                        type="button"
+                        className="navLinkButton"
+                        onClick={() => irInicio()}
+                    >
+                        Inicio
+                    </button>
 
-                {/* ============================= */}
-                {/* USUARIO */}
-                {/* ============================= */}
+                    <button
+                        type="button"
+                        className="navLinkButton"
+                        onClick={() =>
+                            irInicio("productos")
+                        }
+                    >
+                        Productos
+                    </button>
 
-                {cliente ? (
-
-                    <div className="userMenu">
-
-
-                        <Link
-                            to="/mi-cuenta"
-                            className="accountButton"
-                        >
-
-                            <FaUser />
-
-                            <span>
-                                {cliente.nombre}
-                            </span>
-
-                        </Link>
-
-
+                    <div
+                        className="navCategorias"
+                        ref={menuRef}
+                    >
                         <button
-                            className="logoutButton"
-                            onClick={cerrarSesion}
                             type="button"
+                            className={
+                                `categoriasTrigger ${menuAbierto
+                                    ? "activo"
+                                    : ""}`
+                            }
+                            aria-haspopup="true"
+                            aria-expanded={menuAbierto}
+                            onClick={() =>
+                                setMenuAbierto(
+                                    actual => !actual
+                                )
+                            }
                         >
-
-                            Salir
-
+                            <span>Categorías</span>
+                            <FaChevronDown />
                         </button>
-
-
                     </div>
 
-                ) : (
+                    <button
+                        type="button"
+                        className="navLinkButton"
+                        onClick={() =>
+                            irInicio("contacto")
+                        }
+                    >
+                        Contacto
+                    </button>
+                </nav>
+
+                <div className="navbarRight">
+                    <div className="search">
+                        <FaSearch />
+
+                        <input
+                            type="text"
+                            placeholder="Buscar productos..."
+                            value={busqueda}
+                            onChange={(e) => {
+                                if (
+                                    typeof setBusqueda ===
+                                    "function"
+                                ) {
+                                    setBusqueda(
+                                        e.target.value
+                                    );
+                                }
+                            }}
+                        />
+                    </div>
+
+                    <button
+                        className="cartIcon"
+                        onClick={() => {
+                            if (
+                                typeof abrirCarrito ===
+                                "function"
+                            ) {
+                                abrirCarrito();
+                            }
+                        }}
+                        type="button"
+                        aria-label="Abrir carrito"
+                    >
+                        <FaShoppingCart />
+
+                        {cantidad > 0 && (
+                            <span>{cantidad}</span>
+                        )}
+                    </button>
 
                     <button
                         className="login"
+                        type="button"
                         onClick={() =>
                             navigate("/login")
                         }
-                        type="button"
                     >
-
                         <FaUser />
-
-                        <span>
-                            Ingresar
-                        </span>
-
+                        <span>Ingresar</span>
                     </button>
+                </div>
+            </header>
 
-                )}
+            <div
+                className={
+                    `megaCategoriasBackdrop ${menuAbierto
+                        ? "visible"
+                        : ""}`
+                }
+                onClick={() =>
+                    setMenuAbierto(false)
+                }
+            />
 
-            </div>
+            <section
+                className={
+                    `megaCategorias ${menuAbierto
+                        ? "abierto"
+                        : ""}`
+                }
+                aria-hidden={!menuAbierto}
+            >
+                <div className="megaCategoriasInner">
+                    <div className="megaCategoriasHeader">
+                        <div>
+                            <span>
+                                CATÁLOGO RC CONVERSIONES
+                            </span>
 
-        </header>
+                            <h2>
+                                Elegí qué querés ver
+                            </h2>
 
+                            <p>
+                                Entrá por categoría o directamente
+                                a una subcategoría.
+                            </p>
+                        </div>
+
+                        <div className="megaCategoriasAcciones">
+                            <button
+                                type="button"
+                                className="megaVerTodos"
+                                onClick={() =>
+                                    irCategoria("todos")
+                                }
+                            >
+                                Ver todos
+                            </button>
+
+                            <button
+                                type="button"
+                                className="megaCerrar"
+                                aria-label="Cerrar categorías"
+                                onClick={() =>
+                                    setMenuAbierto(false)
+                                }
+                            >
+                                <FaTimes />
+                            </button>
+                        </div>
+                    </div>
+
+                    <div className="megaCategoriasColumns">
+                        {CATALOGO_CATEGORIAS.map(
+                            categoria => (
+                                <div
+                                    className="megaCategoriaGrupo"
+                                    key={categoria.slug}
+                                >
+                                    <button
+                                        type="button"
+                                        className="megaCategoriaTitulo"
+                                        onClick={() =>
+                                            irCategoria(
+                                                categoria.slug
+                                            )
+                                        }
+                                    >
+                                        {categoria.nombre}
+                                        <span>→</span>
+                                    </button>
+
+                                    <div className="megaSubcategorias">
+                                        {categoria.subcategorias.map(
+                                            subcategoria => (
+                                                <button
+                                                    type="button"
+                                                    key={
+                                                        subcategoria
+                                                    }
+                                                    onClick={() =>
+                                                        irSubcategoria(
+                                                            categoria.slug,
+                                                            subcategoria
+                                                        )
+                                                    }
+                                                >
+                                                    {
+                                                        subcategoria
+                                                    }
+                                                </button>
+                                            )
+                                        )}
+                                    </div>
+                                </div>
+                            )
+                        )}
+                    </div>
+                </div>
+            </section>
+        </>
     );
-
 }
