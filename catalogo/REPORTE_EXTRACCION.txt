@@ -1,0 +1,30 @@
+Productos: 559
+Imágenes: 559
+Categorías: 18
+
+Productos por categoría:
+- Energía Solar: 26
+- Reguladores: 16
+- Inversores: 34
+- Baterías: 29
+- Electricidad: 29
+- Electrodomésticos: 11
+- Heladeras: 21
+- Climatización: 18
+- Calefacción: 45
+- Cocina: 25
+- Aberturas: 93
+- Ventilación: 27
+- Herrajes: 11
+- Mobiliario: 32
+- Seguridad: 8
+- Sanitarios: 70
+- Grifería: 2
+- Agua: 62
+
+Validación:
+- Todos los productos tienen código.
+- Todos los productos tienen descripción.
+- Todos los productos tienen una imagen asociada.
+- Los códigos son únicos.
+- La planilla no presenta errores de fórmula en la verificación.

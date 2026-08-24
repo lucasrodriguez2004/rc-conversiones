@@ -49,3 +49,7 @@ migrar-api.cjs
 # Archivos temporales
 *.tmp
 *.temp
+.vercel
+.env*
+
+public/images/productos_backup/

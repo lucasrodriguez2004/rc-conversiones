@@ -1,0 +1,1484 @@
+-- RC Conversiones - catálogo extraído del PDF
+-- 559 productos
+-- Los precios quedan en 0 hasta que los cargues/actualices.
+
+INSERT INTO productos
+(codigo, nombre, categoria, subcategoria, precio, stock, descripcion, caracteristicas, imagen, destacado)
+VALUES
+('PM.50', 'Panel Solar Monocristalino 50W', 'Energía Solar', 'Paneles Solares Monocristalino', 0, 0, 'Panel Solar Monocristalino 50W. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: PM.50
+• 71 x 40 x 2,5 cm
+• 3,2kg
+• 12v (Conexion C/Pinzas)', 'https://rc-conversiones.vercel.app/images/productos/pm-50.webp', 0),
+('PM.100', 'Panel Solar Monocristalino 100W', 'Energía Solar', 'Paneles Solares Monocristalino', 0, 0, 'Panel Solar Monocristalino 100W. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: PM.100
+• 77 x 70 x 3 cm
+• 6kg
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/pm-100.webp', 0),
+('PM.160', 'Panel Solar Monocristalino 160W', 'Energía Solar', 'Paneles Solares Monocristalino', 0, 0, 'Panel Solar Monocristalino 160W. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: PM.160
+• 122 x 57,5 x 3 cm
+• 6,5kg
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/pm-160.webp', 0),
+('PM.180', 'Panel Solar Monocristalino 180W', 'Energía Solar', 'Paneles Solares Monocristalino', 0, 0, 'Panel Solar Monocristalino 180W. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: PM.180
+• 116 x 76 x 3 cm
+• 8,8kg -12v', 'https://rc-conversiones.vercel.app/images/productos/pm-180.webp', 0),
+('PM.190', 'Panel Solar Monocristalino 190W', 'Energía Solar', 'Paneles Solares Monocristalino', 0, 0, 'Panel Solar Monocristalino 190W. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: PM.190
+• 124 x 77 x 3 cm
+• 10,2kg
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/pm-190.webp', 0),
+('PM.200', 'Panel Solar Monocristalino 200W', 'Energía Solar', 'Paneles Solares Monocristalino', 0, 0, 'Panel Solar Monocristalino 200W. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: PM.200
+• 148 x 67 x 3,5 cm
+• 11 kg
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/pm-200.webp', 0),
+('PM.210', 'Panel Solar Monocristalino 210W', 'Energía Solar', 'Paneles Solares Monocristalino', 0, 0, 'Panel Solar Monocristalino 210W. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: PM.210
+• 135 x 77 x 3 cm 11,3kg
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/pm-210.webp', 0),
+('PM.240', 'Panel Solar Monocristalino 240W', 'Energía Solar', 'Paneles Solares Monocristalino', 0, 0, 'Panel Solar Monocristalino 240W. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: PM.240
+• 134 x 88 x 3,5 cm
+• 12 kg
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/pm-240.webp', 0),
+('PM.280', 'Panel Solar Monocristalino 280W', 'Energía Solar', 'Paneles Solares Monocristalino', 0, 0, 'Panel Solar Monocristalino 280W. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: PM.280
+• 164 x 99,2 x 3,5 cm 18,5kg
+• 24v', 'https://rc-conversiones.vercel.app/images/productos/pm-280.webp', 0),
+('PM.380', 'Panel Solar Monocristalino 380W', 'Energía Solar', 'Paneles Solares Monocristalino', 0, 0, 'Panel Solar Monocristalino 380W. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: PM.380
+• 176 x 103,8 x 3,5 cm
+• 20kg
+• 24v', 'https://rc-conversiones.vercel.app/images/productos/pm-380.webp', 0),
+('PM.420', 'Panel Solar Monocristalino 420W', 'Energía Solar', 'Paneles Solares Monocristalino', 0, 0, 'Panel Solar Monocristalino 420W. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: PM.420
+• 172,2 x 113,4 x 3 cm 19,2kg
+• 24v', 'https://rc-conversiones.vercel.app/images/productos/pm-420.webp', 0),
+('PM.430', 'Panel Solar Monocristalino 430W', 'Energía Solar', 'Paneles Solares Monocristalino', 0, 0, 'Panel Solar Monocristalino 430W. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: PM.430
+• 172,2 x 113,4 x 3 cm
+• 20,5 kg
+• 24v', 'https://rc-conversiones.vercel.app/images/productos/pm-430.webp', 0),
+('PM.440', 'Panel Solar Monocristalino 440W', 'Energía Solar', 'Paneles Solares Monocristalino', 0, 0, 'Panel Solar Monocristalino 440W. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: PM.440
+• 176,2 x 113,4 x 3 cm
+• 21 kg
+• 24v', 'https://rc-conversiones.vercel.app/images/productos/pm-440.webp', 0),
+('PM.450', 'Panel Solar Monocristalino 450W', 'Energía Solar', 'Paneles Solares Monocristalino', 0, 0, 'Panel Solar Monocristalino 450W. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: PM.450
+• 210 x 103,8 x 3,5 cm
+• 24kg
+• 24v', 'https://rc-conversiones.vercel.app/images/productos/pm-450.webp', 0),
+('PM.470', 'Panel Solar Monocristalino 470W', 'Energía Solar', 'Paneles Solares Monocristalino', 0, 0, 'Panel Solar Monocristalino 470W. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: PM.470
+• 190,8 x 113,4 x 3 cm
+• 23 kg
+• 24v', 'https://rc-conversiones.vercel.app/images/productos/pm-470.webp', 0),
+('PM.540', 'Panel Solar Monocristalino 540W', 'Energía Solar', 'Paneles Solares Monocristalino', 0, 0, 'Panel Solar Monocristalino 540W. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: PM.540
+• 225,6 x 113,3 x 3,5cm
+• 27,2kg
+• 24v', 'https://rc-conversiones.vercel.app/images/productos/pm-540.webp', 0),
+('PM.550', 'Panel Solar Monocristalino 550W', 'Energía Solar', 'Paneles Solares Monocristalino', 0, 0, 'Panel Solar Monocristalino 550W. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: PM.550
+• 227,8 x 113,4 x 3,5cm
+• 29kg
+• 24v', 'https://rc-conversiones.vercel.app/images/productos/pm-550.webp', 0),
+('PP.80', 'Panel Solar Policristalino 80W', 'Energía Solar', 'Paneles Solares Policristalino', 0, 0, 'Panel Solar Policristalino 80W. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: PP.80
+• 77 x 66 x 3,5 cm
+• 6kg
+• 12V', 'https://rc-conversiones.vercel.app/images/productos/pp-80.webp', 0),
+('PP.100', 'Panel Solar Policristalino 100W', 'Energía Solar', 'Paneles Solares Policristalino', 0, 0, 'Panel Solar Policristalino 100W. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: PP.100
+• 103 x 67 x 3,5 cm
+• 7kg
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/pp-100.webp', 0),
+('PP.340', 'Panel Solar Policristalino 340W', 'Energía Solar', 'Paneles Solares Policristalino', 0, 0, 'Panel Solar Policristalino 340W. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: PP.340
+• 195,5 x 99,2 x 3,5 cm
+• 21kg
+• 24v', 'https://rc-conversiones.vercel.app/images/productos/pp-340.webp', 0),
+('MC4', 'Conector MC4 - Macho + Hembra', 'Energía Solar', 'Accesorios P/Paneles', 0, 0, 'Conector MC4 - Macho + Hembra. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: MC4
+• Macho + Hembra', 'https://rc-conversiones.vercel.app/images/productos/mc4.webp', 0),
+('MC4-Y2', 'Conector  MC4Y-2 - Macho + Hembra', 'Energía Solar', 'Accesorios P/Paneles', 0, 0, 'Conector  MC4Y-2 - Macho + Hembra. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: MC4-Y2
+• Macho + Hembra', 'https://rc-conversiones.vercel.app/images/productos/mc4-y2.webp', 0),
+('MC4-Y3', 'Conector  MC4Y-3 - Macho + Hembra', 'Energía Solar', 'Accesorios P/Paneles', 0, 0, 'Conector  MC4Y-3 - Macho + Hembra. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: MC4-Y3
+• Macho + Hembra', 'https://rc-conversiones.vercel.app/images/productos/mc4-y3.webp', 0),
+('MC4-T2', 'Conector  MC4T-2 - Macho + Hembra', 'Energía Solar', 'Accesorios P/Paneles', 0, 0, 'Conector  MC4T-2 - Macho + Hembra. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: MC4-T2
+• Macho + Hembra', 'https://rc-conversiones.vercel.app/images/productos/mc4-t2.webp', 0),
+('MC4-T3', 'Conector  MC4T-3 - Macho + Hembra', 'Energía Solar', 'Accesorios P/Paneles', 0, 0, 'Conector  MC4T-3 - Macho + Hembra. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: MC4-T3
+• Macho + Hembra', 'https://rc-conversiones.vercel.app/images/productos/mc4-t3.webp', 0),
+('MC4-T4', 'Conector  MC4T-4 - Macho + Hembra', 'Energía Solar', 'Accesorios P/Paneles', 0, 0, 'Conector  MC4T-4 - Macho + Hembra. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.', '• Código: MC4-T4
+• Macho + Hembra', 'https://rc-conversiones.vercel.app/images/productos/mc4-t4.webp', 0),
+('RM.15.L', 'Regulador MPPT 15ah Max', 'Reguladores', 'Reguladores Solares MPPT', 0, 0, 'Regulador MPPT 15ah Max. Adecuado para gestionar la carga de sistemas solares en instalaciones móviles o autónomas.', '• Código: RM.15.L
+• 12v 24v', 'https://rc-conversiones.vercel.app/images/productos/rm-15-l.webp', 0),
+('RM.20', 'Regulador MPPT 20ah', 'Reguladores', 'Reguladores Solares MPPT', 0, 0, 'Regulador MPPT 20ah. Adecuado para gestionar la carga de sistemas solares en instalaciones móviles o autónomas.', '• Código: RM.20
+• 12v 24v', 'https://rc-conversiones.vercel.app/images/productos/rm-20.webp', 0),
+('RM.20.L', 'Regulador MPPT 20ah Max', 'Reguladores', 'Reguladores Solares MPPT', 0, 0, 'Regulador MPPT 20ah Max. Adecuado para gestionar la carga de sistemas solares en instalaciones móviles o autónomas.', '• Código: RM.20.L
+• 12v 24v', 'https://rc-conversiones.vercel.app/images/productos/rm-20-l.webp', 0),
+('RM.30.L', 'Regulador MPPT 30ah Max', 'Reguladores', 'Reguladores Solares MPPT', 0, 0, 'Regulador MPPT 30ah Max. Adecuado para gestionar la carga de sistemas solares en instalaciones móviles o autónomas.', '• Código: RM.30.L
+• 12v 24v', 'https://rc-conversiones.vercel.app/images/productos/rm-30-l.webp', 0),
+('RM.40.L', 'Regulador MPPT 40ah Max', 'Reguladores', 'Reguladores Solares MPPT', 0, 0, 'Regulador MPPT 40ah Max. Adecuado para gestionar la carga de sistemas solares en instalaciones móviles o autónomas.', '• Código: RM.40.L
+• 12v 24v', 'https://rc-conversiones.vercel.app/images/productos/rm-40-l.webp', 0),
+('RM.40', 'Regulador MPPT 40ah C/Display', 'Reguladores', 'Reguladores Solares MPPT', 0, 0, 'Regulador MPPT 40ah C/Display. Adecuado para gestionar la carga de sistemas solares en instalaciones móviles o autónomas.', '• Código: RM.40
+• 12v 24v', 'https://rc-conversiones.vercel.app/images/productos/rm-40.webp', 0),
+('RM.60', 'Regulador MPPT 60ah', 'Reguladores', 'Reguladores Solares MPPT', 0, 0, 'Regulador MPPT 60ah. Adecuado para gestionar la carga de sistemas solares en instalaciones móviles o autónomas.', '• Código: RM.60
+• 12v 24v', 'https://rc-conversiones.vercel.app/images/productos/rm-60.webp', 0),
+('RM.60.L', 'Regulador MPPT 60A C/Bluetooth', 'Reguladores', 'Reguladores Solares MPPT', 0, 0, 'Regulador MPPT 60A C/Bluetooth. Adecuado para gestionar la carga de sistemas solares en instalaciones móviles o autónomas.', '• Código: RM.60.L
+• 12v 24v
+• Max', 'https://rc-conversiones.vercel.app/images/productos/rm-60-l.webp', 0),
+('RM.80', 'Regulador MPPT 80ah', 'Reguladores', 'Reguladores Solares MPPT', 0, 0, 'Regulador MPPT 80ah. Adecuado para gestionar la carga de sistemas solares en instalaciones móviles o autónomas.', '• Código: RM.80
+• 12v 24v', 'https://rc-conversiones.vercel.app/images/productos/rm-80.webp', 0),
+('RM.100', 'Regulador MPPT 100ah', 'Reguladores', 'Reguladores Solares MPPT', 0, 0, 'Regulador MPPT 100ah. Adecuado para gestionar la carga de sistemas solares en instalaciones móviles o autónomas.', '• Código: RM.100
+• 12v 24v', 'https://rc-conversiones.vercel.app/images/productos/rm-100.webp', 0),
+('RP.10', 'Regulador PWM 10ah', 'Reguladores', 'Reguladores Solares PWM', 0, 0, 'Regulador PWM 10ah. Adecuado para gestionar la carga de sistemas solares en instalaciones móviles o autónomas.', '• Código: RP.10
+• 12v 24v', 'https://rc-conversiones.vercel.app/images/productos/rp-10.webp', 0),
+('RP.20', 'Regulador PWM 20ah', 'Reguladores', 'Reguladores Solares PWM', 0, 0, 'Regulador PWM 20ah. Adecuado para gestionar la carga de sistemas solares en instalaciones móviles o autónomas.', '• Código: RP.20
+• 12v 24v', 'https://rc-conversiones.vercel.app/images/productos/rp-20.webp', 0),
+('RP.30', 'Regulador PWM 30ah', 'Reguladores', 'Reguladores Solares PWM', 0, 0, 'Regulador PWM 30ah. Adecuado para gestionar la carga de sistemas solares en instalaciones móviles o autónomas.', '• Código: RP.30
+• 12v 24v', 'https://rc-conversiones.vercel.app/images/productos/rp-30.webp', 0),
+('RP.40', 'Regulador PWM 40ah', 'Reguladores', 'Reguladores Solares PWM', 0, 0, 'Regulador PWM 40ah. Adecuado para gestionar la carga de sistemas solares en instalaciones móviles o autónomas.', '• Código: RP.40
+• 12v 24v', 'https://rc-conversiones.vercel.app/images/productos/rp-40.webp', 0),
+('RP.60', 'Regulador PWM 60ah', 'Reguladores', 'Reguladores Solares PWM', 0, 0, 'Regulador PWM 60ah. Adecuado para gestionar la carga de sistemas solares en instalaciones móviles o autónomas.', '• Código: RP.60
+• 12v 24v', 'https://rc-conversiones.vercel.app/images/productos/rp-60.webp', 0),
+('RP.80', 'Regulador PWM 80ah', 'Reguladores', 'Reguladores Solares PWM', 0, 0, 'Regulador PWM 80ah. Adecuado para gestionar la carga de sistemas solares en instalaciones móviles o autónomas.', '• Código: RP.80
+• 12v 24v', 'https://rc-conversiones.vercel.app/images/productos/rp-80.webp', 0),
+('II.1000.12', 'Inversor Inteligente BELTTT 1000W', 'Inversores', 'Inversores Inteligentes OFF GRID', 0, 0, 'Inversor Inteligente BELTTT 1000W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: II.1000.12
+• MPPT 40AH
+• OFF GRID
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/ii-1000-12.webp', 0),
+('II.2000.12', 'Inversor Inteligente BELTTT 2000W', 'Inversores', 'Inversores Inteligentes OFF GRID', 0, 0, 'Inversor Inteligente BELTTT 2000W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: II.2000.12
+• MPPT 80AH
+• OFF GRID
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/ii-2000-12.webp', 0),
+('II.3000.B24', 'Inversor Inteligente BELTTT 4200W', 'Inversores', 'Inversores Inteligentes OFF GRID', 0, 0, 'Inversor Inteligente BELTTT 4200W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: II.3000.B24
+• MPPT 120AH
+• OFF GRID
+• 24v', 'https://rc-conversiones.vercel.app/images/productos/ii-3000-b24.webp', 0),
+('II.1000.12V', 'Inversor Inteligente VOLTRONIK 1000W', 'Inversores', 'Inversores Inteligentes OFF GRID', 0, 0, 'Inversor Inteligente VOLTRONIK 1000W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: II.1000.12V
+• MPPT 40AH
+• OFF GRID
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/ii-1000-12v.webp', 0),
+('II.2000.24V', 'Inversor Inteligente VOLTRONIK 2000W', 'Inversores', 'Inversores Inteligentes OFF GRID', 0, 0, 'Inversor Inteligente VOLTRONIK 2000W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: II.2000.24V
+• MPPT 40AH
+• OFF GRID
+• 24v', 'https://rc-conversiones.vercel.app/images/productos/ii-2000-24v.webp', 0),
+('II.3000.24V', 'Inversor Inteligente VOLTRONIK 3000W', 'Inversores', 'Inversores Inteligentes OFF GRID', 0, 0, 'Inversor Inteligente VOLTRONIK 3000W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: II.3000.24V
+• MPPT 40AH
+• OFF GRID
+• 24v', 'https://rc-conversiones.vercel.app/images/productos/ii-3000-24v.webp', 0),
+('II.2000.24', 'Inversor Inteligente MUST 2000W', 'Inversores', 'Inversores Inteligentes OFF GRID', 0, 0, 'Inversor Inteligente MUST 2000W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: II.2000.24
+• MPPT 80AH
+• OFF GRID
+• 24v', 'https://rc-conversiones.vercel.app/images/productos/ii-2000-24.webp', 0),
+('II.3000.24', 'Inversor Inteligente MUST 3000W', 'Inversores', 'Inversores Inteligentes OFF GRID', 0, 0, 'Inversor Inteligente MUST 3000W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: II.3000.24
+• MPPT 80AH
+• OFF GRID
+• 24v', 'https://rc-conversiones.vercel.app/images/productos/ii-3000-24.webp', 0),
+('IPP.1000.12', 'Inversor Onda Pura PROBATTERY 1000W', 'Inversores', 'Inversores Onda Pura', 0, 0, 'Inversor Onda Pura PROBATTERY 1000W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IPP.1000.12
+• 12v a 220v', 'https://rc-conversiones.vercel.app/images/productos/ipp-1000-12.webp', 0),
+('IPP.1500.12', 'Inversor Onda Pura PROBATTERY 1500W', 'Inversores', 'Inversores Onda Pura', 0, 0, 'Inversor Onda Pura PROBATTERY 1500W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IPP.1500.12
+• 12v a 220v', 'https://rc-conversiones.vercel.app/images/productos/ipp-1500-12.webp', 0),
+('IPP.3000.12', 'Inversor Onda Pura PROBATTERY 3000W', 'Inversores', 'Inversores Onda Pura', 0, 0, 'Inversor Onda Pura PROBATTERY 3000W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IPP.3000.12
+• 12v a 220v', 'https://rc-conversiones.vercel.app/images/productos/ipp-3000-12.webp', 0),
+('IP.300.12', 'Inversor Onda Pura 300W', 'Inversores', 'Inversores Onda Pura', 0, 0, 'Inversor Onda Pura 300W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IP.300.12
+• 12v a 220v', 'https://rc-conversiones.vercel.app/images/productos/ip-300-12.webp', 0),
+('IP.500.12', 'Inversor Onda Pura 500W', 'Inversores', 'Inversores Onda Pura', 0, 0, 'Inversor Onda Pura 500W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IP.500.12
+• 12v a 220v', 'https://rc-conversiones.vercel.app/images/productos/ip-500-12.webp', 0),
+('IP.1000.12', 'Inversor Onda Pura 1000W', 'Inversores', 'Inversores Onda Pura', 0, 0, 'Inversor Onda Pura 1000W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IP.1000.12
+• 12v a 220v', 'https://rc-conversiones.vercel.app/images/productos/ip-1000-12.webp', 0),
+('IP.1500.12', 'Inversor Onda Pura 1500W', 'Inversores', 'Inversores Onda Pura', 0, 0, 'Inversor Onda Pura 1500W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IP.1500.12
+• 12v a 220v', 'https://rc-conversiones.vercel.app/images/productos/ip-1500-12.webp', 0),
+('IP.2000.12', 'Inversor Onda Pura 2000W', 'Inversores', 'Inversores Onda Pura', 0, 0, 'Inversor Onda Pura 2000W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IP.2000.12
+• 12v a 220v', 'https://rc-conversiones.vercel.app/images/productos/ip-2000-12.webp', 0),
+('IP.300.24', 'Inversor Onda Pura 300W', 'Inversores', 'Inversores Onda Pura', 0, 0, 'Inversor Onda Pura 300W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IP.300.24
+• 24v a 220v', 'https://rc-conversiones.vercel.app/images/productos/ip-300-24.webp', 0),
+('IP.500.24', 'Inversor Onda Pura 500W', 'Inversores', 'Inversores Onda Pura', 0, 0, 'Inversor Onda Pura 500W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IP.500.24
+• 24v a 220v', 'https://rc-conversiones.vercel.app/images/productos/ip-500-24.webp', 0),
+('IP.1000.24', 'Inversor Onda Pura 1000W', 'Inversores', 'Inversores Onda Pura', 0, 0, 'Inversor Onda Pura 1000W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IP.1000.24
+• 24v a 220v', 'https://rc-conversiones.vercel.app/images/productos/ip-1000-24.webp', 0),
+('IP.1500.24', 'Inversor Onda Pura 1500W', 'Inversores', 'Inversores Onda Pura', 0, 0, 'Inversor Onda Pura 1500W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IP.1500.24
+• 24v a 220v', 'https://rc-conversiones.vercel.app/images/productos/ip-1500-24.webp', 0),
+('IP.2000.24', 'Inversor Onda Pura 2000W', 'Inversores', 'Inversores Onda Pura', 0, 0, 'Inversor Onda Pura 2000W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IP.2000.24
+• 24v a 220v', 'https://rc-conversiones.vercel.app/images/productos/ip-2000-24.webp', 0),
+('IP.3000.24', 'Inversor Onda Pura 3000W', 'Inversores', 'Inversores Onda Pura', 0, 0, 'Inversor Onda Pura 3000W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IP.3000.24
+• 24v a 220v', 'https://rc-conversiones.vercel.app/images/productos/ip-3000-24.webp', 0),
+('IM.300.12', 'Inversor Onda Modificada 300W', 'Inversores', 'Inversores Onda Modificada', 0, 0, 'Inversor Onda Modificada 300W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IM.300.12
+• 12v a 220v', 'https://rc-conversiones.vercel.app/images/productos/im-300-12.webp', 0),
+('IM.500.12', 'Inversor Onda Modificada 500W', 'Inversores', 'Inversores Onda Modificada', 0, 0, 'Inversor Onda Modificada 500W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IM.500.12
+• 12v a 220v', 'https://rc-conversiones.vercel.app/images/productos/im-500-12.webp', 0),
+('IM.1000.12', 'Inversor Onda Modificada 1000W', 'Inversores', 'Inversores Onda Modificada', 0, 0, 'Inversor Onda Modificada 1000W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IM.1000.12
+• 12v a 220v', 'https://rc-conversiones.vercel.app/images/productos/im-1000-12.webp', 0),
+('IM.1500.12', 'Inversor Onda Modificada 1500W', 'Inversores', 'Inversores Onda Modificada', 0, 0, 'Inversor Onda Modificada 1500W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IM.1500.12
+• 12v a 220v', 'https://rc-conversiones.vercel.app/images/productos/im-1500-12.webp', 0),
+('IM.2000.12', 'Inversor Onda Modificada 2000W', 'Inversores', 'Inversores Onda Modificada', 0, 0, 'Inversor Onda Modificada 2000W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IM.2000.12
+• 12v a 220v', 'https://rc-conversiones.vercel.app/images/productos/im-2000-12.webp', 0),
+('IM.3000.12', 'Inversor Onda Modificada 3000W', 'Inversores', 'Inversores Onda Modificada', 0, 0, 'Inversor Onda Modificada 3000W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IM.3000.12
+• 12v a 220v', 'https://rc-conversiones.vercel.app/images/productos/im-3000-12.webp', 0),
+('IM.300.24', 'Inversor Onda Modificada 300W', 'Inversores', 'Inversores Onda Modificada', 0, 0, 'Inversor Onda Modificada 300W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IM.300.24
+• 24v a 220v', 'https://rc-conversiones.vercel.app/images/productos/im-300-24.webp', 0),
+('IM.500.24', 'Inversor Onda Modificada 500W', 'Inversores', 'Inversores Onda Modificada', 0, 0, 'Inversor Onda Modificada 500W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IM.500.24
+• 24v a 220v', 'https://rc-conversiones.vercel.app/images/productos/im-500-24.webp', 0),
+('IM.1000.24', 'Inversor Onda Modificada 1000W', 'Inversores', 'Inversores Onda Modificada', 0, 0, 'Inversor Onda Modificada 1000W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IM.1000.24
+• 24v a 220v', 'https://rc-conversiones.vercel.app/images/productos/im-1000-24.webp', 0),
+('IM.1500.24', 'Inversor Onda Modificada 1500W', 'Inversores', 'Inversores Onda Modificada', 0, 0, 'Inversor Onda Modificada 1500W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IM.1500.24
+• 24v a 220v', 'https://rc-conversiones.vercel.app/images/productos/im-1500-24.webp', 0),
+('IM.2000.24', 'Inversor Onda Modificada 2000W', 'Inversores', 'Inversores Onda Modificada', 0, 0, 'Inversor Onda Modificada 2000W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IM.2000.24
+• 24v a 220v', 'https://rc-conversiones.vercel.app/images/productos/im-2000-24.webp', 0),
+('IM.3000.24', 'Inversor Onda Modificada 3000W', 'Inversores', 'Inversores Onda Modificada', 0, 0, 'Inversor Onda Modificada 3000W. Una solución para complementar instalaciones eléctricas de motorhomes y sistemas de energía autónomos.', '• Código: IM.3000.24
+• 24v a 220v', 'https://rc-conversiones.vercel.app/images/productos/im-3000-24.webp', 0),
+('BL.100.B24', 'Bateria de LITIO LiFePO4 C/Display 100ah - Branik', 'Baterías', 'Baterias de Litio', 0, 0, 'Bateria de LITIO LiFePO4 C/Display 100ah - Branik. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: BL.100.B24
+• Branik
+• 24v', 'https://rc-conversiones.vercel.app/images/productos/bl-100-b24.webp', 0),
+('BL.100.B48', 'Bateria de LITIO LiFePO4 C/Display 100ah - Branik', 'Baterías', 'Baterias de Litio', 0, 0, 'Bateria de LITIO LiFePO4 C/Display 100ah - Branik. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: BL.100.B48
+• Branik
+• 48v', 'https://rc-conversiones.vercel.app/images/productos/bl-100-b48.webp', 0),
+('BL.50.B', 'Bateria de LITIO LiFePO4 50ah - Branik', 'Baterías', 'Baterias de Litio', 0, 0, 'Bateria de LITIO LiFePO4 50ah - Branik. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: BL.50.B
+• Branik
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/bl-50-b.webp', 0),
+('BL.100.B', 'Bateria de LITIO LiFePO4 100ah - Branik', 'Baterías', 'Baterias de Litio', 0, 0, 'Bateria de LITIO LiFePO4 100ah - Branik. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: BL.100.B
+• Branik
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/bl-100-b.webp', 0),
+('BL.200.B', 'Bateria de LITIO LiFePO4 200ah - Branik', 'Baterías', 'Baterias de Litio', 0, 0, 'Bateria de LITIO LiFePO4 200ah - Branik. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: BL.200.B
+• Branik
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/bl-200-b.webp', 0),
+('BG.55.U', 'Bateria de Gel UCG 55ah - Ultracell', 'Baterías', 'Baterias de Gel UCG', 0, 0, 'Bateria de Gel UCG 55ah - Ultracell. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: BG.55.U
+• Ultracell
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/bg-55-u.webp', 0),
+('BG.100.U', 'Bateria de Gel UCG 100ah - Ultracell', 'Baterías', 'Baterias de Gel UCG', 0, 0, 'Bateria de Gel UCG 100ah - Ultracell. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: BG.100.U
+• Ultracell
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/bg-100-u.webp', 0),
+('BG.200.U', 'Bateria de Gel UCG 200ah - Ultracell', 'Baterías', 'Baterias de Gel UCG', 0, 0, 'Bateria de Gel UCG 200ah - Ultracell. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: BG.200.U
+• Ultracell
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/bg-200-u.webp', 0),
+('BG.275.U', 'Bateria de Gel UCG 275ah - Ultracell', 'Baterías', 'Baterias de Gel UCG', 0, 0, 'Bateria de Gel UCG 275ah - Ultracell. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: BG.275.U
+• Ultracell
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/bg-275-u.webp', 0),
+('BG.100.D', 'Bateria de Gel AGM 100ah - Detroit', 'Baterías', 'Baterias de Gel AGM', 0, 0, 'Bateria de Gel AGM 100ah - Detroit. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: BG.100.D
+• Detroit
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/bg-100-d.webp', 0),
+('BG.150.D', 'Bateria de Gel AGM 150ah - Detroit', 'Baterías', 'Baterias de Gel AGM', 0, 0, 'Bateria de Gel AGM 150ah - Detroit. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: BG.150.D
+• Detroit
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/bg-150-d.webp', 0),
+('BG.190.D', 'Bateria de Gel AGM 190ah - Detroit', 'Baterías', 'Baterias de Gel AGM', 0, 0, 'Bateria de Gel AGM 190ah - Detroit. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: BG.190.D
+• Detroit
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/bg-190-d.webp', 0),
+('BG.200.D', 'Bateria de Gel AGM 200ah - Detroit', 'Baterías', 'Baterias de Gel AGM', 0, 0, 'Bateria de Gel AGM 200ah - Detroit. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: BG.200.D
+• Detroit
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/bg-200-d.webp', 0),
+('BG.250.D', 'Bateria de Gel AGM 250ah - Detroit', 'Baterías', 'Baterias de Gel AGM', 0, 0, 'Bateria de Gel AGM 250ah - Detroit. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: BG.250.D
+• Detroit
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/bg-250-d.webp', 0),
+('BG.22.B', 'Bateria de Gel AGM 20ah - Branik', 'Baterías', 'Baterias de Gel AGM', 0, 0, 'Bateria de Gel AGM 20ah - Branik. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: BG.22.B
+• Branik
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/bg-22-b.webp', 0),
+('BG.55.B', 'Bateria de Gel AGM 55ah - Branik', 'Baterías', 'Baterias de Gel AGM', 0, 0, 'Bateria de Gel AGM 55ah - Branik. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: BG.55.B
+• Branik
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/bg-55-b.webp', 0),
+('BG.100.B', 'Bateria de Gel AGM 100ah - Branik', 'Baterías', 'Baterias de Gel AGM', 0, 0, 'Bateria de Gel AGM 100ah - Branik. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: BG.100.B
+• Branik
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/bg-100-b.webp', 0),
+('BG.120.B', 'Bateria de Gel AGM 120ah - Branik', 'Baterías', 'Baterias de Gel AGM', 0, 0, 'Bateria de Gel AGM 120ah - Branik. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: BG.120.B
+• Branik
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/bg-120-b.webp', 0),
+('BG.200.B', 'Bateria de Gel AGM 200ah - Branik', 'Baterías', 'Baterias de Gel AGM', 0, 0, 'Bateria de Gel AGM 200ah - Branik. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: BG.200.B
+• Branik
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/bg-200-b.webp', 0),
+('CB.1212.50', 'Cargador de Bateria VICTRON ORION SMART', 'Baterías', 'Cargadores de Bateria - Desde Alternador', 0, 0, 'Cargador de Bateria VICTRON ORION SMART. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: CB.1212.50
+• XS 12/12-50ah (700W)
+• Aislado', 'https://rc-conversiones.vercel.app/images/productos/cb-1212-50.webp', 0),
+('CB.1212.30A', 'Cargador de Bateria VICTRON ORION SMART', 'Baterías', 'Cargadores de Bateria - Desde Alternador', 0, 0, 'Cargador de Bateria VICTRON ORION SMART. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: CB.1212.30A
+• 12/12-30ah (360W)
+• Aislado', 'https://rc-conversiones.vercel.app/images/productos/cb-1212-30a.webp', 0),
+('CB.1212.18A', 'Cargador de Bateria VICTRON ORION SMART', 'Baterías', 'Cargadores de Bateria - Desde Alternador', 0, 0, 'Cargador de Bateria VICTRON ORION SMART. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: CB.1212.18A
+• 12/12-18ah (220W)
+• Aislado', 'https://rc-conversiones.vercel.app/images/productos/cb-1212-18a.webp', 0),
+('CB.1212.30', 'Cargador de Bateria VICTRON ORION SMART', 'Baterías', 'Cargadores de Bateria - Desde Alternador', 0, 0, 'Cargador de Bateria VICTRON ORION SMART. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: CB.1212.30
+• 12/12-30ah (360W)
+• No Aislado', 'https://rc-conversiones.vercel.app/images/productos/cb-1212-30.webp', 0),
+('CB.1224.15', 'Cargador de Bateria VICTRON ORION SMART', 'Baterías', 'Cargadores de Bateria - Desde Alternador', 0, 0, 'Cargador de Bateria VICTRON ORION SMART. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: CB.1224.15
+• 12/24-15ah (360W)
+• No Aislado', 'https://rc-conversiones.vercel.app/images/productos/cb-1224-15.webp', 0),
+('CB.2424.17', 'Cargador de Bateria VICTRON ORION SMART', 'Baterías', 'Cargadores de Bateria - Desde Alternador', 0, 0, 'Cargador de Bateria VICTRON ORION SMART. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: CB.2424.17
+• 24/24-17ah (400W)
+• No Aislado', 'https://rc-conversiones.vercel.app/images/productos/cb-2424-17.webp', 0),
+('CB.2412.30', 'Cargador de Bateria VICTRON ORION SMART', 'Baterías', 'Cargadores de Bateria - Desde Alternador', 0, 0, 'Cargador de Bateria VICTRON ORION SMART. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: CB.2412.30
+• 24/12-30ah (360W)
+• No Aislado', 'https://rc-conversiones.vercel.app/images/productos/cb-2412-30.webp', 0),
+('GEA.12', 'Generador de Corriente C/Control 12v ACTECMAX', 'Electricidad', 'Generadores de Corriente - Nafteros', 0, 0, 'Generador de Corriente C/Control 12v ACTECMAX. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: GEA.12
+• 60Ah
+• 60 x 40 x 50 cm', 'https://rc-conversiones.vercel.app/images/productos/gea-12.webp', 0),
+('GEA.24', 'Generador de Corriente C/Control 24v ACTECMAX', 'Electricidad', 'Generadores de Corriente - Nafteros', 0, 0, 'Generador de Corriente C/Control 24v ACTECMAX. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: GEA.24
+• 90Ah
+• 60 x 40 x 50 cm', 'https://rc-conversiones.vercel.app/images/productos/gea-24.webp', 0),
+('LC.275.A', 'Llave de Corte Bateria Hasta 275ah - De Apoyo', 'Baterías', 'Protecciones', 0, 0, 'Llave de Corte Bateria Hasta 275ah - De Apoyo. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: LC.275.A
+• De Apoyo', 'https://rc-conversiones.vercel.app/images/productos/lc-275-a.webp', 0),
+('LC.275.E', 'Llave de Corte Bateria Hasta 275ah - De Embutir', 'Baterías', 'Protecciones', 0, 0, 'Llave de Corte Bateria Hasta 275ah - De Embutir. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: LC.275.E
+• De Embutir', 'https://rc-conversiones.vercel.app/images/productos/lc-275-e.webp', 0),
+('TMH.RB', 'KIT Toma Exterior 220v  Macho + Hembra', 'Electricidad', 'Tomas Corriente - Exterior', 0, 0, 'KIT Toma Exterior 220v  Macho + Hembra. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: TMH.RB
+• 16ah
+• BLANCA', 'https://rc-conversiones.vercel.app/images/productos/tmh-rb.webp', 0),
+('TMH.RG', 'KIT Toma Exterior 220v  Macho + Hembra', 'Electricidad', 'Tomas Corriente - Exterior', 0, 0, 'KIT Toma Exterior 220v  Macho + Hembra. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: TMH.RG
+• 16ah
+• GRIS', 'https://rc-conversiones.vercel.app/images/productos/tmh-rg.webp', 0),
+('TMH.RN', 'KIT Toma Exterior 220v  Macho + Hembra', 'Electricidad', 'Tomas Corriente - Exterior', 0, 0, 'KIT Toma Exterior 220v  Macho + Hembra. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: TMH.RN
+• 16ah
+• NEGRO', 'https://rc-conversiones.vercel.app/images/productos/tmh-rn.webp', 0),
+('TME.32', 'Toma Exterior Macho 220v', 'Electricidad', 'Tomas Corriente - Exterior', 0, 0, 'Toma Exterior Macho 220v. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: TME.32
+• 32ah', 'https://rc-conversiones.vercel.app/images/productos/tme-32.webp', 0),
+('THE.32', 'Toma Exterior Hembra 220v', 'Electricidad', 'Tomas Corriente - Exterior', 0, 0, 'Toma Exterior Hembra 220v. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: THE.32
+• 32ah', 'https://rc-conversiones.vercel.app/images/productos/the-32.webp', 0),
+('TME.20', 'Toma Exterior Macho 220v', 'Electricidad', 'Tomas Corriente - Exterior', 0, 0, 'Toma Exterior Macho 220v. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: TME.20
+• 20ah', 'https://rc-conversiones.vercel.app/images/productos/tme-20.webp', 0),
+('TH.12', 'Toma Hembra TIPO ENCENDEDOR 12v - ACERO INOX', 'Electricidad', 'Tomas Corriente - Interior', 0, 0, 'Toma Hembra TIPO ENCENDEDOR 12v - ACERO INOX. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: TH.12
+• ACERO INOX', 'https://rc-conversiones.vercel.app/images/productos/th-12.webp', 0),
+('TH.1224.B', 'Toma Hembra TIPO ENCENDEDOR 12v 24v', 'Electricidad', 'Tomas Corriente - Interior', 0, 0, 'Toma Hembra TIPO ENCENDEDOR 12v 24v. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: TH.1224.B
+• BLANCA', 'https://rc-conversiones.vercel.app/images/productos/th-1224-b.webp', 0),
+('TH.1224.N', 'Toma Hembra TIPO ENCENDEDOR 12v 24v', 'Electricidad', 'Tomas Corriente - Interior', 0, 0, 'Toma Hembra TIPO ENCENDEDOR 12v 24v. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: TH.1224.N
+• NEGRA', 'https://rc-conversiones.vercel.app/images/productos/th-1224-n.webp', 0),
+('T.TE', 'Toma Macho TIPO ENCENDEDOR 12v 24v USB + USB C', 'Electricidad', 'Tomas Corriente - Interior', 0, 0, 'Toma Macho TIPO ENCENDEDOR 12v 24v USB + USB C. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: T.TE
+• NEGRA', 'https://rc-conversiones.vercel.app/images/productos/t-te.webp', 0),
+('T.UV', 'Toma 12v 24v  USB x 2 + Voltimentro / Amperimetro', 'Electricidad', 'Tomas Corriente - Interior', 0, 0, 'Toma 12v 24v  USB x 2 + Voltimentro / Amperimetro. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: T.UV
+• 12v
+• 24v', 'https://rc-conversiones.vercel.app/images/productos/t-uv.webp', 0),
+('T.V', 'Toma 12v 24v Voltimetro / Amperimetro', 'Electricidad', 'Tomas Corriente - Interior', 0, 0, 'Toma 12v 24v Voltimetro / Amperimetro. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: T.V
+• 12v
+• 24v', 'https://rc-conversiones.vercel.app/images/productos/t-v.webp', 0),
+('T.T', 'Toma 12v 24v TIPO TECLA - USB +USB C NEGRA', 'Electricidad', 'Tomas Corriente - Interior', 0, 0, 'Toma 12v 24v TIPO TECLA - USB +USB C NEGRA. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: T.T
+• USB +USB C NEGRA', 'https://rc-conversiones.vercel.app/images/productos/t-t.webp', 0),
+('T.USB', 'Toma 12v 24v C/ USB + USB C', 'Electricidad', 'Tomas Corriente - Interior', 0, 0, 'Toma 12v 24v C/ USB + USB C. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: T.USB
+• NEGRA', 'https://rc-conversiones.vercel.app/images/productos/t-usb.webp', 0),
+('PLE.18', 'Plafon LED (18) Exterior 12v cm - Luz Blanca', 'Electricidad', 'Iliminación - Exterior', 0, 0, 'Plafon LED (18) Exterior 12v cm - Luz Blanca. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: PLE.18
+• Luz Blanca', 'https://rc-conversiones.vercel.app/images/productos/ple-18.webp', 0),
+('PLE.5B', 'Plafon LED (5) Exterior 12v - Luz Blanca', 'Electricidad', 'Iliminación - Exterior', 0, 0, 'Plafon LED (5) Exterior 12v - Luz Blanca. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: PLE.5B
+• Luz Blanca', 'https://rc-conversiones.vercel.app/images/productos/ple-5b.webp', 0),
+('PLE.6N', 'Plafon LED (6) Exterior 12v 24v', 'Electricidad', 'Iliminación - Exterior', 0, 0, 'Plafon LED (6) Exterior 12v 24v. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: PLE.6N
+• NEGRO
+• Luz Blanca', 'https://rc-conversiones.vercel.app/images/productos/ple-6n.webp', 0),
+('PLE.6', 'Plafon LED (6) Exterior 12v 24v - Luz Blanca', 'Electricidad', 'Iliminación - Exterior', 0, 0, 'Plafon LED (6) Exterior 12v 24v - Luz Blanca. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: PLE.6
+• Luz Blanca', 'https://rc-conversiones.vercel.app/images/productos/ple-6.webp', 0),
+('PLR.13', 'Plafon LED 12v', 'Electricidad', 'Iliminación - Interior', 0, 0, 'Plafon LED 12v. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: PLR.13
+• Acrílico C/Tecla 13 cm
+• Luz Calida', 'https://rc-conversiones.vercel.app/images/productos/plr-13.webp', 0),
+('PLR.8', 'Plafon LED 12v', 'Electricidad', 'Iliminación - Interior', 0, 0, 'Plafon LED 12v. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: PLR.8
+• Acrílico C/Tecla 8 cm
+• Luz Calida', 'https://rc-conversiones.vercel.app/images/productos/plr-8.webp', 0),
+('PLR.14.5.M', 'Plafon LED 12v', 'Electricidad', 'Iliminación - Interior', 0, 0, 'Plafon LED 12v. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: PLR.14.5.M
+• Marco de Madera  14,5 cm Diametro
+• Luz Neutra', 'https://rc-conversiones.vercel.app/images/productos/plr-14-5-m.webp', 0),
+('PLR.10.5.M', 'Plafon LED 12v', 'Electricidad', 'Iliminación - Interior', 0, 0, 'Plafon LED 12v. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: PLR.10.5.M
+• Marco de Madera 10,5 cm Diametro
+• Luz Neutra', 'https://rc-conversiones.vercel.app/images/productos/plr-10-5-m.webp', 0),
+('PLS.10.5', 'Plafon LED Spot 12v 24v', 'Electricidad', 'Iliminación - Interior', 0, 0, 'Plafon LED Spot 12v 24v. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: PLS.10.5
+• 10,5 cm Diametro
+• Luz Blanca Neutra', 'https://rc-conversiones.vercel.app/images/productos/pls-10-5.webp', 0),
+('PLS.7', 'Plafon LED Spot 12v 24v', 'Electricidad', 'Iliminación - Interior', 0, 0, 'Plafon LED Spot 12v 24v. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: PLS.7
+• 7 cm Diametro
+• Luz Blanca Neutra', 'https://rc-conversiones.vercel.app/images/productos/pls-7.webp', 0),
+('PLS.4', 'Plafon LED (4) Spot 12v', 'Electricidad', 'Iliminación - Interior', 0, 0, 'Plafon LED (4) Spot 12v. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: PLS.4
+• 7,6 cm Diametro
+• Luz Neutra', 'https://rc-conversiones.vercel.app/images/productos/pls-4.webp', 0),
+('PLS.6', 'Plafon LED (6) Spot 12v', 'Electricidad', 'Iliminación - Interior', 0, 0, 'Plafon LED (6) Spot 12v. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: PLS.6
+• 7 cm Diametro
+• Luz Neutra', 'https://rc-conversiones.vercel.app/images/productos/pls-6.webp', 0),
+('PLS.18', 'Plafon LED (18) Spot 12v', 'Electricidad', 'Iliminación - Interior', 0, 0, 'Plafon LED (18) Spot 12v. Accesorio pensado para resolver instalaciones eléctricas y conexiones dentro o fuera del motorhome.', '• Código: PLS.18
+• 9,7 cm Diametro- Luz Blanca', 'https://rc-conversiones.vercel.app/images/productos/pls-18.webp', 0),
+('PLT.12', 'Plafon LED (12) Tira 12v 24v + Tecla-Switch - Luz Blanca', 'Electrodomésticos', 'Iliminación - Interior', 0, 0, 'Plafon LED (12) Tira 12v 24v + Tecla-Switch - Luz Blanca. Equipo práctico para sumar confort y funcionalidad al interior del motorhome.', '• Código: PLT.12
+• Luz Blanca', 'https://rc-conversiones.vercel.app/images/productos/plt-12.webp', 0),
+('PLT.30', 'Plafon LED (30) Tira 12v 24v - Aluminio', 'Electrodomésticos', 'Iliminación - Interior', 0, 0, 'Plafon LED (30) Tira 12v 24v - Aluminio. Equipo práctico para sumar confort y funcionalidad al interior del motorhome.', '• Código: PLT.30
+• Aluminio
+• Luz Blanca', 'https://rc-conversiones.vercel.app/images/productos/plt-30.webp', 0),
+('LL.T', 'Luz de Lectura LED 12v 24v', 'Electrodomésticos', 'Iliminación - Interior', 0, 0, 'Luz de Lectura LED 12v 24v. Equipo práctico para sumar confort y funcionalidad al interior del motorhome.', '• Código: LL.T
+• 5x9 cm
+• Tactil, Aluminio y Acrilico
+• Luz Calida', 'https://rc-conversiones.vercel.app/images/productos/ll-t.webp', 0),
+('LL.FTU', 'Luz de Lectura LED 12v 24v', 'Electrodomésticos', 'Iliminación - Interior', 0, 0, 'Luz de Lectura LED 12v 24v. Equipo práctico para sumar confort y funcionalidad al interior del motorhome.', '• Código: LL.FTU
+• Cuello Flexible, Tactil + USB C
+• Aluminio Negro
+• Luz Blanca', 'https://rc-conversiones.vercel.app/images/productos/ll-ftu.webp', 0),
+('LL.FTUN', 'Luz de Lectura LED 12v 24v', 'Electrodomésticos', 'Iliminación - Interior', 0, 0, 'Luz de Lectura LED 12v 24v. Equipo práctico para sumar confort y funcionalidad al interior del motorhome.', '• Código: LL.FTUN
+• Cuello Flexible, Tactil + USB A
+• Aluminio
+• Luz Neutra', 'https://rc-conversiones.vercel.app/images/productos/ll-ftun.webp', 0),
+('T.24S.12', 'TV KODAK 24" SMART ONN C/Control de Voz', 'Electrodomésticos', 'Televisores 12v', 0, 0, 'TV KODAK 24" SMART ONN C/Control de Voz. Equipo práctico para sumar confort y funcionalidad al interior del motorhome.', '• Código: T.24S.12
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/t-24s-12.webp', 0),
+('T.24.12', 'TV KODAK 24"', 'Electrodomésticos', 'Televisores 12v', 0, 0, 'TV KODAK 24". Equipo práctico para sumar confort y funcionalidad al interior del motorhome.', '• Código: T.24.12
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/t-24-12.webp', 0),
+('TS.19.12220', 'TV Smart 19"', 'Electrodomésticos', 'Televisores 12v', 0, 0, 'TV Smart 19". Equipo práctico para sumar confort y funcionalidad al interior del motorhome.', '• Código: TS.19.12220
+• 12v/220v', 'https://rc-conversiones.vercel.app/images/productos/ts-19-12220.webp', 0),
+('TS.22.12220', 'TV Smart 22"', 'Electrodomésticos', 'Televisores 12v', 0, 0, 'TV Smart 22". Equipo práctico para sumar confort y funcionalidad al interior del motorhome.', '• Código: TS.22.12220
+• 12v/220v', 'https://rc-conversiones.vercel.app/images/productos/ts-22-12220.webp', 0),
+('TS.24.12220', 'TV Smart 24"', 'Electrodomésticos', 'Televisores 12v', 0, 0, 'TV Smart 24". Equipo práctico para sumar confort y funcionalidad al interior del motorhome.', '• Código: TS.24.12220
+• 12v/220v', 'https://rc-conversiones.vercel.app/images/productos/ts-24-12220.webp', 0),
+('T.S', 'Soporte para TV 24"', 'Electrodomésticos', 'Accesorios para Televisores', 0, 0, 'Soporte para TV 24". Equipo práctico para sumar confort y funcionalidad al interior del motorhome.', '• Código: T.S', 'https://rc-conversiones.vercel.app/images/productos/t-s.webp', 0),
+('C.6.KGE', 'Calefon 6L - Sin Llama Piloto', 'Calefacción', 'Calefones y Ventilación', 0, 0, 'Calefon 6L - Sin Llama Piloto. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: C.6.KGE
+• Sin Llama Piloto
+• KRAMM
+• Gas Envasado', 'https://rc-conversiones.vercel.app/images/productos/c-6-kge.webp', 0),
+('C.6.BMGE', 'Calefon 6L - Sin Llama Piloto', 'Calefacción', 'Calefones y Ventilación', 0, 0, 'Calefon 6L - Sin Llama Piloto. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: C.6.BMGE
+• Sin Llama Piloto
+• BRAMETAL
+• 35 x 53 x 18 cm
+• Gas Envasado', 'https://rc-conversiones.vercel.app/images/productos/c-6-bmge.webp', 0),
+('C.6.BMGN', 'Calefon 6L - Sin Llama Piloto', 'Calefacción', 'Calefones y Ventilación', 0, 0, 'Calefon 6L - Sin Llama Piloto. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: C.6.BMGN
+• Sin Llama Piloto
+• BRAMETAL
+• 35 x 53 x 18 cm
+• Gas Envasado', 'https://rc-conversiones.vercel.app/images/productos/c-6-bmgn.webp', 0),
+('C.6.BGE', 'Calefon 6L - Con Llama Piloto', 'Calefacción', 'Calefones y Ventilación', 0, 0, 'Calefon 6L - Con Llama Piloto. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: C.6.BGE
+• Con Llama Piloto
+• BROGAS
+• 25cm x 46cm x 12 cm
+• Gas Envasado', 'https://rc-conversiones.vercel.app/images/productos/c-6-bge.webp', 0),
+('C.6.BGN', 'Calefon 6L - Con Llama Piloto', 'Calefacción', 'Calefones y Ventilación', 0, 0, 'Calefon 6L - Con Llama Piloto. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: C.6.BGN
+• Con Llama Piloto
+• BROGAS
+• 25cm x 46cm x 12 cm
+• Gas Natural', 'https://rc-conversiones.vercel.app/images/productos/c-6-bgn.webp', 0),
+('HAVC', 'Hongo de Aluminio P/Ventilacion - Chico 4"', 'Calefacción', 'Calefones y Ventilación', 0, 0, 'Hongo de Aluminio P/Ventilacion - Chico 4". Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: HAVC
+• Chico 4"', 'https://rc-conversiones.vercel.app/images/productos/havc.webp', 0),
+('HAVG', 'Hongo de Aluminio P/Ventilacion - Grande 4"', 'Calefacción', 'Calefones y Ventilación', 0, 0, 'Hongo de Aluminio P/Ventilacion - Grande 4". Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: HAVG
+• Grande 4"', 'https://rc-conversiones.vercel.app/images/productos/havg.webp', 0),
+('HAVL', 'Hongo de Aluminio P/Ventilacion - Lateral 4"', 'Calefacción', 'Calefones y Ventilación', 0, 0, 'Hongo de Aluminio P/Ventilacion - Lateral 4". Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: HAVL
+• Lateral 4"', 'https://rc-conversiones.vercel.app/images/productos/havl.webp', 0),
+('T.12', 'Termo Electrico P/Ficha Encendedor', 'Calefacción', 'Calentadores 12v', 0, 0, 'Termo Electrico P/Ficha Encendedor. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: T.12
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/t-12.webp', 0),
+('P.12', 'Pava Electrica P/Ficha Encendedor', 'Calefacción', 'Calentadores 12v', 0, 0, 'Pava Electrica P/Ficha Encendedor. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: P.12
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/p-12.webp', 0),
+('V8.12', 'Ventilador 8" 12v', 'Ventilación', 'Ventiladores 12v', 0, 0, 'Ventilador 8" 12v. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: V8.12
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/v8-12.webp', 0),
+('V6.12', 'Ventilador 6" 12v', 'Ventilación', 'Ventiladores 12v', 0, 0, 'Ventilador 6" 12v. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: V6.12
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/v6-12.webp', 0),
+('H80.12.F', 'Heladera FREUCAMP C/Congelador 80L', 'Heladeras', 'Heladeras FREUCAMP 12v 24v', 0, 0, 'Heladera FREUCAMP C/Congelador 80L. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.', '• Código: H80.12.F
+• 12v 24v
+• 47,5 x 63 x 54,5 cm', 'https://rc-conversiones.vercel.app/images/productos/h80-12-f.webp', 0),
+('H90.12.F', 'Heladera FREUCAMP C/Congelador 90L', 'Heladeras', 'Heladeras FREUCAMP 12v 24v', 0, 0, 'Heladera FREUCAMP C/Congelador 90L. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.', '• Código: H90.12.F
+• 12v 24v
+• 42,8 x 98 x 49 cm', 'https://rc-conversiones.vercel.app/images/productos/h90-12-f.webp', 0),
+('H58.12', 'Heladera FIVE OCEANS C/Freezer 58L 12v 24v + Display Digital (Puerta reversible)', 'Heladeras', 'Heladeras FIVE OCEANS 12v 24v', 0, 0, 'Heladera FIVE OCEANS C/Freezer 58L 12v 24v + Display Digital (Puerta reversible). Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.', '• Código: H58.12
+• NEGRA', 'https://rc-conversiones.vercel.app/images/productos/h58-12.webp', 0),
+('H85.12', 'Heladera FIVE OCEANS C/Freezer 85L 12v 24v + Display Digital', 'Heladeras', 'Heladeras FIVE OCEANS 12v 24v', 0, 0, 'Heladera FIVE OCEANS C/Freezer 85L 12v 24v + Display Digital. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.', '• Código: H85.12
+• ACERO INOX', 'https://rc-conversiones.vercel.app/images/productos/h85-12.webp', 0),
+('H81.12B', 'Heladera LACAR C/Congelador 81L 12v 24v', 'Heladeras', 'Heladeras LACAR 12v 24v', 0, 0, 'Heladera LACAR C/Congelador 81L 12v 24v. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.', '• Código: H81.12B
+• 44 x 67 x 57 cm
+• BLANCA', 'https://rc-conversiones.vercel.app/images/productos/h81-12b.webp', 0),
+('H81.12N', 'Heladera LACAR C/Congelador 81L 12v 24v', 'Heladeras', 'Heladeras LACAR 12v 24v', 0, 0, 'Heladera LACAR C/Congelador 81L 12v 24v. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.', '• Código: H81.12N
+• 44 x 67 x 57 cm
+• NEGRA', 'https://rc-conversiones.vercel.app/images/productos/h81-12n.webp', 0),
+('H110.12B', 'Heladera LACAR C/Freezer 110L 12v 24v', 'Heladeras', 'Heladeras LACAR 12v 24v', 0, 0, 'Heladera LACAR C/Freezer 110L 12v 24v. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.', '• Código: H110.12B
+• 44,5 x 101 x 58,5 cm
+• BLANCA', 'https://rc-conversiones.vercel.app/images/productos/h110-12b.webp', 0),
+('H110.12N', 'Heladera LACAR C/Freezer 110L 12v 24v', 'Heladeras', 'Heladeras LACAR 12v 24v', 0, 0, 'Heladera LACAR C/Freezer 110L 12v 24v. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.', '• Código: H110.12N
+• 44,5 x 101 x 58,5 cm
+• NEGRA', 'https://rc-conversiones.vercel.app/images/productos/h110-12n.webp', 0),
+('H230.12B', 'Heladera LACAR C/Freezer 230L', 'Heladeras', 'Heladeras LACAR 12v 24v', 0, 0, 'Heladera LACAR C/Freezer 230L. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.', '• Código: H230.12B
+• 12v 24v
+• 55 x 125 x 63 cm
+• BLANCA', 'https://rc-conversiones.vercel.app/images/productos/h230-12b.webp', 0),
+('H230.12N', 'Heladera LACAR C/Freezer 230L', 'Heladeras', 'Heladeras LACAR 12v 24v', 0, 0, 'Heladera LACAR C/Freezer 230L. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.', '• Código: H230.12N
+• 12v 24v
+• 55 x 125 x 63 cm
+• NEGRA', 'https://rc-conversiones.vercel.app/images/productos/h230-12n.webp', 0),
+('H290.12B', 'Heladera LACAR C/Freezer 290L', 'Heladeras', 'Heladeras LACAR 12v 24v', 0, 0, 'Heladera LACAR C/Freezer 290L. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.', '• Código: H290.12B
+• 12v 24v
+• 55 x 162 x 63 cm
+• BLANCA', 'https://rc-conversiones.vercel.app/images/productos/h290-12b.webp', 0),
+('H290.12N', 'Heladera LACAR C/Freezer 290L', 'Heladeras', 'Heladeras LACAR 12v 24v', 0, 0, 'Heladera LACAR C/Freezer 290L. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.', '• Código: H290.12N
+• 12v 24v
+• 55 x 162 x 63 cm
+• NEGRA', 'https://rc-conversiones.vercel.app/images/productos/h290-12n.webp', 0),
+('H50.12', 'Heladera C/Congelador 50L', 'Heladeras', 'Heladeras 12v 24v', 0, 0, 'Heladera C/Congelador 50L. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.', '• Código: H50.12
+• 12v 24v
+• 47 x 49 x 44 cm', 'https://rc-conversiones.vercel.app/images/productos/h50-12.webp', 0),
+('H90.12', 'Heladera C/Congelador 90L', 'Heladeras', 'Heladeras 12v 24v', 0, 0, 'Heladera C/Congelador 90L. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.', '• Código: H90.12
+• 12v 24v
+• 45 x 84 x 44 cm', 'https://rc-conversiones.vercel.app/images/productos/h90-12.webp', 0),
+('H90F.12', 'Heladera C/Freezer 90L', 'Heladeras', 'Heladeras 12v 24v', 0, 0, 'Heladera C/Freezer 90L. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.', '• Código: H90F.12
+• 12v 24v
+• 38 x 75 x 41 cm
+• 14 kg
+• GRIS', 'https://rc-conversiones.vercel.app/images/productos/h90f-12.webp', 0),
+('H105.12', 'Heladera C/Freezer 105L', 'Heladeras', 'Heladeras 12v 24v', 0, 0, 'Heladera C/Freezer 105L. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.', '• Código: H105.12
+• 12v 24v
+• 42 x 87 x 44,5 cm
+• 17kg
+• GRIS', 'https://rc-conversiones.vercel.app/images/productos/h105-12.webp', 0),
+('HP.27', 'Heladera Portatil ACTECMAX C/Freezer  27L', 'Heladeras', 'Heladeras Portátiles 12v 24v', 0, 0, 'Heladera Portatil ACTECMAX C/Freezer  27L. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.', '• Código: HP.27
+• 12v 24v', 'https://rc-conversiones.vercel.app/images/productos/hp-27.webp', 0),
+('HP.35', 'Heladera Portatil ACTECMAX C/Freezer 35L', 'Heladeras', 'Heladeras Portátiles 12v 24v', 0, 0, 'Heladera Portatil ACTECMAX C/Freezer 35L. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.', '• Código: HP.35
+• 12v 24v', 'https://rc-conversiones.vercel.app/images/productos/hp-35.webp', 0),
+('HP.45', 'Heladera Portatil ACTECMAX C/Freezer 45L', 'Heladeras', 'Heladeras Portátiles 12v 24v', 0, 0, 'Heladera Portatil ACTECMAX C/Freezer 45L. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.', '• Código: HP.45
+• 12v 24v', 'https://rc-conversiones.vercel.app/images/productos/hp-45.webp', 0),
+('HP.50', 'Heladera Portatil ACTECMAX C/Freezer Tipo Carrito  50L', 'Heladeras', 'Heladeras Portátiles 12v 24v', 0, 0, 'Heladera Portatil ACTECMAX C/Freezer Tipo Carrito  50L. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.', '• Código: HP.50
+• 12v 24v', 'https://rc-conversiones.vercel.app/images/productos/hp-50.webp', 0),
+('FH.12', 'Fabricadora de Hielo Portatil 12v 24v - 9 Hielos por minuto', 'Heladeras', 'Fabricadora de Hielo 12v 24v', 0, 0, 'Fabricadora de Hielo Portatil 12v 24v - 9 Hielos por minuto. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.', '• Código: FH.12
+• 9 Hielos por minuto', 'https://rc-conversiones.vercel.app/images/productos/fh-12.webp', 0),
+('AA.220.D', 'Aire Acondicionado Frio-Calor P/Instalar en Escotilla DOMETIC FJX7 (Tactil)', 'Climatización', 'Aires Acondicionados 220v FRIO-CALOR - INVERTER', 0, 0, 'Aire Acondicionado Frio-Calor P/Instalar en Escotilla DOMETIC FJX7 (Tactil). Solución de climatización pensada para mejorar el confort térmico durante el viaje y la estadía.', '• Código: AA.220.D
+• 2200Fg
+• 75,2 x 70,2 x 22,5 cm', 'https://rc-conversiones.vercel.app/images/productos/aa-220-d.webp', 0),
+('AA.220.F2', 'Aire Acondicionado Frio-Calor P/Instalar en Escotilla FREUCAMP', 'Climatización', 'Aires Acondicionados 220v FRIO-CALOR - INVERTER', 0, 0, 'Aire Acondicionado Frio-Calor P/Instalar en Escotilla FREUCAMP. Solución de climatización pensada para mejorar el confort térmico durante el viaje y la estadía.', '• Código: AA.220.F2
+• 2700Fg
+• 72,8 x 23,9 x 99,6 cm', 'https://rc-conversiones.vercel.app/images/productos/aa-220-f2.webp', 0),
+('AA.220.F1', 'Aire Acondicionado Frio-Calor P/Instalar en Escotilla FREUCAMP', 'Climatización', 'Aires Acondicionados 220v FRIO-CALOR - INVERTER', 0, 0, 'Aire Acondicionado Frio-Calor P/Instalar en Escotilla FREUCAMP. Solución de climatización pensada para mejorar el confort térmico durante el viaje y la estadía.', '• Código: AA.220.F1
+• 1720Fg
+• 56 x 22,5 x 79,5 cm', 'https://rc-conversiones.vercel.app/images/productos/aa-220-f1.webp', 0),
+('AA.12.H', 'Aire Acondicionado 12v P/Instalar en Escotilla HDK', 'Climatización', 'Aires Acondicionados 24v', 0, 0, 'Aire Acondicionado 12v P/Instalar en Escotilla HDK. Solución de climatización pensada para mejorar el confort térmico durante el viaje y la estadía.', '• Código: AA.12.H
+• 2200Fg
+• 70 x 74,5 x 19,5 cm', 'https://rc-conversiones.vercel.app/images/productos/aa-12-h.webp', 0),
+('AA.12.A', 'Aire Acondicionado AGRO 12v P/Instalar en Escotilla ACTECMAX', 'Climatización', 'Aires Acondicionados 24v', 0, 0, 'Aire Acondicionado AGRO 12v P/Instalar en Escotilla ACTECMAX. Solución de climatización pensada para mejorar el confort térmico durante el viaje y la estadía.', '• Código: AA.12.A
+• 2000Fg
+• C/Condesador y Pre-Filtro
+• 84 x 80 x 16 cm', 'https://rc-conversiones.vercel.app/images/productos/aa-12-a.webp', 0),
+('AA.12', 'Aire Acondicionado 12v P/Instalar en Escotilla  ACTECMAX', 'Climatización', 'Aires Acondicionados 24v', 0, 0, 'Aire Acondicionado 12v P/Instalar en Escotilla  ACTECMAX. Solución de climatización pensada para mejorar el confort térmico durante el viaje y la estadía.', '• Código: AA.12
+• 2000Fg
+• 84 x 80 x 16 cm', 'https://rc-conversiones.vercel.app/images/productos/aa-12.webp', 0),
+('AAL.12', 'Aire Acondicionado 12v P/Instalar en Lateral ACTECMAX', 'Climatización', 'Aires Acondicionados 24v', 0, 0, 'Aire Acondicionado 12v P/Instalar en Lateral ACTECMAX. Solución de climatización pensada para mejorar el confort térmico durante el viaje y la estadía.', '• Código: AAL.12
+• 2000Fg
+• 54 x 51 x 19 cm', 'https://rc-conversiones.vercel.app/images/productos/aal-12.webp', 0),
+('AA.24.H', 'Aire Acondicionado 24v P/Instalar en Escotilla HDK', 'Climatización', 'Aires Acondicionados 24v', 0, 0, 'Aire Acondicionado 24v P/Instalar en Escotilla HDK. Solución de climatización pensada para mejorar el confort térmico durante el viaje y la estadía.', '• Código: AA.24.H
+• 2200Fg
+• 70 x 74,5 x 19,5 cm', 'https://rc-conversiones.vercel.app/images/productos/aa-24-h.webp', 0),
+('AA.24.HM', 'Aire Acondicionado 24v P/Instalar en Escotilla HDK', 'Climatización', 'Aires Acondicionados 24v', 0, 0, 'Aire Acondicionado 24v P/Instalar en Escotilla HDK. Solución de climatización pensada para mejorar el confort térmico durante el viaje y la estadía.', '• Código: AA.24.HM
+• 3300Fg
+• 70 x 74,5 x 19,5 cm', 'https://rc-conversiones.vercel.app/images/productos/aa-24-hm.webp', 0),
+('AA.24', 'Aire Acondicionado 24v P/Instalar en Escotilla  ACTECMAX', 'Climatización', 'Aires Acondicionados 24v', 0, 0, 'Aire Acondicionado 24v P/Instalar en Escotilla  ACTECMAX. Solución de climatización pensada para mejorar el confort térmico durante el viaje y la estadía.', '• Código: AA.24
+• 2000Fg
+• 84 x 80 x 16 cm', 'https://rc-conversiones.vercel.app/images/productos/aa-24.webp', 0),
+('AAL.24', 'Aire Acondicionado 24v P/Instalar en Lateral ACTECMAX', 'Climatización', 'Aires Acondicionados 24v', 0, 0, 'Aire Acondicionado 24v P/Instalar en Lateral ACTECMAX. Solución de climatización pensada para mejorar el confort térmico durante el viaje y la estadía.', '• Código: AAL.24
+• 2000Fg
+• 54 x 51 x 19 cm', 'https://rc-conversiones.vercel.app/images/productos/aal-24.webp', 0),
+('CN.C.12', 'Climatizador NEIL CAMPER / SLIM FULL', 'Climatización', 'Climatizadores 12v', 0, 0, 'Climatizador NEIL CAMPER / SLIM FULL. Solución de climatización pensada para mejorar el confort térmico durante el viaje y la estadía.', '• Código: CN.C.12
+• 87 x 9 x 62 cm
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/cn-c-12.webp', 0),
+('CN.P.12', 'Climatizador NEIL PATAGONIA', 'Climatización', 'Climatizadores 12v', 0, 0, 'Climatizador NEIL PATAGONIA. Solución de climatización pensada para mejorar el confort térmico durante el viaje y la estadía.', '• Código: CN.P.12
+• 87 x 9 x 62 cm
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/cn-p-12.webp', 0),
+('CN.C.24', 'Climatizador NEIL CAMPER / SLIM FULL', 'Climatización', 'Climatizadores 24v', 0, 0, 'Climatizador NEIL CAMPER / SLIM FULL. Solución de climatización pensada para mejorar el confort térmico durante el viaje y la estadía.', '• Código: CN.C.24
+• 87 x 9 x 62 cm
+• 24v', 'https://rc-conversiones.vercel.app/images/productos/cn-c-24.webp', 0),
+('CN.P.24', 'Climatizador NEIL PATAGONIA', 'Climatización', 'Climatizadores 24v', 0, 0, 'Climatizador NEIL PATAGONIA. Solución de climatización pensada para mejorar el confort térmico durante el viaje y la estadía.', '• Código: CN.P.24
+• 87 x 9 x 62 cm
+• 24v', 'https://rc-conversiones.vercel.app/images/productos/cn-p-24.webp', 0),
+('RCN.TGO', 'Carcasa Interior P/Climatizador - GRIS OSCURO', 'Climatización', 'Repuestos Climatizadores NEIL', 0, 0, 'Carcasa Interior P/Climatizador - GRIS OSCURO. Solución de climatización pensada para mejorar el confort térmico durante el viaje y la estadía.', '• Código: RCN.TGO
+• GRIS OSCURO
+• 37 x 28 cm x 13 cm', 'https://rc-conversiones.vercel.app/images/productos/rcn-tgo.webp', 0),
+('RCN.TGC', 'Carcasa Interior P/Climatizador - GRIS CLARO', 'Climatización', 'Repuestos Climatizadores NEIL', 0, 0, 'Carcasa Interior P/Climatizador - GRIS CLARO. Solución de climatización pensada para mejorar el confort térmico durante el viaje y la estadía.', '• Código: RCN.TGC
+• GRIS CLARO
+• 37 x 28 cm x 13 cm', 'https://rc-conversiones.vercel.app/images/productos/rcn-tgc.webp', 0),
+('RCN.TB', 'Carcasa Interior P/Climatizador - BEIGE', 'Climatización', 'Repuestos Climatizadores NEIL', 0, 0, 'Carcasa Interior P/Climatizador - BEIGE. Solución de climatización pensada para mejorar el confort térmico durante el viaje y la estadía.', '• Código: RCN.TB
+• BEIGE
+• 37 x 28 cm x 13 cm', 'https://rc-conversiones.vercel.app/images/productos/rcn-tb.webp', 0),
+('CD.812.CP', 'Calefactor Diesel 8000w 12v WINFULL C/Termostato + Control Remoto', 'Calefacción', 'Calderas Diesel 12v', 0, 0, 'Calefactor Diesel 8000w 12v WINFULL C/Termostato + Control Remoto. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: CD.812.CP
+• PORTATIL', 'https://rc-conversiones.vercel.app/images/productos/cd-812-cp.webp', 0),
+('CD.512.CA', 'Calefactor Diesel 5000w 12v ACTECMAX C/Termostato + Control Remoto', 'Calefacción', 'Calderas Diesel 12v', 0, 0, 'Calefactor Diesel 5000w 12v ACTECMAX C/Termostato + Control Remoto. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: CD.512.CA
+• Carcasa Aluminio', 'https://rc-conversiones.vercel.app/images/productos/cd-512-ca.webp', 0),
+('CD.512.CP', 'Calefactor Diesel 5000w 12v WINFULL C/Termostato + Control Remoto', 'Calefacción', 'Calderas Diesel 12v', 0, 0, 'Calefactor Diesel 5000w 12v WINFULL C/Termostato + Control Remoto. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: CD.512.CP
+• Carcasa Plastica', 'https://rc-conversiones.vercel.app/images/productos/cd-512-cp.webp', 0),
+('CD.212.CP', 'Calefactor Diesel 2000w 12v WINFULL C/Termostato + Control Remoto', 'Calefacción', 'Calderas Diesel 12v', 0, 0, 'Calefactor Diesel 2000w 12v WINFULL C/Termostato + Control Remoto. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: CD.212.CP
+• Carcasa Plastica', 'https://rc-conversiones.vercel.app/images/productos/cd-212-cp.webp', 0),
+('CD.212.CPT', 'Calefactor Diesel 2000w 12v TULK C/Termostato + Control Remoto', 'Calefacción', 'Calderas Diesel 12v', 0, 0, 'Calefactor Diesel 2000w 12v TULK C/Termostato + Control Remoto. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: CD.212.CPT
+• Carcasa Plastica', 'https://rc-conversiones.vercel.app/images/productos/cd-212-cpt.webp', 0),
+('CD.824.P', 'Calefactor Diesel 8000w 24v WINFULL C/Termostato + Control Remoto', 'Calefacción', 'Calderas Diesel 24v', 0, 0, 'Calefactor Diesel 8000w 24v WINFULL C/Termostato + Control Remoto. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: CD.824.P
+• PORTATIL', 'https://rc-conversiones.vercel.app/images/productos/cd-824-p.webp', 0),
+('CD.524.CA', 'Calefactor Diesel 5000w 24v ACTECMAX C/Termostato + Control Remoto', 'Calefacción', 'Calderas Diesel 24v', 0, 0, 'Calefactor Diesel 5000w 24v ACTECMAX C/Termostato + Control Remoto. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: CD.524.CA
+• Carcasa Aluminio', 'https://rc-conversiones.vercel.app/images/productos/cd-524-ca.webp', 0),
+('CD.524.CP', 'Calefactor Diesel 5000w 24v WINFULL C/Termostato + Control Remoto', 'Calefacción', 'Calderas Diesel 24v', 0, 0, 'Calefactor Diesel 5000w 24v WINFULL C/Termostato + Control Remoto. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: CD.524.CP
+• Carcasa Plastica', 'https://rc-conversiones.vercel.app/images/productos/cd-524-cp.webp', 0),
+('CD.824.CP', 'Calefactor Diesel 8000w 24v WINFULL C/Termostato + Control Remoto', 'Calefacción', 'Calderas Diesel 24v', 0, 0, 'Calefactor Diesel 8000w 24v WINFULL C/Termostato + Control Remoto. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: CD.824.CP
+• Carcasa Plastica', 'https://rc-conversiones.vercel.app/images/productos/cd-824-cp.webp', 0),
+('RDA.UT', 'Union T / 2 Salidas', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Union T / 2 Salidas. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.UT', 'https://rc-conversiones.vercel.app/images/productos/rda-ut.webp', 0),
+('RDA.VD', 'Ventilete Difusor / Rejilla de Salida', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Ventilete Difusor / Rejilla de Salida. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.VD', 'https://rc-conversiones.vercel.app/images/productos/rda-vd.webp', 0),
+('RDA.T10', 'Tanque de Combustible 10L', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Tanque de Combustible 10L. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.T10
+• 10L', 'https://rc-conversiones.vercel.app/images/productos/rda-t10.webp', 0),
+('RDA.TE', 'Tubo de Escape', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Tubo de Escape. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.TE', 'https://rc-conversiones.vercel.app/images/productos/rda-te.webp', 0),
+('RDA.STE', 'Silenciador P/Escape', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Silenciador P/Escape. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.STE', 'https://rc-conversiones.vercel.app/images/productos/rda-ste.webp', 0),
+('RDA.DS', 'Ducto de salida', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Ducto de salida. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.DS', 'https://rc-conversiones.vercel.app/images/productos/rda-ds.webp', 0),
+('RDA.FS', 'Filtro de Aire', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Filtro de Aire. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.FS', 'https://rc-conversiones.vercel.app/images/productos/rda-fs.webp', 0),
+('RDA.B.12', 'Bujia 12v', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Bujia 12v. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.B.12
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/rda-b-12.webp', 0),
+('RDA.B.24', 'Bujia 24v', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Bujia 24v. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.B.24
+• 24v', 'https://rc-conversiones.vercel.app/images/productos/rda-b-24.webp', 0),
+('RDA.FB', 'Filtro P/Bujia', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Filtro P/Bujia. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.FB', 'https://rc-conversiones.vercel.app/images/productos/rda-fb.webp', 0),
+('RDA.BG.12', 'Bomba de Gasoil 12v', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Bomba de Gasoil 12v. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.BG.12
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/rda-bg-12.webp', 0),
+('RDA.BG.24', 'Bomba de Gasoil 24v', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Bomba de Gasoil 24v. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.BG.24
+• 24v', 'https://rc-conversiones.vercel.app/images/productos/rda-bg-24.webp', 0),
+('RDA.FG', 'Filtro de Gasoil', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Filtro de Gasoil. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.FG', 'https://rc-conversiones.vercel.app/images/productos/rda-fg.webp', 0),
+('RDA.S12', 'Soplador 12v', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Soplador 12v. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.S12
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/rda-s12.webp', 0),
+('RDA.S24', 'Soplador 24v', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Soplador 24v. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.S24
+• 24v', 'https://rc-conversiones.vercel.app/images/productos/rda-s24.webp', 0),
+('RDA.QP', 'Quemador Parking Heater', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Quemador Parking Heater. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.QP', 'https://rc-conversiones.vercel.app/images/productos/rda-qp.webp', 0),
+('RDA.GA', 'Goma de asiento', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Goma de asiento. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.GA', 'https://rc-conversiones.vercel.app/images/productos/rda-ga.webp', 0),
+('RDA.JAQ', 'Junta Asiento Quemador', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Junta Asiento Quemador. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.JAQ', 'https://rc-conversiones.vercel.app/images/productos/rda-jaq.webp', 0),
+('RDA.JBP', 'Junta Block Parking Heater', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Junta Block Parking Heater. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.JBP', 'https://rc-conversiones.vercel.app/images/productos/rda-jbp.webp', 0),
+('RDA.D.34', 'Display - RAD303/RAD 304', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Display - RAD303/RAD 304. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.D.34
+• RAD303/RAD 304', 'https://rc-conversiones.vercel.app/images/productos/rda-d-34.webp', 0),
+('RDA.D.1', 'DIsplay - RAD301', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'DIsplay - RAD301. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.D.1
+• RAD301', 'https://rc-conversiones.vercel.app/images/productos/rda-d-1.webp', 0),
+('RDA.D.2', 'DIsplay - RAD302', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'DIsplay - RAD302. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.D.2
+• RAD302', 'https://rc-conversiones.vercel.app/images/productos/rda-d-2.webp', 0),
+('RDA.P1', 'Plaqueta RAD301', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Plaqueta RAD301. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.P1', 'https://rc-conversiones.vercel.app/images/productos/rda-p1.webp', 0),
+('RDA.P2', 'Plaqueta RAD302', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Plaqueta RAD302. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.P2', 'https://rc-conversiones.vercel.app/images/productos/rda-p2.webp', 0),
+('RDA.R34', 'Plaqueta RAD 303/304', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Plaqueta RAD 303/304. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.R34', 'https://rc-conversiones.vercel.app/images/productos/rda-r34.webp', 0),
+('RDA.CR34', 'Cableado RAD 303/304', 'Calefacción', 'Repuestos Calefactor Diesel ACTECMAX', 0, 0, 'Cableado RAD 303/304. Equipo orientado a climatización, agua caliente o calefacción según el modelo indicado.', '• Código: RDA.CR34', 'https://rc-conversiones.vercel.app/images/productos/rda-cr34.webp', 0),
+('SP.12', 'Secador de Pelo Plegable 12v - CARBEST', 'Cocina', 'Accesorios', 0, 0, 'Secador de Pelo Plegable 12v - CARBEST. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: SP.12
+• CARBEST', 'https://rc-conversiones.vercel.app/images/productos/sp-12.webp', 0),
+('CH.2H.VGE', 'Cocina C/Horno 2H Brogas Vertical Angosta', 'Cocina', 'Cocinas con Horno Verticales', 0, 0, 'Cocina C/Horno 2H Brogas Vertical Angosta. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: CH.2H.VGE
+• 33 x 85 x 53 cm
+• Gas Envasado', 'https://rc-conversiones.vercel.app/images/productos/ch-2h-vge.webp', 0),
+('CH.2H.VGN', 'Cocina C/Horno 2H Brogas Vertical Angosta', 'Cocina', 'Cocinas con Horno Verticales', 0, 0, 'Cocina C/Horno 2H Brogas Vertical Angosta. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: CH.2H.VGN
+• 33 x 85 x 53 cm
+• Gas Natural', 'https://rc-conversiones.vercel.app/images/productos/ch-2h-vgn.webp', 0),
+('CH.2H.KVGE', 'Cocina C/Horno 2H Kitchenette Vertical Angosta', 'Cocina', 'Cocinas con Horno Verticales', 0, 0, 'Cocina C/Horno 2H Kitchenette Vertical Angosta. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: CH.2H.KVGE
+• 36 x 86 x 53 cm
+• ACERO INOX
+• Gas Envasado', 'https://rc-conversiones.vercel.app/images/productos/ch-2h-kvge.webp', 0),
+('CH.2H.KVGN', 'Cocina C/Horno 2H Kitchenette Vertical Angosta', 'Cocina', 'Cocinas con Horno Verticales', 0, 0, 'Cocina C/Horno 2H Kitchenette Vertical Angosta. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: CH.2H.KVGN
+• 36 x 86 x 53 cm
+• ACERO INOX
+• Gas Natural', 'https://rc-conversiones.vercel.app/images/productos/ch-2h-kvgn.webp', 0),
+('CH.2H.KNVGE', 'Cocina C/Horno 2H Kitchenette Vertical Angosta', 'Cocina', 'Cocinas con Horno Verticales', 0, 0, 'Cocina C/Horno 2H Kitchenette Vertical Angosta. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: CH.2H.KNVGE
+• 36 x 86 x 53 cm
+• NEGRA
+• Gas Envasado', 'https://rc-conversiones.vercel.app/images/productos/ch-2h-knvge.webp', 0),
+('CH.2H.KNVGN', 'Cocina C/Horno 2H Kitchenette Vertical Angosta', 'Cocina', 'Cocinas con Horno Verticales', 0, 0, 'Cocina C/Horno 2H Kitchenette Vertical Angosta. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: CH.2H.KNVGN
+• 36 x 86 x 53 cm
+• NEGRA
+• Gas Natural', 'https://rc-conversiones.vercel.app/images/productos/ch-2h-knvgn.webp', 0),
+('CH.2H.SGE', 'Cocina C/Horno 2H Brogas Sopita', 'Cocina', 'Cocinas con Horno para Embutir', 0, 0, 'Cocina C/Horno 2H Brogas Sopita. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: CH.2H.SGE
+• 51 x 43 x 36 cm
+• Gas Envasado', 'https://rc-conversiones.vercel.app/images/productos/ch-2h-sge.webp', 0),
+('CH.2H.SGN', 'Cocina C/Horno 2H Brogas Sopita', 'Cocina', 'Cocinas con Horno para Embutir', 0, 0, 'Cocina C/Horno 2H Brogas Sopita. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: CH.2H.SGN
+• 51 x 43 x 36 cm
+• Gas Natural', 'https://rc-conversiones.vercel.app/images/productos/ch-2h-sgn.webp', 0),
+('CH.2H.DNGE', 'Cocina C/Horno 2H BRAM METAL Deluxe', 'Cocina', 'Cocinas con Horno para Embutir', 0, 0, 'Cocina C/Horno 2H BRAM METAL Deluxe. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: CH.2H.DNGE
+• Negra
+• 51 x 43 x 36 cm
+• Gas Envasado', 'https://rc-conversiones.vercel.app/images/productos/ch-2h-dnge.webp', 0),
+('CH.2H.DNGN', 'Cocina C/Horno 2H BRAM METAL Deluxe', 'Cocina', 'Cocinas con Horno para Embutir', 0, 0, 'Cocina C/Horno 2H BRAM METAL Deluxe. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: CH.2H.DNGN
+• Negra
+• 51x43x36 cm
+• Gas Natural', 'https://rc-conversiones.vercel.app/images/productos/ch-2h-dngn.webp', 0),
+('CH.2H.BNGE', 'Cocina C/Horno 2H BRAM METAL', 'Cocina', 'Cocinas con Horno para Embutir', 0, 0, 'Cocina C/Horno 2H BRAM METAL. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: CH.2H.BNGE
+• Negra
+• 51 x 43 x 36 cm
+• Gas Envasado', 'https://rc-conversiones.vercel.app/images/productos/ch-2h-bnge.webp', 0),
+('CH.2H.BNGN', 'Cocina C/Horno 2H BRAM METAL', 'Cocina', 'Cocinas con Horno para Embutir', 0, 0, 'Cocina C/Horno 2H BRAM METAL. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: CH.2H.BNGN
+• Negra
+• 51 x 43 x 36 cm
+• Gas Natural', 'https://rc-conversiones.vercel.app/images/productos/ch-2h-bngn.webp', 0),
+('CH.2H.BBGE', 'Cocina C/Horno 2H BRAM METAL', 'Cocina', 'Cocinas con Horno para Embutir', 0, 0, 'Cocina C/Horno 2H BRAM METAL. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: CH.2H.BBGE
+• Blanca
+• 51 x 43 x 36 cm
+• Gas Envasado', 'https://rc-conversiones.vercel.app/images/productos/ch-2h-bbge.webp', 0),
+('CH.2H.BBGN', 'Cocina C/Horno 2H BRAM METAL', 'Cocina', 'Cocinas con Horno para Embutir', 0, 0, 'Cocina C/Horno 2H BRAM METAL. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: CH.2H.BBGN
+• Blanca
+• 51 x 43 x 36 cm
+• Gas Natural', 'https://rc-conversiones.vercel.app/images/productos/ch-2h-bbgn.webp', 0),
+('BAI.TV.A2', 'Bacha C/Tapa de Vidro, Griferia y Anafe 2H', 'Cocina', 'Bachas y Anafes con Tapa de Vidrio', 0, 0, 'Bacha C/Tapa de Vidro, Griferia y Anafe 2H. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: BAI.TV.A2', 'https://rc-conversiones.vercel.app/images/productos/bai-tv-a2.webp', 0),
+('A.2.TV', 'Anafe 2H C/Tapa de Vidrio', 'Cocina', 'Bachas y Anafes con Tapa de Vidrio', 0, 0, 'Anafe 2H C/Tapa de Vidrio. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: A.2.TV', 'https://rc-conversiones.vercel.app/images/productos/a-2-tv.webp', 0),
+('BAI.TV', 'Bacha Acero C/Tapa de Vidrio y Griferia', 'Cocina', 'Bachas y Anafes con Tapa de Vidrio', 0, 0, 'Bacha Acero C/Tapa de Vidrio y Griferia. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: BAI.TV', 'https://rc-conversiones.vercel.app/images/productos/bai-tv.webp', 0),
+('AOAI', 'Anafe 2H Ormay Carmin IX - C/Encendido Electrico', 'Cocina', 'Anafes 2 Hornallas', 0, 0, 'Anafe 2H Ormay Carmin IX - C/Encendido Electrico. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: AOAI
+• C/Encendido Electrico
+• Gas Envasado', 'https://rc-conversiones.vercel.app/images/productos/aoai.webp', 0),
+('AON', 'Anafe 2H Ormay Carmin N - C/Encendido Electrico', 'Cocina', 'Anafes 2 Hornallas', 0, 0, 'Anafe 2H Ormay Carmin N - C/Encendido Electrico. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: AON
+• C/Encendido Electrico
+• Gas Envasado', 'https://rc-conversiones.vercel.app/images/productos/aon.webp', 0),
+('AOB', 'Anafe 2H Ormay Carmin S - Gas Envasado', 'Cocina', 'Anafes 2 Hornallas', 0, 0, 'Anafe 2H Ormay Carmin S - Gas Envasado. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: AOB
+• Gas Envasado', 'https://rc-conversiones.vercel.app/images/productos/aob.webp', 0),
+('BAI.RE34', 'Bacha Acero Inox. Rectangular', 'Cocina', 'Bachas de Acero Inoxidable', 0, 0, 'Bacha Acero Inox. Rectangular. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: BAI.RE34
+• 37 x 18 x 34 cm', 'https://rc-conversiones.vercel.app/images/productos/bai-re34.webp', 0),
+('BAI.RE', 'Bacha Acero Inox. Rectangular', 'Cocina', 'Bachas de Acero Inoxidable', 0, 0, 'Bacha Acero Inox. Rectangular. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: BAI.RE
+• 37 x 18 x 27 cm', 'https://rc-conversiones.vercel.app/images/productos/bai-re.webp', 0),
+('BAI.R', 'Bacha Acero Inox. Redonda', 'Cocina', 'Bachas de Acero Inoxidable', 0, 0, 'Bacha Acero Inox. Redonda. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: BAI.R
+• 26 x 15 cm', 'https://rc-conversiones.vercel.app/images/productos/bai-r.webp', 0),
+('BAI.O.P', 'Bacha Acero Inox. Ovalada PILETIN', 'Cocina', 'Bachas de Acero Inoxidable', 0, 0, 'Bacha Acero Inox. Ovalada PILETIN. Producto pensado para equipar la cocina de motorhomes y espacios compactos.', '• Código: BAI.O.P
+• 36 x 16 x 13cm', 'https://rc-conversiones.vercel.app/images/productos/bai-o-p.webp', 0),
+('BAI.O', 'Bacha Acero Inox. Ovalada', 'Aberturas', 'Bachas de Acero Inoxidable', 0, 0, 'Bacha Acero Inox. Ovalada. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: BAI.O
+• 33 x 13 x 24 cm', 'https://rc-conversiones.vercel.app/images/productos/bai-o.webp', 0),
+('DJLD', 'Dispenser de Jabon Liquido o Detergente', 'Aberturas', 'Accesorios', 0, 0, 'Dispenser de Jabon Liquido o Detergente. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: DJLD', 'https://rc-conversiones.vercel.app/images/productos/djld.webp', 0),
+('PM.18262', 'Puerta Acceso Motorhome de Aluminio C/Black Out y Mosquitero', 'Aberturas', 'Puertas de Acceso', 0, 0, 'Puerta Acceso Motorhome de Aluminio C/Black Out y Mosquitero. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: PM.18262
+• 182x62 cm', 'https://rc-conversiones.vercel.app/images/productos/pm-18262.webp', 0),
+('MP.17055.NE', 'Marco P/Puerta - MARCO NEGRO', 'Aberturas', 'Marcos para Puertas', 0, 0, 'Marco P/Puerta - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: MP.17055.NE
+• MARCO NEGRO
+• 170x55 cm', 'https://rc-conversiones.vercel.app/images/productos/mp-17055-ne.webp', 0),
+('MP.17065.NE', 'Marco P/Puerta - MARCO NEGRO', 'Aberturas', 'Marcos para Puertas', 0, 0, 'Marco P/Puerta - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: MP.17065.NE
+• MARCO NEGRO
+• 170x65 cm', 'https://rc-conversiones.vercel.app/images/productos/mp-17065-ne.webp', 0),
+('MP.17080.NE', 'Marco P/Puerta - MARCO NEGRO', 'Aberturas', 'Marcos para Puertas', 0, 0, 'Marco P/Puerta - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: MP.17080.NE
+• MARCO NEGRO
+• 170x80 cm', 'https://rc-conversiones.vercel.app/images/productos/mp-17080-ne.webp', 0),
+('MP.17055.NA', 'Marco P/Puerta - MARCO NATURAL', 'Aberturas', 'Marcos para Puertas', 0, 0, 'Marco P/Puerta - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: MP.17055.NA
+• MARCO NATURAL
+• 170x55 cm', 'https://rc-conversiones.vercel.app/images/productos/mp-17055-na.webp', 0),
+('MP.17065.NA', 'Marco P/Puerta - MARCO NATURAL', 'Aberturas', 'Marcos para Puertas', 0, 0, 'Marco P/Puerta - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: MP.17065.NA
+• MARCO NATURAL
+• 170x65 cm', 'https://rc-conversiones.vercel.app/images/productos/mp-17065-na.webp', 0),
+('MP.17080.NA', 'Marco P/Puerta - MARCO NATURAL', 'Aberturas', 'Marcos para Puertas', 0, 0, 'Marco P/Puerta - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: MP.17080.NA
+• MARCO NATURAL
+• 170x80 cm', 'https://rc-conversiones.vercel.app/images/productos/mp-17080-na.webp', 0),
+('PB.4545', 'Puerta Para Baulera C/llave', 'Aberturas', 'Puertas Bauleras', 0, 0, 'Puerta Para Baulera C/llave. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: PB.4545
+• 45×45 cm', 'https://rc-conversiones.vercel.app/images/productos/pb-4545.webp', 0),
+('PB.6045', 'Puerta Para Baulera C/llave', 'Aberturas', 'Puertas Bauleras', 0, 0, 'Puerta Para Baulera C/llave. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: PB.6045
+• 60×45 cm', 'https://rc-conversiones.vercel.app/images/productos/pb-6045.webp', 0),
+('PB.8045', 'Puerta Para Baulera C/llave', 'Aberturas', 'Puertas Bauleras', 0, 0, 'Puerta Para Baulera C/llave. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: PB.8045
+• 80×45 cm', 'https://rc-conversiones.vercel.app/images/productos/pb-8045.webp', 0),
+('PB.8060', 'Puerta Para Baulera C/llave', 'Aberturas', 'Puertas Bauleras', 0, 0, 'Puerta Para Baulera C/llave. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: PB.8060
+• 80×60 cm', 'https://rc-conversiones.vercel.app/images/productos/pb-8060.webp', 0),
+('MB.7088.NE', 'Marco P/Baulera - MARCO NEGRO', 'Aberturas', 'Marco Bauleras', 0, 0, 'Marco P/Baulera - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: MB.7088.NE
+• MARCO NEGRO
+• 70x88 cm', 'https://rc-conversiones.vercel.app/images/productos/mb-7088-ne.webp', 0),
+('MB.8040.NE', 'Marco P/Baulera - MARCO NEGRO', 'Aberturas', 'Marco Bauleras', 0, 0, 'Marco P/Baulera - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: MB.8040.NE
+• MARCO NEGRO
+• 80x40 cm', 'https://rc-conversiones.vercel.app/images/productos/mb-8040-ne.webp', 0),
+('MB.5040.NE', 'Marco P/Baulera - MARCO NEGRO', 'Aberturas', 'Marco Bauleras', 0, 0, 'Marco P/Baulera - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: MB.5040.NE
+• MARCO NEGRO
+• 50x40 cm', 'https://rc-conversiones.vercel.app/images/productos/mb-5040-ne.webp', 0),
+('MB.7088.NA', 'Marco P/Baulera - MARCO NATURAL', 'Aberturas', 'Marco Bauleras', 0, 0, 'Marco P/Baulera - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: MB.7088.NA
+• MARCO NATURAL
+• 70x88 cm', 'https://rc-conversiones.vercel.app/images/productos/mb-7088-na.webp', 0),
+('MB.8040.NA', 'Marco P/Baulera - MARCO NATURAL', 'Aberturas', 'Marco Bauleras', 0, 0, 'Marco P/Baulera - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: MB.8040.NA
+• MARCO NATURAL
+• 80x40 cm', 'https://rc-conversiones.vercel.app/images/productos/mb-8040-na.webp', 0),
+('MB.5040.NA', 'Marco P/Baulera - MARCO NATURAL', 'Aberturas', 'Marco Bauleras', 0, 0, 'Marco P/Baulera - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: MB.5040.NA
+• MARCO NATURAL
+• 50x40 cm', 'https://rc-conversiones.vercel.app/images/productos/mb-5040-na.webp', 0),
+('VLA.2838', 'Ventana Levadiza de Acrilico Plana', 'Aberturas', 'Ventanas de Doble Acrilico - Planas', 0, 0, 'Ventana Levadiza de Acrilico Plana. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VLA.2838
+• C/Doble Aislante, Black Out y Mosquitero 28x38 cm', 'https://rc-conversiones.vercel.app/images/productos/vla-2838.webp', 0),
+('VLA.3550', 'Ventana Levadiza de Acrilico Plana', 'Aberturas', 'Ventanas de Doble Acrilico - Planas', 0, 0, 'Ventana Levadiza de Acrilico Plana. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VLA.3550
+• C/Doble Aislante, Black Out y Mosquitero 35x50 cm', 'https://rc-conversiones.vercel.app/images/productos/vla-3550.webp', 0),
+('VLA.5030', 'Ventana Levadiza de Acrilico Plana', 'Aberturas', 'Ventanas de Doble Acrilico - Planas', 0, 0, 'Ventana Levadiza de Acrilico Plana. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VLA.5030
+• C/Doble Aislante, Black Out y Mosquitero 50x30 cm', 'https://rc-conversiones.vercel.app/images/productos/vla-5030.webp', 0),
+('VLA.6145', 'Ventana Levadiza de Acrilico Plana', 'Aberturas', 'Ventanas de Doble Acrilico - Planas', 0, 0, 'Ventana Levadiza de Acrilico Plana. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VLA.6145
+• C/Doble Aislante, Black Out y Mosquitero 61x45 cm', 'https://rc-conversiones.vercel.app/images/productos/vla-6145.webp', 0),
+('VLA.7035', 'Ventana Levadiza de Acrilico Plana', 'Aberturas', 'Ventanas de Doble Acrilico - Planas', 0, 0, 'Ventana Levadiza de Acrilico Plana. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VLA.7035
+• C/Doble Aislante, Black Out y Mosquitero 70x35 cm', 'https://rc-conversiones.vercel.app/images/productos/vla-7035.webp', 0),
+('VLA.7045', 'Ventana Levadiza de Acrilico Plana', 'Aberturas', 'Ventanas de Doble Acrilico - Planas', 0, 0, 'Ventana Levadiza de Acrilico Plana. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VLA.7045
+• C/Doble Aislante, Black Out y Mosquitero 70x45 cm', 'https://rc-conversiones.vercel.app/images/productos/vla-7045.webp', 0),
+('VLA.8040', 'Ventana Levadiza de Acrilico Plana', 'Aberturas', 'Ventanas de Doble Acrilico - Planas', 0, 0, 'Ventana Levadiza de Acrilico Plana. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VLA.8040
+• C/Doble Aislante, Black Out y Mosquitero 80x40 cm', 'https://rc-conversiones.vercel.app/images/productos/vla-8040.webp', 0),
+('VLA.10050', 'Ventana Levadiza de Acrilico Plana', 'Aberturas', 'Ventanas de Doble Acrilico - Planas', 0, 0, 'Ventana Levadiza de Acrilico Plana. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VLA.10050
+• C/Doble Aislante, Black Out y Mosquitero 100x50 cm', 'https://rc-conversiones.vercel.app/images/productos/vla-10050.webp', 0),
+('VLA.7040.B', 'Ventana de Acrlico', 'Aberturas', 'Ventanas de Doble Acrilico - Planas Tipo Burbuja', 0, 0, 'Ventana de Acrlico. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VLA.7040.B
+• C/Doble Aislante, Mosquitero y Black Out
+• Tipo Burbuja  70 x 40 cm', 'https://rc-conversiones.vercel.app/images/productos/vla-7040-b.webp', 0),
+('VLC.2838', 'Ventana Levadiza de Acrilico Curva', 'Aberturas', 'Ventanas de Doble Acrilico - Curvas', 0, 0, 'Ventana Levadiza de Acrilico Curva. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VLC.2838
+• C/Doble Aislante, Black Out y Mosquitero 28x38 cm', 'https://rc-conversiones.vercel.app/images/productos/vlc-2838.webp', 0),
+('VLC.8131', 'Ventana Levadiza de Acrilico Curva', 'Aberturas', 'Ventanas de Doble Acrilico - Curvas', 0, 0, 'Ventana Levadiza de Acrilico Curva. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VLC.8131
+• C/Doble Aislante, Black Out y Mosquitero 81,8x31,5 cm', 'https://rc-conversiones.vercel.app/images/productos/vlc-8131.webp', 0),
+('VLC.9846', 'Ventana Levadiza de Acrilico Curva', 'Aberturas', 'Ventanas de Doble Acrilico - Curvas', 0, 0, 'Ventana Levadiza de Acrilico Curva. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VLC.9846
+• C/Doble Aislante, Black Out y Mosquitero 98,5x46,5 cm', 'https://rc-conversiones.vercel.app/images/productos/vlc-9846.webp', 0),
+('VL.4030.P', 'Ventana Levadiza Plus', 'Aberturas', 'Ventanas Levadizas Plus', 0, 0, 'Ventana Levadiza Plus. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VL.4030.P
+• 40x30 cm', 'https://rc-conversiones.vercel.app/images/productos/vl-4030-p.webp', 0),
+('VL.6030.P', 'Ventana Levadiza Plus', 'Aberturas', 'Ventanas Levadizas Plus', 0, 0, 'Ventana Levadiza Plus. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VL.6030.P
+• 60x30 cm', 'https://rc-conversiones.vercel.app/images/productos/vl-6030-p.webp', 0),
+('VL.6040.P', 'Ventana Levadiza Plus', 'Aberturas', 'Ventanas Levadizas Plus', 0, 0, 'Ventana Levadiza Plus. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VL.6040.P
+• 60x40 cm', 'https://rc-conversiones.vercel.app/images/productos/vl-6040-p.webp', 0),
+('VL.5050.P', 'Ventana Levadiza Plus', 'Aberturas', 'Ventanas Levadizas Plus', 0, 0, 'Ventana Levadiza Plus. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VL.5050.P
+• 50x50 cm', 'https://rc-conversiones.vercel.app/images/productos/vl-5050-p.webp', 0),
+('VL.8050.P', 'Ventana Levadiza Plus', 'Aberturas', 'Ventanas Levadizas Plus', 0, 0, 'Ventana Levadiza Plus. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VL.8050.P
+• 80x50 cm', 'https://rc-conversiones.vercel.app/images/productos/vl-8050-p.webp', 0),
+('VL.10050.P', 'Ventana Levadiza Plus', 'Aberturas', 'Ventanas Levadizas Plus', 0, 0, 'Ventana Levadiza Plus. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VL.10050.P
+• 100x50 cm', 'https://rc-conversiones.vercel.app/images/productos/vl-10050-p.webp', 0),
+('VL.4030.NG', 'Ventana Levadiza - MARCO NEGRO', 'Aberturas', 'Ventanas Levadizas', 0, 0, 'Ventana Levadiza - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VL.4030.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 40x30 cm', 'https://rc-conversiones.vercel.app/images/productos/vl-4030-ng.webp', 0),
+('VL.6040.NG', 'Ventana Levadiza - MARCO NEGRO', 'Aberturas', 'Ventanas Levadizas', 0, 0, 'Ventana Levadiza - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VL.6040.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 60x40 cm', 'https://rc-conversiones.vercel.app/images/productos/vl-6040-ng.webp', 0),
+('VL.8050.NG', 'Ventana Levadiza - MARCO NEGRO', 'Aberturas', 'Ventanas Levadizas', 0, 0, 'Ventana Levadiza - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VL.8050.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 80x50 cm', 'https://rc-conversiones.vercel.app/images/productos/vl-8050-ng.webp', 0),
+('VL.10050.NG', 'Ventana Levadiza - MARCO NEGRO', 'Aberturas', 'Ventanas Levadizas', 0, 0, 'Ventana Levadiza - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VL.10050.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 100x50 cm', 'https://rc-conversiones.vercel.app/images/productos/vl-10050-ng.webp', 0),
+('VL.12050.NG', 'Ventana Levadiza - MARCO NEGRO', 'Aberturas', 'Ventanas Levadizas', 0, 0, 'Ventana Levadiza - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VL.12050.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 120x50 cm', 'https://rc-conversiones.vercel.app/images/productos/vl-12050-ng.webp', 0),
+('VD.6040.NG', 'Ventana Doble Corrediza - MARCO NEGRO', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.6040.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 60x40 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-6040-ng.webp', 0),
+('VD.7040.NG', 'Ventana Doble Corrediza - MARCO NEGRO', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.7040.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 70x40 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-7040-ng.webp', 0),
+('VD.8040.NG', 'Ventana Doble Corrediza - MARCO NEGRO', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.8040.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 80x40 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-8040-ng.webp', 0),
+('VD.8050.NG', 'Ventana Doble Corrediza - MARCO NEGRO', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.8050.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 80x50 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-8050-ng.webp', 0),
+('VD.10050.NG', 'Ventana Doble Corrediza - MARCO NEGRO', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.10050.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 100x50 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-10050-ng.webp', 0),
+('VD.12050.NG', 'Ventana Doble Corrediza - MARCO NEGRO', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.12050.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 120x50 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-12050-ng.webp', 0),
+('VD.10035.NG', 'Ventana Doble Corrediza - MARCO NEGRO', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.10035.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 100x35 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-10035-ng.webp', 0),
+('VD.12035.NG', 'Ventana Doble Corrediza - MARCO NEGRO', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.12035.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 120x35 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-12035-ng.webp', 0),
+('VD.10060.NG', 'Ventana Doble Corrediza - MARCO NEGRO', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.10060.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 100x60 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-10060-ng.webp', 0),
+('VD.12060.NG', 'Ventana Doble Corrediza - MARCO NEGRO', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.12060.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 120x60 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-12060-ng.webp', 0),
+('VD.10070.NG', 'Ventana Doble Corrediza - MARCO NEGRO', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.10070.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 100x70 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-10070-ng.webp', 0),
+('VD.12070.NG', 'Ventana Doble Corrediza - MARCO NEGRO', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.12070.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 120x70 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-12070-ng.webp', 0),
+('VD.9090.NG', 'Ventana Doble Corrediza - MARCO NEGRO', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.9090.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 90x90 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-9090-ng.webp', 0),
+('VD.7070.NG', 'Ventana Doble Corrediza - MARCO NEGRO', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.7070.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 70x70 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-7070-ng.webp', 0),
+('VD.6040.NI', 'Ventana Doble Corrediza - MARCO NATURAL', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.6040.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 60x40 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-6040-ni.webp', 0),
+('VD.7040.NI', 'Ventana Doble Corrediza - MARCO NATURAL', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.7040.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 70x40 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-7040-ni.webp', 0),
+('VD.8040.NI', 'Ventana Doble Corrediza - MARCO NATURAL', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.8040.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 80x40 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-8040-ni.webp', 0),
+('VD.8050.NI', 'Ventana Doble Corrediza - MARCO NATURAL', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.8050.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 80x50 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-8050-ni.webp', 0),
+('VD.10050.NI', 'Ventana Doble Corrediza - MARCO NATURAL', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.10050.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 100x50 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-10050-ni.webp', 0),
+('VD.12050.NI', 'Ventana Doble Corrediza - MARCO NATURAL', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.12050.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 120x50 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-12050-ni.webp', 0),
+('VD.10035.NI', 'Ventana Doble Corrediza - MARCO NATURAL', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.10035.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 100x35 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-10035-ni.webp', 0),
+('VD.12035.NI', 'Ventana Doble Corrediza - MARCO NATURAL', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.12035.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 120x35 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-12035-ni.webp', 0),
+('VD.10060.NI', 'Ventana Doble Corrediza - MARCO NATURAL', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.10060.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 100x60 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-10060-ni.webp', 0),
+('VD.12060.NI', 'Ventana Doble Corrediza - MARCO NATURAL', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.12060.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 120x60 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-12060-ni.webp', 0),
+('VD.10070.NI', 'Ventana Doble Corrediza - MARCO NATURAL', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.10070.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 100x70 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-10070-ni.webp', 0),
+('VD.12070.NI', 'Ventana Doble Corrediza - MARCO NATURAL', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.12070.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 120x70 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-12070-ni.webp', 0),
+('VD.9090.NI', 'Ventana Doble Corrediza - MARCO NATURAL', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.9090.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 90x90 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-9090-ni.webp', 0),
+('VD.7070.NI', 'Ventana Doble Corrediza - MARCO NATURAL', 'Aberturas', 'Ventanas Dobles Corredizas', 0, 0, 'Ventana Doble Corrediza - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VD.7070.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 70x70 cm', 'https://rc-conversiones.vercel.app/images/productos/vd-7070-ni.webp', 0),
+('VS.4030.NG', 'Ventana Simple Corrediza - MARCO NEGRO', 'Aberturas', 'Ventanas Simples Corredizas', 0, 0, 'Ventana Simple Corrediza - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VS.4030.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 40x30 cm', 'https://rc-conversiones.vercel.app/images/productos/vs-4030-ng.webp', 0),
+('VS.4530.NG', 'Ventana Simple Corrediza - MARCO NEGRO', 'Aberturas', 'Ventanas Simples Corredizas', 0, 0, 'Ventana Simple Corrediza - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VS.4530.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 45x30 cm', 'https://rc-conversiones.vercel.app/images/productos/vs-4530-ng.webp', 0),
+('VS.6030.NG', 'Ventana Simple Corrediza - MARCO NEGRO', 'Aberturas', 'Ventanas Simples Corredizas', 0, 0, 'Ventana Simple Corrediza - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VS.6030.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 60x30 cm', 'https://rc-conversiones.vercel.app/images/productos/vs-6030-ng.webp', 0),
+('VS.4030.NI', 'Ventana Simple Corrediza - MARCO NATURAL', 'Aberturas', 'Ventanas Simples Corredizas', 0, 0, 'Ventana Simple Corrediza - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VS.4030.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 40x30 cm', 'https://rc-conversiones.vercel.app/images/productos/vs-4030-ni.webp', 0),
+('VS.4530.NI', 'Ventana Simple Corrediza - MARCO NATURAL', 'Aberturas', 'Ventanas Simples Corredizas', 0, 0, 'Ventana Simple Corrediza - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VS.4530.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 45x30 cm', 'https://rc-conversiones.vercel.app/images/productos/vs-4530-ni.webp', 0),
+('VS.6030.NI', 'Ventana Simple Corrediza - MARCO NATURAL', 'Aberturas', 'Ventanas Simples Corredizas', 0, 0, 'Ventana Simple Corrediza - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VS.6030.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 60x30 cm', 'https://rc-conversiones.vercel.app/images/productos/vs-6030-ni.webp', 0),
+('VS.6040.NI', 'Ventana Simple Corrediza - MARCO NATURAL', 'Aberturas', 'Ventanas Simples Corredizas', 0, 0, 'Ventana Simple Corrediza - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VS.6040.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 60x40 cm', 'https://rc-conversiones.vercel.app/images/productos/vs-6040-ni.webp', 0),
+('VS.8050.NI', 'Ventana Simple Corrediza - MARCO NATURAL', 'Aberturas', 'Ventanas Simples Corredizas', 0, 0, 'Ventana Simple Corrediza - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VS.8050.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 80x50 cm', 'https://rc-conversiones.vercel.app/images/productos/vs-8050-ni.webp', 0),
+('VS.10050.NI', 'Ventana Simple Corrediza - MARCO NATURAL', 'Aberturas', 'Ventanas Simples Corredizas', 0, 0, 'Ventana Simple Corrediza - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VS.10050.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 100x50 cm', 'https://rc-conversiones.vercel.app/images/productos/vs-10050-ni.webp', 0),
+('VS.9090.NI', 'Ventana Simple Corrediza - MARCO NATURAL', 'Aberturas', 'Ventanas Simples Corredizas', 0, 0, 'Ventana Simple Corrediza - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VS.9090.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 90x90 cm', 'https://rc-conversiones.vercel.app/images/productos/vs-9090-ni.webp', 0),
+('VF.7023.NG', 'Ventana Fija - MARCO NEGRO', 'Aberturas', 'Ventanas Fijas', 0, 0, 'Ventana Fija - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VF.7023.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 70x23', 'https://rc-conversiones.vercel.app/images/productos/vf-7023-ng.webp', 0),
+('VF.8050.NG', 'Ventana Fija - MARCO NEGRO', 'Aberturas', 'Ventanas Fijas', 0, 0, 'Ventana Fija - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VF.8050.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 80x50', 'https://rc-conversiones.vercel.app/images/productos/vf-8050-ng.webp', 0),
+('VF.10050.NG', 'Ventana Fija - MARCO NEGRO', 'Aberturas', 'Ventanas Fijas', 0, 0, 'Ventana Fija - MARCO NEGRO. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VF.10050.NG
+• MARCO NEGRO
+• VIDRIO GRIS
+• 100x50', 'https://rc-conversiones.vercel.app/images/productos/vf-10050-ng.webp', 0),
+('VF.7023.NI', 'Ventana Fija - MARCO NATURAL', 'Aberturas', 'Ventanas Fijas', 0, 0, 'Ventana Fija - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VF.7023.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 70x23', 'https://rc-conversiones.vercel.app/images/productos/vf-7023-ni.webp', 0),
+('VF.8050.NI', 'Ventana Fija - MARCO NATURAL', 'Aberturas', 'Ventanas Fijas', 0, 0, 'Ventana Fija - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VF.8050.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 80x50', 'https://rc-conversiones.vercel.app/images/productos/vf-8050-ni.webp', 0),
+('VF.10050.NI', 'Ventana Fija - MARCO NATURAL', 'Aberturas', 'Ventanas Fijas', 0, 0, 'Ventana Fija - MARCO NATURAL. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VF.10050.NI
+• MARCO NATURAL
+• VIDRIO INCOLORO
+• 100x50', 'https://rc-conversiones.vercel.app/images/productos/vf-10050-ni.webp', 0),
+('VOB.42', 'Ventana Ojo de Buey 42 cm - Corredizo', 'Aberturas', 'Ventanas Ojo de Buey', 0, 0, 'Ventana Ojo de Buey 42 cm - Corredizo. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VOB.42
+• Corredizo', 'https://rc-conversiones.vercel.app/images/productos/vob-42.webp', 0),
+('VOB.40', 'Ventana Ojo de Buey 40 cm - Levadizo', 'Aberturas', 'Ventanas Ojo de Buey', 0, 0, 'Ventana Ojo de Buey 40 cm - Levadizo. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VOB.40
+• Levadizo', 'https://rc-conversiones.vercel.app/images/productos/vob-40.webp', 0),
+('VOB.26', 'Ventana Ojo de Buey 26 cm - Levadizo', 'Aberturas', 'Ventanas Ojo de Buey', 0, 0, 'Ventana Ojo de Buey 26 cm - Levadizo. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: VOB.26
+• Levadizo', 'https://rc-conversiones.vercel.app/images/productos/vob-26.webp', 0),
+('A.3535.EVMC', 'Aireador 35x35 cm', 'Ventilación', 'Aireadores con Extractor y Ventilador', 0, 0, 'Aireador 35x35 cm. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: A.3535.EVMC
+• C/Extractor, Ventilador, Mosquitero, Sensor y Control
+• Tapa Plastica Tonalizada', 'https://rc-conversiones.vercel.app/images/productos/a-3535-evmc.webp', 0),
+('A.3535.EVM', 'Aireador 35x35 cm', 'Ventilación', 'Aireadores con Extractor y Ventilador', 0, 0, 'Aireador 35x35 cm. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: A.3535.EVM
+• C/Extractor, Ventilador y Mosquitero
+• Tapa Plastica Tonalizada', 'https://rc-conversiones.vercel.app/images/productos/a-3535-evm.webp', 0),
+('A.3535.EVMCB', 'Aireador 35x35 cm', 'Ventilación', 'Aireadores con Extractor y Ventilador', 0, 0, 'Aireador 35x35 cm. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: A.3535.EVMCB
+• C/Extractor, Ventilador, Mosquitero, Sensor y Control
+• Tapa Plastica Blanca', 'https://rc-conversiones.vercel.app/images/productos/a-3535-evmcb.webp', 0),
+('A.2828.EVM', 'Aireador 28x28 cm', 'Ventilación', 'Aireadores con Extractor y Ventilador', 0, 0, 'Aireador 28x28 cm. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: A.2828.EVM
+• C/Extractor, Ventilador y Mosquitero
+• Tapa Plastica Transparente', 'https://rc-conversiones.vercel.app/images/productos/a-2828-evm.webp', 0),
+('A.3535.EMB', 'Aireador 35x35 cm - C/Extractor y Mosquitero', 'Ventilación', 'Aireadores con Extractor', 0, 0, 'Aireador 35x35 cm - C/Extractor y Mosquitero. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: A.3535.EMB
+• C/Extractor y Mosquitero
+• Tapa Plastica Blanca', 'https://rc-conversiones.vercel.app/images/productos/a-3535-emb.webp', 0),
+('A.3535.EMT', 'Aireador 35x35 cm - C/Extractor y Mosquitero', 'Ventilación', 'Aireadores con Extractor', 0, 0, 'Aireador 35x35 cm - C/Extractor y Mosquitero. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: A.3535.EMT
+• C/Extractor y Mosquitero
+• Tapa Plastica Tonalizada', 'https://rc-conversiones.vercel.app/images/productos/a-3535-emt.webp', 0),
+('A.5070.BLM', 'Aireador 50x70 cm - C/Black Out, Luz y Mosquitero', 'Ventilación', 'Aireadores con Cortina Black Out', 0, 0, 'Aireador 50x70 cm - C/Black Out, Luz y Mosquitero. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: A.5070.BLM
+• C/Black Out, Luz y Mosquitero
+• Tapa Acrilica Doble', 'https://rc-conversiones.vercel.app/images/productos/a-5070-blm.webp', 0),
+('A.4040.BLM', 'Aireador 40x40 cm - C/Black Out, Luz y Mosquitero', 'Ventilación', 'Aireadores con Cortina Black Out', 0, 0, 'Aireador 40x40 cm - C/Black Out, Luz y Mosquitero. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: A.4040.BLM
+• C/Black Out, Luz y Mosquitero
+• Tapa Acrilica Doble', 'https://rc-conversiones.vercel.app/images/productos/a-4040-blm.webp', 0),
+('A.5050.EC', 'Aireador 50X50 cm - Tapa de Expulsable Cataforesis', 'Ventilación', 'Aireadores Expulsables', 0, 0, 'Aireador 50X50 cm - Tapa de Expulsable Cataforesis. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: A.5050.EC
+• Tapa de Expulsable Cataforesis
+• Expuslable', 'https://rc-conversiones.vercel.app/images/productos/a-5050-ec.webp', 0),
+('A.2030.V', 'Aireador 20x30 cm - Tapa de Vidrio', 'Ventilación', 'Aireadores Simples de Vidrio', 0, 0, 'Aireador 20x30 cm - Tapa de Vidrio. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: A.2030.V
+• Tapa de Vidrio', 'https://rc-conversiones.vercel.app/images/productos/a-2030-v.webp', 0),
+('A.3535.V', 'Aireador 35x35 cm - Tapa de Vidrio', 'Ventilación', 'Aireadores Simples de Vidrio', 0, 0, 'Aireador 35x35 cm - Tapa de Vidrio. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: A.3535.V
+• Tapa de Vidrio', 'https://rc-conversiones.vercel.app/images/productos/a-3535-v.webp', 0),
+('A.3550.V', 'Aireador 35x50 cm - Tapa de Vidrio', 'Ventilación', 'Aireadores Simples de Vidrio', 0, 0, 'Aireador 35x50 cm - Tapa de Vidrio. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: A.3550.V
+• Tapa de Vidrio', 'https://rc-conversiones.vercel.app/images/productos/a-3550-v.webp', 0),
+('A.5050.V', 'Aireador 50x50 cm - Tapa de Vidrio', 'Ventilación', 'Aireadores Simples de Vidrio', 0, 0, 'Aireador 50x50 cm - Tapa de Vidrio. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: A.5050.V
+• Tapa de Vidrio', 'https://rc-conversiones.vercel.app/images/productos/a-5050-v.webp', 0),
+('A.2030.A', 'Aireador 20x30 cm - Tapa de Acrilico', 'Ventilación', 'Aireadores Simples de Acrilico', 0, 0, 'Aireador 20x30 cm - Tapa de Acrilico. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: A.2030.A
+• Tapa de Acrilico', 'https://rc-conversiones.vercel.app/images/productos/a-2030-a.webp', 0),
+('A.3550.A', 'Aireador 35x50 cm - Tapa de Acrilico', 'Ventilación', 'Aireadores Simples de Acrilico', 0, 0, 'Aireador 35x50 cm - Tapa de Acrilico. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: A.3550.A
+• Tapa de Acrilico', 'https://rc-conversiones.vercel.app/images/productos/a-3550-a.webp', 0),
+('A.3550.C', 'Aireador 35x50 cm - Tapa de Chapa Cataforesis', 'Ventilación', 'Aireadores Simples de Chapa', 0, 0, 'Aireador 35x50 cm - Tapa de Chapa Cataforesis. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: A.3550.C
+• Tapa de Chapa Cataforesis', 'https://rc-conversiones.vercel.app/images/productos/a-3550-c.webp', 0),
+('A.2030.ABS', 'Aireador 20x30 cm - Tapa Plastica ABS Blanca', 'Ventilación', 'Aireadores Simples de Plastico', 0, 0, 'Aireador 20x30 cm - Tapa Plastica ABS Blanca. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: A.2030.ABS
+• Tapa Plastica ABS Blanca', 'https://rc-conversiones.vercel.app/images/productos/a-2030-abs.webp', 0),
+('A.3535.MT', 'Aireador 35x35 cm - C/Mosquitero', 'Ventilación', 'Aireadores Simples de Plastico', 0, 0, 'Aireador 35x35 cm - C/Mosquitero. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: A.3535.MT
+• C/Mosquitero
+• Tapa Plastica Tonalizada', 'https://rc-conversiones.vercel.app/images/productos/a-3535-mt.webp', 0),
+('A.3535.MB', 'Aireador 35x35 cm - C/Mosquitero', 'Ventilación', 'Aireadores Simples de Plastico', 0, 0, 'Aireador 35x35 cm - C/Mosquitero. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: A.3535.MB
+• C/Mosquitero
+• Tapa Plastica Blanca', 'https://rc-conversiones.vercel.app/images/productos/a-3535-mb.webp', 0),
+('ETH.12', 'Extractor 12v Tipo Hongo 10"', 'Ventilación', 'Extractores', 0, 0, 'Extractor 12v Tipo Hongo 10". Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: ETH.12
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/eth-12.webp', 0),
+('ES.21.7', 'Extractor C/Panel Solar, Bateria e Interruptor', 'Baterías', 'Extractores', 0, 0, 'Extractor C/Panel Solar, Bateria e Interruptor. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.', '• Código: ES.21.7
+• Diametro 21,7 cm', 'https://rc-conversiones.vercel.app/images/productos/es-21-7.webp', 0),
+('EL.12', 'Extractor 12v Lateral TMC', 'Ventilación', 'Extractores', 0, 0, 'Extractor 12v Lateral TMC. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: EL.12
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/el-12.webp', 0),
+('RDN', 'Rejilla Fija ABS Doble 26x12,5 cm', 'Ventilación', 'Rejillas', 0, 0, 'Rejilla Fija ABS Doble 26x12,5 cm. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: RDN
+• NEGRA', 'https://rc-conversiones.vercel.app/images/productos/rdn.webp', 0),
+('RDB', 'Rejilla Fija ABS Doble 26x12,5 cm', 'Ventilación', 'Rejillas', 0, 0, 'Rejilla Fija ABS Doble 26x12,5 cm. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: RDB
+• BLANCA', 'https://rc-conversiones.vercel.app/images/productos/rdb.webp', 0),
+('RSN', 'Rejilla Fija ABS Simple 14,3x12,5 cm', 'Ventilación', 'Rejillas', 0, 0, 'Rejilla Fija ABS Simple 14,3x12,5 cm. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: RSN
+• NEGRA', 'https://rc-conversiones.vercel.app/images/productos/rsn.webp', 0),
+('RSB', 'Rejilla Fija ABS Simple 14,3x12,5 cm', 'Ventilación', 'Rejillas', 0, 0, 'Rejilla Fija ABS Simple 14,3x12,5 cm. Solución para favorecer ventilación y circulación de aire en el habitáculo.', '• Código: RSB
+• BLANCA', 'https://rc-conversiones.vercel.app/images/productos/rsb.webp', 0),
+('C.PA.E', 'Cerradura P/Puerta de Acceso Electronica C/Control', 'Aberturas', 'Cerraduras para Puertas de Acceso', 0, 0, 'Cerradura P/Puerta de Acceso Electronica C/Control. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: C.PA.E', 'https://rc-conversiones.vercel.app/images/productos/c-pa-e.webp', 0),
+('C.PA.R', 'Cerradura P/Puerta de acceso C/Llave y Traba Interior Tipo Picaporte', 'Aberturas', 'Cerraduras para Puertas de Acceso', 0, 0, 'Cerradura P/Puerta de acceso C/Llave y Traba Interior Tipo Picaporte. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: C.PA.R
+• REIMO
+• NEGRA', 'https://rc-conversiones.vercel.app/images/productos/c-pa-r.webp', 0),
+('C.PA.LC', 'Cerradura P/Puerta de acceso C/Llave y Traba Interior', 'Aberturas', 'Cerraduras para Puertas de Acceso', 0, 0, 'Cerradura P/Puerta de acceso C/Llave y Traba Interior. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: C.PA.LC
+• Cromada', 'https://rc-conversiones.vercel.app/images/productos/c-pa-lc.webp', 0),
+('C.PA.LN', 'Cerradura P/Puerta de acceso C/Llave y Traba Interior', 'Aberturas', 'Cerraduras para Puertas de Acceso', 0, 0, 'Cerradura P/Puerta de acceso C/Llave y Traba Interior. Componente pensado para puertas, ventanas y cerramientos de motorhomes.', '• Código: C.PA.LN
+• Negra', 'https://rc-conversiones.vercel.app/images/productos/c-pa-ln.webp', 0),
+('C.B.AI', 'Cerradura P/Baulera C/llave 12 x 9 cm - Acero Inox', 'Herrajes', 'Cerraduras para Bauleras', 0, 0, 'Cerradura P/Baulera C/llave 12 x 9 cm - Acero Inox. Herraje pensado para puertas, muebles y compartimentos del motorhome.', '• Código: C.B.AI
+• Acero Inox', 'https://rc-conversiones.vercel.app/images/productos/c-b-ai.webp', 0),
+('C.B.N', 'Cerradura P/Baulera C/llave 12 x 9 cm', 'Herrajes', 'Cerraduras para Bauleras', 0, 0, 'Cerradura P/Baulera C/llave 12 x 9 cm. Herraje pensado para puertas, muebles y compartimentos del motorhome.', '• Código: C.B.N
+• Negra', 'https://rc-conversiones.vercel.app/images/productos/c-b-n.webp', 0),
+('C.B.PE', 'Perilla P/Cerradura Baulera', 'Herrajes', 'Cerraduras para Bauleras', 0, 0, 'Perilla P/Cerradura Baulera. Herraje pensado para puertas, muebles y compartimentos del motorhome.', '• Código: C.B.PE', 'https://rc-conversiones.vercel.app/images/productos/c-b-pe.webp', 0),
+('C.LPC', 'Cerradura Levanta Piso con Llave', 'Herrajes', 'Cerradura Levantapiso', 0, 0, 'Cerradura Levanta Piso con Llave. Herraje pensado para puertas, muebles y compartimentos del motorhome.', '• Código: C.LPC', 'https://rc-conversiones.vercel.app/images/productos/c-lpc.webp', 0),
+('C.LP', 'Cerradura Levanta Piso', 'Herrajes', 'Cerradura Levantapiso', 0, 0, 'Cerradura Levanta Piso. Herraje pensado para puertas, muebles y compartimentos del motorhome.', '• Código: C.LP', 'https://rc-conversiones.vercel.app/images/productos/c-lp.webp', 0),
+('C.B.P', 'Cerradura P/Puerta Baño C/picaporte', 'Herrajes', 'Cerraduras para Baños', 0, 0, 'Cerradura P/Puerta Baño C/picaporte. Herraje pensado para puertas, muebles y compartimentos del motorhome.', '• Código: C.B.P
+• Cromada', 'https://rc-conversiones.vercel.app/images/productos/c-b-p.webp', 0),
+('C.B.E', 'Cerradura P/Puerta Baño P/Embutir', 'Herrajes', 'Cerraduras para Baños', 0, 0, 'Cerradura P/Puerta Baño P/Embutir. Herraje pensado para puertas, muebles y compartimentos del motorhome.', '• Código: C.B.E', 'https://rc-conversiones.vercel.app/images/productos/c-b-e.webp', 0),
+('C.PLT.C', 'Cerradura Push lock P/Mueble C/Tirador', 'Herrajes', 'Cerraduras para Muebles', 0, 0, 'Cerradura Push lock P/Mueble C/Tirador. Herraje pensado para puertas, muebles y compartimentos del motorhome.', '• Código: C.PLT.C
+• CROMADA', 'https://rc-conversiones.vercel.app/images/productos/c-plt-c.webp', 0),
+('C.PL.BC', 'Cerradura Push lock P/Mueble - GRANDE', 'Herrajes', 'Cerraduras para Muebles', 0, 0, 'Cerradura Push lock P/Mueble - GRANDE. Herraje pensado para puertas, muebles y compartimentos del motorhome.', '• Código: C.PL.BC
+• GRANDE
+• BRONCA CROMADA', 'https://rc-conversiones.vercel.app/images/productos/c-pl-bc.webp', 0),
+('C.PL.N', 'Cerradura Push lock P/Mueble - CHICA', 'Herrajes', 'Cerraduras para Muebles', 0, 0, 'Cerradura Push lock P/Mueble - CHICA. Herraje pensado para puertas, muebles y compartimentos del motorhome.', '• Código: C.PL.N
+• CHICA
+• NEGRA', 'https://rc-conversiones.vercel.app/images/productos/c-pl-n.webp', 0),
+('C.PL.C', 'Cerradura Push lock P/Mueble - CHICA', 'Herrajes', 'Cerraduras para Muebles', 0, 0, 'Cerradura Push lock P/Mueble - CHICA. Herraje pensado para puertas, muebles y compartimentos del motorhome.', '• Código: C.PL.C
+• CHICA
+• CROMADA', 'https://rc-conversiones.vercel.app/images/productos/c-pl-c.webp', 0),
+('BB.18.E', 'Base Butaca Giratoria 18 cm', 'Mobiliario', 'Bases de Butacas Giratorias', 0, 0, 'Base Butaca Giratoria 18 cm. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: BB.18.E
+• Base 45x34 cm
+• EXPERT', 'https://rc-conversiones.vercel.app/images/productos/bb-18-e.webp', 0),
+('BB.20.T', 'Base Butaca Giratoria 20 cm - TRANSIT', 'Mobiliario', 'Bases de Butacas Giratorias', 0, 0, 'Base Butaca Giratoria 20 cm - TRANSIT. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: BB.20.T
+• TRANSIT
+• Desde 2001 a 2015', 'https://rc-conversiones.vercel.app/images/productos/bb-20-t.webp', 0),
+('BB.195.T', 'Base Butaca Giratoria 19,5 cm - TRANSIT', 'Mobiliario', 'Bases de Butacas Giratorias', 0, 0, 'Base Butaca Giratoria 19,5 cm - TRANSIT. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: BB.195.T
+• TRANSIT
+• Desde 2016', 'https://rc-conversiones.vercel.app/images/productos/bb-195-t.webp', 0),
+('BB.20.MA', 'Base butaca Giratoria 20 cm - MASTER', 'Mobiliario', 'Bases de Butacas Giratorias', 0, 0, 'Base butaca Giratoria 20 cm - MASTER. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: BB.20.MA
+• MASTER
+• Acompañante', 'https://rc-conversiones.vercel.app/images/productos/bb-20-ma.webp', 0),
+('BB.36.DA', 'Base Butaca Giratoria 36 cm - DUCATO 1993', 'Mobiliario', 'Bases de Butacas Giratorias', 0, 0, 'Base Butaca Giratoria 36 cm - DUCATO 1993. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: BB.36.DA
+• DUCATO 1993
+• Acompañante', 'https://rc-conversiones.vercel.app/images/productos/bb-36-da.webp', 0),
+('BB.22.DA', 'Base Butaca Giratoria 22 cm - DUCATO', 'Mobiliario', 'Bases de Butacas Giratorias', 0, 0, 'Base Butaca Giratoria 22 cm - DUCATO. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: BB.22.DA
+• DUCATO
+• Hasta 2016
+• Acompañante', 'https://rc-conversiones.vercel.app/images/productos/bb-22-da.webp', 0),
+('BB.22.DJBA', 'Base Butaca Giratoria 22 cm - JUMPER/DUCATO/BOXER', 'Mobiliario', 'Bases de Butacas Giratorias', 0, 0, 'Base Butaca Giratoria 22 cm - JUMPER/DUCATO/BOXER. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: BB.22.DJBA
+• JUMPER/DUCATO/BOXER
+• 2017
+• Acompañante', 'https://rc-conversiones.vercel.app/images/productos/bb-22-djba.webp', 0),
+('BB.25.SH13A', 'Base Butaca Giratoria 25 cm - SPRINTER', 'Mobiliario', 'Bases de Butacas Giratorias', 0, 0, 'Base Butaca Giratoria 25 cm - SPRINTER. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: BB.25.SH13A
+• SPRINTER
+• Hasta 2013
+• Acompañante', 'https://rc-conversiones.vercel.app/images/productos/bb-25-sh13a.webp', 0),
+('BB.25.SD13A', 'Base Butaca Giratoria 25 cm - SPRINTER', 'Mobiliario', 'Bases de Butacas Giratorias', 0, 0, 'Base Butaca Giratoria 25 cm - SPRINTER. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: BB.25.SD13A
+• SPRINTER
+• Desde 2013
+• Acompañante', 'https://rc-conversiones.vercel.app/images/productos/bb-25-sd13a.webp', 0),
+('BB.9.SA', 'Base Butaca Giratoria 9cm - SPRINTER', 'Mobiliario', 'Bases de Butacas Giratorias', 0, 0, 'Base Butaca Giratoria 9cm - SPRINTER. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: BB.9.SA
+• SPRINTER
+• S/Cajon
+• Acompañante', 'https://rc-conversiones.vercel.app/images/productos/bb-9-sa.webp', 0),
+('BB.25.D', 'Base Butaca Giratoria 25 cm - IVECO DAYLI', 'Mobiliario', 'Bases de Butacas Giratorias', 0, 0, 'Base Butaca Giratoria 25 cm - IVECO DAYLI. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: BB.25.D
+• IVECO DAYLI
+• Acompañante', 'https://rc-conversiones.vercel.app/images/productos/bb-25-d.webp', 0),
+('BB.35.DJBC', 'Base Butaca Giratoria 3,5 cm - JUMPER/DUCATO/BOXER', 'Mobiliario', 'Bases de Butacas Giratorias', 0, 0, 'Base Butaca Giratoria 3,5 cm - JUMPER/DUCATO/BOXER. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: BB.35.DJBC
+• JUMPER/DUCATO/BOXER
+• Desde 2018/2019
+• Conductor', 'https://rc-conversiones.vercel.app/images/productos/bb-35-djbc.webp', 0),
+('BB.35.SVC', 'Base Butaca Giratoria 3,5 cm - SPRINTER/VITO Desde 2018', 'Mobiliario', 'Bases de Butacas Giratorias', 0, 0, 'Base Butaca Giratoria 3,5 cm - SPRINTER/VITO Desde 2018. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: BB.35.SVC
+• SPRINTER/VITO Desde 2018
+• Conductor', 'https://rc-conversiones.vercel.app/images/productos/bb-35-svc.webp', 0),
+('BB.18', 'Base Butaca Giratoria 18 cm', 'Mobiliario', 'Bases de Butacas Giratorias', 0, 0, 'Base Butaca Giratoria 18 cm. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: BB.18', 'https://rc-conversiones.vercel.app/images/productos/bb-18.webp', 0),
+('BB.25', 'Base Butaca Giratoria 25 cm', 'Mobiliario', 'Bases de Butacas Giratorias', 0, 0, 'Base Butaca Giratoria 25 cm. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: BB.25', 'https://rc-conversiones.vercel.app/images/productos/bb-25.webp', 0),
+('BB.27', 'Base Butaca Giratoria 27 cm', 'Mobiliario', 'Bases de Butacas Giratorias', 0, 0, 'Base Butaca Giratoria 27 cm. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: BB.27', 'https://rc-conversiones.vercel.app/images/productos/bb-27.webp', 0),
+('PM.E.BP', 'Pie de Mesa Electrico 12v C/Bandeja P/Mesa - Giro Completo 360º', 'Mobiliario', 'Pies de Mesa Electricos', 0, 0, 'Pie de Mesa Electrico 12v C/Bandeja P/Mesa - Giro Completo 360º. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: PM.E.BP
+• Giro Completo 360º', 'https://rc-conversiones.vercel.app/images/productos/pm-e-bp.webp', 0),
+('PMD.RR100', 'Pie de Mesa Simple RR100 - Elevacion Neumatica', 'Mobiliario', 'Pies de Mesa Electricos', 0, 0, 'Pie de Mesa Simple RR100 - Elevacion Neumatica. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: PMD.RR100
+• Elevacion Neumatica
+• Sobre Piso
+• 42 a 72 cm', 'https://rc-conversiones.vercel.app/images/productos/pmd-rr100.webp', 0),
+('PMD.RR110', 'Pie de Mesa Doble RR110 - Elevacion Neumatica', 'Mobiliario', 'Pies de Mesa Electricos', 0, 0, 'Pie de Mesa Doble RR110 - Elevacion Neumatica. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: PMD.RR110
+• Elevacion Neumatica
+• Sobre Piso
+• 42 a 72 cm', 'https://rc-conversiones.vercel.app/images/productos/pmd-rr110.webp', 0),
+('PMS.RM01', 'Pie de Mesa Simple RM01 - Elevacion Mecanica', 'Mobiliario', 'Pies de Mesa Mecanicos', 0, 0, 'Pie de Mesa Simple RM01 - Elevacion Mecanica. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: PMS.RM01
+• Elevacion Mecanica
+• Sobre Piso
+• 42 a 72 cm', 'https://rc-conversiones.vercel.app/images/productos/pms-rm01.webp', 0),
+('PMS.RM02', 'Pie de Mesa Simple RM02 - Elevacion Mecanica', 'Mobiliario', 'Pies de Mesa Mecanicos', 0, 0, 'Pie de Mesa Simple RM02 - Elevacion Mecanica. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: PMS.RM02
+• Elevacion Mecanica
+• Bajo Piso
+• 34 a 65 cm', 'https://rc-conversiones.vercel.app/images/productos/pms-rm02.webp', 0),
+('PMS.RM03', 'Pie de Mesa Simple RM03 - Elevacion Mecanica', 'Mobiliario', 'Pies de Mesa Mecanicos', 0, 0, 'Pie de Mesa Simple RM03 - Elevacion Mecanica. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: PMS.RM03
+• Elevacion Mecanica
+• Bajo Piso
+• Desmontable 36,5 a 69 cm', 'https://rc-conversiones.vercel.app/images/productos/pms-rm03.webp', 0),
+('PMD.RM04', 'Pie de Mesa Doble RM04 - Elevacion Mecanica', 'Mobiliario', 'Pies de Mesa Mecanicos', 0, 0, 'Pie de Mesa Doble RM04 - Elevacion Mecanica. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: PMD.RM04
+• Elevacion Mecanica
+• Sobre Piso
+• 42 a 72 cm', 'https://rc-conversiones.vercel.app/images/productos/pmd-rm04.webp', 0),
+('PMD.RM05', 'Pie de Mesa Doble RM05 - Elevacion Mecanica', 'Mobiliario', 'Pies de Mesa Mecanicos', 0, 0, 'Pie de Mesa Doble RM05 - Elevacion Mecanica. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: PMD.RM05
+• Elevacion Mecanica
+• Bajo Piso
+• 34 a 66,5 cm', 'https://rc-conversiones.vercel.app/images/productos/pmd-rm05.webp', 0),
+('PMD.RM09', 'Pie de Mesa Doble  RM09 - Elevacion Mecanica', 'Mobiliario', 'Pies de Mesa Mecanicos', 0, 0, 'Pie de Mesa Doble  RM09 - Elevacion Mecanica. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: PMD.RM09
+• Elevacion Mecanica
+• Bajo Piso
+• Desmontable 36,5 a 69 cm', 'https://rc-conversiones.vercel.app/images/productos/pmd-rm09.webp', 0),
+('PMS.RM06', 'Pie de Mesa Simple RM06 - Elevacion Manual', 'Mobiliario', 'Pies de Mesa Manuales', 0, 0, 'Pie de Mesa Simple RM06 - Elevacion Manual. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: PMS.RM06
+• Elevacion Manual
+• Sobre Piso
+• 42 a 72 cm', 'https://rc-conversiones.vercel.app/images/productos/pms-rm06.webp', 0),
+('PMS.RM07', 'Pie de Mesa Simple RM07 - Elevacion Manual', 'Mobiliario', 'Pies de Mesa Manuales', 0, 0, 'Pie de Mesa Simple RM07 - Elevacion Manual. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: PMS.RM07
+• Elevacion Manual
+• Bajo Piso
+• 33,5 a 65,5 cm', 'https://rc-conversiones.vercel.app/images/productos/pms-rm07.webp', 0),
+('PMS.RM08', 'Pie de Mesa Simple RM08 - Elevacion Manual', 'Mobiliario', 'Pies de Mesa Manuales', 0, 0, 'Pie de Mesa Simple RM08 - Elevacion Manual. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: PMS.RM08
+• Elevacion Manual
+• Bajo Piso
+• Desmontable
+• 36 a 68,5 cm', 'https://rc-conversiones.vercel.app/images/productos/pms-rm08.webp', 0),
+('PM.FC', 'Pie de Mesa Fijo Central Sobre Piso - Desmontable', 'Mobiliario', 'Pies de Mesa Fijos', 0, 0, 'Pie de Mesa Fijo Central Sobre Piso - Desmontable. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: PM.FC
+• Desmontable
+• ALUMINIO PULIDO', 'https://rc-conversiones.vercel.app/images/productos/pm-fc.webp', 0),
+('PM.FC.AP', 'Pie de Mesa Fijo Central Bajo Piso - Desmontable', 'Mobiliario', 'Pies de Mesa Fijos', 0, 0, 'Pie de Mesa Fijo Central Bajo Piso - Desmontable. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: PM.FC.AP
+• Desmontable
+• ALUMINIO PULIDO', 'https://rc-conversiones.vercel.app/images/productos/pm-fc-ap.webp', 0),
+('BG.MP', 'Brazo P/Mesa - Giratorio Articulado Aluminio', 'Mobiliario', 'Pies de Mesa Fijos', 0, 0, 'Brazo P/Mesa - Giratorio Articulado Aluminio. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: BG.MP
+• Giratorio Articulado Aluminio
+• PREMIUM', 'https://rc-conversiones.vercel.app/images/productos/bg-mp.webp', 0),
+('BG.M', 'Brazo P/Mesa - Giratorio Articulado Aluminio', 'Mobiliario', 'Pies de Mesa Fijos', 0, 0, 'Brazo P/Mesa - Giratorio Articulado Aluminio. Componente pensado para optimizar el mobiliario y el aprovechamiento del espacio interior.', '• Código: BG.M
+• Giratorio Articulado Aluminio', 'https://rc-conversiones.vercel.app/images/productos/bg-m.webp', 0),
+('ER.S.N', 'Escalon Rebatible Simple P/Puerta Ingreso', 'Seguridad', 'Escalones', 0, 0, 'Escalon Rebatible Simple P/Puerta Ingreso. Accesorio destinado a sumar practicidad y seguridad en el equipamiento del vehículo.', '• Código: ER.S.N
+• Negro', 'https://rc-conversiones.vercel.app/images/productos/er-s-n.webp', 0),
+('M18020', 'Matafuego Tipo Compacto C/Sopore', 'Seguridad', 'Matafuegos', 0, 0, 'Matafuego Tipo Compacto C/Sopore. Accesorio destinado a sumar practicidad y seguridad en el equipamiento del vehículo.', '• Código: M18020
+• 1kg
+• 10,9 x 24 x 10,4 cm', 'https://rc-conversiones.vercel.app/images/productos/m18020.webp', 0),
+('TT.112.G', 'Tapa de Tanque de Gasoil o Nafta C/Traba 1 1/2"- BLANCA C/ROJO', 'Seguridad', 'Tapas de Tanque de Combustible', 0, 0, 'Tapa de Tanque de Gasoil o Nafta C/Traba 1 1/2"- BLANCA C/ROJO. Accesorio destinado a sumar practicidad y seguridad en el equipamiento del vehículo.', '• Código: TT.112.G', 'https://rc-conversiones.vercel.app/images/productos/tt-112-g.webp', 0),
+('BC.20', 'Bidon Combustible 20L', 'Seguridad', 'Bidones para Combustible', 0, 0, 'Bidon Combustible 20L. Accesorio destinado a sumar practicidad y seguridad en el equipamiento del vehículo.', '• Código: BC.20
+• C/Venteo Pico Vertedor y Cierre Automatico', 'https://rc-conversiones.vercel.app/images/productos/bc-20.webp', 0),
+('BC.10', 'Bidon Combustible 10L', 'Seguridad', 'Bidones para Combustible', 0, 0, 'Bidon Combustible 10L. Accesorio destinado a sumar practicidad y seguridad en el equipamiento del vehículo.', '• Código: BC.10
+• C/Venteo Pico Vertedor y Cierre Automatico', 'https://rc-conversiones.vercel.app/images/productos/bc-10.webp', 0),
+('BC.5', 'Bidon Combustible 5L', 'Seguridad', 'Bidones para Combustible', 0, 0, 'Bidon Combustible 5L. Accesorio destinado a sumar practicidad y seguridad en el equipamiento del vehículo.', '• Código: BC.5
+• C/Venteo Pico Vertedor y Cierre Automatico', 'https://rc-conversiones.vercel.app/images/productos/bc-5.webp', 0),
+('LS.5000', 'Linga/Suncho 2" con Cricket', 'Seguridad', 'Lingas y Sunchos', 0, 0, 'Linga/Suncho 2" con Cricket. Accesorio destinado a sumar practicidad y seguridad en el equipamiento del vehículo.', '• Código: LS.5000
+• 800x5 cm
+• Hasta 5000kg', 'https://rc-conversiones.vercel.app/images/productos/ls-5000.webp', 0),
+('LS.800', 'Linga/Suncho 1" con Cricket', 'Seguridad', 'Lingas y Sunchos', 0, 0, 'Linga/Suncho 1" con Cricket. Accesorio destinado a sumar practicidad y seguridad en el equipamiento del vehículo.', '• Código: LS.800
+• 300x2,5 cm
+• Hasta 800kg', 'https://rc-conversiones.vercel.app/images/productos/ls-800.webp', 0),
+('TI.LC.B', 'Tapa Estanca Plastica de Inspeccion C/Llave - CHICA', 'Sanitarios', 'Tapas de Inspección - Con Llave', 0, 0, 'Tapa Estanca Plastica de Inspeccion C/Llave - CHICA. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: TI.LC.B
+• CHICA
+• 27x37,5 cm', 'https://rc-conversiones.vercel.app/images/productos/ti-lc-b.webp', 0),
+('TI.LM.B', 'Tapa Estanca Plastica de Inspeccion C/Llave - MEDIANA', 'Sanitarios', 'Tapas de Inspección - Con Llave', 0, 0, 'Tapa Estanca Plastica de Inspeccion C/Llave - MEDIANA. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: TI.LM.B
+• MEDIANA
+• 44x31,5 cm', 'https://rc-conversiones.vercel.app/images/productos/ti-lm-b.webp', 0),
+('TI.LG.B', 'Tapa Estanca Plastica de Inspeccion C/Llave - GRANDE', 'Sanitarios', 'Tapas de Inspección - Con Llave', 0, 0, 'Tapa Estanca Plastica de Inspeccion C/Llave - GRANDE. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: TI.LG.B
+• GRANDE
+• 60,5x35 cm', 'https://rc-conversiones.vercel.app/images/productos/ti-lg-b.webp', 0),
+('TI.LVC.B', 'Tapa Estanca Plastica de Inspeccion C/Llave + Ventana Corrediza', 'Sanitarios', 'Tapas de Inspección - Con Llave', 0, 0, 'Tapa Estanca Plastica de Inspeccion C/Llave + Ventana Corrediza. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: TI.LVC.B
+• 15,1x16,6 cm', 'https://rc-conversiones.vercel.app/images/productos/ti-lvc-b.webp', 0),
+('TI.LVM.B', 'Tapa Estanca Plastica de Inspeccion C/Llave + Ventana Corrediza', 'Sanitarios', 'Tapas de Inspección - Con Llave', 0, 0, 'Tapa Estanca Plastica de Inspeccion C/Llave + Ventana Corrediza. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: TI.LVM.B
+• 16,5x19,3 cm', 'https://rc-conversiones.vercel.app/images/productos/ti-lvm-b.webp', 0),
+('TI.TC.B', 'Tapa Estanca Plastica de Inspeccion C/1 Traba', 'Sanitarios', 'Tapas de Inspección - Con Traba', 0, 0, 'Tapa Estanca Plastica de Inspeccion C/1 Traba. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: TI.TC.B
+• CHICA 27x37,5x3 cm', 'https://rc-conversiones.vercel.app/images/productos/ti-tc-b.webp', 0),
+('TI.TM.B', 'Tapa Estanca Plastica de Inspeccion C/2 Traba MEDIANA 44x31,5x4 cm', 'Sanitarios', 'Tapas de Inspección - Con Traba', 0, 0, 'Tapa Estanca Plastica de Inspeccion C/2 Traba MEDIANA 44x31,5x4 cm. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: TI.TM.B
+• 44x31,5x4 cm', 'https://rc-conversiones.vercel.app/images/productos/ti-tm-b.webp', 0),
+('TI.TG.B', 'Tapa Estanca Plastica de Inspeccion C/2 Traba GRANDE 60,5x35x4 cm', 'Sanitarios', 'Tapas de Inspección - Con Traba', 0, 0, 'Tapa Estanca Plastica de Inspeccion C/2 Traba GRANDE 60,5x35x4 cm. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: TI.TG.B
+• 60,5x35x4 cm', 'https://rc-conversiones.vercel.app/images/productos/ti-tg-b.webp', 0),
+('TI.4.BC', 'Tapa Estanca Plastica de Inspeccion Redonda 4"', 'Sanitarios', 'Tapas de Inspección - Simples', 0, 0, 'Tapa Estanca Plastica de Inspeccion Redonda 4". Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: TI.4.BC
+• BLANCA', 'https://rc-conversiones.vercel.app/images/productos/ti-4-bc.webp', 0),
+('TI.4.NC', 'Tapa Estanca Plastica de Inspeccion Redonda 4"', 'Sanitarios', 'Tapas de Inspección - Simples', 0, 0, 'Tapa Estanca Plastica de Inspeccion Redonda 4". Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: TI.4.NC
+• NEGRA', 'https://rc-conversiones.vercel.app/images/productos/ti-4-nc.webp', 0),
+('TI.6.BC', 'Tapa Estanca Plastica de Inspeccion Redonda 6"', 'Sanitarios', 'Tapas de Inspección - Simples', 0, 0, 'Tapa Estanca Plastica de Inspeccion Redonda 6". Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: TI.6.BC
+• BLANCA', 'https://rc-conversiones.vercel.app/images/productos/ti-6-bc.webp', 0),
+('BBC12077', 'Box de Baño Completo', 'Sanitarios', 'Modulos de Baño - Fibra de Vidrio', 0, 0, 'Box de Baño Completo. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: BBC12077
+• 120  x 77 cm', 'https://rc-conversiones.vercel.app/images/productos/bbc12077.webp', 0),
+('BBC11077', 'Box de Baño Completo', 'Sanitarios', 'Modulos de Baño - Fibra de Vidrio', 0, 0, 'Box de Baño Completo. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: BBC11077
+• 110 x 77 cm', 'https://rc-conversiones.vercel.app/images/productos/bbc11077.webp', 0),
+('BBC8292', 'Box de Baño Completo', 'Sanitarios', 'Modulos de Baño - Fibra de Vidrio', 0, 0, 'Box de Baño Completo. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: BBC8292
+• 82 x 92 cm', 'https://rc-conversiones.vercel.app/images/productos/bbc8292.webp', 0),
+('BBC7090', 'Box de Baño Completo', 'Sanitarios', 'Modulos de Baño - Fibra de Vidrio', 0, 0, 'Box de Baño Completo. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: BBC7090
+• 70 x 90 cm', 'https://rc-conversiones.vercel.app/images/productos/bbc7090.webp', 0),
+('BBM12077', 'Box de Baño Medio', 'Sanitarios', 'Modulos de Baño - Fibra de Vidrio', 0, 0, 'Box de Baño Medio. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: BBM12077
+• 120  x 77 cm', 'https://rc-conversiones.vercel.app/images/productos/bbm12077.webp', 0),
+('BBM11077', 'Box de Baño Medio', 'Sanitarios', 'Modulos de Baño - Fibra de Vidrio', 0, 0, 'Box de Baño Medio. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: BBM11077
+• 110 x 77 cm', 'https://rc-conversiones.vercel.app/images/productos/bbm11077.webp', 0),
+('BBM8292', 'Box de Baño Medio', 'Sanitarios', 'Modulos de Baño - Fibra de Vidrio', 0, 0, 'Box de Baño Medio. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: BBM8292
+• 82 x 92 cm', 'https://rc-conversiones.vercel.app/images/productos/bbm8292.webp', 0),
+('BBM7090', 'Box de Baño Medio', 'Sanitarios', 'Modulos de Baño - Fibra de Vidrio', 0, 0, 'Box de Baño Medio. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: BBM7090
+• 70 x 90 cm', 'https://rc-conversiones.vercel.app/images/productos/bbm7090.webp', 0),
+('BBM8670', 'Box de Baño Medio', 'Sanitarios', 'Modulos de Baño - Fibra de Vidrio', 0, 0, 'Box de Baño Medio. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: BBM8670
+• 86 x 70 x 80 cm', 'https://rc-conversiones.vercel.app/images/productos/bbm8670.webp', 0),
+('PFV', 'Puerta de Fibra de Vidrio', 'Sanitarios', 'Modulos de Baño - Fibra de Vidrio', 0, 0, 'Puerta de Fibra de Vidrio. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: PFV
+• Marco 167 x 55 cm
+• Hoja 155 x 45 cm', 'https://rc-conversiones.vercel.app/images/productos/pfv.webp', 0),
+('PD.6060', 'Piso de Ducha 60x60x6 cm', 'Sanitarios', 'Pisos/Receptaculos de Ducha', 0, 0, 'Piso de Ducha 60x60x6 cm. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: PD.6060
+• 60x60x6 cm', 'https://rc-conversiones.vercel.app/images/productos/pd-6060.webp', 0),
+('PD.7070', 'Piso de Ducha 70x70x8 cm', 'Sanitarios', 'Pisos/Receptaculos de Ducha', 0, 0, 'Piso de Ducha 70x70x8 cm. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: PD.7070
+• 70x70x8 cm', 'https://rc-conversiones.vercel.app/images/productos/pd-7070.webp', 0),
+('PD.7575', 'Piso de Ducha 75x75x8 cm', 'Sanitarios', 'Pisos/Receptaculos de Ducha', 0, 0, 'Piso de Ducha 75x75x8 cm. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: PD.7575
+• 75x75x8 cm', 'https://rc-conversiones.vercel.app/images/productos/pd-7575.webp', 0),
+('PD.8080', 'Piso de Ducha 80x80x12 cm', 'Sanitarios', 'Pisos/Receptaculos de Ducha', 0, 0, 'Piso de Ducha 80x80x12 cm. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: PD.8080
+• 80x80x12 cm', 'https://rc-conversiones.vercel.app/images/productos/pd-8080.webp', 0),
+('PD.9090', 'Piso de Ducha 90x90x8 cm', 'Sanitarios', 'Pisos/Receptaculos de Ducha', 0, 0, 'Piso de Ducha 90x90x8 cm. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: PD.9090
+• 90x90x8 cm', 'https://rc-conversiones.vercel.app/images/productos/pd-9090.webp', 0),
+('PDC.8080', 'Piso de Ducha Curvo 80x80x8 cm', 'Sanitarios', 'Pisos/Receptaculos de Ducha', 0, 0, 'Piso de Ducha Curvo 80x80x8 cm. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: PDC.8080
+• 80x80x8 cm', 'https://rc-conversiones.vercel.app/images/productos/pdc-8080.webp', 0),
+('PDC.9090', 'Piso de Ducha Curvo 90x90x6 cm', 'Sanitarios', 'Pisos/Receptaculos de Ducha', 0, 0, 'Piso de Ducha Curvo 90x90x6 cm. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: PDC.9090
+• 90x90x6 cm', 'https://rc-conversiones.vercel.app/images/productos/pdc-9090.webp', 0),
+('PD.10075', 'Piso de Ducha 100x75 cm', 'Sanitarios', 'Pisos/Receptaculos de Ducha', 0, 0, 'Piso de Ducha 100x75 cm. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: PD.10075
+• 100x75 cm', 'https://rc-conversiones.vercel.app/images/productos/pd-10075.webp', 0),
+('PD.12070', 'Piso de Ducha 120x70x6 cm', 'Sanitarios', 'Pisos/Receptaculos de Ducha', 0, 0, 'Piso de Ducha 120x70x6 cm. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: PD.12070
+• 120x70x6 cm', 'https://rc-conversiones.vercel.app/images/productos/pd-12070.webp', 0),
+('PD.12080', 'Piso de Ducha 120x80x6 cm', 'Sanitarios', 'Pisos/Receptaculos de Ducha', 0, 0, 'Piso de Ducha 120x80x6 cm. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: PD.12080
+• 120x80x6 cm', 'https://rc-conversiones.vercel.app/images/productos/pd-12080.webp', 0),
+('IE.G.12', 'Inodoro Electrico 12v TMC - GRANDE', 'Sanitarios', 'Inodoros Electricos 12v o 24v - TMC', 0, 0, 'Inodoro Electrico 12v TMC - GRANDE. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IE.G.12
+• GRANDE', 'https://rc-conversiones.vercel.app/images/productos/ie-g-12.webp', 0),
+('IE.C.12', 'Inodoro Electrico 12v TMC - CHICO', 'Sanitarios', 'Inodoros Electricos 12v o 24v - TMC', 0, 0, 'Inodoro Electrico 12v TMC - CHICO. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IE.C.12
+• CHICO', 'https://rc-conversiones.vercel.app/images/productos/ie-c-12.webp', 0),
+('IE.TCA.12', 'Inodoro Electrico 12v TMC - TIPO CASA ALTO', 'Sanitarios', 'Inodoros Electricos 12v o 24v - TMC', 0, 0, 'Inodoro Electrico 12v TMC - TIPO CASA ALTO. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IE.TCA.12
+• TIPO CASA ALTO', 'https://rc-conversiones.vercel.app/images/productos/ie-tca-12.webp', 0),
+('IE.TCB.12', 'Inodoro Electrico 12v TMC - TIPO CASA BAJO', 'Sanitarios', 'Inodoros Electricos 12v o 24v - TMC', 0, 0, 'Inodoro Electrico 12v TMC - TIPO CASA BAJO. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IE.TCB.12
+• TIPO CASA BAJO', 'https://rc-conversiones.vercel.app/images/productos/ie-tcb-12.webp', 0),
+('IE.G.24', 'Inodoro Electrico 24v TMC - GRANDE', 'Sanitarios', 'Inodoros Electricos 12v o 24v - TMC', 0, 0, 'Inodoro Electrico 24v TMC - GRANDE. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IE.G.24
+• GRANDE', 'https://rc-conversiones.vercel.app/images/productos/ie-g-24.webp', 0),
+('IE.CS.12', 'Inodoro Electrico 12v SEAFLO - Redondo', 'Sanitarios', 'Inodoros Electricos 12v o 24v - SEAFLO', 0, 0, 'Inodoro Electrico 12v SEAFLO - Redondo. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IE.CS.12
+• Redondo', 'https://rc-conversiones.vercel.app/images/productos/ie-cs-12.webp', 0),
+('IE.GS.12', 'Inodoro Electrico 12v SEAFLO - Ovalado', 'Sanitarios', 'Inodoros Electricos 12v o 24v - SEAFLO', 0, 0, 'Inodoro Electrico 12v SEAFLO - Ovalado. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IE.GS.12
+• Ovalado', 'https://rc-conversiones.vercel.app/images/productos/ie-gs-12.webp', 0),
+('IE.TCS.12', 'Inodoro Electrico 12v SEAFLO - Ovalado Silencioso TIPO CASA', 'Sanitarios', 'Inodoros Electricos 12v o 24v - SEAFLO', 0, 0, 'Inodoro Electrico 12v SEAFLO - Ovalado Silencioso TIPO CASA. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IE.TCS.12
+• Ovalado Silencioso TIPO CASA', 'https://rc-conversiones.vercel.app/images/productos/ie-tcs-12.webp', 0),
+('IP.TH.BR', 'Inodoro C/Pedal THETFORD BRAVURA', 'Sanitarios', 'Inodoros a Pedal', 0, 0, 'Inodoro C/Pedal THETFORD BRAVURA. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IP.TH.BR', 'https://rc-conversiones.vercel.app/images/productos/ip-th-br.webp', 0),
+('IP.TH.A', 'Inodoro C/Pedal THETFORD AQUA MAGIC VI ALTO', 'Sanitarios', 'Inodoros a Pedal', 0, 0, 'Inodoro C/Pedal THETFORD AQUA MAGIC VI ALTO. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IP.TH.A
+• Blanco', 'https://rc-conversiones.vercel.app/images/productos/ip-th-a.webp', 0),
+('IP.TH.B', 'Inodoro C/Pedal THETFORD AQUA MAGIC VI BAJO - Beige', 'Sanitarios', 'Inodoros a Pedal', 0, 0, 'Inodoro C/Pedal THETFORD AQUA MAGIC VI BAJO - Beige. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IP.TH.B
+• Beige', 'https://rc-conversiones.vercel.app/images/productos/ip-th-b.webp', 0),
+('IP.P', 'Inodoro C/Pedal Practitoilet', 'Sanitarios', 'Inodoros a Pedal', 0, 0, 'Inodoro C/Pedal Practitoilet. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IP.P', 'https://rc-conversiones.vercel.app/images/productos/ip-p.webp', 0),
+('IP.BP', 'Brida Plastica P/Inodoro a Pedal Practitoilet', 'Sanitarios', 'Inodoros a Pedal', 0, 0, 'Brida Plastica P/Inodoro a Pedal Practitoilet. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IP.BP', 'https://rc-conversiones.vercel.app/images/productos/ip-bp.webp', 0),
+('IP.S.D', 'Inodoro C/Pedal SEAFLO + Bidet Duchador', 'Sanitarios', 'Inodoros a Pedal', 0, 0, 'Inodoro C/Pedal SEAFLO + Bidet Duchador. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IP.S.D', 'https://rc-conversiones.vercel.app/images/productos/ip-s-d.webp', 0),
+('IP.S', 'Inodoro C/Pedal SEAFLO', 'Sanitarios', 'Inodoros a Pedal', 0, 0, 'Inodoro C/Pedal SEAFLO. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IP.S', 'https://rc-conversiones.vercel.app/images/productos/ip-s.webp', 0),
+('IP.BS', 'Brida Plastica P/Inodoro a Pedal SEAFLO', 'Sanitarios', 'Inodoros a Pedal', 0, 0, 'Brida Plastica P/Inodoro a Pedal SEAFLO. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IP.BS', 'https://rc-conversiones.vercel.app/images/productos/ip-bs.webp', 0),
+('IQC.22.G', 'Inodoro Quimico Cassette 22L Giratorio C/Piston', 'Sanitarios', 'Inodoros a Quimicos a Cassette', 0, 0, 'Inodoro Quimico Cassette 22L Giratorio C/Piston. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IQC.22.G
+• 22L', 'https://rc-conversiones.vercel.app/images/productos/iqc-22-g.webp', 0),
+('IQC.24', 'Inodoro Quimico Cassette 24L C/Piston', 'Sanitarios', 'Inodoros a Quimicos a Cassette', 0, 0, 'Inodoro Quimico Cassette 24L C/Piston. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IQC.24
+• 24L', 'https://rc-conversiones.vercel.app/images/productos/iqc-24.webp', 0),
+('IQ.20.P', 'Inodoro Quimico Practipotty 20L C/Piston', 'Sanitarios', 'Inodoros Quimicos', 0, 0, 'Inodoro Quimico Practipotty 20L C/Piston. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IQ.20.P
+• 20L', 'https://rc-conversiones.vercel.app/images/productos/iq-20-p.webp', 0),
+('IQ.20.FD', 'Inodoro Quimico Practipotty 20L Diagonal C/Fuelle', 'Sanitarios', 'Inodoros Quimicos', 0, 0, 'Inodoro Quimico Practipotty 20L Diagonal C/Fuelle. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IQ.20.FD
+• 20L', 'https://rc-conversiones.vercel.app/images/productos/iq-20-fd.webp', 0),
+('IQ.20.F', 'Inodoro Quimico Practipotty 20L C/Fuelle', 'Sanitarios', 'Inodoros Quimicos', 0, 0, 'Inodoro Quimico Practipotty 20L C/Fuelle. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IQ.20.F
+• 20L', 'https://rc-conversiones.vercel.app/images/productos/iq-20-f.webp', 0),
+('IQ.10.F', 'Inodoro Quimico Practipotty 10L C/Fuelle', 'Sanitarios', 'Inodoros Quimicos', 0, 0, 'Inodoro Quimico Practipotty 10L C/Fuelle. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IQ.10.F
+• 10L', 'https://rc-conversiones.vercel.app/images/productos/iq-10-f.webp', 0),
+('IQ.22.S', 'Inodoro Quimico SEAFLO 22L C/Piston, Pico Vertedor, Medidor y Porta Papel Higienico', 'Sanitarios', 'Inodoros Quimicos SEAFLO', 0, 0, 'Inodoro Quimico SEAFLO 22L C/Piston, Pico Vertedor, Medidor y Porta Papel Higienico. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IQ.22.S
+• 22L', 'https://rc-conversiones.vercel.app/images/productos/iq-22-s.webp', 0),
+('IQ.20.S', 'Inodoro Quimico SEAFLO 20L C/Piston', 'Sanitarios', 'Inodoros Quimicos SEAFLO', 0, 0, 'Inodoro Quimico SEAFLO 20L C/Piston. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IQ.20.S
+• 20L', 'https://rc-conversiones.vercel.app/images/productos/iq-20-s.webp', 0),
+('IQ.18.S', 'Inodoro Quimico FIVE OCEANS 18L C/Piston, Pico Vertedor y Medidor', 'Sanitarios', 'Inodoros Quimicos SEAFLO', 0, 0, 'Inodoro Quimico FIVE OCEANS 18L C/Piston, Pico Vertedor y Medidor. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: IQ.18.S
+• 18L', 'https://rc-conversiones.vercel.app/images/productos/iq-18-s.webp', 0),
+('D.1.F', 'Disgregante Liquido FABA 1L - P/Aguas Negras', 'Sanitarios', 'Disgregantes para Aguas Negras', 0, 0, 'Disgregante Liquido FABA 1L - P/Aguas Negras. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: D.1.F
+• P/Aguas Negras', 'https://rc-conversiones.vercel.app/images/productos/d-1-f.webp', 0),
+('D.1.T', 'Disgregante Liquido TEC 1L - P/Aguas Negras', 'Sanitarios', 'Disgregantes para Aguas Negras', 0, 0, 'Disgregante Liquido TEC 1L - P/Aguas Negras. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: D.1.T
+• P/Aguas Negras', 'https://rc-conversiones.vercel.app/images/productos/d-1-t.webp', 0),
+('B.U', 'Bidet Universal Adaptable - Frio-Calor', 'Sanitarios', 'Bidets', 0, 0, 'Bidet Universal Adaptable - Frio-Calor. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: B.U
+• Frio-Calor', 'https://rc-conversiones.vercel.app/images/productos/b-u.webp', 0),
+('DE.FCM.N', 'Duchador Exterior Frio-Calor NUOVA - Monocomando', 'Sanitarios', 'Duchadores para Exterior', 0, 0, 'Duchador Exterior Frio-Calor NUOVA - Monocomando. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: DE.FCM.N
+• Monocomando
+• Manguera 3m', 'https://rc-conversiones.vercel.app/images/productos/de-fcm-n.webp', 0),
+('DE.FC.S', 'Duchador Exterior Frio-Calor SEAFLO - C/Mezcladora', 'Sanitarios', 'Duchadores para Exterior', 0, 0, 'Duchador Exterior Frio-Calor SEAFLO - C/Mezcladora. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: DE.FC.S
+• C/Mezcladora
+• NEGRO
+• Manguera 3m', 'https://rc-conversiones.vercel.app/images/productos/de-fc-s.webp', 0),
+('DE.FC.D', 'Duchador Exterior Frio-Calor DURA - C/Mezcladora', 'Sanitarios', 'Duchadores para Exterior', 0, 0, 'Duchador Exterior Frio-Calor DURA - C/Mezcladora. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: DE.FC.D
+• C/Mezcladora
+• Blanco', 'https://rc-conversiones.vercel.app/images/productos/de-fc-d.webp', 0),
+('DE.F.N', 'Duchador Exterior Frio NUOVA - C/Corte', 'Sanitarios', 'Duchadores para Exterior', 0, 0, 'Duchador Exterior Frio NUOVA - C/Corte. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: DE.F.N
+• C/Corte
+• Manguera 3m', 'https://rc-conversiones.vercel.app/images/productos/de-f-n.webp', 0),
+('DE.S.20', 'Duchador Exterior SOLAR 20L P/Colgar', 'Sanitarios', 'Duchadores para Exterior', 0, 0, 'Duchador Exterior SOLAR 20L P/Colgar. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: DE.S.20
+• 20L', 'https://rc-conversiones.vercel.app/images/productos/de-s-20.webp', 0),
+('D.G.C', 'Duchador Interior C/Gatillo ABS C/Manguera - Cromado', 'Sanitarios', 'Duchadores para Interior', 0, 0, 'Duchador Interior C/Gatillo ABS C/Manguera - Cromado. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: D.G.C
+• Cromado', 'https://rc-conversiones.vercel.app/images/productos/d-g-c.webp', 0),
+('D.C.C', 'Duchador Interior C/corte ABS C/Manguera - Cromado', 'Sanitarios', 'Duchadores para Interior', 0, 0, 'Duchador Interior C/corte ABS C/Manguera - Cromado. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: D.C.C
+• Cromado', 'https://rc-conversiones.vercel.app/images/productos/d-c-c.webp', 0),
+('GM.DA.N', 'Grifería Monocomando C/Duchador Abajo C/Canilla - MOZART', 'Sanitarios', 'Completas Canilla + Duchador', 0, 0, 'Grifería Monocomando C/Duchador Abajo C/Canilla - MOZART. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: GM.DA.N
+• MOZART
+• ABS NEGRA', 'https://rc-conversiones.vercel.app/images/productos/gm-da-n.webp', 0),
+('GM.DA.C', 'Grifería Monocomando C/Duchador Abajo C/Canilla - MOZART', 'Sanitarios', 'Completas Canilla + Duchador', 0, 0, 'Grifería Monocomando C/Duchador Abajo C/Canilla - MOZART. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: GM.DA.C
+• MOZART
+• ABS CROMADA', 'https://rc-conversiones.vercel.app/images/productos/gm-da-c.webp', 0),
+('GM.DAR.N', 'Grifería Monocomando C/Duchador Arriba - MOZART', 'Sanitarios', 'Completas Canilla + Duchador', 0, 0, 'Grifería Monocomando C/Duchador Arriba - MOZART. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: GM.DAR.N
+• MOZART
+• ABS NEGRA', 'https://rc-conversiones.vercel.app/images/productos/gm-dar-n.webp', 0),
+('GM.DAR.C', 'Grifería Monocomando C/Duchador Arriba - MOZART', 'Sanitarios', 'Completas Canilla + Duchador', 0, 0, 'Grifería Monocomando C/Duchador Arriba - MOZART. Producto destinado al equipamiento sanitario y de baño del motorhome.', '• Código: GM.DAR.C
+• MOZART
+• ABS CROMADA', 'https://rc-conversiones.vercel.app/images/productos/gm-dar-c.webp', 0),
+('CC.RM.B', 'Canilla P/Cocina Rebatible C/mezcladora - BRONCE CROMADO', 'Grifería', 'Canillas Rebatibles', 0, 0, 'Canilla P/Cocina Rebatible C/mezcladora - BRONCE CROMADO. Accesorio para instalaciones de agua, cocina o baño en espacios compactos.', '• Código: CC.RM.B
+• BRONCE CROMADO', 'https://rc-conversiones.vercel.app/images/productos/cc-rm-b.webp', 0),
+('CC.R.B', 'Canilla P/Cocina Rebatible - BRONCE CROMADO', 'Grifería', 'Canillas Rebatibles', 0, 0, 'Canilla P/Cocina Rebatible - BRONCE CROMADO. Accesorio para instalaciones de agua, cocina o baño en espacios compactos.', '• Código: CC.R.B
+• BRONCE CROMADO', 'https://rc-conversiones.vercel.app/images/productos/cc-r-b.webp', 0),
+('BA.SH.12', 'Bomba de agua SHURFLO 12v', 'Agua', 'Bombas de Agua SHURFLO', 0, 0, 'Bomba de agua SHURFLO 12v. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: BA.SH.12
+• 11.3L
+• Automatica', 'https://rc-conversiones.vercel.app/images/productos/ba-sh-12.webp', 0),
+('BA.SH.24', 'Bomba de agua SHURFLO 24v', 'Agua', 'Bombas de Agua SHURFLO', 0, 0, 'Bomba de agua SHURFLO 24v. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: BA.SH.24
+• 11.3L
+• Automatica', 'https://rc-conversiones.vercel.app/images/productos/ba-sh-24.webp', 0),
+('BA.SH.F', 'Filtro P/Bomba de Agua SHURFLO', 'Agua', 'Bombas de Agua SHURFLO', 0, 0, 'Filtro P/Bomba de Agua SHURFLO. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: BA.SH.F', 'https://rc-conversiones.vercel.app/images/productos/ba-sh-f.webp', 0),
+('BA.SH.P', 'Pico Adaptador P/Bomba de Agua SHURFLO - Rosca 1/2" a Manguera', 'Agua', 'Bombas de Agua SHURFLO', 0, 0, 'Pico Adaptador P/Bomba de Agua SHURFLO - Rosca 1/2" a Manguera. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: BA.SH.P
+• Rosca 1/2" a Manguera', 'https://rc-conversiones.vercel.app/images/productos/ba-sh-p.webp', 0),
+('BA.S4.12', 'Bomba de Agua SEAFLO 12v', 'Agua', 'Bombas de Agua SEAFLO', 0, 0, 'Bomba de Agua SEAFLO 12v. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: BA.S4.12
+• 4.5L
+• Automatica
+• 1.2 GPM / 35 PSI', 'https://rc-conversiones.vercel.app/images/productos/ba-s4-12.webp', 0),
+('BA.S56.12', 'Bomba de Agua SEAFLO 12v', 'Agua', 'Bombas de Agua SEAFLO', 0, 0, 'Bomba de Agua SEAFLO 12v. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: BA.S56.12
+• 5.6L
+• Automatica
+• 1.5 GPM / 40 PSI', 'https://rc-conversiones.vercel.app/images/productos/ba-s56-12.webp', 0),
+('BA.S13.12', 'Bomba de Agua SEAFLO 12v', 'Agua', 'Bombas de Agua SEAFLO', 0, 0, 'Bomba de Agua SEAFLO 12v. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: BA.S13.12
+• 13.2L
+• Automatica
+• 3.5 GPM / 45 PSI', 'https://rc-conversiones.vercel.app/images/productos/ba-s13-12.webp', 0),
+('BA.S17.12', 'Bomba de Agua SEAFLO 12v', 'Agua', 'Bombas de Agua SEAFLO', 0, 0, 'Bomba de Agua SEAFLO 12v. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: BA.S17.12
+• 17L
+• Automatica
+• 4.5GPM / 40 PSI', 'https://rc-conversiones.vercel.app/images/productos/ba-s17-12.webp', 0),
+('BA.S17.24', 'Bomba de Agua SEAFLO 24v', 'Agua', 'Bombas de Agua SEAFLO', 0, 0, 'Bomba de Agua SEAFLO 24v. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: BA.S17.24
+• 17L
+• Automatica
+• 4.5GPM / 40 PSI', 'https://rc-conversiones.vercel.app/images/productos/ba-s17-24.webp', 0),
+('BA.S45.12', 'Bomba de agua SEAFLO 12v', 'Agua', 'Bombas de Agua SEAFLO', 0, 0, 'Bomba de agua SEAFLO 12v. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: BA.S45.12
+• 45L Trituradora/Maseradora P/Aguas Negras', 'https://rc-conversiones.vercel.app/images/productos/ba-s45-12.webp', 0),
+('BA.4.12', 'Bomba de agua SINGFLO 12v', 'Agua', 'Bombas de Agua SINGFLO', 0, 0, 'Bomba de agua SINGFLO 12v. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: BA.4.12
+• 4,3L', 'https://rc-conversiones.vercel.app/images/productos/ba-4-12.webp', 0),
+('BA.6.12', 'Bomba de agua SINGFLO 12v', 'Agua', 'Bombas de Agua SINGFLO', 0, 0, 'Bomba de agua SINGFLO 12v. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: BA.6.12
+• 6L', 'https://rc-conversiones.vercel.app/images/productos/ba-6-12.webp', 0),
+('BAT.49.12', 'Bomba de agua SINGFLO 12v', 'Agua', 'Bombas de Agua SINGFLO', 0, 0, 'Bomba de agua SINGFLO 12v. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: BAT.49.12
+• 49,2L Trituradora/Maseradora P/Aguas Negras', 'https://rc-conversiones.vercel.app/images/productos/bat-49-12.webp', 0),
+('TA', 'Tanque Acumulador FIVE OCEANS - Pulmon de Agua', 'Agua', 'Tanques Acumuladores', 0, 0, 'Tanque Acumulador FIVE OCEANS - Pulmon de Agua. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TA
+• Pulmon de Agua', 'https://rc-conversiones.vercel.app/images/productos/ta.webp', 0),
+('TAG', 'Tanque Acumulador SAILINGFLO - Pulmon de Agua', 'Agua', 'Tanques Acumuladores', 0, 0, 'Tanque Acumulador SAILINGFLO - Pulmon de Agua. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAG
+• Pulmon de Agua', 'https://rc-conversiones.vercel.app/images/productos/tag.webp', 0),
+('LEE.3', 'Llave exclusa Electrica 3"', 'Agua', 'Llaves Exclusas Electricas', 0, 0, 'Llave exclusa Electrica 3". Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: LEE.3', 'https://rc-conversiones.vercel.app/images/productos/lee-3.webp', 0),
+('LE.3.C', 'Llave exclusa 3" C/cable 180 cm', 'Agua', 'Llaves Exclusas con Cable', 0, 0, 'Llave exclusa 3" C/cable 180 cm. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: LE.3.C', 'https://rc-conversiones.vercel.app/images/productos/le-3-c.webp', 0),
+('LE.112.C', 'Llave exclusa 1 1/2" C/Cable 180 cm', 'Agua', 'Llaves Exclusas con Cable', 0, 0, 'Llave exclusa 1 1/2" C/Cable 180 cm. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: LE.112.C', 'https://rc-conversiones.vercel.app/images/productos/le-112-c.webp', 0),
+('LE.3', 'Llave exclusa 3"', 'Agua', 'Llaves Exclusas', 0, 0, 'Llave exclusa 3". Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: LE.3', 'https://rc-conversiones.vercel.app/images/productos/le-3.webp', 0),
+('LE.112', 'Llave exclusa 1 1/2"', 'Agua', 'Llaves Exclusas', 0, 0, 'Llave exclusa 1 1/2". Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: LE.112', 'https://rc-conversiones.vercel.app/images/productos/le-112.webp', 0),
+('AT.LE.3', 'Acople de Tanque de Agua a Llave Exclusa 3"', 'Agua', 'Acoples para Llaves Exclusas', 0, 0, 'Acople de Tanque de Agua a Llave Exclusa 3". Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: AT.LE.3', 'https://rc-conversiones.vercel.app/images/productos/at-le-3.webp', 0),
+('AT.LE.112', 'Acople de Tanque de Agua a Llave Exclusa 1 1/2"', 'Agua', 'Acoples para Llaves Exclusas', 0, 0, 'Acople de Tanque de Agua a Llave Exclusa 1 1/2". Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: AT.LE.112', 'https://rc-conversiones.vercel.app/images/productos/at-le-112.webp', 0),
+('MT.1T', 'Medidor Tactil P/1 Tanque de Agua', 'Agua', 'Medidores para Tanques de Agua', 0, 0, 'Medidor Tactil P/1 Tanque de Agua. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: MT.1T
+• 12v 24v', 'https://rc-conversiones.vercel.app/images/productos/mt-1t.webp', 0),
+('MT.2T', 'Medidor Tactil P/2 Tanques de Agua', 'Agua', 'Medidores para Tanques de Agua', 0, 0, 'Medidor Tactil P/2 Tanques de Agua. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: MT.2T
+• 12v 24v', 'https://rc-conversiones.vercel.app/images/productos/mt-2t.webp', 0),
+('MT.3T', 'Medidor Tactil P/3 Tanques de Agua', 'Agua', 'Medidores para Tanques de Agua', 0, 0, 'Medidor Tactil P/3 Tanques de Agua. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: MT.3T
+• 12v 24v', 'https://rc-conversiones.vercel.app/images/productos/mt-3t.webp', 0),
+('MT.1', 'Medidor P/1 Tanque de Agua', 'Agua', 'Medidores para Tanques de Agua', 0, 0, 'Medidor P/1 Tanque de Agua. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: MT.1
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/mt-1.webp', 0),
+('MT.2', 'Medidor P/2 Tanques de Agua', 'Agua', 'Medidores para Tanques de Agua', 0, 0, 'Medidor P/2 Tanques de Agua. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: MT.2
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/mt-2.webp', 0),
+('MT.3', 'Medidor P/3 Tanques de Agua', 'Agua', 'Medidores para Tanques de Agua', 0, 0, 'Medidor P/3 Tanques de Agua. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: MT.3
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/mt-3.webp', 0),
+('MT.4', 'Medidor P/4 Tanques de Agua', 'Agua', 'Medidores para Tanques de Agua', 0, 0, 'Medidor P/4 Tanques de Agua. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: MT.4
+• 12v', 'https://rc-conversiones.vercel.app/images/productos/mt-4.webp', 0),
+('TTL.112.NR', 'Tapa de Tanque de Agua C/Llave 1 1/2" + Boca de Venteo - REIMO', 'Agua', 'Tapas de Tanque para Ingreso de Agua', 0, 0, 'Tapa de Tanque de Agua C/Llave 1 1/2" + Boca de Venteo - REIMO. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TTL.112.NR
+• REIMO
+• NEGRA', 'https://rc-conversiones.vercel.app/images/productos/ttl-112-nr.webp', 0),
+('TTL.112.SB', 'Tapa de Tanque de Agua C/Llave 1" - SEAFLO BLANCA', 'Agua', 'Tapas de Tanque para Ingreso de Agua', 0, 0, 'Tapa de Tanque de Agua C/Llave 1" - SEAFLO BLANCA. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TTL.112.SB
+• SEAFLO BLANCA', 'https://rc-conversiones.vercel.app/images/productos/ttl-112-sb.webp', 0),
+('TTL.112.B', 'Tapa de Tanque de Agua C/Llave 1 1/2"', 'Agua', 'Tapas de Tanque para Ingreso de Agua', 0, 0, 'Tapa de Tanque de Agua C/Llave 1 1/2". Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TTL.112.B
+• BLANCA', 'https://rc-conversiones.vercel.app/images/productos/ttl-112-b.webp', 0),
+('TTT.112.B', 'Tapa de Tanque de Agua C/Traba 1 1/2" - BLANCA C/AZUL', 'Agua', 'Tapas de Tanque para Ingreso de Agua', 0, 0, 'Tapa de Tanque de Agua C/Traba 1 1/2" - BLANCA C/AZUL. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TTT.112.B
+• BLANCA C/AZUL', 'https://rc-conversiones.vercel.app/images/productos/ttt-112-b.webp', 0),
+('TT.112.NR', 'Tapa de Tanque de Agua 1 1/2"', 'Agua', 'Tapas de Tanque para Ingreso de Agua', 0, 0, 'Tapa de Tanque de Agua 1 1/2". Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TT.112.NR
+• NEGRA
+• REFORZADA', 'https://rc-conversiones.vercel.app/images/productos/tt-112-nr.webp', 0),
+('TT.112.B', 'Tapa de Tanque de Agua 1 1/2"', 'Agua', 'Tapas de Tanque para Ingreso de Agua', 0, 0, 'Tapa de Tanque de Agua 1 1/2". Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TT.112.B
+• BLANCA', 'https://rc-conversiones.vercel.app/images/productos/tt-112-b.webp', 0),
+('TT.112.N', 'Tapa de Tanque de Agua 1 1/2"', 'Agua', 'Tapas de Tanque para Ingreso de Agua', 0, 0, 'Tapa de Tanque de Agua 1 1/2". Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TT.112.N
+• NEGRA', 'https://rc-conversiones.vercel.app/images/productos/tt-112-n.webp', 0),
+('TAB.40', 'Tanque de Aguas Blancas 40L', 'Agua', 'Tanques de Aguas Blancas', 0, 0, 'Tanque de Aguas Blancas 40L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAB.40
+• 77x49x12 cm', 'https://rc-conversiones.vercel.app/images/productos/tab-40.webp', 0),
+('TAB.45', 'Tanque de Aguas Blancas 45L', 'Agua', 'Tanques de Aguas Blancas', 0, 0, 'Tanque de Aguas Blancas 45L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAB.45
+• 110x33x14 cm
+• C/Rompeolas', 'https://rc-conversiones.vercel.app/images/productos/tab-45.webp', 0),
+('TAB.55', 'Tanque de Aguas Blancas 55L', 'Agua', 'Tanques de Aguas Blancas', 0, 0, 'Tanque de Aguas Blancas 55L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAB.55
+• 62x32x31 cm', 'https://rc-conversiones.vercel.app/images/productos/tab-55.webp', 0),
+('TAB.63', 'Tanque de Aguas Blancas 63L', 'Agua', 'Tanques de Aguas Blancas', 0, 0, 'Tanque de Aguas Blancas 63L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAB.63
+• 52X49X27 cm', 'https://rc-conversiones.vercel.app/images/productos/tab-63.webp', 0),
+('TAB.56', 'Tanque de Aguas Blancas 56L', 'Agua', 'Tanques de Aguas Blancas', 0, 0, 'Tanque de Aguas Blancas 56L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAB.56
+• 91x49x17 cm
+• C/Rompeolas', 'https://rc-conversiones.vercel.app/images/productos/tab-56.webp', 0),
+('TAB.80', 'Tanque de Aguas Blancas 80L', 'Agua', 'Tanques de Aguas Blancas', 0, 0, 'Tanque de Aguas Blancas 80L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAB.80
+• 76x49x24 cm', 'https://rc-conversiones.vercel.app/images/productos/tab-80.webp', 0),
+('TAB.90', 'Tanque de Aguas Blancas 90L', 'Agua', 'Tanques de Aguas Blancas', 0, 0, 'Tanque de Aguas Blancas 90L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAB.90
+• 75x52x27 cm
+• C/Rompeolas', 'https://rc-conversiones.vercel.app/images/productos/tab-90.webp', 0),
+('TAB.92', 'Tanque de Aguas Blancas 92L', 'Agua', 'Tanques de Aguas Blancas', 0, 0, 'Tanque de Aguas Blancas 92L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAB.92
+• 79x58x23cm', 'https://rc-conversiones.vercel.app/images/productos/tab-92.webp', 0),
+('TAB.100', 'Tanque de Aguas Blancas 100L', 'Agua', 'Tanques de Aguas Blancas', 0, 0, 'Tanque de Aguas Blancas 100L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAB.100
+• 85x44x31 cm
+• C/rompeolas', 'https://rc-conversiones.vercel.app/images/productos/tab-100.webp', 0),
+('TAB.127', 'Tanque de Aguas Blancas 127L', 'Agua', 'Tanques de Aguas Blancas', 0, 0, 'Tanque de Aguas Blancas 127L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAB.127
+• 116x66x19 cm
+• C/rompeolas', 'https://rc-conversiones.vercel.app/images/productos/tab-127.webp', 0),
+('TAB.130', 'Tanque de Aguas Blancas 130L', 'Agua', 'Tanques de Aguas Blancas', 0, 0, 'Tanque de Aguas Blancas 130L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAB.130
+• 99x45x33 cm', 'https://rc-conversiones.vercel.app/images/productos/tab-130.webp', 0),
+('TAB.150', 'Tanque de Aguas Blancas 150L', 'Agua', 'Tanques de Aguas Blancas', 0, 0, 'Tanque de Aguas Blancas 150L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAB.150
+• 83x53x37 cm
+• C/Rompeolas', 'https://rc-conversiones.vercel.app/images/productos/tab-150.webp', 0),
+('TAB.235', 'Tanque de Aguas Blancas 235L', 'Agua', 'Tanques de Aguas Blancas', 0, 0, 'Tanque de Aguas Blancas 235L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAB.235
+• 88x60x48 cm', 'https://rc-conversiones.vercel.app/images/productos/tab-235.webp', 0),
+('TAB.350', 'Tanque de Aguas Blancas 350L', 'Agua', 'Tanques de Aguas Blancas', 0, 0, 'Tanque de Aguas Blancas 350L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAB.350
+• 116x75x49 cm', 'https://rc-conversiones.vercel.app/images/productos/tab-350.webp', 0),
+('TAB.450', 'Tanque de Aguas Blancas 450L', 'Agua', 'Tanques de Aguas Blancas', 0, 0, 'Tanque de Aguas Blancas 450L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAB.450
+• 118x148x29 cm
+• C/Rompeolas', 'https://rc-conversiones.vercel.app/images/productos/tab-450.webp', 0),
+('TAB.73.S', 'Tanque de Aguas Blancas 73L', 'Agua', 'Tanques de Aguas Blancas', 0, 0, 'Tanque de Aguas Blancas 73L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAB.73.S
+• 135x30x21 cm
+• SPRINTER 416 Lado Conductor', 'https://rc-conversiones.vercel.app/images/productos/tab-73-s.webp', 0),
+('TAB.125.S', 'Tanque de Aguas Blancas 125L', 'Agua', 'Tanques de Aguas Blancas', 0, 0, 'Tanque de Aguas Blancas 125L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAB.125.S
+• 92x62x38
+• 5x29x53 cm
+• SPRINTER Pasaruedas', 'https://rc-conversiones.vercel.app/images/productos/tab-125-s.webp', 0),
+('TAB.151.S', 'Tanque de Aguas Blancas 151L', 'Agua', 'Tanques de Aguas Blancas', 0, 0, 'Tanque de Aguas Blancas 151L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAB.151.S
+• 159x40x30
+• 101x40x10 cm
+• SPRINTER "U"', 'https://rc-conversiones.vercel.app/images/productos/tab-151-s.webp', 0),
+('TAN.63', 'Tanque de Aguas Negras 63L', 'Agua', 'Tanques de Aguas Negras', 0, 0, 'Tanque de Aguas Negras 63L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAN.63
+• 52x49x27 cm', 'https://rc-conversiones.vercel.app/images/productos/tan-63.webp', 0),
+('TAN.80', 'Tanque de Aguas Negras 80 L', 'Agua', 'Tanques de Aguas Negras', 0, 0, 'Tanque de Aguas Negras 80 L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAN.80
+• 76x49x24 cm', 'https://rc-conversiones.vercel.app/images/productos/tan-80.webp', 0),
+('TAN.90', 'Tanque de Aguas Negras 90L', 'Agua', 'Tanques de Aguas Negras', 0, 0, 'Tanque de Aguas Negras 90L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAN.90
+• 75x52x27 cm', 'https://rc-conversiones.vercel.app/images/productos/tan-90.webp', 0),
+('TAN.100', 'Tanque de Aguas Negras 100L', 'Agua', 'Tanques de Aguas Negras', 0, 0, 'Tanque de Aguas Negras 100L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAN.100
+• 85x44x31 cm', 'https://rc-conversiones.vercel.app/images/productos/tan-100.webp', 0),
+('TAN.130', 'Tanque de Aguas Negras 130L', 'Agua', 'Tanques de Aguas Negras', 0, 0, 'Tanque de Aguas Negras 130L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAN.130
+• 99x45x33 cm', 'https://rc-conversiones.vercel.app/images/productos/tan-130.webp', 0),
+('TAN.140', 'Tanque de Aguas Negras 140L', 'Agua', 'Tanques de Aguas Negras', 0, 0, 'Tanque de Aguas Negras 140L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAN.140
+• 69x69x30 cm', 'https://rc-conversiones.vercel.app/images/productos/tan-140.webp', 0),
+('TAN.235', 'Tanque de Aguas Negras 235L', 'Agua', 'Tanques de Aguas Negras', 0, 0, 'Tanque de Aguas Negras 235L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAN.235
+• 88x60x48 cm', 'https://rc-conversiones.vercel.app/images/productos/tan-235.webp', 0),
+('TAN.350', 'Tanque de Aguas Negras 350L', 'Agua', 'Tanques de Aguas Negras', 0, 0, 'Tanque de Aguas Negras 350L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', '• Código: TAN.350
+• 116x75x49 cm', 'https://rc-conversiones.vercel.app/images/productos/tan-350.webp', 0)
+ON DUPLICATE KEY UPDATE
+    nombre = VALUES(nombre),
+    categoria = VALUES(categoria),
+    subcategoria = VALUES(subcategoria),
+    descripcion = VALUES(descripcion),
+    caracteristicas = VALUES(caracteristicas),
+    imagen = VALUES(imagen);

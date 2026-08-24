@@ -1,0 +1,80 @@
+RC CONVERSIONES - CATÁLOGO COMPLETO DESDE PDF
+==================================================
+
+Productos detectados: 559
+Imágenes extraídas: 559
+Categorías: 18
+
+CONTENIDO
+---------
+public/images/productos/
+    Imágenes de cada producto del PDF, normalizadas a PNG 600x600.
+
+catalogo/productos_catalogo.json
+    Catálogo completo en JSON.
+
+catalogo/productos_catalogo.csv
+    Catálogo completo en CSV.
+
+catalogo/01_migrar_tabla_productos.sql
+    Agrega: codigo, subcategoria y caracteristicas a la tabla productos.
+
+catalogo/02_importar_productos.sql
+    Importa/actualiza los productos por código.
+    NO pisa los precios existentes al volver a ejecutarlo.
+
+catalogo/RC_Gestor_Masivo_Precios.xlsx
+    Hoja para organizar precios y aplicar aumentos/rebajas masivos.
+
+aplicar-categorias-catalogo.cjs
+    Actualiza el desplegable de categorías y CategoriaProductos.jsx.
+
+IMPORTANTE SOBRE LAS DESCRIPCIONES
+----------------------------------
+- Las medidas, voltajes, capacidades, pesos, marcas y demás datos técnicos
+  provienen del PDF.
+- Cuando la descripción original era corta, se agregó una frase GENERAL de uso
+  para hacerla más presentable en la web.
+- No se inventaron potencias, medidas, compatibilidades o especificaciones
+  técnicas que no estuvieran en el catálogo.
+
+IMÁGENES
+--------
+Las imágenes se sirven desde:
+https://rc-conversiones.vercel.app/images/productos/<archivo>.png
+
+Por eso la carpeta public/images/productos debe subirse a GitHub/Vercel
+ANTES de importar los registros a Railway.
+
+ORDEN RECOMENDADO
+-----------------
+1) Copiar el contenido de este pack dentro de:
+   C:\Users\Ale\Desktop\rcweb
+
+2) En la raíz del proyecto:
+   node aplicar-categorias-catalogo.cjs
+
+3) Probar:
+   npm run dev
+
+4) Subir imágenes y cambios a GitHub:
+   git add .
+   git commit -m "Agregar catalogo completo de productos"
+   git push
+
+5) Esperar a que Vercel termine el deploy.
+
+6) Con MySQL Shell conectado a Railway:
+   \source C:/Users/Ale/Desktop/rcweb/catalogo/01_migrar_tabla_productos.sql
+   \source C:/Users/Ale/Desktop/rcweb/catalogo/02_importar_productos.sql
+
+7) Verificar:
+   SELECT COUNT(*) FROM productos;
+   SELECT categoria, COUNT(*) FROM productos GROUP BY categoria ORDER BY categoria;
+
+PRECIOS
+-------
+El PDF no contiene precios, por eso los productos nuevos entran con precio 0.
+La planilla incluida permite organizar los precios sin ir producto por producto.
+Luego podemos conectar esa misma lógica al panel Admin para actualizar precios
+masivamente desde la web.
