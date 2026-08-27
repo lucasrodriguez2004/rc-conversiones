@@ -550,6 +550,8 @@ app.get("/productos", (req, res) => {
         `
         SELECT *
         FROM productos
+        WHERE imagen IS NOT NULL
+          AND TRIM(imagen) <> ''
         ORDER BY id DESC
         `,
         (err, resultados) => {

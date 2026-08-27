@@ -613,3 +613,10 @@ footer a:hover{
 .rc-topbar {
     display: none !important;
 }
+
+/* RC PRECIO CONSULTAR */
+.precioConsultar{
+  color:#0d3978 !important;
+  font-weight:900 !important;
+  font-size:18px !important;
+}

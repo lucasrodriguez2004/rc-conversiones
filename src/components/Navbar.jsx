@@ -27,6 +27,7 @@ export default function Navbar({
         useState(false);
 
     const menuRef = useRef(null);
+    const megaRef = useRef(null);
 
     const cantidad = carrito.reduce(
         (total, item) =>
@@ -36,10 +37,15 @@ export default function Navbar({
 
     useEffect(() => {
         function cerrarAlTocarAfuera(event) {
-            if (
+            const clickEnTrigger =
                 menuRef.current &&
-                !menuRef.current.contains(event.target)
-            ) {
+                menuRef.current.contains(event.target);
+
+            const clickEnMega =
+                megaRef.current &&
+                megaRef.current.contains(event.target);
+
+            if (!clickEnTrigger && !clickEnMega) {
                 setMenuAbierto(false);
             }
         }
@@ -259,6 +265,7 @@ export default function Navbar({
             />
 
             <section
+                ref={megaRef}
                 className={
                     `megaCategorias ${menuAbierto
                         ? "abierto"

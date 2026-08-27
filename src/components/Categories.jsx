@@ -2,103 +2,102 @@ import { useNavigate } from "react-router-dom";
 import "../styles/Categories.css";
 
 const categories = [
-    {
-        title: "Energía Solar",
-        description: "Paneles, reguladores y soluciones para autonomía.",
-        image: "/images/categories/panelsolar.jpg",
-        slug: "energia-solar"
-    },
-    {
-        title: "Heladeras",
-        description: "Refrigeración 12V / 24V para cada viaje.",
-        image: "/images/categories/heladera.webp",
-        slug: "heladeras"
-    },
-    {
-        title: "Baterías",
-        description: "Litio, gel y almacenamiento de energía.",
-        image: "/images/categories/baterias.png",
-        slug: "baterias"
-    },
-    {
-        title: "Reguladores",
-        description: "Controladores PWM y MPPT.",
-        image: "/images/categories/reguladores.png",
-        slug: "reguladores"
-    },
-    {
-        title: "Calefacción",
-        description: "Calefones y climatización para motorhomes.",
-        image: "/images/categories/caldera.png",
-        slug: "calefaccion"
-    },
-    {
-        title: "Accesorios",
-        description: "Interior, equipamiento y soluciones prácticas.",
-        image: "/images/categories/interior.webp",
-        slug: "accesorios"
-    },
-    {
-        title: "Ventilación",
-        description: "Claraboyas, extractores y circulación de aire.",
-        image: "/images/categories/extractor.jpg",
-        slug: "ventilacion"
-    },
-    {
-        title: "Grifería",
-        description: "Canillas, duchadores y accesorios de agua.",
-        image: "/images/categories/griferia.jpeg",
-        slug: "griferia"
-    }
+  {
+    title: "Energía Solar",
+    slug: "energia-solar",
+    description: "Paneles solares, reguladores y soluciones de energía.",
+    image: "/images/categories/panelsolar.jpg"
+  },
+  {
+    title: "Heladeras",
+    slug: "heladeras",
+    description: "Heladeras 12V / 24V para motorhomes.",
+    image: "/images/categories/heladera.webp"
+  },
+  {
+    title: "Baterías",
+    slug: "baterias",
+    description: "Litio, gel y soluciones de almacenamiento.",
+    image: "/images/categories/baterias.png"
+  },
+  {
+    title: "Reguladores",
+    slug: "reguladores",
+    description: "Reguladores solares PWM y MPPT.",
+    image: "/images/categories/reguladores.png"
+  },
+  {
+    title: "Climatización",
+    slug: "climatizacion",
+    description: "Aires acondicionados y climatización para vehículos.",
+    image: "/images/categorias/climatizacion-totalblack.webp"
+  },
+  {
+    title: "Calefacción",
+    slug: "calefaccion",
+    description: "Calefactores y calderas diésel para motorhomes.",
+    image: "/images/categorias/calefaccion-totalblack.jpg"
+  },
+  {
+    title: "Ventilación",
+    slug: "ventilacion",
+    description: "Claraboyas, extractores, aireadores y rejillas.",
+    image: "/images/categories/extractor.jpg"
+  },
+  {
+    title: "Agua",
+    slug: "agua",
+    description: "Tanques, bombas y accesorios para el sistema de agua.",
+    image: "/images/categories/griferia.jpeg"
+  }
 ];
 
 export default function Categories() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    return (
-        <section
-            id="categorias"
-            className="categories"
-        >
-            <div className="categoriesHeader">
-                <span>CATÁLOGO</span>
-                <h2>Categorías principales</h2>
-                <p>
-                    Elegí una categoría y encontrá el equipamiento
-                    que necesitás para tu motorhome.
-                </p>
+  return (
+    <section id="categorias" className="categories">
+      <div className="categoriesHeader">
+        <span>CATÁLOGO RC CONVERSIONES</span>
+        <h2>Nuestras categorías</h2>
+        <p>Elegí una categoría para ver todos sus productos.</p>
+      </div>
+
+      <div className="categoriesGrid">
+        {categories.map((cat) => (
+          <article
+            className="categoryCard"
+            key={cat.slug}
+            role="button"
+            tabIndex={0}
+            onClick={() => navigate(`/categoria/${cat.slug}`)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                navigate(`/categoria/${cat.slug}`);
+              }
+            }}
+          >
+            <div className="categoryCardImage">
+              <img src={cat.image} alt={cat.title} />
+              <span className="categoryNameBadge">{cat.title}</span>
             </div>
 
-            <div className="grid">
-                {categories.map((cat) => (
-                    <button
-                        type="button"
-                        className="card"
-                        key={cat.slug}
-                        onClick={() =>
-                            navigate(
-                                `/categoria/${cat.slug}`
-                            )
-                        }
-                    >
-                        <div className="categoryImage">
-                            <img
-                                src={cat.image}
-                                alt={cat.title}
-                            />
-                        </div>
-
-                        <div className="info">
-                            <h3>{cat.title}</h3>
-                            <p>{cat.description}</p>
-                            <span>
-                                Ver productos
-                                <b aria-hidden="true">→</b>
-                            </span>
-                        </div>
-                    </button>
-                ))}
+            <div className="categoryCardInfo">
+              <h3>{cat.title}</h3>
+              <p>{cat.description}</p>
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  navigate(`/categoria/${cat.slug}`);
+                }}
+              >
+                Ver productos
+              </button>
             </div>
-        </section>
-    );
+          </article>
+        ))}
+      </div>
+    </section>
+  );
 }

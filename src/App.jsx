@@ -1,10 +1,10 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Categories from "./components/Categories";
-import Catalog from "./components/Catalog";
+
 import FeaturedProducts from "./components/FeaturedProducts";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Newsletter from "./components/Newsletter";
@@ -44,11 +44,6 @@ function Inicio() {
             <Hero />
 
             <Categories />
-
-            <Catalog
-                busqueda={busqueda}
-            />
-
             <FeaturedProducts />
 
             <WhyChooseUs />
@@ -77,7 +72,7 @@ function App() {
         <Routes>
 
             {/* ================================
-                SITIO PÚBLICO
+                SITIO PÃšBLICO
             ================================= */}
 
             <Route
@@ -192,3 +187,4 @@ function App() {
 }
 
 export default App;
+

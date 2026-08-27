@@ -60,7 +60,6 @@ export const CATALOGO_CATEGORIAS = [
         "subcategorias": [
             "Heladeras FREUCAMP 12v 24v",
             "Heladeras FIVE OCEANS 12v 24v",
-            "Heladeras LACAR 12v 24v",
             "Heladeras 12v 24v",
             "Heladeras Portátiles 12v 24v",
             "Fabricadora de Hielo 12v 24v"

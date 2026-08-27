@@ -1,568 +1,1145 @@
+:root {
+  --cuenta-blue-950: #082653;
+  --cuenta-blue-900: #0b3169;
+  --cuenta-blue-800: #104585;
+  --cuenta-blue-600: #147dd1;
+  --cuenta-blue-500: #149cf0;
+  --cuenta-ink: #10243d;
+  --cuenta-muted: #6d7f94;
+  --cuenta-line: #dfe9f3;
+  --cuenta-bg: #eef7ff;
+  --cuenta-card: #ffffff;
+}
+
 .miCuentaPage {
-    min-height: 100vh;
-    padding: 100px 8%;
-    background: #f8fafc;
+  min-height: 100vh;
+  padding: 48px 18px 80px;
+  background:
+    radial-gradient(circle at 14% 10%, rgba(20, 156, 240, 0.10), transparent 28%),
+    radial-gradient(circle at 90% 5%, rgba(16, 69, 133, 0.10), transparent 26%),
+    linear-gradient(180deg, #f4faff 0%, #eaf5ff 100%);
+  color: var(--cuenta-ink);
 }
 
 .miCuentaContainer {
-    max-width: 1100px;
-    margin: 0 auto;
+  width: min(1180px, 100%);
+  margin: 0 auto;
 }
 
-.cuentaHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
+.cuentaHero {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 30px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 80% 0%, rgba(25, 171, 255, 0.28), transparent 34%),
+    linear-gradient(135deg, var(--cuenta-blue-950), var(--cuenta-blue-800));
+  box-shadow: 0 22px 55px rgba(8, 38, 83, 0.19);
+  color: #fff;
 }
 
-.cuentaHeader h1 {
-    margin: 0;
-    font-size: 40px;
-    color: #111827;
+.cuentaHero::after {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  right: -70px;
+  bottom: -150px;
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 50%;
 }
 
-.cuentaHeader p {
-    margin-top: 8px;
-    color: #6b7280;
-    font-size: 18px;
+.cuentaHeroIdentity,
+.cuentaHeroActions {
+  position: relative;
+  z-index: 1;
 }
 
-.cerrarSesion {
-    border: none;
-    background: #ef4444;
-    color: white;
-
-    padding: 12px 20px;
-    border-radius: 10px;
-
-    cursor: pointer;
-    font-size: 15px;
+.cuentaHeroIdentity {
+  display: flex;
+  align-items: center;
+  gap: 18px;
 }
 
-.cerrarSesion:hover {
-    background: #dc2626;
+.cuentaAvatar,
+.cuentaResumenAvatar {
+  display: grid;
+  place-items: center;
+  border-radius: 22px;
+  font-weight: 900;
+  letter-spacing: .02em;
 }
 
-/* ==========================================
-   DATOS
-========================================== */
-
-.datosCliente {
-    background: white;
-    padding: 30px;
-
-    border-radius: 18px;
-
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-
-    margin-bottom: 30px;
+.cuentaAvatar {
+  width: 76px;
+  height: 76px;
+  flex: 0 0 auto;
+  background: linear-gradient(145deg, #1aa8fb, #1174cb);
+  border: 1px solid rgba(255,255,255,.33);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.28);
+  font-size: 26px;
 }
 
-.datosCliente h2 {
-    margin-top: 0;
-    margin-bottom: 25px;
+.cuentaEyebrow,
+.cuentaPanelHeader > div > span,
+.cuentaSolicitudesHeader > div > span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .15em;
 }
 
-.datosGrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.cuentaEyebrow {
+  color: #80d4ff;
 }
 
-.datosGrid div {
-    background: #f8fafc;
-    padding: 18px;
-    border-radius: 12px;
+.cuentaHero h1 {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.05;
 }
 
-.datosGrid span {
-    display: block;
-    color: #6b7280;
-    font-size: 14px;
-    margin-bottom: 6px;
+.cuentaHero p {
+  margin: 8px 0 0;
+  color: rgba(255,255,255,.78);
+  font-size: 15px;
 }
 
-.datosGrid strong {
-    color: #111827;
+.cuentaHeroActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.cuentaVerificada {
-    color: #15803d !important;
+.cuentaVolver,
+.cuentaCerrar,
+.cuentaEditarBtn,
+.cuentaGuardarBtn,
+.cuentaCancelarBtn,
+.cuentaTicketToggle,
+.cuentaSinTickets a {
+  min-height: 43px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: .18s ease;
 }
 
-/* ==========================================
-   TICKETS
-========================================== */
-
-.presupuestosSection {
-    background: white;
-    padding: 30px;
-
-    border-radius: 18px;
-
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+.cuentaVolver {
+  padding: 0 16px;
+  border: 1px solid rgba(255,255,255,.24);
+  background: rgba(255,255,255,.10);
+  color: #fff;
 }
 
-.presupuestosHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    margin-bottom: 25px;
+.cuentaVolver:hover {
+  background: rgba(255,255,255,.18);
 }
 
-.presupuestosHeader h2 {
-    margin: 0;
+.cuentaCerrar {
+  padding: 0 17px;
+  border: 1px solid rgba(255,255,255,.18);
+  background: #fff;
+  color: var(--cuenta-blue-950);
+  cursor: pointer;
 }
 
-.presupuestosHeader p {
-    color: #6b7280;
-    margin: 7px 0 0;
+.cuentaConfirmacion,
+.cuentaMensaje {
+  margin-top: 18px;
+  border-radius: 18px;
 }
 
-.presupuestosHeader span {
-    color: #6b7280;
+.cuentaConfirmacion {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 22px;
+  border: 1px solid #b8e6c8;
+  background: #f1fff6;
+  box-shadow: 0 10px 30px rgba(20, 109, 55, .08);
 }
 
-.presupuestosLista {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.cuentaConfirmacionIcon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #1da85a;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 900;
 }
 
-.presupuestoCard {
-    border: 1px solid #e5e7eb;
-    border-radius: 15px;
-    padding: 22px;
+.cuentaConfirmacion span {
+  color: #168447;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .1em;
+  text-transform: uppercase;
 }
 
-.presupuestoTop {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding-bottom: 18px;
-    border-bottom: 1px solid #eee;
+.cuentaConfirmacion h2 {
+  margin: 4px 0;
+  font-size: 19px;
 }
 
-.presupuestoTop span {
-    color: #6b7280;
-    font-size: 14px;
+.cuentaConfirmacion p {
+  margin: 0;
+  color: #597261;
+  font-size: 13px;
 }
 
-.presupuestoTop h3 {
-    margin: 5px 0 0;
-    color: #0d8cff;
+.cuentaConfirmacionTicket {
+  margin-top: 8px;
+  color: #385c46;
+  font-size: 13px;
 }
 
-.estadoPresupuesto {
-    background: #fff7ed;
-    color: #ea580c !important;
+.cuentaConfirmacion > button {
+  border: 0;
+  border-radius: 11px;
+  padding: 11px 15px;
+  background: #168447;
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+}
 
-    padding: 7px 12px;
-    border-radius: 20px;
+.cuentaMensaje {
+  padding: 14px 17px;
+  font-weight: 700;
+  font-size: 14px;
+}
 
-    font-size: 13px !important;
+.cuentaMensajeExito {
+  border: 1px solid #a9e0bc;
+  background: #effcf4;
+  color: #14753d;
+}
+
+.cuentaMensajeError {
+  border: 1px solid #f1bcbc;
+  background: #fff2f2;
+  color: #a42d2d;
+}
+
+.cuentaStats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.cuentaStats article {
+  padding: 20px 22px;
+  border: 1px solid var(--cuenta-line);
+  border-radius: 20px;
+  background: rgba(255,255,255,.88);
+  box-shadow: 0 12px 32px rgba(18, 62, 110, .07);
+}
+
+.cuentaStats span,
+.cuentaStats small {
+  display: block;
+}
+
+.cuentaStats span {
+  color: var(--cuenta-muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.cuentaStats strong {
+  display: block;
+  margin: 6px 0 2px;
+  color: var(--cuenta-blue-900);
+  font-size: 30px;
+}
+
+.cuentaStats small {
+  color: #8a9bad;
+}
+
+.cuentaMainGrid {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.cuentaResumenPerfil,
+.cuentaDatosPanel,
+.cuentaSolicitudesPanel {
+  border: 1px solid var(--cuenta-line);
+  background: var(--cuenta-card);
+  box-shadow: 0 14px 36px rgba(15, 58, 104, .08);
+}
+
+.cuentaResumenPerfil {
+  align-self: start;
+  padding: 26px;
+  border-radius: 22px;
+  text-align: center;
+}
+
+.cuentaResumenAvatar {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 14px;
+  background: linear-gradient(145deg, #168fe6, #0e5ea8);
+  color: #fff;
+  font-size: 25px;
+}
+
+.cuentaResumenPerfil h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.cuentaResumenPerfil > p {
+  margin: 6px 0 17px;
+  color: var(--cuenta-muted);
+  font-size: 13px;
+  word-break: break-word;
+}
+
+.cuentaVerificacion {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #ecfbf2;
+  color: #168447;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.cuentaVerificacion span {
+  width: 19px;
+  height: 19px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #1da85a;
+  color: #fff;
+  font-size: 11px;
+}
+
+.cuentaMiembro {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid #edf2f7;
+  text-align: left;
+}
+
+.cuentaMiembro span,
+.cuentaMiembro strong {
+  display: block;
+}
+
+.cuentaMiembro span {
+  color: var(--cuenta-muted);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.cuentaMiembro strong {
+  margin-top: 4px;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.cuentaEmailPendiente {
+  margin-top: 16px;
+  padding: 13px;
+  border: 1px solid #ffd89e;
+  border-radius: 13px;
+  background: #fff8eb;
+  text-align: left;
+  color: #7e5615;
+}
+
+.cuentaEmailPendiente strong,
+.cuentaEmailPendiente span,
+.cuentaEmailPendiente small {
+  display: block;
+}
+
+.cuentaEmailPendiente span {
+  margin: 4px 0;
+  word-break: break-word;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.cuentaEmailPendiente small {
+  line-height: 1.4;
+}
+
+.cuentaDatosPanel {
+  padding: 28px;
+  border-radius: 22px;
+}
+
+.cuentaPanelHeader,
+.cuentaSolicitudesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.cuentaPanelHeader > div > span,
+.cuentaSolicitudesHeader > div > span {
+  color: var(--cuenta-blue-600);
+}
+
+.cuentaPanelHeader h2,
+.cuentaSolicitudesHeader h2 {
+  margin: 0;
+  color: var(--cuenta-blue-950);
+  font-size: 25px;
+}
+
+.cuentaPanelHeader p,
+.cuentaSolicitudesHeader p {
+  margin: 6px 0 0;
+  color: var(--cuenta-muted);
+  font-size: 13px;
+}
+
+.cuentaEditarBtn {
+  flex: 0 0 auto;
+  padding: 0 15px;
+  border: 1px solid #cfe1f0;
+  background: #f5faff;
+  color: var(--cuenta-blue-800);
+  cursor: pointer;
+}
+
+.cuentaEditarBtn:hover {
+  border-color: #9dccf1;
+  background: #edf7ff;
+}
+
+.cuentaDatosVista {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px;
+  margin-top: 24px;
+}
+
+.cuentaDatosVista > div {
+  min-height: 82px;
+  padding: 16px;
+  border: 1px solid #e5edf4;
+  border-radius: 15px;
+  background: #f8fbfe;
+}
+
+.cuentaDatosVista span,
+.cuentaDatosVista strong {
+  display: block;
+}
+
+.cuentaDatosVista span {
+  margin-bottom: 7px;
+  color: var(--cuenta-muted);
+  font-size: 12px;
+}
+
+.cuentaDatosVista strong {
+  color: #132a45;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.cuentaEstadoOk {
+  color: #168447 !important;
+}
+
+.cuentaEditarForm {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 17px;
+  margin-top: 24px;
+}
+
+.cuentaEditarForm label {
+  display: block;
+}
+
+.cuentaEditarForm label:nth-child(2) {
+  grid-column: span 2;
+}
+
+.cuentaEditarForm label > span,
+.cuentaEditarForm label > small {
+  display: block;
+}
+
+.cuentaEditarForm label > span {
+  margin-bottom: 7px;
+  color: #344e6a;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.cuentaEditarForm input {
+  width: 100%;
+  min-height: 47px;
+  box-sizing: border-box;
+  border: 1px solid #cddce9;
+  border-radius: 12px;
+  padding: 0 13px;
+  outline: none;
+  background: #fff;
+  color: #142b45;
+  font: inherit;
+  transition: .18s ease;
+}
+
+.cuentaEditarForm input:focus {
+  border-color: #4aa9e8;
+  box-shadow: 0 0 0 4px rgba(20, 156, 240, .10);
+}
+
+.cuentaEditarForm label > small {
+  margin-top: 6px;
+  color: #7a8c9f;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.cuentaFormActions {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 3px;
+}
+
+.cuentaGuardarBtn,
+.cuentaCancelarBtn {
+  padding: 0 18px;
+  cursor: pointer;
+}
+
+.cuentaGuardarBtn {
+  border: 0;
+  background: linear-gradient(135deg, #169deb, #0e70c5);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(14, 112, 197, .20);
+}
+
+.cuentaCancelarBtn {
+  border: 1px solid #d7e1ea;
+  background: #fff;
+  color: #566b80;
+}
+
+.cuentaGuardarBtn:disabled,
+.cuentaCancelarBtn:disabled {
+  opacity: .6;
+  cursor: wait;
+}
+
+.cuentaSolicitudesPanel {
+  margin-top: 20px;
+  padding: 28px;
+  border-radius: 22px;
+}
+
+.cuentaCantidadTickets {
+  flex: 0 0 auto;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #edf7ff;
+  color: var(--cuenta-blue-800);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.cuentaTicketsLista {
+  display: grid;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.cuentaTicketCard {
+  overflow: hidden;
+  border: 1px solid #e0e9f1;
+  border-radius: 17px;
+  background: #fff;
+  transition: border-color .18s ease, box-shadow .18s ease;
+}
+
+.cuentaTicketCard:hover {
+  border-color: #c4dced;
+  box-shadow: 0 9px 24px rgba(14, 68, 118, .07);
+}
+
+.cuentaTicketPrincipal {
+  display: grid;
+  grid-template-columns: 1.35fr 1.15fr .7fr auto auto;
+  align-items: center;
+  gap: 16px;
+  padding: 17px 18px;
+}
+
+.cuentaTicketCodigo span,
+.cuentaTicketFecha span,
+.cuentaTicketPrecio span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--cuenta-muted);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+.cuentaTicketCodigo strong {
+  color: #087bd5;
+  font-size: 14px;
+}
+
+.cuentaTicketFecha strong,
+.cuentaTicketPrecio strong {
+  font-size: 12px;
+}
+
+.cuentaTicketPrecio strong {
+  color: var(--cuenta-blue-800);
+}
+
+.cuentaTicketEstado {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 29px;
+  padding: 0 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+  font-size: 11px;
+  font-weight: 850;
 }
 
 .estadoPendiente {
-    background: #fff7ed !important;
-    color: #c2410c !important;
+  background: #fff4dd;
+  color: #a35d00;
 }
 
 .estadoRevision {
-    background: #dbeafe !important;
-    color: #1d4ed8 !important;
-}
-
-.estadoAprobado {
-    background: #dcfce7 !important;
-    color: #15803d !important;
-}
-
-.estadoRechazado {
-    background: #fee2e2 !important;
-    color: #b91c1c !important;
-}
-
-/* ==========================================
-   AVISO DEL TICKET
-========================================== */
-
-.ticketNotice {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-
-    margin: 18px 0;
-    padding: 14px 16px;
-
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-
-    border-radius: 10px;
-}
-
-.ticketNotice strong {
-    font-size: 14px;
-    color: #1f2937;
-}
-
-.ticketNotice span {
-    font-size: 13px;
-    line-height: 1.5;
-    color: #64748b;
-}
-
-/* ==========================================
-   INFORMACIÓN DEL TICKET
-========================================== */
-
-.presupuestoInfo {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-
-    padding: 20px 0;
-}
-
-.presupuestoInfo span {
-    display: block;
-    color: #6b7280;
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
-.presupuestoInfo strong {
-    font-size: 18px;
-    color: #111827;
-}
-
-.ticketFecha {
-    color: #111827;
-}
-
-/* ==========================================
-   PRODUCTOS
-========================================== */
-
-.productosPresupuesto {
-    border-top: 1px solid #eee;
-    padding-top: 18px;
-}
-
-.productosPresupuesto h4 {
-    margin: 0 0 12px;
-}
-
-.productoPresupuesto {
-    display: flex;
-    justify-content: space-between;
-
-    padding: 8px 0;
-
-    color: #4b5563;
-}
-
-/* ==========================================
-   SIN TICKETS
-========================================== */
-
-.sinPresupuestos {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.sinPresupuestos h3 {
-    margin-bottom: 10px;
-}
-
-.sinPresupuestos p {
-    color: #6b7280;
-    margin-bottom: 25px;
-}
-
-.volverCatalogo {
-    display: inline-block;
-
-    background: #0d8cff;
-    color: white;
-
-    padding: 12px 20px;
-    border-radius: 10px;
-
-    text-decoration: none;
-}
-
-.estado {
-    text-align: center;
-    padding: 40px;
-    color: #6b7280;
-}
-
-/* ==========================================
-   CELULAR
-========================================== */
-
-@media (max-width: 700px) {
-
-    .miCuentaPage {
-        padding: 70px 20px;
-    }
-
-    .cuentaHeader {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-    }
-
-    .cuentaHeader h1 {
-        font-size: 32px;
-    }
-
-    .datosGrid {
-        grid-template-columns: 1fr;
-    }
-
-    .presupuestosHeader {
-        align-items: flex-start;
-        gap: 10px;
-        flex-direction: column;
-    }
-
-    .presupuestoInfo {
-        flex-direction: column;
-        gap: 18px;
-    }
-
-}
-.detalleEstado.contactado {
-    background: #fef3c7;
-    color: #92400e;
+  background: #edf3ff;
+  color: #325eaa;
 }
 
 .estadoContactado {
-    background: #fef3c7 !important;
-    color: #92400e !important;
-}
-.historialCliente {
-    margin-top: 22px;
-    padding-top: 20px;
-    border-top: 1px solid #eee;
+  background: #ecf8ff;
+  color: #14749d;
 }
 
-.historialCliente h4 {
-    margin: 0 0 18px;
-    color: #111827;
+.estadoAprobado {
+  background: #eaf9ef;
+  color: #18854a;
 }
 
-.historialClienteTimeline {
-    position: relative;
+.estadoRechazado {
+  background: #fff0f0;
+  color: #b23b3b;
 }
 
-.historialClienteTimeline::before {
-    content: "";
-    position: absolute;
-    left: 6px;
-    top: 5px;
-    bottom: 5px;
-    width: 2px;
-    background: #e5e7eb;
+.cuentaTicketToggle {
+  min-height: 36px;
+  padding: 0 11px;
+  border: 1px solid #d6e3ed;
+  background: #f9fcff;
+  color: #3a5875;
+  cursor: pointer;
+  font-size: 11px;
 }
 
-.historialClienteItem {
-    position: relative;
+.cuentaTicketDetalle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+  padding: 20px;
+  border-top: 1px solid #e7eef4;
+  background: #f9fcff;
+}
 
-    display: flex;
+.cuentaTicketDetalleCol h4 {
+  margin: 0 0 13px;
+  color: #203b58;
+  font-size: 13px;
+}
+
+.cuentaTicketDetalleCol > p {
+  margin: 0;
+  color: var(--cuenta-muted);
+  font-size: 12px;
+}
+
+.cuentaProductosTicket {
+  display: grid;
+  gap: 8px;
+}
+
+.cuentaProductosTicket > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 11px;
+  border: 1px solid #e1eaf2;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 12px;
+}
+
+.cuentaProductosTicket strong {
+  color: #51708c;
+}
+
+.cuentaTimeline {
+  display: grid;
+  gap: 0;
+}
+
+.cuentaTimelineItem {
+  position: relative;
+  display: grid;
+  grid-template-columns: 17px 1fr;
+  gap: 10px;
+  min-height: 45px;
+}
+
+.cuentaTimelineItem::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 13px;
+  bottom: -2px;
+  width: 1px;
+  background: #ccdae5;
+}
+
+.cuentaTimelineItem:last-child::before {
+  display: none;
+}
+
+.cuentaTimelineItem i {
+  position: relative;
+  z-index: 1;
+  width: 11px;
+  height: 11px;
+  margin-top: 2px;
+  border: 2px solid #9cb4c7;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.cuentaTimelineItem i.actual {
+  border-color: #168ddd;
+  background: #168ddd;
+  box-shadow: 0 0 0 4px #e7f5ff;
+}
+
+.cuentaTimelineItem strong,
+.cuentaTimelineItem span {
+  display: block;
+}
+
+.cuentaTimelineItem strong {
+  font-size: 12px;
+}
+
+.cuentaTimelineItem span {
+  margin-top: 3px;
+  color: var(--cuenta-muted);
+  font-size: 10px;
+}
+
+.cuentaSinTickets,
+.cuentaEstadoVacio {
+  margin-top: 22px;
+  border: 1px dashed #cbdce9;
+  border-radius: 17px;
+  padding: 30px;
+  background: #f9fcff;
+  text-align: center;
+  color: var(--cuenta-muted);
+}
+
+.cuentaSinTicketsIcon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background: #e9f6ff;
+  color: #1585d4;
+  font-size: 25px;
+}
+
+.cuentaSinTickets h3 {
+  margin: 0;
+  color: #213c59;
+}
+
+.cuentaSinTickets p {
+  margin: 7px 0 15px;
+  font-size: 13px;
+}
+
+.cuentaSinTickets a {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 16px;
+  background: #137fce;
+  color: #fff;
+}
+
+.cuentaCargando {
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #4b657f;
+  font-weight: 700;
+}
+
+.cuentaSpinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #cae1f2;
+  border-top-color: #1487d8;
+  border-radius: 50%;
+  animation: cuentaSpin .8s linear infinite;
+}
+
+@keyframes cuentaSpin {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 980px) {
+  .cuentaHero {
     align-items: flex-start;
-
-    gap: 14px;
-
-    padding-bottom: 18px;
-}
-
-.historialClienteItem:last-child {
-    padding-bottom: 0;
-}
-
-.historialClientePunto {
-    position: relative;
-    z-index: 2;
-
-    width: 14px;
-    height: 14px;
-
-    flex-shrink: 0;
-
-    margin-top: 3px;
-
-    border-radius: 50%;
-
-    background: #cbd5e1;
-    border: 3px solid white;
-    box-shadow: 0 0 0 1px #cbd5e1;
-}
-
-.historialClientePunto.actual {
-    background: #0d8cff;
-    box-shadow: 0 0 0 1px #0d8cff;
-}
-
-.historialClienteContenido {
-    display: flex;
     flex-direction: column;
-    gap: 3px;
+  }
+
+  .cuentaMainGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .cuentaResumenPerfil {
+    text-align: left;
+  }
+
+  .cuentaResumenAvatar {
+    margin-left: 0;
+  }
+
+  .cuentaTicketPrincipal {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cuentaTicketEstado,
+  .cuentaTicketToggle {
+    justify-self: start;
+  }
 }
 
-.historialClienteContenido strong {
-    color: #111827;
-    font-size: 14px;
-}
+@media (max-width: 720px) {
+  .miCuentaPage {
+    padding: 18px 12px 50px;
+  }
 
-.historialClienteContenido span {
-    color: #6b7280;
-    font-size: 12px;
-}
-
-.historialClienteVacio {
-    color: #6b7280;
-    font-size: 13px;
-}
-
-.ticketAprobado {
-    background: #f0fdf4 !important;
-    border-color: #bbf7d0 !important;
-}
-
-.ticketAprobado strong {
-    color: #15803d !important;
-}
-
-.ticketAprobado span {
-    color: #166534 !important;
-}
-
-.ticketRechazado {
-    background: #fef2f2 !important;
-    border-color: #fecaca !important;
-}
-
-.ticketRechazado strong {
-    color: #b91c1c !important;
-}
-
-.ticketRechazado span {
-    color: #991b1b !important;
-}
-/* ==========================================
-   PROGRESO DEL TICKET
-========================================== */
-
-.ticketProgreso {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 8px;
-
-    margin: 22px 0;
+  .cuentaHero,
+  .cuentaDatosPanel,
+  .cuentaSolicitudesPanel {
     padding: 20px;
+    border-radius: 18px;
+  }
 
-    background: #f8fafc;
+  .cuentaHeroIdentity {
+    align-items: flex-start;
+  }
 
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-}
+  .cuentaAvatar {
+    width: 58px;
+    height: 58px;
+    border-radius: 17px;
+    font-size: 20px;
+  }
 
-.ticketPaso {
-    position: relative;
+  .cuentaHeroActions {
+    width: 100%;
+  }
 
-    display: flex;
+  .cuentaVolver,
+  .cuentaCerrar {
+    flex: 1;
+  }
+
+  .cuentaStats {
+    grid-template-columns: 1fr;
+  }
+
+  .cuentaPanelHeader,
+  .cuentaSolicitudesHeader {
     flex-direction: column;
-    align-items: center;
+  }
 
-    gap: 8px;
+  .cuentaEditarBtn {
+    width: 100%;
+  }
 
-    text-align: center;
+  .cuentaDatosVista,
+  .cuentaEditarForm,
+  .cuentaTicketDetalle {
+    grid-template-columns: 1fr;
+  }
 
-    color: #94a3b8;
+  .cuentaEditarForm label:nth-child(2),
+  .cuentaFormActions {
+    grid-column: auto;
+  }
 
-    font-size: 12px;
-    font-weight: 600;
-}
+  .cuentaFormActions {
+    flex-direction: column-reverse;
+  }
 
-.ticketPasoCirculo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .cuentaGuardarBtn,
+  .cuentaCancelarBtn {
+    width: 100%;
+  }
 
-    width: 32px;
-    height: 32px;
+  .cuentaTicketPrincipal {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
 
-    border: 2px solid #cbd5e1;
-    border-radius: 50%;
+  .cuentaTicketEstado,
+  .cuentaTicketToggle {
+    width: 100%;
+  }
 
-    background: white;
-    color: #94a3b8;
+  .cuentaConfirmacion {
+    grid-template-columns: 1fr;
+  }
 
-    font-size: 12px;
-    font-weight: 800;
-}
-
-.ticketPaso.completado {
-    color: #111827;
-}
-
-.ticketPaso.completado .ticketPasoCirculo {
-    border-color: #111827;
-
-    background: #111827;
-    color: white;
-}
-
-.ticketPaso.actual .ticketPasoCirculo {
-    transform: scale(1.1);
-
-    box-shadow:
-        0 0 0 4px
-        rgba(17, 24, 39, 0.08);
+  .cuentaConfirmacion > button {
+    width: 100%;
+  }
 }
 
 
-/* ==========================================
-   PRODUCTOS
-========================================== */
-
-.productoPresupuesto {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 15px;
+/* RC CAMBIO PASSWORD */
+.cuentaSeguridadPanel {
+  margin-top: 20px;
+  padding: 28px;
+  border: 1px solid var(--cuenta-line, #dfe9f3);
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 14px 36px rgba(15, 58, 104, .08);
 }
 
-.productoPresupuesto > div {
-    display: flex;
+.cuentaSeguridadHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.cuentaSeguridadHeader > div > span {
+  display: block;
+  margin-bottom: 6px;
+  color: #147dd1;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .15em;
+}
+
+.cuentaSeguridadHeader h2 {
+  margin: 0;
+  color: #082653;
+  font-size: 25px;
+}
+
+.cuentaSeguridadHeader p {
+  max-width: 680px;
+  margin: 6px 0 0;
+  color: #6d7f94;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.cuentaPasswordBtn {
+  min-height: 43px;
+  flex: 0 0 auto;
+  padding: 0 16px;
+  border: 1px solid #cfe1f0;
+  border-radius: 12px;
+  background: #f5faff;
+  color: #104585;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.cuentaPasswordBtn:hover {
+  border-color: #9dccf1;
+  background: #edf7ff;
+}
+
+.cuentaPasswordVista {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 22px;
+  padding: 17px;
+  border: 1px solid #e5edf4;
+  border-radius: 15px;
+  background: #f8fbfe;
+}
+
+.cuentaPasswordIcon {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: #e8f4ff;
+  font-size: 20px;
+}
+
+.cuentaPasswordVista strong,
+.cuentaPasswordVista span {
+  display: block;
+}
+
+.cuentaPasswordVista strong {
+  color: #173b62;
+  font-size: 14px;
+}
+
+.cuentaPasswordVista span {
+  margin-top: 4px;
+  color: #70859b;
+  font-size: 12px;
+}
+
+.cuentaPasswordForm {
+  margin-top: 22px;
+}
+
+.cuentaPasswordForm label > span {
+  display: block;
+  margin-bottom: 7px;
+  color: #344e6a;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.cuentaPasswordForm input {
+  width: 100%;
+  min-height: 47px;
+  box-sizing: border-box;
+  border: 1px solid #cddce9;
+  border-radius: 12px;
+  padding: 0 13px;
+  outline: none;
+  background: #fff;
+  color: #142b45;
+  font: inherit;
+}
+
+.cuentaPasswordForm input:focus {
+  border-color: #4aa9e8;
+  box-shadow: 0 0 0 4px rgba(20, 156, 240, .10);
+}
+
+.cuentaPasswordDosColumnas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 17px;
+  margin-top: 16px;
+}
+
+.cuentaPasswordAyuda {
+  display: block;
+  margin-top: 9px;
+  color: #7a8c9f;
+  line-height: 1.45;
+}
+
+.cuentaPasswordActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.cuentaPasswordMensaje {
+  margin-top: 18px;
+  padding: 13px 15px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.cuentaPasswordExito {
+  border: 1px solid #a9e0bc;
+  background: #effcf4;
+  color: #14753d;
+}
+
+.cuentaPasswordError {
+  border: 1px solid #f1bcbc;
+  background: #fff2f2;
+  color: #a42d2d;
+}
+
+@media (max-width: 720px) {
+  .cuentaSeguridadPanel {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .cuentaSeguridadHeader {
     flex-direction: column;
+  }
 
-    gap: 4px;
-}
+  .cuentaPasswordBtn {
+    width: 100%;
+  }
 
-.productoPresupuesto small {
-    color: #64748b;
+  .cuentaPasswordDosColumnas {
+    grid-template-columns: 1fr;
+  }
 
-    font-size: 12px;
-}
+  .cuentaPasswordActions {
+    flex-direction: column-reverse;
+  }
 
-
-/* ==========================================
-   RESPONSIVE
-========================================== */
-
-@media (max-width: 650px) {
-
-    .ticketProgreso {
-        grid-template-columns: 1fr 1fr;
-    }
-
+  .cuentaPasswordActions button {
+    width: 100%;
+  }
 }

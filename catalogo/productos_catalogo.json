@@ -14,7 +14,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pm-50.webp",
+    "imagen": "/images/productos/pm-50.webp",
     "imagen_archivo": "pm-50.webp",
     "destacado": 0,
     "pagina_pdf": 1
@@ -34,7 +34,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pm-100.webp",
+    "imagen": "/images/productos/pm-100.webp",
     "imagen_archivo": "pm-100.webp",
     "destacado": 0,
     "pagina_pdf": 1
@@ -54,7 +54,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pm-160.webp",
+    "imagen": "/images/productos/pm-160.webp",
     "imagen_archivo": "pm-160.webp",
     "destacado": 0,
     "pagina_pdf": 1
@@ -73,7 +73,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pm-180.webp",
+    "imagen": "/images/productos/pm-180.webp",
     "imagen_archivo": "pm-180.webp",
     "destacado": 0,
     "pagina_pdf": 1
@@ -93,7 +93,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pm-190.webp",
+    "imagen": "/images/productos/pm-190.webp",
     "imagen_archivo": "pm-190.webp",
     "destacado": 0,
     "pagina_pdf": 1
@@ -113,7 +113,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pm-200.webp",
+    "imagen": "/images/productos/pm-200.webp",
     "imagen_archivo": "pm-200.webp",
     "destacado": 0,
     "pagina_pdf": 1
@@ -132,7 +132,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pm-210.webp",
+    "imagen": "/images/productos/pm-210.webp",
     "imagen_archivo": "pm-210.webp",
     "destacado": 0,
     "pagina_pdf": 1
@@ -152,7 +152,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pm-240.webp",
+    "imagen": "/images/productos/pm-240.webp",
     "imagen_archivo": "pm-240.webp",
     "destacado": 0,
     "pagina_pdf": 2
@@ -171,7 +171,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pm-280.webp",
+    "imagen": "/images/productos/pm-280.webp",
     "imagen_archivo": "pm-280.webp",
     "destacado": 0,
     "pagina_pdf": 2
@@ -191,7 +191,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pm-380.webp",
+    "imagen": "/images/productos/pm-380.webp",
     "imagen_archivo": "pm-380.webp",
     "destacado": 0,
     "pagina_pdf": 2
@@ -210,7 +210,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pm-420.webp",
+    "imagen": "/images/productos/pm-420.webp",
     "imagen_archivo": "pm-420.webp",
     "destacado": 0,
     "pagina_pdf": 2
@@ -230,7 +230,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pm-430.webp",
+    "imagen": "/images/productos/pm-430.webp",
     "imagen_archivo": "pm-430.webp",
     "destacado": 0,
     "pagina_pdf": 2
@@ -250,7 +250,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pm-440.webp",
+    "imagen": "/images/productos/pm-440.webp",
     "imagen_archivo": "pm-440.webp",
     "destacado": 0,
     "pagina_pdf": 2
@@ -270,7 +270,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pm-450.webp",
+    "imagen": "/images/productos/pm-450.webp",
     "imagen_archivo": "pm-450.webp",
     "destacado": 0,
     "pagina_pdf": 2
@@ -290,7 +290,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pm-470.webp",
+    "imagen": "/images/productos/pm-470.webp",
     "imagen_archivo": "pm-470.webp",
     "destacado": 0,
     "pagina_pdf": 2
@@ -310,10 +310,25 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pm-540.webp",
+    "imagen": "/images/productos/pm-540.webp",
     "imagen_archivo": "pm-540.webp",
     "destacado": 0,
     "pagina_pdf": 3
+  },
+  {
+    "codigo": "PM.700",
+    "nombre": "Panel Solar Monocristalino 700W",
+    "categoria": "Energía Solar",
+    "subcategoria": "Paneles Solares Monocristalino",
+    "descripcion": "Panel Solar Monocristalino 700W. Pensado para instalaciones solares en motorhomes, casas rodantes y sistemas off-grid.",
+    "descripcion_original": "Panel Solar Monocristalino 700W",
+    "caracteristicas": "• Código: PM.700\n• Potencia: 700W",
+    "precio": 0,
+    "stock": 0,
+    "imagen": "/images/productos/pm-700.webp",
+    "imagen_archivo": "pm-700.webp",
+    "destacado": 0,
+    "pagina_pdf": null
   },
   {
     "codigo": "PM.550",
@@ -330,7 +345,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pm-550.webp",
+    "imagen": "/images/productos/pm-550.webp",
     "imagen_archivo": "pm-550.webp",
     "destacado": 0,
     "pagina_pdf": 3
@@ -350,7 +365,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pp-80.webp",
+    "imagen": "/images/productos/pp-80.webp",
     "imagen_archivo": "pp-80.webp",
     "destacado": 0,
     "pagina_pdf": 3
@@ -370,7 +385,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pp-100.webp",
+    "imagen": "/images/productos/pp-100.webp",
     "imagen_archivo": "pp-100.webp",
     "destacado": 0,
     "pagina_pdf": 3
@@ -390,7 +405,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pp-340.webp",
+    "imagen": "/images/productos/pp-340.webp",
     "imagen_archivo": "pp-340.webp",
     "destacado": 0,
     "pagina_pdf": 3
@@ -408,7 +423,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mc4.webp",
+    "imagen": "/images/productos/mc4.webp",
     "imagen_archivo": "mc4.webp",
     "destacado": 0,
     "pagina_pdf": 3
@@ -426,7 +441,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mc4-y2.webp",
+    "imagen": "/images/productos/mc4-y2.webp",
     "imagen_archivo": "mc4-y2.webp",
     "destacado": 0,
     "pagina_pdf": 3
@@ -444,7 +459,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mc4-y3.webp",
+    "imagen": "/images/productos/mc4-y3.webp",
     "imagen_archivo": "mc4-y3.webp",
     "destacado": 0,
     "pagina_pdf": 4
@@ -462,7 +477,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mc4-t2.webp",
+    "imagen": "/images/productos/mc4-t2.webp",
     "imagen_archivo": "mc4-t2.webp",
     "destacado": 0,
     "pagina_pdf": 4
@@ -480,7 +495,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mc4-t3.webp",
+    "imagen": "/images/productos/mc4-t3.webp",
     "imagen_archivo": "mc4-t3.webp",
     "destacado": 0,
     "pagina_pdf": 4
@@ -498,7 +513,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mc4-t4.webp",
+    "imagen": "/images/productos/mc4-t4.webp",
     "imagen_archivo": "mc4-t4.webp",
     "destacado": 0,
     "pagina_pdf": 4
@@ -516,7 +531,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rm-15-l.webp",
+    "imagen": "/images/productos/rm-15-l.webp",
     "imagen_archivo": "rm-15-l.webp",
     "destacado": 0,
     "pagina_pdf": 4
@@ -534,7 +549,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rm-20.webp",
+    "imagen": "/images/productos/rm-20.webp",
     "imagen_archivo": "rm-20.webp",
     "destacado": 0,
     "pagina_pdf": 4
@@ -552,7 +567,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rm-20-l.webp",
+    "imagen": "/images/productos/rm-20-l.webp",
     "imagen_archivo": "rm-20-l.webp",
     "destacado": 0,
     "pagina_pdf": 4
@@ -570,7 +585,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rm-30-l.webp",
+    "imagen": "/images/productos/rm-30-l.webp",
     "imagen_archivo": "rm-30-l.webp",
     "destacado": 0,
     "pagina_pdf": 4
@@ -588,7 +603,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rm-40-l.webp",
+    "imagen": "/images/productos/rm-40-l.webp",
     "imagen_archivo": "rm-40-l.webp",
     "destacado": 0,
     "pagina_pdf": 5
@@ -606,7 +621,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rm-40.webp",
+    "imagen": "/images/productos/rm-40.webp",
     "imagen_archivo": "rm-40.webp",
     "destacado": 0,
     "pagina_pdf": 5
@@ -624,7 +639,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rm-60.webp",
+    "imagen": "/images/productos/rm-60.webp",
     "imagen_archivo": "rm-60.webp",
     "destacado": 0,
     "pagina_pdf": 5
@@ -643,7 +658,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rm-60-l.webp",
+    "imagen": "/images/productos/rm-60-l.webp",
     "imagen_archivo": "rm-60-l.webp",
     "destacado": 0,
     "pagina_pdf": 5
@@ -661,7 +676,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rm-80.webp",
+    "imagen": "/images/productos/rm-80.webp",
     "imagen_archivo": "rm-80.webp",
     "destacado": 0,
     "pagina_pdf": 5
@@ -679,7 +694,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rm-100.webp",
+    "imagen": "/images/productos/rm-100.webp",
     "imagen_archivo": "rm-100.webp",
     "destacado": 0,
     "pagina_pdf": 5
@@ -697,7 +712,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rp-10.webp",
+    "imagen": "/images/productos/rp-10.webp",
     "imagen_archivo": "rp-10.webp",
     "destacado": 0,
     "pagina_pdf": 5
@@ -715,7 +730,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rp-20.webp",
+    "imagen": "/images/productos/rp-20.webp",
     "imagen_archivo": "rp-20.webp",
     "destacado": 0,
     "pagina_pdf": 5
@@ -733,7 +748,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rp-30.webp",
+    "imagen": "/images/productos/rp-30.webp",
     "imagen_archivo": "rp-30.webp",
     "destacado": 0,
     "pagina_pdf": 6
@@ -751,7 +766,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rp-40.webp",
+    "imagen": "/images/productos/rp-40.webp",
     "imagen_archivo": "rp-40.webp",
     "destacado": 0,
     "pagina_pdf": 6
@@ -769,7 +784,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rp-60.webp",
+    "imagen": "/images/productos/rp-60.webp",
     "imagen_archivo": "rp-60.webp",
     "destacado": 0,
     "pagina_pdf": 6
@@ -787,7 +802,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rp-80.webp",
+    "imagen": "/images/productos/rp-80.webp",
     "imagen_archivo": "rp-80.webp",
     "destacado": 0,
     "pagina_pdf": 6
@@ -807,7 +822,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ii-1000-12.webp",
+    "imagen": "/images/productos/ii-1000-12.webp",
     "imagen_archivo": "ii-1000-12.webp",
     "destacado": 0,
     "pagina_pdf": 6
@@ -827,7 +842,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ii-2000-12.webp",
+    "imagen": "/images/productos/ii-2000-12.webp",
     "imagen_archivo": "ii-2000-12.webp",
     "destacado": 0,
     "pagina_pdf": 6
@@ -847,7 +862,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ii-3000-b24.webp",
+    "imagen": "/images/productos/ii-3000-b24.webp",
     "imagen_archivo": "ii-3000-b24.webp",
     "destacado": 0,
     "pagina_pdf": 6
@@ -867,7 +882,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ii-1000-12v.webp",
+    "imagen": "/images/productos/ii-1000-12v.webp",
     "imagen_archivo": "ii-1000-12v.webp",
     "destacado": 0,
     "pagina_pdf": 6
@@ -887,7 +902,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ii-2000-24v.webp",
+    "imagen": "/images/productos/ii-2000-24v.webp",
     "imagen_archivo": "ii-2000-24v.webp",
     "destacado": 0,
     "pagina_pdf": 7
@@ -907,7 +922,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ii-3000-24v.webp",
+    "imagen": "/images/productos/ii-3000-24v.webp",
     "imagen_archivo": "ii-3000-24v.webp",
     "destacado": 0,
     "pagina_pdf": 7
@@ -927,7 +942,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ii-2000-24.webp",
+    "imagen": "/images/productos/ii-2000-24.webp",
     "imagen_archivo": "ii-2000-24.webp",
     "destacado": 0,
     "pagina_pdf": 7
@@ -947,7 +962,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ii-3000-24.webp",
+    "imagen": "/images/productos/ii-3000-24.webp",
     "imagen_archivo": "ii-3000-24.webp",
     "destacado": 0,
     "pagina_pdf": 7
@@ -965,7 +980,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ipp-1000-12.webp",
+    "imagen": "/images/productos/ipp-1000-12.webp",
     "imagen_archivo": "ipp-1000-12.webp",
     "destacado": 0,
     "pagina_pdf": 7
@@ -983,7 +998,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ipp-1500-12.webp",
+    "imagen": "/images/productos/ipp-1500-12.webp",
     "imagen_archivo": "ipp-1500-12.webp",
     "destacado": 0,
     "pagina_pdf": 7
@@ -1001,7 +1016,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ipp-3000-12.webp",
+    "imagen": "/images/productos/ipp-3000-12.webp",
     "imagen_archivo": "ipp-3000-12.webp",
     "destacado": 0,
     "pagina_pdf": 7
@@ -1019,7 +1034,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ip-300-12.webp",
+    "imagen": "/images/productos/ip-300-12.webp",
     "imagen_archivo": "ip-300-12.webp",
     "destacado": 0,
     "pagina_pdf": 7
@@ -1037,7 +1052,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ip-500-12.webp",
+    "imagen": "/images/productos/ip-500-12.webp",
     "imagen_archivo": "ip-500-12.webp",
     "destacado": 0,
     "pagina_pdf": 8
@@ -1055,7 +1070,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ip-1000-12.webp",
+    "imagen": "/images/productos/ip-1000-12.webp",
     "imagen_archivo": "ip-1000-12.webp",
     "destacado": 0,
     "pagina_pdf": 8
@@ -1073,7 +1088,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ip-1500-12.webp",
+    "imagen": "/images/productos/ip-1500-12.webp",
     "imagen_archivo": "ip-1500-12.webp",
     "destacado": 0,
     "pagina_pdf": 8
@@ -1091,7 +1106,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ip-2000-12.webp",
+    "imagen": "/images/productos/ip-2000-12.webp",
     "imagen_archivo": "ip-2000-12.webp",
     "destacado": 0,
     "pagina_pdf": 8
@@ -1109,7 +1124,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ip-300-24.webp",
+    "imagen": "/images/productos/ip-300-24.webp",
     "imagen_archivo": "ip-300-24.webp",
     "destacado": 0,
     "pagina_pdf": 8
@@ -1127,7 +1142,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ip-500-24.webp",
+    "imagen": "/images/productos/ip-500-24.webp",
     "imagen_archivo": "ip-500-24.webp",
     "destacado": 0,
     "pagina_pdf": 8
@@ -1145,7 +1160,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ip-1000-24.webp",
+    "imagen": "/images/productos/ip-1000-24.webp",
     "imagen_archivo": "ip-1000-24.webp",
     "destacado": 0,
     "pagina_pdf": 8
@@ -1163,7 +1178,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ip-1500-24.webp",
+    "imagen": "/images/productos/ip-1500-24.webp",
     "imagen_archivo": "ip-1500-24.webp",
     "destacado": 0,
     "pagina_pdf": 8
@@ -1181,7 +1196,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ip-2000-24.webp",
+    "imagen": "/images/productos/ip-2000-24.webp",
     "imagen_archivo": "ip-2000-24.webp",
     "destacado": 0,
     "pagina_pdf": 9
@@ -1199,7 +1214,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ip-3000-24.webp",
+    "imagen": "/images/productos/ip-3000-24.webp",
     "imagen_archivo": "ip-3000-24.webp",
     "destacado": 0,
     "pagina_pdf": 9
@@ -1217,7 +1232,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/im-300-12.webp",
+    "imagen": "/images/productos/im-300-12.webp",
     "imagen_archivo": "im-300-12.webp",
     "destacado": 0,
     "pagina_pdf": 9
@@ -1235,7 +1250,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/im-500-12.webp",
+    "imagen": "/images/productos/im-500-12.webp",
     "imagen_archivo": "im-500-12.webp",
     "destacado": 0,
     "pagina_pdf": 9
@@ -1253,7 +1268,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/im-1000-12.webp",
+    "imagen": "/images/productos/im-1000-12.webp",
     "imagen_archivo": "im-1000-12.webp",
     "destacado": 0,
     "pagina_pdf": 9
@@ -1271,7 +1286,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/im-1500-12.webp",
+    "imagen": "/images/productos/im-1500-12.webp",
     "imagen_archivo": "im-1500-12.webp",
     "destacado": 0,
     "pagina_pdf": 9
@@ -1289,7 +1304,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/im-2000-12.webp",
+    "imagen": "/images/productos/im-2000-12.webp",
     "imagen_archivo": "im-2000-12.webp",
     "destacado": 0,
     "pagina_pdf": 9
@@ -1307,7 +1322,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/im-3000-12.webp",
+    "imagen": "/images/productos/im-3000-12.webp",
     "imagen_archivo": "im-3000-12.webp",
     "destacado": 0,
     "pagina_pdf": 9
@@ -1325,7 +1340,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/im-300-24.webp",
+    "imagen": "/images/productos/im-300-24.webp",
     "imagen_archivo": "im-300-24.webp",
     "destacado": 0,
     "pagina_pdf": 10
@@ -1343,7 +1358,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/im-500-24.webp",
+    "imagen": "/images/productos/im-500-24.webp",
     "imagen_archivo": "im-500-24.webp",
     "destacado": 0,
     "pagina_pdf": 10
@@ -1361,7 +1376,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/im-1000-24.webp",
+    "imagen": "/images/productos/im-1000-24.webp",
     "imagen_archivo": "im-1000-24.webp",
     "destacado": 0,
     "pagina_pdf": 10
@@ -1379,7 +1394,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/im-1500-24.webp",
+    "imagen": "/images/productos/im-1500-24.webp",
     "imagen_archivo": "im-1500-24.webp",
     "destacado": 0,
     "pagina_pdf": 10
@@ -1397,7 +1412,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/im-2000-24.webp",
+    "imagen": "/images/productos/im-2000-24.webp",
     "imagen_archivo": "im-2000-24.webp",
     "destacado": 0,
     "pagina_pdf": 10
@@ -1415,7 +1430,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/im-3000-24.webp",
+    "imagen": "/images/productos/im-3000-24.webp",
     "imagen_archivo": "im-3000-24.webp",
     "destacado": 0,
     "pagina_pdf": 10
@@ -1434,7 +1449,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bl-100-b24.webp",
+    "imagen": "/images/productos/bl-100-b24.webp",
     "imagen_archivo": "bl-100-b24.webp",
     "destacado": 0,
     "pagina_pdf": 10
@@ -1453,7 +1468,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bl-100-b48.webp",
+    "imagen": "/images/productos/bl-100-b48.webp",
     "imagen_archivo": "bl-100-b48.webp",
     "destacado": 0,
     "pagina_pdf": 10
@@ -1472,7 +1487,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bl-50-b.webp",
+    "imagen": "/images/productos/bl-50-b.webp",
     "imagen_archivo": "bl-50-b.webp",
     "destacado": 0,
     "pagina_pdf": 11
@@ -1491,7 +1506,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bl-100-b.webp",
+    "imagen": "/images/productos/bl-100-b.webp",
     "imagen_archivo": "bl-100-b.webp",
     "destacado": 0,
     "pagina_pdf": 11
@@ -1510,7 +1525,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bl-200-b.webp",
+    "imagen": "/images/productos/bl-200-b.webp",
     "imagen_archivo": "bl-200-b.webp",
     "destacado": 0,
     "pagina_pdf": 11
@@ -1529,7 +1544,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bg-55-u.webp",
+    "imagen": "/images/productos/bg-55-u.webp",
     "imagen_archivo": "bg-55-u.webp",
     "destacado": 0,
     "pagina_pdf": 11
@@ -1548,7 +1563,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bg-100-u.webp",
+    "imagen": "/images/productos/bg-100-u.webp",
     "imagen_archivo": "bg-100-u.webp",
     "destacado": 0,
     "pagina_pdf": 11
@@ -1567,7 +1582,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bg-200-u.webp",
+    "imagen": "/images/productos/bg-200-u.webp",
     "imagen_archivo": "bg-200-u.webp",
     "destacado": 0,
     "pagina_pdf": 11
@@ -1586,7 +1601,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bg-275-u.webp",
+    "imagen": "/images/productos/bg-275-u.webp",
     "imagen_archivo": "bg-275-u.webp",
     "destacado": 0,
     "pagina_pdf": 11
@@ -1605,7 +1620,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bg-100-d.webp",
+    "imagen": "/images/productos/bg-100-d.webp",
     "imagen_archivo": "bg-100-d.webp",
     "destacado": 0,
     "pagina_pdf": 11
@@ -1624,7 +1639,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bg-150-d.webp",
+    "imagen": "/images/productos/bg-150-d.webp",
     "imagen_archivo": "bg-150-d.webp",
     "destacado": 0,
     "pagina_pdf": 12
@@ -1643,7 +1658,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bg-190-d.webp",
+    "imagen": "/images/productos/bg-190-d.webp",
     "imagen_archivo": "bg-190-d.webp",
     "destacado": 0,
     "pagina_pdf": 12
@@ -1662,7 +1677,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bg-200-d.webp",
+    "imagen": "/images/productos/bg-200-d.webp",
     "imagen_archivo": "bg-200-d.webp",
     "destacado": 0,
     "pagina_pdf": 12
@@ -1681,7 +1696,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bg-250-d.webp",
+    "imagen": "/images/productos/bg-250-d.webp",
     "imagen_archivo": "bg-250-d.webp",
     "destacado": 0,
     "pagina_pdf": 12
@@ -1700,7 +1715,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bg-22-b.webp",
+    "imagen": "/images/productos/bg-22-b.webp",
     "imagen_archivo": "bg-22-b.webp",
     "destacado": 0,
     "pagina_pdf": 12
@@ -1719,7 +1734,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bg-55-b.webp",
+    "imagen": "/images/productos/bg-55-b.webp",
     "imagen_archivo": "bg-55-b.webp",
     "destacado": 0,
     "pagina_pdf": 12
@@ -1738,7 +1753,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bg-100-b.webp",
+    "imagen": "/images/productos/bg-100-b.webp",
     "imagen_archivo": "bg-100-b.webp",
     "destacado": 0,
     "pagina_pdf": 12
@@ -1757,7 +1772,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bg-120-b.webp",
+    "imagen": "/images/productos/bg-120-b.webp",
     "imagen_archivo": "bg-120-b.webp",
     "destacado": 0,
     "pagina_pdf": 12
@@ -1776,7 +1791,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bg-200-b.webp",
+    "imagen": "/images/productos/bg-200-b.webp",
     "imagen_archivo": "bg-200-b.webp",
     "destacado": 0,
     "pagina_pdf": 13
@@ -1795,122 +1810,8 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/cb-1212-50.webp",
+    "imagen": "/images/productos/cb-1212-50.webp",
     "imagen_archivo": "cb-1212-50.webp",
-    "destacado": 0,
-    "pagina_pdf": 13
-  },
-  {
-    "codigo": "CB.1212.30A",
-    "nombre": "Cargador de Bateria VICTRON ORION SMART",
-    "categoria": "Baterías",
-    "subcategoria": "Cargadores de Bateria - Desde Alternador",
-    "descripcion": "Cargador de Bateria VICTRON ORION SMART. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.",
-    "descripcion_original": "Cargador de Bateria VICTRON ORION SMART - 12/12-30ah (360W) - Aislado",
-    "caracteristicas": [
-      "Código: CB.1212.30A",
-      "12/12-30ah (360W)",
-      "Aislado"
-    ],
-    "precio": 0,
-    "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/cb-1212-30a.webp",
-    "imagen_archivo": "cb-1212-30a.webp",
-    "destacado": 0,
-    "pagina_pdf": 13
-  },
-  {
-    "codigo": "CB.1212.18A",
-    "nombre": "Cargador de Bateria VICTRON ORION SMART",
-    "categoria": "Baterías",
-    "subcategoria": "Cargadores de Bateria - Desde Alternador",
-    "descripcion": "Cargador de Bateria VICTRON ORION SMART. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.",
-    "descripcion_original": "Cargador de Bateria VICTRON ORION SMART - 12/12-18ah (220W) - Aislado",
-    "caracteristicas": [
-      "Código: CB.1212.18A",
-      "12/12-18ah (220W)",
-      "Aislado"
-    ],
-    "precio": 0,
-    "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/cb-1212-18a.webp",
-    "imagen_archivo": "cb-1212-18a.webp",
-    "destacado": 0,
-    "pagina_pdf": 13
-  },
-  {
-    "codigo": "CB.1212.30",
-    "nombre": "Cargador de Bateria VICTRON ORION SMART",
-    "categoria": "Baterías",
-    "subcategoria": "Cargadores de Bateria - Desde Alternador",
-    "descripcion": "Cargador de Bateria VICTRON ORION SMART. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.",
-    "descripcion_original": "Cargador de Bateria VICTRON ORION SMART - 12/12-30ah (360W) - No Aislado",
-    "caracteristicas": [
-      "Código: CB.1212.30",
-      "12/12-30ah (360W)",
-      "No Aislado"
-    ],
-    "precio": 0,
-    "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/cb-1212-30.webp",
-    "imagen_archivo": "cb-1212-30.webp",
-    "destacado": 0,
-    "pagina_pdf": 13
-  },
-  {
-    "codigo": "CB.1224.15",
-    "nombre": "Cargador de Bateria VICTRON ORION SMART",
-    "categoria": "Baterías",
-    "subcategoria": "Cargadores de Bateria - Desde Alternador",
-    "descripcion": "Cargador de Bateria VICTRON ORION SMART. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.",
-    "descripcion_original": "Cargador de Bateria VICTRON ORION SMART - 12/24-15ah (360W) - No Aislado",
-    "caracteristicas": [
-      "Código: CB.1224.15",
-      "12/24-15ah (360W)",
-      "No Aislado"
-    ],
-    "precio": 0,
-    "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/cb-1224-15.webp",
-    "imagen_archivo": "cb-1224-15.webp",
-    "destacado": 0,
-    "pagina_pdf": 13
-  },
-  {
-    "codigo": "CB.2424.17",
-    "nombre": "Cargador de Bateria VICTRON ORION SMART",
-    "categoria": "Baterías",
-    "subcategoria": "Cargadores de Bateria - Desde Alternador",
-    "descripcion": "Cargador de Bateria VICTRON ORION SMART. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.",
-    "descripcion_original": "Cargador de Bateria VICTRON ORION SMART - 24/24-17ah (400W) - No Aislado",
-    "caracteristicas": [
-      "Código: CB.2424.17",
-      "24/24-17ah (400W)",
-      "No Aislado"
-    ],
-    "precio": 0,
-    "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/cb-2424-17.webp",
-    "imagen_archivo": "cb-2424-17.webp",
-    "destacado": 0,
-    "pagina_pdf": 13
-  },
-  {
-    "codigo": "CB.2412.30",
-    "nombre": "Cargador de Bateria VICTRON ORION SMART",
-    "categoria": "Baterías",
-    "subcategoria": "Cargadores de Bateria - Desde Alternador",
-    "descripcion": "Cargador de Bateria VICTRON ORION SMART. Orientado al almacenamiento y gestión de energía en motorhomes y otras instalaciones de 12/24/48 V según modelo.",
-    "descripcion_original": "Cargador de Bateria VICTRON ORION SMART - 24/12-30ah (360W) - No Aislado",
-    "caracteristicas": [
-      "Código: CB.2412.30",
-      "24/12-30ah (360W)",
-      "No Aislado"
-    ],
-    "precio": 0,
-    "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/cb-2412-30.webp",
-    "imagen_archivo": "cb-2412-30.webp",
     "destacado": 0,
     "pagina_pdf": 13
   },
@@ -1928,7 +1829,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/gea-12.webp",
+    "imagen": "/images/productos/gea-12.webp",
     "imagen_archivo": "gea-12.webp",
     "destacado": 0,
     "pagina_pdf": 14
@@ -1947,7 +1848,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/gea-24.webp",
+    "imagen": "/images/productos/gea-24.webp",
     "imagen_archivo": "gea-24.webp",
     "destacado": 0,
     "pagina_pdf": 14
@@ -1965,7 +1866,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/lc-275-a.webp",
+    "imagen": "/images/productos/lc-275-a.webp",
     "imagen_archivo": "lc-275-a.webp",
     "destacado": 0,
     "pagina_pdf": 14
@@ -1983,7 +1884,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/lc-275-e.webp",
+    "imagen": "/images/productos/lc-275-e.webp",
     "imagen_archivo": "lc-275-e.webp",
     "destacado": 0,
     "pagina_pdf": 14
@@ -2002,7 +1903,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tmh-rb.webp",
+    "imagen": "/images/productos/tmh-rb.webp",
     "imagen_archivo": "tmh-rb.webp",
     "destacado": 0,
     "pagina_pdf": 14
@@ -2021,7 +1922,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tmh-rg.webp",
+    "imagen": "/images/productos/tmh-rg.webp",
     "imagen_archivo": "tmh-rg.webp",
     "destacado": 0,
     "pagina_pdf": 14
@@ -2040,7 +1941,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tmh-rn.webp",
+    "imagen": "/images/productos/tmh-rn.webp",
     "imagen_archivo": "tmh-rn.webp",
     "destacado": 0,
     "pagina_pdf": 14
@@ -2058,7 +1959,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tme-32.webp",
+    "imagen": "/images/productos/tme-32.webp",
     "imagen_archivo": "tme-32.webp",
     "destacado": 0,
     "pagina_pdf": 15
@@ -2076,7 +1977,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/the-32.webp",
+    "imagen": "/images/productos/the-32.webp",
     "imagen_archivo": "the-32.webp",
     "destacado": 0,
     "pagina_pdf": 15
@@ -2094,7 +1995,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tme-20.webp",
+    "imagen": "/images/productos/tme-20.webp",
     "imagen_archivo": "tme-20.webp",
     "destacado": 0,
     "pagina_pdf": 15
@@ -2112,7 +2013,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/th-12.webp",
+    "imagen": "/images/productos/th-12.webp",
     "imagen_archivo": "th-12.webp",
     "destacado": 0,
     "pagina_pdf": 15
@@ -2130,7 +2031,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/th-1224-b.webp",
+    "imagen": "/images/productos/th-1224-b.webp",
     "imagen_archivo": "th-1224-b.webp",
     "destacado": 0,
     "pagina_pdf": 15
@@ -2148,7 +2049,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/th-1224-n.webp",
+    "imagen": "/images/productos/th-1224-n.webp",
     "imagen_archivo": "th-1224-n.webp",
     "destacado": 0,
     "pagina_pdf": 15
@@ -2166,7 +2067,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/t-te.webp",
+    "imagen": "/images/productos/t-te.webp",
     "imagen_archivo": "t-te.webp",
     "destacado": 0,
     "pagina_pdf": 15
@@ -2185,7 +2086,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/t-uv.webp",
+    "imagen": "/images/productos/t-uv.webp",
     "imagen_archivo": "t-uv.webp",
     "destacado": 0,
     "pagina_pdf": 15
@@ -2204,7 +2105,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/t-v.webp",
+    "imagen": "/images/productos/t-v.webp",
     "imagen_archivo": "t-v.webp",
     "destacado": 0,
     "pagina_pdf": 16
@@ -2222,7 +2123,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/t-t.webp",
+    "imagen": "/images/productos/t-t.webp",
     "imagen_archivo": "t-t.webp",
     "destacado": 0,
     "pagina_pdf": 16
@@ -2240,7 +2141,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/t-usb.webp",
+    "imagen": "/images/productos/t-usb.webp",
     "imagen_archivo": "t-usb.webp",
     "destacado": 0,
     "pagina_pdf": 16
@@ -2258,7 +2159,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ple-18.webp",
+    "imagen": "/images/productos/ple-18.webp",
     "imagen_archivo": "ple-18.webp",
     "destacado": 0,
     "pagina_pdf": 16
@@ -2276,7 +2177,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ple-5b.webp",
+    "imagen": "/images/productos/ple-5b.webp",
     "imagen_archivo": "ple-5b.webp",
     "destacado": 0,
     "pagina_pdf": 16
@@ -2295,7 +2196,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ple-6n.webp",
+    "imagen": "/images/productos/ple-6n.webp",
     "imagen_archivo": "ple-6n.webp",
     "destacado": 0,
     "pagina_pdf": 16
@@ -2313,7 +2214,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ple-6.webp",
+    "imagen": "/images/productos/ple-6.webp",
     "imagen_archivo": "ple-6.webp",
     "destacado": 0,
     "pagina_pdf": 16
@@ -2332,7 +2233,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/plr-13.webp",
+    "imagen": "/images/productos/plr-13.webp",
     "imagen_archivo": "plr-13.webp",
     "destacado": 0,
     "pagina_pdf": 16
@@ -2351,7 +2252,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/plr-8.webp",
+    "imagen": "/images/productos/plr-8.webp",
     "imagen_archivo": "plr-8.webp",
     "destacado": 0,
     "pagina_pdf": 17
@@ -2370,7 +2271,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/plr-14-5-m.webp",
+    "imagen": "/images/productos/plr-14-5-m.webp",
     "imagen_archivo": "plr-14-5-m.webp",
     "destacado": 0,
     "pagina_pdf": 17
@@ -2389,7 +2290,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/plr-10-5-m.webp",
+    "imagen": "/images/productos/plr-10-5-m.webp",
     "imagen_archivo": "plr-10-5-m.webp",
     "destacado": 0,
     "pagina_pdf": 17
@@ -2408,7 +2309,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pls-10-5.webp",
+    "imagen": "/images/productos/pls-10-5.webp",
     "imagen_archivo": "pls-10-5.webp",
     "destacado": 0,
     "pagina_pdf": 17
@@ -2427,7 +2328,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pls-7.webp",
+    "imagen": "/images/productos/pls-7.webp",
     "imagen_archivo": "pls-7.webp",
     "destacado": 0,
     "pagina_pdf": 17
@@ -2446,7 +2347,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pls-4.webp",
+    "imagen": "/images/productos/pls-4.webp",
     "imagen_archivo": "pls-4.webp",
     "destacado": 0,
     "pagina_pdf": 17
@@ -2465,7 +2366,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pls-6.webp",
+    "imagen": "/images/productos/pls-6.webp",
     "imagen_archivo": "pls-6.webp",
     "destacado": 0,
     "pagina_pdf": 17
@@ -2483,7 +2384,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pls-18.webp",
+    "imagen": "/images/productos/pls-18.webp",
     "imagen_archivo": "pls-18.webp",
     "destacado": 0,
     "pagina_pdf": 17
@@ -2501,7 +2402,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/plt-12.webp",
+    "imagen": "/images/productos/plt-12.webp",
     "imagen_archivo": "plt-12.webp",
     "destacado": 0,
     "pagina_pdf": 18
@@ -2520,7 +2421,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/plt-30.webp",
+    "imagen": "/images/productos/plt-30.webp",
     "imagen_archivo": "plt-30.webp",
     "destacado": 0,
     "pagina_pdf": 18
@@ -2540,7 +2441,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ll-t.webp",
+    "imagen": "/images/productos/ll-t.webp",
     "imagen_archivo": "ll-t.webp",
     "destacado": 0,
     "pagina_pdf": 18
@@ -2560,7 +2461,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ll-ftu.webp",
+    "imagen": "/images/productos/ll-ftu.webp",
     "imagen_archivo": "ll-ftu.webp",
     "destacado": 0,
     "pagina_pdf": 18
@@ -2580,7 +2481,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ll-ftun.webp",
+    "imagen": "/images/productos/ll-ftun.webp",
     "imagen_archivo": "ll-ftun.webp",
     "destacado": 0,
     "pagina_pdf": 18
@@ -2598,7 +2499,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/t-24s-12.webp",
+    "imagen": "/images/productos/t-24s-12.webp",
     "imagen_archivo": "t-24s-12.webp",
     "destacado": 0,
     "pagina_pdf": 18
@@ -2616,7 +2517,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/t-24-12.webp",
+    "imagen": "/images/productos/t-24-12.webp",
     "imagen_archivo": "t-24-12.webp",
     "destacado": 0,
     "pagina_pdf": 18
@@ -2634,7 +2535,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ts-19-12220.webp",
+    "imagen": "/images/productos/ts-19-12220.webp",
     "imagen_archivo": "ts-19-12220.webp",
     "destacado": 0,
     "pagina_pdf": 19
@@ -2652,7 +2553,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ts-22-12220.webp",
+    "imagen": "/images/productos/ts-22-12220.webp",
     "imagen_archivo": "ts-22-12220.webp",
     "destacado": 0,
     "pagina_pdf": 19
@@ -2670,7 +2571,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ts-24-12220.webp",
+    "imagen": "/images/productos/ts-24-12220.webp",
     "imagen_archivo": "ts-24-12220.webp",
     "destacado": 0,
     "pagina_pdf": 19
@@ -2687,7 +2588,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/t-s.webp",
+    "imagen": "/images/productos/t-s.webp",
     "imagen_archivo": "t-s.webp",
     "destacado": 0,
     "pagina_pdf": 19
@@ -2707,7 +2608,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/c-6-kge.webp",
+    "imagen": "/images/productos/c-6-kge.webp",
     "imagen_archivo": "c-6-kge.webp",
     "destacado": 0,
     "pagina_pdf": 19
@@ -2728,7 +2629,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/c-6-bmge.webp",
+    "imagen": "/images/productos/c-6-bmge.webp",
     "imagen_archivo": "c-6-bmge.webp",
     "destacado": 0,
     "pagina_pdf": 19
@@ -2749,7 +2650,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/c-6-bmgn.webp",
+    "imagen": "/images/productos/c-6-bmgn.webp",
     "imagen_archivo": "c-6-bmgn.webp",
     "destacado": 0,
     "pagina_pdf": 19
@@ -2770,7 +2671,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/c-6-bge.webp",
+    "imagen": "/images/productos/c-6-bge.webp",
     "imagen_archivo": "c-6-bge.webp",
     "destacado": 0,
     "pagina_pdf": 19
@@ -2791,7 +2692,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/c-6-bgn.webp",
+    "imagen": "/images/productos/c-6-bgn.webp",
     "imagen_archivo": "c-6-bgn.webp",
     "destacado": 0,
     "pagina_pdf": 20
@@ -2809,7 +2710,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/havc.webp",
+    "imagen": "/images/productos/havc.webp",
     "imagen_archivo": "havc.webp",
     "destacado": 0,
     "pagina_pdf": 20
@@ -2827,7 +2728,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/havg.webp",
+    "imagen": "/images/productos/havg.webp",
     "imagen_archivo": "havg.webp",
     "destacado": 0,
     "pagina_pdf": 20
@@ -2845,7 +2746,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/havl.webp",
+    "imagen": "/images/productos/havl.webp",
     "imagen_archivo": "havl.webp",
     "destacado": 0,
     "pagina_pdf": 20
@@ -2863,7 +2764,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/t-12.webp",
+    "imagen": "/images/productos/t-12.webp",
     "imagen_archivo": "t-12.webp",
     "destacado": 0,
     "pagina_pdf": 20
@@ -2881,7 +2782,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/p-12.webp",
+    "imagen": "/images/productos/p-12.webp",
     "imagen_archivo": "p-12.webp",
     "destacado": 0,
     "pagina_pdf": 20
@@ -2899,7 +2800,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/v8-12.webp",
+    "imagen": "/images/productos/v8-12.webp",
     "imagen_archivo": "v8-12.webp",
     "destacado": 0,
     "pagina_pdf": 20
@@ -2917,7 +2818,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/v6-12.webp",
+    "imagen": "/images/productos/v6-12.webp",
     "imagen_archivo": "v6-12.webp",
     "destacado": 0,
     "pagina_pdf": 20
@@ -2936,7 +2837,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/h80-12-f.webp",
+    "imagen": "/images/productos/h80-12-f.webp",
     "imagen_archivo": "h80-12-f.webp",
     "destacado": 0,
     "pagina_pdf": 21
@@ -2955,7 +2856,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/h90-12-f.webp",
+    "imagen": "/images/productos/h90-12-f.webp",
     "imagen_archivo": "h90-12-f.webp",
     "destacado": 0,
     "pagina_pdf": 21
@@ -2973,7 +2874,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/h58-12.webp",
+    "imagen": "/images/productos/h58-12.webp",
     "imagen_archivo": "h58-12.webp",
     "destacado": 0,
     "pagina_pdf": 21
@@ -2991,166 +2892,10 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/h85-12.webp",
+    "imagen": "/images/productos/h85-12.webp",
     "imagen_archivo": "h85-12.webp",
     "destacado": 0,
     "pagina_pdf": 21
-  },
-  {
-    "codigo": "H81.12B",
-    "nombre": "Heladera LACAR C/Congelador 81L 12v 24v",
-    "categoria": "Heladeras",
-    "subcategoria": "Heladeras LACAR 12v 24v",
-    "descripcion": "Heladera LACAR C/Congelador 81L 12v 24v. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.",
-    "descripcion_original": "Heladera LACAR C/Congelador 81L 12v 24v - 44 x 67 x 57 cm - BLANCA",
-    "caracteristicas": [
-      "Código: H81.12B",
-      "44 x 67 x 57 cm",
-      "BLANCA"
-    ],
-    "precio": 0,
-    "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/h81-12b.webp",
-    "imagen_archivo": "h81-12b.webp",
-    "destacado": 0,
-    "pagina_pdf": 21
-  },
-  {
-    "codigo": "H81.12N",
-    "nombre": "Heladera LACAR C/Congelador 81L 12v 24v",
-    "categoria": "Heladeras",
-    "subcategoria": "Heladeras LACAR 12v 24v",
-    "descripcion": "Heladera LACAR C/Congelador 81L 12v 24v. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.",
-    "descripcion_original": "Heladera LACAR C/Congelador 81L 12v 24v - 44 x 67 x 57 cm - NEGRA",
-    "caracteristicas": [
-      "Código: H81.12N",
-      "44 x 67 x 57 cm",
-      "NEGRA"
-    ],
-    "precio": 0,
-    "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/h81-12n.webp",
-    "imagen_archivo": "h81-12n.webp",
-    "destacado": 0,
-    "pagina_pdf": 21
-  },
-  {
-    "codigo": "H110.12B",
-    "nombre": "Heladera LACAR C/Freezer 110L 12v 24v",
-    "categoria": "Heladeras",
-    "subcategoria": "Heladeras LACAR 12v 24v",
-    "descripcion": "Heladera LACAR C/Freezer 110L 12v 24v. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.",
-    "descripcion_original": "Heladera LACAR C/Freezer 110L 12v 24v - 44,5 x 101 x 58,5 cm - BLANCA",
-    "caracteristicas": [
-      "Código: H110.12B",
-      "44,5 x 101 x 58,5 cm",
-      "BLANCA"
-    ],
-    "precio": 0,
-    "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/h110-12b.webp",
-    "imagen_archivo": "h110-12b.webp",
-    "destacado": 0,
-    "pagina_pdf": 21
-  },
-  {
-    "codigo": "H110.12N",
-    "nombre": "Heladera LACAR C/Freezer 110L 12v 24v",
-    "categoria": "Heladeras",
-    "subcategoria": "Heladeras LACAR 12v 24v",
-    "descripcion": "Heladera LACAR C/Freezer 110L 12v 24v. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.",
-    "descripcion_original": "Heladera LACAR C/Freezer 110L 12v 24v - 44,5 x 101 x 58,5 cm - NEGRA",
-    "caracteristicas": [
-      "Código: H110.12N",
-      "44,5 x 101 x 58,5 cm",
-      "NEGRA"
-    ],
-    "precio": 0,
-    "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/h110-12n.webp",
-    "imagen_archivo": "h110-12n.webp",
-    "destacado": 0,
-    "pagina_pdf": 22
-  },
-  {
-    "codigo": "H230.12B",
-    "nombre": "Heladera LACAR C/Freezer 230L",
-    "categoria": "Heladeras",
-    "subcategoria": "Heladeras LACAR 12v 24v",
-    "descripcion": "Heladera LACAR C/Freezer 230L. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.",
-    "descripcion_original": "Heladera LACAR C/Freezer 230L - 12v 24v - 55 x 125 x 63 cm - BLANCA",
-    "caracteristicas": [
-      "Código: H230.12B",
-      "12v 24v",
-      "55 x 125 x 63 cm",
-      "BLANCA"
-    ],
-    "precio": 0,
-    "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/h230-12b.webp",
-    "imagen_archivo": "h230-12b.webp",
-    "destacado": 0,
-    "pagina_pdf": 22
-  },
-  {
-    "codigo": "H230.12N",
-    "nombre": "Heladera LACAR C/Freezer 230L",
-    "categoria": "Heladeras",
-    "subcategoria": "Heladeras LACAR 12v 24v",
-    "descripcion": "Heladera LACAR C/Freezer 230L. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.",
-    "descripcion_original": "Heladera LACAR C/Freezer 230L - 12v 24v - 55 x 125 x 63 cm - NEGRA",
-    "caracteristicas": [
-      "Código: H230.12N",
-      "12v 24v",
-      "55 x 125 x 63 cm",
-      "NEGRA"
-    ],
-    "precio": 0,
-    "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/h230-12n.webp",
-    "imagen_archivo": "h230-12n.webp",
-    "destacado": 0,
-    "pagina_pdf": 22
-  },
-  {
-    "codigo": "H290.12B",
-    "nombre": "Heladera LACAR C/Freezer 290L",
-    "categoria": "Heladeras",
-    "subcategoria": "Heladeras LACAR 12v 24v",
-    "descripcion": "Heladera LACAR C/Freezer 290L. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.",
-    "descripcion_original": "Heladera LACAR C/Freezer 290L - 12v 24v - 55 x 162 x 63 cm - BLANCA",
-    "caracteristicas": [
-      "Código: H290.12B",
-      "12v 24v",
-      "55 x 162 x 63 cm",
-      "BLANCA"
-    ],
-    "precio": 0,
-    "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/h290-12b.webp",
-    "imagen_archivo": "h290-12b.webp",
-    "destacado": 0,
-    "pagina_pdf": 22
-  },
-  {
-    "codigo": "H290.12N",
-    "nombre": "Heladera LACAR C/Freezer 290L",
-    "categoria": "Heladeras",
-    "subcategoria": "Heladeras LACAR 12v 24v",
-    "descripcion": "Heladera LACAR C/Freezer 290L. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.",
-    "descripcion_original": "Heladera LACAR C/Freezer 290L - 12v 24v - 55 x 162 x 63 cm - NEGRA",
-    "caracteristicas": [
-      "Código: H290.12N",
-      "12v 24v",
-      "55 x 162 x 63 cm",
-      "NEGRA"
-    ],
-    "precio": 0,
-    "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/h290-12n.webp",
-    "imagen_archivo": "h290-12n.webp",
-    "destacado": 0,
-    "pagina_pdf": 22
   },
   {
     "codigo": "H50.12",
@@ -3166,7 +2911,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/h50-12.webp",
+    "imagen": "/images/productos/h50-12.webp",
     "imagen_archivo": "h50-12.webp",
     "destacado": 0,
     "pagina_pdf": 22
@@ -3185,7 +2930,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/h90-12.webp",
+    "imagen": "/images/productos/h90-12.webp",
     "imagen_archivo": "h90-12.webp",
     "destacado": 0,
     "pagina_pdf": 22
@@ -3206,31 +2951,25 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/h90f-12.webp",
+    "imagen": "/images/productos/h90f-12.webp",
     "imagen_archivo": "h90f-12.webp",
     "destacado": 0,
     "pagina_pdf": 22
   },
   {
-    "codigo": "H105.12",
-    "nombre": "Heladera C/Freezer 105L",
+    "codigo": "H140.12",
+    "nombre": "Heladera C/Freezer 140L 12v 24v",
     "categoria": "Heladeras",
     "subcategoria": "Heladeras 12v 24v",
-    "descripcion": "Heladera C/Freezer 105L. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.",
-    "descripcion_original": "Heladera C/Freezer 105L - 12v 24v - 42 x 87 x 44,5 cm - 17kg - GRIS",
-    "caracteristicas": [
-      "Código: H105.12",
-      "12v 24v",
-      "42 x 87 x 44,5 cm",
-      "17kg",
-      "GRIS"
-    ],
+    "descripcion": "Heladera C/Freezer 140L. Equipo de refrigeración pensado para motorhomes, casas rodantes y vehículos recreativos.",
+    "descripcion_original": "Heladera C/Freezer 140L - 12v 24v - 42 x 87 x 44,5 cm - 17kg - GRIS",
+    "caracteristicas": "• Código: H140.12\n• Capacidad: 140L\n• 12v / 24v",
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/h105-12.webp",
-    "imagen_archivo": "h105-12.webp",
+    "imagen": "/images/productos/h140-12.webp",
+    "imagen_archivo": "h140-12.webp",
     "destacado": 0,
-    "pagina_pdf": 23
+    "pagina_pdf": null
   },
   {
     "codigo": "HP.27",
@@ -3245,7 +2984,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/hp-27.webp",
+    "imagen": "/images/productos/hp-27.webp",
     "imagen_archivo": "hp-27.webp",
     "destacado": 0,
     "pagina_pdf": 23
@@ -3263,7 +3002,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/hp-35.webp",
+    "imagen": "/images/productos/hp-35.webp",
     "imagen_archivo": "hp-35.webp",
     "destacado": 0,
     "pagina_pdf": 23
@@ -3281,7 +3020,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/hp-45.webp",
+    "imagen": "/images/productos/hp-45.webp",
     "imagen_archivo": "hp-45.webp",
     "destacado": 0,
     "pagina_pdf": 23
@@ -3299,7 +3038,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/hp-50.webp",
+    "imagen": "/images/productos/hp-50.webp",
     "imagen_archivo": "hp-50.webp",
     "destacado": 0,
     "pagina_pdf": 23
@@ -3317,7 +3056,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/fh-12.webp",
+    "imagen": "/images/productos/fh-12.webp",
     "imagen_archivo": "fh-12.webp",
     "destacado": 0,
     "pagina_pdf": 23
@@ -3336,7 +3075,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/aa-220-d.webp",
+    "imagen": "/images/productos/aa-220-d.webp",
     "imagen_archivo": "aa-220-d.webp",
     "destacado": 0,
     "pagina_pdf": 23
@@ -3355,7 +3094,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/aa-220-f2.webp",
+    "imagen": "/images/productos/aa-220-f2.webp",
     "imagen_archivo": "aa-220-f2.webp",
     "destacado": 0,
     "pagina_pdf": 24
@@ -3374,7 +3113,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/aa-220-f1.webp",
+    "imagen": "/images/productos/aa-220-f1.webp",
     "imagen_archivo": "aa-220-f1.webp",
     "destacado": 0,
     "pagina_pdf": 24
@@ -3393,7 +3132,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/aa-12-h.webp",
+    "imagen": "/images/productos/aa-12-h.webp",
     "imagen_archivo": "aa-12-h.webp",
     "destacado": 0,
     "pagina_pdf": 24
@@ -3413,7 +3152,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/aa-12-a.webp",
+    "imagen": "/images/productos/aa-12-a.webp",
     "imagen_archivo": "aa-12-a.webp",
     "destacado": 0,
     "pagina_pdf": 24
@@ -3432,7 +3171,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/aa-12.webp",
+    "imagen": "/images/productos/aa-12.webp",
     "imagen_archivo": "aa-12.webp",
     "destacado": 0,
     "pagina_pdf": 24
@@ -3451,7 +3190,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/aal-12.webp",
+    "imagen": "/images/productos/aal-12.webp",
     "imagen_archivo": "aal-12.webp",
     "destacado": 0,
     "pagina_pdf": 24
@@ -3470,7 +3209,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/aa-24-h.webp",
+    "imagen": "/images/productos/aa-24-h.webp",
     "imagen_archivo": "aa-24-h.webp",
     "destacado": 0,
     "pagina_pdf": 24
@@ -3489,7 +3228,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/aa-24-hm.webp",
+    "imagen": "/images/productos/aa-24-hm.webp",
     "imagen_archivo": "aa-24-hm.webp",
     "destacado": 0,
     "pagina_pdf": 25
@@ -3508,7 +3247,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/aa-24.webp",
+    "imagen": "/images/productos/aa-24.webp",
     "imagen_archivo": "aa-24.webp",
     "destacado": 0,
     "pagina_pdf": 25
@@ -3527,7 +3266,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/aal-24.webp",
+    "imagen": "/images/productos/aal-24.webp",
     "imagen_archivo": "aal-24.webp",
     "destacado": 0,
     "pagina_pdf": 25
@@ -3546,7 +3285,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/cn-c-12.webp",
+    "imagen": "/images/productos/cn-c-12.webp",
     "imagen_archivo": "cn-c-12.webp",
     "destacado": 0,
     "pagina_pdf": 25
@@ -3565,7 +3304,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/cn-p-12.webp",
+    "imagen": "/images/productos/cn-p-12.webp",
     "imagen_archivo": "cn-p-12.webp",
     "destacado": 0,
     "pagina_pdf": 25
@@ -3584,7 +3323,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/cn-c-24.webp",
+    "imagen": "/images/productos/cn-c-24.webp",
     "imagen_archivo": "cn-c-24.webp",
     "destacado": 0,
     "pagina_pdf": 25
@@ -3603,7 +3342,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/cn-p-24.webp",
+    "imagen": "/images/productos/cn-p-24.webp",
     "imagen_archivo": "cn-p-24.webp",
     "destacado": 0,
     "pagina_pdf": 25
@@ -3622,7 +3361,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rcn-tgo.webp",
+    "imagen": "/images/productos/rcn-tgo.webp",
     "imagen_archivo": "rcn-tgo.webp",
     "destacado": 0,
     "pagina_pdf": 26
@@ -3641,7 +3380,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rcn-tgc.webp",
+    "imagen": "/images/productos/rcn-tgc.webp",
     "imagen_archivo": "rcn-tgc.webp",
     "destacado": 0,
     "pagina_pdf": 26
@@ -3660,7 +3399,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rcn-tb.webp",
+    "imagen": "/images/productos/rcn-tb.webp",
     "imagen_archivo": "rcn-tb.webp",
     "destacado": 0,
     "pagina_pdf": 26
@@ -3678,7 +3417,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/cd-812-cp.webp",
+    "imagen": "/images/productos/cd-812-cp.webp",
     "imagen_archivo": "cd-812-cp.webp",
     "destacado": 0,
     "pagina_pdf": 26
@@ -3696,7 +3435,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/cd-512-ca.webp",
+    "imagen": "/images/productos/cd-512-ca.webp",
     "imagen_archivo": "cd-512-ca.webp",
     "destacado": 0,
     "pagina_pdf": 26
@@ -3714,7 +3453,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/cd-512-cp.webp",
+    "imagen": "/images/productos/cd-512-cp.webp",
     "imagen_archivo": "cd-512-cp.webp",
     "destacado": 0,
     "pagina_pdf": 26
@@ -3732,7 +3471,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/cd-212-cp.webp",
+    "imagen": "/images/productos/cd-212-cp.webp",
     "imagen_archivo": "cd-212-cp.webp",
     "destacado": 0,
     "pagina_pdf": 26
@@ -3750,7 +3489,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/cd-212-cpt.webp",
+    "imagen": "/images/productos/cd-212-cpt.webp",
     "imagen_archivo": "cd-212-cpt.webp",
     "destacado": 0,
     "pagina_pdf": 26
@@ -3768,7 +3507,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/cd-824-p.webp",
+    "imagen": "/images/productos/cd-824-p.webp",
     "imagen_archivo": "cd-824-p.webp",
     "destacado": 0,
     "pagina_pdf": 27
@@ -3786,7 +3525,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/cd-524-ca.webp",
+    "imagen": "/images/productos/cd-524-ca.webp",
     "imagen_archivo": "cd-524-ca.webp",
     "destacado": 0,
     "pagina_pdf": 27
@@ -3804,7 +3543,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/cd-524-cp.webp",
+    "imagen": "/images/productos/cd-524-cp.webp",
     "imagen_archivo": "cd-524-cp.webp",
     "destacado": 0,
     "pagina_pdf": 27
@@ -3822,7 +3561,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/cd-824-cp.webp",
+    "imagen": "/images/productos/cd-824-cp.webp",
     "imagen_archivo": "cd-824-cp.webp",
     "destacado": 0,
     "pagina_pdf": 27
@@ -3839,7 +3578,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-ut.webp",
+    "imagen": "/images/productos/rda-ut.webp",
     "imagen_archivo": "rda-ut.webp",
     "destacado": 0,
     "pagina_pdf": 27
@@ -3856,7 +3595,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-vd.webp",
+    "imagen": "/images/productos/rda-vd.webp",
     "imagen_archivo": "rda-vd.webp",
     "destacado": 0,
     "pagina_pdf": 27
@@ -3874,7 +3613,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-t10.webp",
+    "imagen": "/images/productos/rda-t10.webp",
     "imagen_archivo": "rda-t10.webp",
     "destacado": 0,
     "pagina_pdf": 27
@@ -3891,7 +3630,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-te.webp",
+    "imagen": "/images/productos/rda-te.webp",
     "imagen_archivo": "rda-te.webp",
     "destacado": 0,
     "pagina_pdf": 27
@@ -3908,7 +3647,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-ste.webp",
+    "imagen": "/images/productos/rda-ste.webp",
     "imagen_archivo": "rda-ste.webp",
     "destacado": 0,
     "pagina_pdf": 28
@@ -3925,7 +3664,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-ds.webp",
+    "imagen": "/images/productos/rda-ds.webp",
     "imagen_archivo": "rda-ds.webp",
     "destacado": 0,
     "pagina_pdf": 28
@@ -3942,7 +3681,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-fs.webp",
+    "imagen": "/images/productos/rda-fs.webp",
     "imagen_archivo": "rda-fs.webp",
     "destacado": 0,
     "pagina_pdf": 28
@@ -3960,7 +3699,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-b-12.webp",
+    "imagen": "/images/productos/rda-b-12.webp",
     "imagen_archivo": "rda-b-12.webp",
     "destacado": 0,
     "pagina_pdf": 28
@@ -3978,7 +3717,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-b-24.webp",
+    "imagen": "/images/productos/rda-b-24.webp",
     "imagen_archivo": "rda-b-24.webp",
     "destacado": 0,
     "pagina_pdf": 28
@@ -3995,7 +3734,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-fb.webp",
+    "imagen": "/images/productos/rda-fb.webp",
     "imagen_archivo": "rda-fb.webp",
     "destacado": 0,
     "pagina_pdf": 28
@@ -4013,7 +3752,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-bg-12.webp",
+    "imagen": "/images/productos/rda-bg-12.webp",
     "imagen_archivo": "rda-bg-12.webp",
     "destacado": 0,
     "pagina_pdf": 28
@@ -4031,7 +3770,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-bg-24.webp",
+    "imagen": "/images/productos/rda-bg-24.webp",
     "imagen_archivo": "rda-bg-24.webp",
     "destacado": 0,
     "pagina_pdf": 28
@@ -4048,7 +3787,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-fg.webp",
+    "imagen": "/images/productos/rda-fg.webp",
     "imagen_archivo": "rda-fg.webp",
     "destacado": 0,
     "pagina_pdf": 29
@@ -4066,7 +3805,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-s12.webp",
+    "imagen": "/images/productos/rda-s12.webp",
     "imagen_archivo": "rda-s12.webp",
     "destacado": 0,
     "pagina_pdf": 29
@@ -4084,7 +3823,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-s24.webp",
+    "imagen": "/images/productos/rda-s24.webp",
     "imagen_archivo": "rda-s24.webp",
     "destacado": 0,
     "pagina_pdf": 29
@@ -4101,7 +3840,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-qp.webp",
+    "imagen": "/images/productos/rda-qp.webp",
     "imagen_archivo": "rda-qp.webp",
     "destacado": 0,
     "pagina_pdf": 29
@@ -4118,7 +3857,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-ga.webp",
+    "imagen": "/images/productos/rda-ga.webp",
     "imagen_archivo": "rda-ga.webp",
     "destacado": 0,
     "pagina_pdf": 29
@@ -4135,7 +3874,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-jaq.webp",
+    "imagen": "/images/productos/rda-jaq.webp",
     "imagen_archivo": "rda-jaq.webp",
     "destacado": 0,
     "pagina_pdf": 29
@@ -4152,7 +3891,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-jbp.webp",
+    "imagen": "/images/productos/rda-jbp.webp",
     "imagen_archivo": "rda-jbp.webp",
     "destacado": 0,
     "pagina_pdf": 29
@@ -4170,7 +3909,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-d-34.webp",
+    "imagen": "/images/productos/rda-d-34.webp",
     "imagen_archivo": "rda-d-34.webp",
     "destacado": 0,
     "pagina_pdf": 29
@@ -4188,7 +3927,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-d-1.webp",
+    "imagen": "/images/productos/rda-d-1.webp",
     "imagen_archivo": "rda-d-1.webp",
     "destacado": 0,
     "pagina_pdf": 30
@@ -4206,7 +3945,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-d-2.webp",
+    "imagen": "/images/productos/rda-d-2.webp",
     "imagen_archivo": "rda-d-2.webp",
     "destacado": 0,
     "pagina_pdf": 30
@@ -4223,7 +3962,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-p1.webp",
+    "imagen": "/images/productos/rda-p1.webp",
     "imagen_archivo": "rda-p1.webp",
     "destacado": 0,
     "pagina_pdf": 30
@@ -4240,7 +3979,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-p2.webp",
+    "imagen": "/images/productos/rda-p2.webp",
     "imagen_archivo": "rda-p2.webp",
     "destacado": 0,
     "pagina_pdf": 30
@@ -4257,7 +3996,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-r34.webp",
+    "imagen": "/images/productos/rda-r34.webp",
     "imagen_archivo": "rda-r34.webp",
     "destacado": 0,
     "pagina_pdf": 30
@@ -4274,7 +4013,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rda-cr34.webp",
+    "imagen": "/images/productos/rda-cr34.webp",
     "imagen_archivo": "rda-cr34.webp",
     "destacado": 0,
     "pagina_pdf": 30
@@ -4292,7 +4031,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/sp-12.webp",
+    "imagen": "/images/productos/sp-12.webp",
     "imagen_archivo": "sp-12.webp",
     "destacado": 0,
     "pagina_pdf": 30
@@ -4311,7 +4050,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ch-2h-vge.webp",
+    "imagen": "/images/productos/ch-2h-vge.webp",
     "imagen_archivo": "ch-2h-vge.webp",
     "destacado": 0,
     "pagina_pdf": 31
@@ -4330,7 +4069,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ch-2h-vgn.webp",
+    "imagen": "/images/productos/ch-2h-vgn.webp",
     "imagen_archivo": "ch-2h-vgn.webp",
     "destacado": 0,
     "pagina_pdf": 31
@@ -4350,7 +4089,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ch-2h-kvge.webp",
+    "imagen": "/images/productos/ch-2h-kvge.webp",
     "imagen_archivo": "ch-2h-kvge.webp",
     "destacado": 0,
     "pagina_pdf": 31
@@ -4370,7 +4109,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ch-2h-kvgn.webp",
+    "imagen": "/images/productos/ch-2h-kvgn.webp",
     "imagen_archivo": "ch-2h-kvgn.webp",
     "destacado": 0,
     "pagina_pdf": 31
@@ -4390,7 +4129,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ch-2h-knvge.webp",
+    "imagen": "/images/productos/ch-2h-knvge.webp",
     "imagen_archivo": "ch-2h-knvge.webp",
     "destacado": 0,
     "pagina_pdf": 31
@@ -4410,7 +4149,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ch-2h-knvgn.webp",
+    "imagen": "/images/productos/ch-2h-knvgn.webp",
     "imagen_archivo": "ch-2h-knvgn.webp",
     "destacado": 0,
     "pagina_pdf": 31
@@ -4429,7 +4168,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ch-2h-sge.webp",
+    "imagen": "/images/productos/ch-2h-sge.webp",
     "imagen_archivo": "ch-2h-sge.webp",
     "destacado": 0,
     "pagina_pdf": 31
@@ -4448,7 +4187,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ch-2h-sgn.webp",
+    "imagen": "/images/productos/ch-2h-sgn.webp",
     "imagen_archivo": "ch-2h-sgn.webp",
     "destacado": 0,
     "pagina_pdf": 31
@@ -4468,7 +4207,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ch-2h-dnge.webp",
+    "imagen": "/images/productos/ch-2h-dnge.webp",
     "imagen_archivo": "ch-2h-dnge.webp",
     "destacado": 0,
     "pagina_pdf": 32
@@ -4488,7 +4227,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ch-2h-dngn.webp",
+    "imagen": "/images/productos/ch-2h-dngn.webp",
     "imagen_archivo": "ch-2h-dngn.webp",
     "destacado": 0,
     "pagina_pdf": 32
@@ -4508,7 +4247,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ch-2h-bnge.webp",
+    "imagen": "/images/productos/ch-2h-bnge.webp",
     "imagen_archivo": "ch-2h-bnge.webp",
     "destacado": 0,
     "pagina_pdf": 32
@@ -4528,7 +4267,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ch-2h-bngn.webp",
+    "imagen": "/images/productos/ch-2h-bngn.webp",
     "imagen_archivo": "ch-2h-bngn.webp",
     "destacado": 0,
     "pagina_pdf": 32
@@ -4548,7 +4287,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ch-2h-bbge.webp",
+    "imagen": "/images/productos/ch-2h-bbge.webp",
     "imagen_archivo": "ch-2h-bbge.webp",
     "destacado": 0,
     "pagina_pdf": 32
@@ -4568,7 +4307,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ch-2h-bbgn.webp",
+    "imagen": "/images/productos/ch-2h-bbgn.webp",
     "imagen_archivo": "ch-2h-bbgn.webp",
     "destacado": 0,
     "pagina_pdf": 32
@@ -4585,7 +4324,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bai-tv-a2.webp",
+    "imagen": "/images/productos/bai-tv-a2.webp",
     "imagen_archivo": "bai-tv-a2.webp",
     "destacado": 0,
     "pagina_pdf": 32
@@ -4602,7 +4341,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/a-2-tv.webp",
+    "imagen": "/images/productos/a-2-tv.webp",
     "imagen_archivo": "a-2-tv.webp",
     "destacado": 0,
     "pagina_pdf": 32
@@ -4619,7 +4358,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bai-tv.webp",
+    "imagen": "/images/productos/bai-tv.webp",
     "imagen_archivo": "bai-tv.webp",
     "destacado": 0,
     "pagina_pdf": 33
@@ -4638,7 +4377,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/aoai.webp",
+    "imagen": "/images/productos/aoai.webp",
     "imagen_archivo": "aoai.webp",
     "destacado": 0,
     "pagina_pdf": 33
@@ -4657,7 +4396,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/aon.webp",
+    "imagen": "/images/productos/aon.webp",
     "imagen_archivo": "aon.webp",
     "destacado": 0,
     "pagina_pdf": 33
@@ -4675,7 +4414,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/aob.webp",
+    "imagen": "/images/productos/aob.webp",
     "imagen_archivo": "aob.webp",
     "destacado": 0,
     "pagina_pdf": 33
@@ -4693,7 +4432,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bai-re34.webp",
+    "imagen": "/images/productos/bai-re34.webp",
     "imagen_archivo": "bai-re34.webp",
     "destacado": 0,
     "pagina_pdf": 33
@@ -4711,7 +4450,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bai-re.webp",
+    "imagen": "/images/productos/bai-re.webp",
     "imagen_archivo": "bai-re.webp",
     "destacado": 0,
     "pagina_pdf": 33
@@ -4729,7 +4468,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bai-r.webp",
+    "imagen": "/images/productos/bai-r.webp",
     "imagen_archivo": "bai-r.webp",
     "destacado": 0,
     "pagina_pdf": 33
@@ -4747,7 +4486,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bai-o-p.webp",
+    "imagen": "/images/productos/bai-o-p.webp",
     "imagen_archivo": "bai-o-p.webp",
     "destacado": 0,
     "pagina_pdf": 33
@@ -4765,7 +4504,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bai-o.webp",
+    "imagen": "/images/productos/bai-o.webp",
     "imagen_archivo": "bai-o.webp",
     "destacado": 0,
     "pagina_pdf": 34
@@ -4782,7 +4521,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/djld.webp",
+    "imagen": "/images/productos/djld.webp",
     "imagen_archivo": "djld.webp",
     "destacado": 0,
     "pagina_pdf": 34
@@ -4800,7 +4539,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pm-18262.webp",
+    "imagen": "/images/productos/pm-18262.webp",
     "imagen_archivo": "pm-18262.webp",
     "destacado": 0,
     "pagina_pdf": 34
@@ -4819,7 +4558,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mp-17055-ne.webp",
+    "imagen": "/images/productos/mp-17055-ne.webp",
     "imagen_archivo": "mp-17055-ne.webp",
     "destacado": 0,
     "pagina_pdf": 34
@@ -4838,7 +4577,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mp-17065-ne.webp",
+    "imagen": "/images/productos/mp-17065-ne.webp",
     "imagen_archivo": "mp-17065-ne.webp",
     "destacado": 0,
     "pagina_pdf": 34
@@ -4857,7 +4596,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mp-17080-ne.webp",
+    "imagen": "/images/productos/mp-17080-ne.webp",
     "imagen_archivo": "mp-17080-ne.webp",
     "destacado": 0,
     "pagina_pdf": 34
@@ -4876,7 +4615,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mp-17055-na.webp",
+    "imagen": "/images/productos/mp-17055-na.webp",
     "imagen_archivo": "mp-17055-na.webp",
     "destacado": 0,
     "pagina_pdf": 34
@@ -4895,7 +4634,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mp-17065-na.webp",
+    "imagen": "/images/productos/mp-17065-na.webp",
     "imagen_archivo": "mp-17065-na.webp",
     "destacado": 0,
     "pagina_pdf": 35
@@ -4914,7 +4653,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mp-17080-na.webp",
+    "imagen": "/images/productos/mp-17080-na.webp",
     "imagen_archivo": "mp-17080-na.webp",
     "destacado": 0,
     "pagina_pdf": 35
@@ -4932,7 +4671,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pb-4545.webp",
+    "imagen": "/images/productos/pb-4545.webp",
     "imagen_archivo": "pb-4545.webp",
     "destacado": 0,
     "pagina_pdf": 35
@@ -4950,7 +4689,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pb-6045.webp",
+    "imagen": "/images/productos/pb-6045.webp",
     "imagen_archivo": "pb-6045.webp",
     "destacado": 0,
     "pagina_pdf": 35
@@ -4968,7 +4707,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pb-8045.webp",
+    "imagen": "/images/productos/pb-8045.webp",
     "imagen_archivo": "pb-8045.webp",
     "destacado": 0,
     "pagina_pdf": 35
@@ -4986,7 +4725,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pb-8060.webp",
+    "imagen": "/images/productos/pb-8060.webp",
     "imagen_archivo": "pb-8060.webp",
     "destacado": 0,
     "pagina_pdf": 35
@@ -5005,7 +4744,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mb-7088-ne.webp",
+    "imagen": "/images/productos/mb-7088-ne.webp",
     "imagen_archivo": "mb-7088-ne.webp",
     "destacado": 0,
     "pagina_pdf": 35
@@ -5024,7 +4763,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mb-8040-ne.webp",
+    "imagen": "/images/productos/mb-8040-ne.webp",
     "imagen_archivo": "mb-8040-ne.webp",
     "destacado": 0,
     "pagina_pdf": 36
@@ -5043,7 +4782,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mb-5040-ne.webp",
+    "imagen": "/images/productos/mb-5040-ne.webp",
     "imagen_archivo": "mb-5040-ne.webp",
     "destacado": 0,
     "pagina_pdf": 36
@@ -5062,7 +4801,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mb-7088-na.webp",
+    "imagen": "/images/productos/mb-7088-na.webp",
     "imagen_archivo": "mb-7088-na.webp",
     "destacado": 0,
     "pagina_pdf": 36
@@ -5081,7 +4820,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mb-8040-na.webp",
+    "imagen": "/images/productos/mb-8040-na.webp",
     "imagen_archivo": "mb-8040-na.webp",
     "destacado": 0,
     "pagina_pdf": 36
@@ -5100,7 +4839,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mb-5040-na.webp",
+    "imagen": "/images/productos/mb-5040-na.webp",
     "imagen_archivo": "mb-5040-na.webp",
     "destacado": 0,
     "pagina_pdf": 36
@@ -5118,7 +4857,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vla-2838.webp",
+    "imagen": "/images/productos/vla-2838.webp",
     "imagen_archivo": "vla-2838.webp",
     "destacado": 0,
     "pagina_pdf": 36
@@ -5136,7 +4875,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vla-3550.webp",
+    "imagen": "/images/productos/vla-3550.webp",
     "imagen_archivo": "vla-3550.webp",
     "destacado": 0,
     "pagina_pdf": 36
@@ -5154,7 +4893,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vla-5030.webp",
+    "imagen": "/images/productos/vla-5030.webp",
     "imagen_archivo": "vla-5030.webp",
     "destacado": 0,
     "pagina_pdf": 36
@@ -5172,7 +4911,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vla-6145.webp",
+    "imagen": "/images/productos/vla-6145.webp",
     "imagen_archivo": "vla-6145.webp",
     "destacado": 0,
     "pagina_pdf": 37
@@ -5190,7 +4929,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vla-7035.webp",
+    "imagen": "/images/productos/vla-7035.webp",
     "imagen_archivo": "vla-7035.webp",
     "destacado": 0,
     "pagina_pdf": 37
@@ -5208,7 +4947,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vla-7045.webp",
+    "imagen": "/images/productos/vla-7045.webp",
     "imagen_archivo": "vla-7045.webp",
     "destacado": 0,
     "pagina_pdf": 37
@@ -5226,7 +4965,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vla-8040.webp",
+    "imagen": "/images/productos/vla-8040.webp",
     "imagen_archivo": "vla-8040.webp",
     "destacado": 0,
     "pagina_pdf": 37
@@ -5244,7 +4983,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vla-10050.webp",
+    "imagen": "/images/productos/vla-10050.webp",
     "imagen_archivo": "vla-10050.webp",
     "destacado": 0,
     "pagina_pdf": 37
@@ -5263,7 +5002,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vla-7040-b.webp",
+    "imagen": "/images/productos/vla-7040-b.webp",
     "imagen_archivo": "vla-7040-b.webp",
     "destacado": 0,
     "pagina_pdf": 37
@@ -5281,7 +5020,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vlc-2838.webp",
+    "imagen": "/images/productos/vlc-2838.webp",
     "imagen_archivo": "vlc-2838.webp",
     "destacado": 0,
     "pagina_pdf": 37
@@ -5299,7 +5038,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vlc-8131.webp",
+    "imagen": "/images/productos/vlc-8131.webp",
     "imagen_archivo": "vlc-8131.webp",
     "destacado": 0,
     "pagina_pdf": 37
@@ -5317,7 +5056,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vlc-9846.webp",
+    "imagen": "/images/productos/vlc-9846.webp",
     "imagen_archivo": "vlc-9846.webp",
     "destacado": 0,
     "pagina_pdf": 38
@@ -5335,7 +5074,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vl-4030-p.webp",
+    "imagen": "/images/productos/vl-4030-p.webp",
     "imagen_archivo": "vl-4030-p.webp",
     "destacado": 0,
     "pagina_pdf": 38
@@ -5353,7 +5092,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vl-6030-p.webp",
+    "imagen": "/images/productos/vl-6030-p.webp",
     "imagen_archivo": "vl-6030-p.webp",
     "destacado": 0,
     "pagina_pdf": 38
@@ -5371,7 +5110,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vl-6040-p.webp",
+    "imagen": "/images/productos/vl-6040-p.webp",
     "imagen_archivo": "vl-6040-p.webp",
     "destacado": 0,
     "pagina_pdf": 38
@@ -5389,7 +5128,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vl-5050-p.webp",
+    "imagen": "/images/productos/vl-5050-p.webp",
     "imagen_archivo": "vl-5050-p.webp",
     "destacado": 0,
     "pagina_pdf": 38
@@ -5407,7 +5146,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vl-8050-p.webp",
+    "imagen": "/images/productos/vl-8050-p.webp",
     "imagen_archivo": "vl-8050-p.webp",
     "destacado": 0,
     "pagina_pdf": 38
@@ -5425,7 +5164,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vl-10050-p.webp",
+    "imagen": "/images/productos/vl-10050-p.webp",
     "imagen_archivo": "vl-10050-p.webp",
     "destacado": 0,
     "pagina_pdf": 38
@@ -5445,7 +5184,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vl-4030-ng.webp",
+    "imagen": "/images/productos/vl-4030-ng.webp",
     "imagen_archivo": "vl-4030-ng.webp",
     "destacado": 0,
     "pagina_pdf": 38
@@ -5465,7 +5204,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vl-6040-ng.webp",
+    "imagen": "/images/productos/vl-6040-ng.webp",
     "imagen_archivo": "vl-6040-ng.webp",
     "destacado": 0,
     "pagina_pdf": 39
@@ -5485,7 +5224,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vl-8050-ng.webp",
+    "imagen": "/images/productos/vl-8050-ng.webp",
     "imagen_archivo": "vl-8050-ng.webp",
     "destacado": 0,
     "pagina_pdf": 39
@@ -5505,7 +5244,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vl-10050-ng.webp",
+    "imagen": "/images/productos/vl-10050-ng.webp",
     "imagen_archivo": "vl-10050-ng.webp",
     "destacado": 0,
     "pagina_pdf": 39
@@ -5525,7 +5264,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vl-12050-ng.webp",
+    "imagen": "/images/productos/vl-12050-ng.webp",
     "imagen_archivo": "vl-12050-ng.webp",
     "destacado": 0,
     "pagina_pdf": 39
@@ -5545,7 +5284,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-6040-ng.webp",
+    "imagen": "/images/productos/vd-6040-ng.webp",
     "imagen_archivo": "vd-6040-ng.webp",
     "destacado": 0,
     "pagina_pdf": 39
@@ -5565,7 +5304,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-7040-ng.webp",
+    "imagen": "/images/productos/vd-7040-ng.webp",
     "imagen_archivo": "vd-7040-ng.webp",
     "destacado": 0,
     "pagina_pdf": 39
@@ -5585,7 +5324,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-8040-ng.webp",
+    "imagen": "/images/productos/vd-8040-ng.webp",
     "imagen_archivo": "vd-8040-ng.webp",
     "destacado": 0,
     "pagina_pdf": 39
@@ -5605,7 +5344,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-8050-ng.webp",
+    "imagen": "/images/productos/vd-8050-ng.webp",
     "imagen_archivo": "vd-8050-ng.webp",
     "destacado": 0,
     "pagina_pdf": 39
@@ -5625,7 +5364,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-10050-ng.webp",
+    "imagen": "/images/productos/vd-10050-ng.webp",
     "imagen_archivo": "vd-10050-ng.webp",
     "destacado": 0,
     "pagina_pdf": 40
@@ -5645,7 +5384,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-12050-ng.webp",
+    "imagen": "/images/productos/vd-12050-ng.webp",
     "imagen_archivo": "vd-12050-ng.webp",
     "destacado": 0,
     "pagina_pdf": 40
@@ -5665,7 +5404,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-10035-ng.webp",
+    "imagen": "/images/productos/vd-10035-ng.webp",
     "imagen_archivo": "vd-10035-ng.webp",
     "destacado": 0,
     "pagina_pdf": 40
@@ -5685,7 +5424,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-12035-ng.webp",
+    "imagen": "/images/productos/vd-12035-ng.webp",
     "imagen_archivo": "vd-12035-ng.webp",
     "destacado": 0,
     "pagina_pdf": 40
@@ -5705,7 +5444,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-10060-ng.webp",
+    "imagen": "/images/productos/vd-10060-ng.webp",
     "imagen_archivo": "vd-10060-ng.webp",
     "destacado": 0,
     "pagina_pdf": 40
@@ -5725,7 +5464,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-12060-ng.webp",
+    "imagen": "/images/productos/vd-12060-ng.webp",
     "imagen_archivo": "vd-12060-ng.webp",
     "destacado": 0,
     "pagina_pdf": 40
@@ -5745,7 +5484,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-10070-ng.webp",
+    "imagen": "/images/productos/vd-10070-ng.webp",
     "imagen_archivo": "vd-10070-ng.webp",
     "destacado": 0,
     "pagina_pdf": 40
@@ -5765,7 +5504,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-12070-ng.webp",
+    "imagen": "/images/productos/vd-12070-ng.webp",
     "imagen_archivo": "vd-12070-ng.webp",
     "destacado": 0,
     "pagina_pdf": 40
@@ -5785,7 +5524,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-9090-ng.webp",
+    "imagen": "/images/productos/vd-9090-ng.webp",
     "imagen_archivo": "vd-9090-ng.webp",
     "destacado": 0,
     "pagina_pdf": 41
@@ -5805,7 +5544,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-7070-ng.webp",
+    "imagen": "/images/productos/vd-7070-ng.webp",
     "imagen_archivo": "vd-7070-ng.webp",
     "destacado": 0,
     "pagina_pdf": 41
@@ -5825,7 +5564,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-6040-ni.webp",
+    "imagen": "/images/productos/vd-6040-ni.webp",
     "imagen_archivo": "vd-6040-ni.webp",
     "destacado": 0,
     "pagina_pdf": 41
@@ -5845,7 +5584,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-7040-ni.webp",
+    "imagen": "/images/productos/vd-7040-ni.webp",
     "imagen_archivo": "vd-7040-ni.webp",
     "destacado": 0,
     "pagina_pdf": 41
@@ -5865,7 +5604,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-8040-ni.webp",
+    "imagen": "/images/productos/vd-8040-ni.webp",
     "imagen_archivo": "vd-8040-ni.webp",
     "destacado": 0,
     "pagina_pdf": 41
@@ -5885,7 +5624,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-8050-ni.webp",
+    "imagen": "/images/productos/vd-8050-ni.webp",
     "imagen_archivo": "vd-8050-ni.webp",
     "destacado": 0,
     "pagina_pdf": 41
@@ -5905,7 +5644,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-10050-ni.webp",
+    "imagen": "/images/productos/vd-10050-ni.webp",
     "imagen_archivo": "vd-10050-ni.webp",
     "destacado": 0,
     "pagina_pdf": 41
@@ -5925,7 +5664,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-12050-ni.webp",
+    "imagen": "/images/productos/vd-12050-ni.webp",
     "imagen_archivo": "vd-12050-ni.webp",
     "destacado": 0,
     "pagina_pdf": 41
@@ -5945,7 +5684,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-10035-ni.webp",
+    "imagen": "/images/productos/vd-10035-ni.webp",
     "imagen_archivo": "vd-10035-ni.webp",
     "destacado": 0,
     "pagina_pdf": 42
@@ -5965,7 +5704,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-12035-ni.webp",
+    "imagen": "/images/productos/vd-12035-ni.webp",
     "imagen_archivo": "vd-12035-ni.webp",
     "destacado": 0,
     "pagina_pdf": 42
@@ -5985,7 +5724,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-10060-ni.webp",
+    "imagen": "/images/productos/vd-10060-ni.webp",
     "imagen_archivo": "vd-10060-ni.webp",
     "destacado": 0,
     "pagina_pdf": 42
@@ -6005,7 +5744,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-12060-ni.webp",
+    "imagen": "/images/productos/vd-12060-ni.webp",
     "imagen_archivo": "vd-12060-ni.webp",
     "destacado": 0,
     "pagina_pdf": 42
@@ -6025,7 +5764,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-10070-ni.webp",
+    "imagen": "/images/productos/vd-10070-ni.webp",
     "imagen_archivo": "vd-10070-ni.webp",
     "destacado": 0,
     "pagina_pdf": 42
@@ -6045,7 +5784,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-12070-ni.webp",
+    "imagen": "/images/productos/vd-12070-ni.webp",
     "imagen_archivo": "vd-12070-ni.webp",
     "destacado": 0,
     "pagina_pdf": 42
@@ -6065,7 +5804,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-9090-ni.webp",
+    "imagen": "/images/productos/vd-9090-ni.webp",
     "imagen_archivo": "vd-9090-ni.webp",
     "destacado": 0,
     "pagina_pdf": 42
@@ -6085,7 +5824,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vd-7070-ni.webp",
+    "imagen": "/images/productos/vd-7070-ni.webp",
     "imagen_archivo": "vd-7070-ni.webp",
     "destacado": 0,
     "pagina_pdf": 42
@@ -6105,7 +5844,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vs-4030-ng.webp",
+    "imagen": "/images/productos/vs-4030-ng.webp",
     "imagen_archivo": "vs-4030-ng.webp",
     "destacado": 0,
     "pagina_pdf": 43
@@ -6125,7 +5864,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vs-4530-ng.webp",
+    "imagen": "/images/productos/vs-4530-ng.webp",
     "imagen_archivo": "vs-4530-ng.webp",
     "destacado": 0,
     "pagina_pdf": 43
@@ -6145,7 +5884,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vs-6030-ng.webp",
+    "imagen": "/images/productos/vs-6030-ng.webp",
     "imagen_archivo": "vs-6030-ng.webp",
     "destacado": 0,
     "pagina_pdf": 43
@@ -6165,7 +5904,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vs-4030-ni.webp",
+    "imagen": "/images/productos/vs-4030-ni.webp",
     "imagen_archivo": "vs-4030-ni.webp",
     "destacado": 0,
     "pagina_pdf": 43
@@ -6185,7 +5924,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vs-4530-ni.webp",
+    "imagen": "/images/productos/vs-4530-ni.webp",
     "imagen_archivo": "vs-4530-ni.webp",
     "destacado": 0,
     "pagina_pdf": 43
@@ -6205,7 +5944,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vs-6030-ni.webp",
+    "imagen": "/images/productos/vs-6030-ni.webp",
     "imagen_archivo": "vs-6030-ni.webp",
     "destacado": 0,
     "pagina_pdf": 43
@@ -6225,7 +5964,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vs-6040-ni.webp",
+    "imagen": "/images/productos/vs-6040-ni.webp",
     "imagen_archivo": "vs-6040-ni.webp",
     "destacado": 0,
     "pagina_pdf": 43
@@ -6245,7 +5984,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vs-8050-ni.webp",
+    "imagen": "/images/productos/vs-8050-ni.webp",
     "imagen_archivo": "vs-8050-ni.webp",
     "destacado": 0,
     "pagina_pdf": 43
@@ -6265,7 +6004,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vs-10050-ni.webp",
+    "imagen": "/images/productos/vs-10050-ni.webp",
     "imagen_archivo": "vs-10050-ni.webp",
     "destacado": 0,
     "pagina_pdf": 44
@@ -6285,7 +6024,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vs-9090-ni.webp",
+    "imagen": "/images/productos/vs-9090-ni.webp",
     "imagen_archivo": "vs-9090-ni.webp",
     "destacado": 0,
     "pagina_pdf": 44
@@ -6305,7 +6044,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vf-7023-ng.webp",
+    "imagen": "/images/productos/vf-7023-ng.webp",
     "imagen_archivo": "vf-7023-ng.webp",
     "destacado": 0,
     "pagina_pdf": 44
@@ -6325,7 +6064,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vf-8050-ng.webp",
+    "imagen": "/images/productos/vf-8050-ng.webp",
     "imagen_archivo": "vf-8050-ng.webp",
     "destacado": 0,
     "pagina_pdf": 44
@@ -6345,7 +6084,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vf-10050-ng.webp",
+    "imagen": "/images/productos/vf-10050-ng.webp",
     "imagen_archivo": "vf-10050-ng.webp",
     "destacado": 0,
     "pagina_pdf": 44
@@ -6365,7 +6104,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vf-7023-ni.webp",
+    "imagen": "/images/productos/vf-7023-ni.webp",
     "imagen_archivo": "vf-7023-ni.webp",
     "destacado": 0,
     "pagina_pdf": 44
@@ -6385,7 +6124,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vf-8050-ni.webp",
+    "imagen": "/images/productos/vf-8050-ni.webp",
     "imagen_archivo": "vf-8050-ni.webp",
     "destacado": 0,
     "pagina_pdf": 44
@@ -6405,7 +6144,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vf-10050-ni.webp",
+    "imagen": "/images/productos/vf-10050-ni.webp",
     "imagen_archivo": "vf-10050-ni.webp",
     "destacado": 0,
     "pagina_pdf": 44
@@ -6423,7 +6162,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vob-42.webp",
+    "imagen": "/images/productos/vob-42.webp",
     "imagen_archivo": "vob-42.webp",
     "destacado": 0,
     "pagina_pdf": 45
@@ -6441,7 +6180,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vob-40.webp",
+    "imagen": "/images/productos/vob-40.webp",
     "imagen_archivo": "vob-40.webp",
     "destacado": 0,
     "pagina_pdf": 45
@@ -6459,7 +6198,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/vob-26.webp",
+    "imagen": "/images/productos/vob-26.webp",
     "imagen_archivo": "vob-26.webp",
     "destacado": 0,
     "pagina_pdf": 45
@@ -6478,7 +6217,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/a-3535-evmc.webp",
+    "imagen": "/images/productos/a-3535-evmc.webp",
     "imagen_archivo": "a-3535-evmc.webp",
     "destacado": 0,
     "pagina_pdf": 45
@@ -6497,7 +6236,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/a-3535-evm.webp",
+    "imagen": "/images/productos/a-3535-evm.webp",
     "imagen_archivo": "a-3535-evm.webp",
     "destacado": 0,
     "pagina_pdf": 45
@@ -6516,7 +6255,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/a-3535-evmcb.webp",
+    "imagen": "/images/productos/a-3535-evmcb.webp",
     "imagen_archivo": "a-3535-evmcb.webp",
     "destacado": 0,
     "pagina_pdf": 45
@@ -6535,7 +6274,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/a-2828-evm.webp",
+    "imagen": "/images/productos/a-2828-evm.webp",
     "imagen_archivo": "a-2828-evm.webp",
     "destacado": 0,
     "pagina_pdf": 45
@@ -6554,7 +6293,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/a-3535-emb.webp",
+    "imagen": "/images/productos/a-3535-emb.webp",
     "imagen_archivo": "a-3535-emb.webp",
     "destacado": 0,
     "pagina_pdf": 46
@@ -6573,7 +6312,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/a-3535-emt.webp",
+    "imagen": "/images/productos/a-3535-emt.webp",
     "imagen_archivo": "a-3535-emt.webp",
     "destacado": 0,
     "pagina_pdf": 46
@@ -6592,7 +6331,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/a-5070-blm.webp",
+    "imagen": "/images/productos/a-5070-blm.webp",
     "imagen_archivo": "a-5070-blm.webp",
     "destacado": 0,
     "pagina_pdf": 46
@@ -6611,7 +6350,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/a-4040-blm.webp",
+    "imagen": "/images/productos/a-4040-blm.webp",
     "imagen_archivo": "a-4040-blm.webp",
     "destacado": 0,
     "pagina_pdf": 46
@@ -6630,7 +6369,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/a-5050-ec.webp",
+    "imagen": "/images/productos/a-5050-ec.webp",
     "imagen_archivo": "a-5050-ec.webp",
     "destacado": 0,
     "pagina_pdf": 46
@@ -6648,7 +6387,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/a-2030-v.webp",
+    "imagen": "/images/productos/a-2030-v.webp",
     "imagen_archivo": "a-2030-v.webp",
     "destacado": 0,
     "pagina_pdf": 46
@@ -6666,7 +6405,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/a-3535-v.webp",
+    "imagen": "/images/productos/a-3535-v.webp",
     "imagen_archivo": "a-3535-v.webp",
     "destacado": 0,
     "pagina_pdf": 46
@@ -6684,7 +6423,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/a-3550-v.webp",
+    "imagen": "/images/productos/a-3550-v.webp",
     "imagen_archivo": "a-3550-v.webp",
     "destacado": 0,
     "pagina_pdf": 47
@@ -6702,7 +6441,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/a-5050-v.webp",
+    "imagen": "/images/productos/a-5050-v.webp",
     "imagen_archivo": "a-5050-v.webp",
     "destacado": 0,
     "pagina_pdf": 47
@@ -6720,7 +6459,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/a-2030-a.webp",
+    "imagen": "/images/productos/a-2030-a.webp",
     "imagen_archivo": "a-2030-a.webp",
     "destacado": 0,
     "pagina_pdf": 47
@@ -6738,7 +6477,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/a-3550-a.webp",
+    "imagen": "/images/productos/a-3550-a.webp",
     "imagen_archivo": "a-3550-a.webp",
     "destacado": 0,
     "pagina_pdf": 47
@@ -6756,7 +6495,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/a-3550-c.webp",
+    "imagen": "/images/productos/a-3550-c.webp",
     "imagen_archivo": "a-3550-c.webp",
     "destacado": 0,
     "pagina_pdf": 47
@@ -6774,7 +6513,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/a-2030-abs.webp",
+    "imagen": "/images/productos/a-2030-abs.webp",
     "imagen_archivo": "a-2030-abs.webp",
     "destacado": 0,
     "pagina_pdf": 47
@@ -6793,7 +6532,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/a-3535-mt.webp",
+    "imagen": "/images/productos/a-3535-mt.webp",
     "imagen_archivo": "a-3535-mt.webp",
     "destacado": 0,
     "pagina_pdf": 47
@@ -6812,7 +6551,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/a-3535-mb.webp",
+    "imagen": "/images/productos/a-3535-mb.webp",
     "imagen_archivo": "a-3535-mb.webp",
     "destacado": 0,
     "pagina_pdf": 48
@@ -6830,7 +6569,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/eth-12.webp",
+    "imagen": "/images/productos/eth-12.webp",
     "imagen_archivo": "eth-12.webp",
     "destacado": 0,
     "pagina_pdf": 48
@@ -6848,7 +6587,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/es-21-7.webp",
+    "imagen": "/images/productos/es-21-7.webp",
     "imagen_archivo": "es-21-7.webp",
     "destacado": 0,
     "pagina_pdf": 48
@@ -6866,7 +6605,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/el-12.webp",
+    "imagen": "/images/productos/el-12.webp",
     "imagen_archivo": "el-12.webp",
     "destacado": 0,
     "pagina_pdf": 48
@@ -6884,7 +6623,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rdn.webp",
+    "imagen": "/images/productos/rdn.webp",
     "imagen_archivo": "rdn.webp",
     "destacado": 0,
     "pagina_pdf": 48
@@ -6902,7 +6641,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rdb.webp",
+    "imagen": "/images/productos/rdb.webp",
     "imagen_archivo": "rdb.webp",
     "destacado": 0,
     "pagina_pdf": 48
@@ -6920,7 +6659,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rsn.webp",
+    "imagen": "/images/productos/rsn.webp",
     "imagen_archivo": "rsn.webp",
     "destacado": 0,
     "pagina_pdf": 48
@@ -6938,7 +6677,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/rsb.webp",
+    "imagen": "/images/productos/rsb.webp",
     "imagen_archivo": "rsb.webp",
     "destacado": 0,
     "pagina_pdf": 48
@@ -6955,7 +6694,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/c-pa-e.webp",
+    "imagen": "/images/productos/c-pa-e.webp",
     "imagen_archivo": "c-pa-e.webp",
     "destacado": 0,
     "pagina_pdf": 49
@@ -6974,7 +6713,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/c-pa-r.webp",
+    "imagen": "/images/productos/c-pa-r.webp",
     "imagen_archivo": "c-pa-r.webp",
     "destacado": 0,
     "pagina_pdf": 49
@@ -6992,7 +6731,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/c-pa-lc.webp",
+    "imagen": "/images/productos/c-pa-lc.webp",
     "imagen_archivo": "c-pa-lc.webp",
     "destacado": 0,
     "pagina_pdf": 49
@@ -7010,7 +6749,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/c-pa-ln.webp",
+    "imagen": "/images/productos/c-pa-ln.webp",
     "imagen_archivo": "c-pa-ln.webp",
     "destacado": 0,
     "pagina_pdf": 49
@@ -7028,7 +6767,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/c-b-ai.webp",
+    "imagen": "/images/productos/c-b-ai.webp",
     "imagen_archivo": "c-b-ai.webp",
     "destacado": 0,
     "pagina_pdf": 49
@@ -7046,7 +6785,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/c-b-n.webp",
+    "imagen": "/images/productos/c-b-n.webp",
     "imagen_archivo": "c-b-n.webp",
     "destacado": 0,
     "pagina_pdf": 49
@@ -7063,7 +6802,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/c-b-pe.webp",
+    "imagen": "/images/productos/c-b-pe.webp",
     "imagen_archivo": "c-b-pe.webp",
     "destacado": 0,
     "pagina_pdf": 49
@@ -7080,7 +6819,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/c-lpc.webp",
+    "imagen": "/images/productos/c-lpc.webp",
     "imagen_archivo": "c-lpc.webp",
     "destacado": 0,
     "pagina_pdf": 50
@@ -7097,7 +6836,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/c-lp.webp",
+    "imagen": "/images/productos/c-lp.webp",
     "imagen_archivo": "c-lp.webp",
     "destacado": 0,
     "pagina_pdf": 50
@@ -7115,7 +6854,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/c-b-p.webp",
+    "imagen": "/images/productos/c-b-p.webp",
     "imagen_archivo": "c-b-p.webp",
     "destacado": 0,
     "pagina_pdf": 50
@@ -7132,7 +6871,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/c-b-e.webp",
+    "imagen": "/images/productos/c-b-e.webp",
     "imagen_archivo": "c-b-e.webp",
     "destacado": 0,
     "pagina_pdf": 50
@@ -7150,7 +6889,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/c-plt-c.webp",
+    "imagen": "/images/productos/c-plt-c.webp",
     "imagen_archivo": "c-plt-c.webp",
     "destacado": 0,
     "pagina_pdf": 50
@@ -7169,7 +6908,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/c-pl-bc.webp",
+    "imagen": "/images/productos/c-pl-bc.webp",
     "imagen_archivo": "c-pl-bc.webp",
     "destacado": 0,
     "pagina_pdf": 50
@@ -7188,7 +6927,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/c-pl-n.webp",
+    "imagen": "/images/productos/c-pl-n.webp",
     "imagen_archivo": "c-pl-n.webp",
     "destacado": 0,
     "pagina_pdf": 50
@@ -7207,7 +6946,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/c-pl-c.webp",
+    "imagen": "/images/productos/c-pl-c.webp",
     "imagen_archivo": "c-pl-c.webp",
     "destacado": 0,
     "pagina_pdf": 51
@@ -7226,7 +6965,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bb-18-e.webp",
+    "imagen": "/images/productos/bb-18-e.webp",
     "imagen_archivo": "bb-18-e.webp",
     "destacado": 0,
     "pagina_pdf": 51
@@ -7245,7 +6984,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bb-20-t.webp",
+    "imagen": "/images/productos/bb-20-t.webp",
     "imagen_archivo": "bb-20-t.webp",
     "destacado": 0,
     "pagina_pdf": 51
@@ -7264,7 +7003,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bb-195-t.webp",
+    "imagen": "/images/productos/bb-195-t.webp",
     "imagen_archivo": "bb-195-t.webp",
     "destacado": 0,
     "pagina_pdf": 51
@@ -7283,7 +7022,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bb-20-ma.webp",
+    "imagen": "/images/productos/bb-20-ma.webp",
     "imagen_archivo": "bb-20-ma.webp",
     "destacado": 0,
     "pagina_pdf": 51
@@ -7302,7 +7041,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bb-36-da.webp",
+    "imagen": "/images/productos/bb-36-da.webp",
     "imagen_archivo": "bb-36-da.webp",
     "destacado": 0,
     "pagina_pdf": 51
@@ -7322,7 +7061,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bb-22-da.webp",
+    "imagen": "/images/productos/bb-22-da.webp",
     "imagen_archivo": "bb-22-da.webp",
     "destacado": 0,
     "pagina_pdf": 51
@@ -7342,7 +7081,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bb-22-djba.webp",
+    "imagen": "/images/productos/bb-22-djba.webp",
     "imagen_archivo": "bb-22-djba.webp",
     "destacado": 0,
     "pagina_pdf": 51
@@ -7362,7 +7101,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bb-25-sh13a.webp",
+    "imagen": "/images/productos/bb-25-sh13a.webp",
     "imagen_archivo": "bb-25-sh13a.webp",
     "destacado": 0,
     "pagina_pdf": 52
@@ -7382,7 +7121,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bb-25-sd13a.webp",
+    "imagen": "/images/productos/bb-25-sd13a.webp",
     "imagen_archivo": "bb-25-sd13a.webp",
     "destacado": 0,
     "pagina_pdf": 52
@@ -7402,7 +7141,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bb-9-sa.webp",
+    "imagen": "/images/productos/bb-9-sa.webp",
     "imagen_archivo": "bb-9-sa.webp",
     "destacado": 0,
     "pagina_pdf": 52
@@ -7421,7 +7160,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bb-25-d.webp",
+    "imagen": "/images/productos/bb-25-d.webp",
     "imagen_archivo": "bb-25-d.webp",
     "destacado": 0,
     "pagina_pdf": 52
@@ -7441,7 +7180,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bb-35-djbc.webp",
+    "imagen": "/images/productos/bb-35-djbc.webp",
     "imagen_archivo": "bb-35-djbc.webp",
     "destacado": 0,
     "pagina_pdf": 52
@@ -7460,7 +7199,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bb-35-svc.webp",
+    "imagen": "/images/productos/bb-35-svc.webp",
     "imagen_archivo": "bb-35-svc.webp",
     "destacado": 0,
     "pagina_pdf": 52
@@ -7477,7 +7216,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bb-18.webp",
+    "imagen": "/images/productos/bb-18.webp",
     "imagen_archivo": "bb-18.webp",
     "destacado": 0,
     "pagina_pdf": 52
@@ -7494,7 +7233,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bb-25.webp",
+    "imagen": "/images/productos/bb-25.webp",
     "imagen_archivo": "bb-25.webp",
     "destacado": 0,
     "pagina_pdf": 52
@@ -7511,7 +7250,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bb-27.webp",
+    "imagen": "/images/productos/bb-27.webp",
     "imagen_archivo": "bb-27.webp",
     "destacado": 0,
     "pagina_pdf": 53
@@ -7529,7 +7268,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pm-e-bp.webp",
+    "imagen": "/images/productos/pm-e-bp.webp",
     "imagen_archivo": "pm-e-bp.webp",
     "destacado": 0,
     "pagina_pdf": 53
@@ -7549,7 +7288,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pmd-rr100.webp",
+    "imagen": "/images/productos/pmd-rr100.webp",
     "imagen_archivo": "pmd-rr100.webp",
     "destacado": 0,
     "pagina_pdf": 53
@@ -7569,7 +7308,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pmd-rr110.webp",
+    "imagen": "/images/productos/pmd-rr110.webp",
     "imagen_archivo": "pmd-rr110.webp",
     "destacado": 0,
     "pagina_pdf": 53
@@ -7589,7 +7328,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pms-rm01.webp",
+    "imagen": "/images/productos/pms-rm01.webp",
     "imagen_archivo": "pms-rm01.webp",
     "destacado": 0,
     "pagina_pdf": 53
@@ -7609,7 +7348,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pms-rm02.webp",
+    "imagen": "/images/productos/pms-rm02.webp",
     "imagen_archivo": "pms-rm02.webp",
     "destacado": 0,
     "pagina_pdf": 53
@@ -7629,7 +7368,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pms-rm03.webp",
+    "imagen": "/images/productos/pms-rm03.webp",
     "imagen_archivo": "pms-rm03.webp",
     "destacado": 0,
     "pagina_pdf": 53
@@ -7649,7 +7388,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pmd-rm04.webp",
+    "imagen": "/images/productos/pmd-rm04.webp",
     "imagen_archivo": "pmd-rm04.webp",
     "destacado": 0,
     "pagina_pdf": 53
@@ -7669,7 +7408,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pmd-rm05.webp",
+    "imagen": "/images/productos/pmd-rm05.webp",
     "imagen_archivo": "pmd-rm05.webp",
     "destacado": 0,
     "pagina_pdf": 54
@@ -7689,7 +7428,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pmd-rm09.webp",
+    "imagen": "/images/productos/pmd-rm09.webp",
     "imagen_archivo": "pmd-rm09.webp",
     "destacado": 0,
     "pagina_pdf": 54
@@ -7709,7 +7448,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pms-rm06.webp",
+    "imagen": "/images/productos/pms-rm06.webp",
     "imagen_archivo": "pms-rm06.webp",
     "destacado": 0,
     "pagina_pdf": 54
@@ -7729,7 +7468,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pms-rm07.webp",
+    "imagen": "/images/productos/pms-rm07.webp",
     "imagen_archivo": "pms-rm07.webp",
     "destacado": 0,
     "pagina_pdf": 54
@@ -7750,7 +7489,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pms-rm08.webp",
+    "imagen": "/images/productos/pms-rm08.webp",
     "imagen_archivo": "pms-rm08.webp",
     "destacado": 0,
     "pagina_pdf": 54
@@ -7769,7 +7508,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pm-fc.webp",
+    "imagen": "/images/productos/pm-fc.webp",
     "imagen_archivo": "pm-fc.webp",
     "destacado": 0,
     "pagina_pdf": 54
@@ -7788,7 +7527,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pm-fc-ap.webp",
+    "imagen": "/images/productos/pm-fc-ap.webp",
     "imagen_archivo": "pm-fc-ap.webp",
     "destacado": 0,
     "pagina_pdf": 54
@@ -7807,7 +7546,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bg-mp.webp",
+    "imagen": "/images/productos/bg-mp.webp",
     "imagen_archivo": "bg-mp.webp",
     "destacado": 0,
     "pagina_pdf": 54
@@ -7825,7 +7564,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bg-m.webp",
+    "imagen": "/images/productos/bg-m.webp",
     "imagen_archivo": "bg-m.webp",
     "destacado": 0,
     "pagina_pdf": 55
@@ -7843,7 +7582,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/er-s-n.webp",
+    "imagen": "/images/productos/er-s-n.webp",
     "imagen_archivo": "er-s-n.webp",
     "destacado": 0,
     "pagina_pdf": 55
@@ -7862,7 +7601,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/m18020.webp",
+    "imagen": "/images/productos/m18020.webp",
     "imagen_archivo": "m18020.webp",
     "destacado": 0,
     "pagina_pdf": 55
@@ -7879,7 +7618,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tt-112-g.webp",
+    "imagen": "/images/productos/tt-112-g.webp",
     "imagen_archivo": "tt-112-g.webp",
     "destacado": 0,
     "pagina_pdf": 55
@@ -7897,7 +7636,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bc-20.webp",
+    "imagen": "/images/productos/bc-20.webp",
     "imagen_archivo": "bc-20.webp",
     "destacado": 0,
     "pagina_pdf": 55
@@ -7915,7 +7654,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bc-10.webp",
+    "imagen": "/images/productos/bc-10.webp",
     "imagen_archivo": "bc-10.webp",
     "destacado": 0,
     "pagina_pdf": 55
@@ -7933,7 +7672,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bc-5.webp",
+    "imagen": "/images/productos/bc-5.webp",
     "imagen_archivo": "bc-5.webp",
     "destacado": 0,
     "pagina_pdf": 55
@@ -7952,7 +7691,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ls-5000.webp",
+    "imagen": "/images/productos/ls-5000.webp",
     "imagen_archivo": "ls-5000.webp",
     "destacado": 0,
     "pagina_pdf": 56
@@ -7971,7 +7710,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ls-800.webp",
+    "imagen": "/images/productos/ls-800.webp",
     "imagen_archivo": "ls-800.webp",
     "destacado": 0,
     "pagina_pdf": 56
@@ -7990,7 +7729,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ti-lc-b.webp",
+    "imagen": "/images/productos/ti-lc-b.webp",
     "imagen_archivo": "ti-lc-b.webp",
     "destacado": 0,
     "pagina_pdf": 56
@@ -8009,7 +7748,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ti-lm-b.webp",
+    "imagen": "/images/productos/ti-lm-b.webp",
     "imagen_archivo": "ti-lm-b.webp",
     "destacado": 0,
     "pagina_pdf": 56
@@ -8028,7 +7767,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ti-lg-b.webp",
+    "imagen": "/images/productos/ti-lg-b.webp",
     "imagen_archivo": "ti-lg-b.webp",
     "destacado": 0,
     "pagina_pdf": 56
@@ -8046,7 +7785,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ti-lvc-b.webp",
+    "imagen": "/images/productos/ti-lvc-b.webp",
     "imagen_archivo": "ti-lvc-b.webp",
     "destacado": 0,
     "pagina_pdf": 56
@@ -8064,7 +7803,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ti-lvm-b.webp",
+    "imagen": "/images/productos/ti-lvm-b.webp",
     "imagen_archivo": "ti-lvm-b.webp",
     "destacado": 0,
     "pagina_pdf": 56
@@ -8082,7 +7821,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ti-tc-b.webp",
+    "imagen": "/images/productos/ti-tc-b.webp",
     "imagen_archivo": "ti-tc-b.webp",
     "destacado": 0,
     "pagina_pdf": 57
@@ -8100,7 +7839,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ti-tm-b.webp",
+    "imagen": "/images/productos/ti-tm-b.webp",
     "imagen_archivo": "ti-tm-b.webp",
     "destacado": 0,
     "pagina_pdf": 57
@@ -8118,7 +7857,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ti-tg-b.webp",
+    "imagen": "/images/productos/ti-tg-b.webp",
     "imagen_archivo": "ti-tg-b.webp",
     "destacado": 0,
     "pagina_pdf": 57
@@ -8136,7 +7875,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ti-4-bc.webp",
+    "imagen": "/images/productos/ti-4-bc.webp",
     "imagen_archivo": "ti-4-bc.webp",
     "destacado": 0,
     "pagina_pdf": 57
@@ -8154,7 +7893,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ti-4-nc.webp",
+    "imagen": "/images/productos/ti-4-nc.webp",
     "imagen_archivo": "ti-4-nc.webp",
     "destacado": 0,
     "pagina_pdf": 57
@@ -8172,7 +7911,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ti-6-bc.webp",
+    "imagen": "/images/productos/ti-6-bc.webp",
     "imagen_archivo": "ti-6-bc.webp",
     "destacado": 0,
     "pagina_pdf": 57
@@ -8190,7 +7929,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bbc12077.webp",
+    "imagen": "/images/productos/bbc12077.webp",
     "imagen_archivo": "bbc12077.webp",
     "destacado": 0,
     "pagina_pdf": 57
@@ -8208,7 +7947,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bbc11077.webp",
+    "imagen": "/images/productos/bbc11077.webp",
     "imagen_archivo": "bbc11077.webp",
     "destacado": 0,
     "pagina_pdf": 58
@@ -8226,7 +7965,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bbc8292.webp",
+    "imagen": "/images/productos/bbc8292.webp",
     "imagen_archivo": "bbc8292.webp",
     "destacado": 0,
     "pagina_pdf": 58
@@ -8244,7 +7983,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bbc7090.webp",
+    "imagen": "/images/productos/bbc7090.webp",
     "imagen_archivo": "bbc7090.webp",
     "destacado": 0,
     "pagina_pdf": 58
@@ -8262,7 +8001,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bbm12077.webp",
+    "imagen": "/images/productos/bbm12077.webp",
     "imagen_archivo": "bbm12077.webp",
     "destacado": 0,
     "pagina_pdf": 58
@@ -8280,7 +8019,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bbm11077.webp",
+    "imagen": "/images/productos/bbm11077.webp",
     "imagen_archivo": "bbm11077.webp",
     "destacado": 0,
     "pagina_pdf": 58
@@ -8298,7 +8037,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bbm8292.webp",
+    "imagen": "/images/productos/bbm8292.webp",
     "imagen_archivo": "bbm8292.webp",
     "destacado": 0,
     "pagina_pdf": 58
@@ -8316,7 +8055,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bbm7090.webp",
+    "imagen": "/images/productos/bbm7090.webp",
     "imagen_archivo": "bbm7090.webp",
     "destacado": 0,
     "pagina_pdf": 58
@@ -8334,7 +8073,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bbm8670.webp",
+    "imagen": "/images/productos/bbm8670.webp",
     "imagen_archivo": "bbm8670.webp",
     "destacado": 0,
     "pagina_pdf": 59
@@ -8353,7 +8092,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pfv.webp",
+    "imagen": "/images/productos/pfv.webp",
     "imagen_archivo": "pfv.webp",
     "destacado": 0,
     "pagina_pdf": 59
@@ -8371,7 +8110,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pd-6060.webp",
+    "imagen": "/images/productos/pd-6060.webp",
     "imagen_archivo": "pd-6060.webp",
     "destacado": 0,
     "pagina_pdf": 59
@@ -8389,7 +8128,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pd-7070.webp",
+    "imagen": "/images/productos/pd-7070.webp",
     "imagen_archivo": "pd-7070.webp",
     "destacado": 0,
     "pagina_pdf": 59
@@ -8407,7 +8146,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pd-7575.webp",
+    "imagen": "/images/productos/pd-7575.webp",
     "imagen_archivo": "pd-7575.webp",
     "destacado": 0,
     "pagina_pdf": 59
@@ -8425,7 +8164,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pd-8080.webp",
+    "imagen": "/images/productos/pd-8080.webp",
     "imagen_archivo": "pd-8080.webp",
     "destacado": 0,
     "pagina_pdf": 59
@@ -8443,7 +8182,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pd-9090.webp",
+    "imagen": "/images/productos/pd-9090.webp",
     "imagen_archivo": "pd-9090.webp",
     "destacado": 0,
     "pagina_pdf": 59
@@ -8461,7 +8200,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pdc-8080.webp",
+    "imagen": "/images/productos/pdc-8080.webp",
     "imagen_archivo": "pdc-8080.webp",
     "destacado": 0,
     "pagina_pdf": 60
@@ -8479,7 +8218,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pdc-9090.webp",
+    "imagen": "/images/productos/pdc-9090.webp",
     "imagen_archivo": "pdc-9090.webp",
     "destacado": 0,
     "pagina_pdf": 60
@@ -8497,7 +8236,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pd-10075.webp",
+    "imagen": "/images/productos/pd-10075.webp",
     "imagen_archivo": "pd-10075.webp",
     "destacado": 0,
     "pagina_pdf": 60
@@ -8515,7 +8254,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pd-12070.webp",
+    "imagen": "/images/productos/pd-12070.webp",
     "imagen_archivo": "pd-12070.webp",
     "destacado": 0,
     "pagina_pdf": 60
@@ -8533,7 +8272,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/pd-12080.webp",
+    "imagen": "/images/productos/pd-12080.webp",
     "imagen_archivo": "pd-12080.webp",
     "destacado": 0,
     "pagina_pdf": 60
@@ -8551,7 +8290,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ie-g-12.webp",
+    "imagen": "/images/productos/ie-g-12.webp",
     "imagen_archivo": "ie-g-12.webp",
     "destacado": 0,
     "pagina_pdf": 60
@@ -8569,7 +8308,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ie-c-12.webp",
+    "imagen": "/images/productos/ie-c-12.webp",
     "imagen_archivo": "ie-c-12.webp",
     "destacado": 0,
     "pagina_pdf": 60
@@ -8587,7 +8326,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ie-tca-12.webp",
+    "imagen": "/images/productos/ie-tca-12.webp",
     "imagen_archivo": "ie-tca-12.webp",
     "destacado": 0,
     "pagina_pdf": 61
@@ -8605,7 +8344,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ie-tcb-12.webp",
+    "imagen": "/images/productos/ie-tcb-12.webp",
     "imagen_archivo": "ie-tcb-12.webp",
     "destacado": 0,
     "pagina_pdf": 61
@@ -8623,7 +8362,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ie-g-24.webp",
+    "imagen": "/images/productos/ie-g-24.webp",
     "imagen_archivo": "ie-g-24.webp",
     "destacado": 0,
     "pagina_pdf": 61
@@ -8641,7 +8380,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ie-cs-12.webp",
+    "imagen": "/images/productos/ie-cs-12.webp",
     "imagen_archivo": "ie-cs-12.webp",
     "destacado": 0,
     "pagina_pdf": 61
@@ -8659,7 +8398,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ie-gs-12.webp",
+    "imagen": "/images/productos/ie-gs-12.webp",
     "imagen_archivo": "ie-gs-12.webp",
     "destacado": 0,
     "pagina_pdf": 61
@@ -8677,7 +8416,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ie-tcs-12.webp",
+    "imagen": "/images/productos/ie-tcs-12.webp",
     "imagen_archivo": "ie-tcs-12.webp",
     "destacado": 0,
     "pagina_pdf": 61
@@ -8694,7 +8433,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ip-th-br.webp",
+    "imagen": "/images/productos/ip-th-br.webp",
     "imagen_archivo": "ip-th-br.webp",
     "destacado": 0,
     "pagina_pdf": 61
@@ -8712,7 +8451,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ip-th-a.webp",
+    "imagen": "/images/productos/ip-th-a.webp",
     "imagen_archivo": "ip-th-a.webp",
     "destacado": 0,
     "pagina_pdf": 61
@@ -8730,7 +8469,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ip-th-b.webp",
+    "imagen": "/images/productos/ip-th-b.webp",
     "imagen_archivo": "ip-th-b.webp",
     "destacado": 0,
     "pagina_pdf": 62
@@ -8747,7 +8486,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ip-p.webp",
+    "imagen": "/images/productos/ip-p.webp",
     "imagen_archivo": "ip-p.webp",
     "destacado": 0,
     "pagina_pdf": 62
@@ -8764,7 +8503,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ip-bp.webp",
+    "imagen": "/images/productos/ip-bp.webp",
     "imagen_archivo": "ip-bp.webp",
     "destacado": 0,
     "pagina_pdf": 62
@@ -8781,7 +8520,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ip-s-d.webp",
+    "imagen": "/images/productos/ip-s-d.webp",
     "imagen_archivo": "ip-s-d.webp",
     "destacado": 0,
     "pagina_pdf": 62
@@ -8798,7 +8537,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ip-s.webp",
+    "imagen": "/images/productos/ip-s.webp",
     "imagen_archivo": "ip-s.webp",
     "destacado": 0,
     "pagina_pdf": 62
@@ -8815,7 +8554,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ip-bs.webp",
+    "imagen": "/images/productos/ip-bs.webp",
     "imagen_archivo": "ip-bs.webp",
     "destacado": 0,
     "pagina_pdf": 62
@@ -8833,7 +8572,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/iqc-22-g.webp",
+    "imagen": "/images/productos/iqc-22-g.webp",
     "imagen_archivo": "iqc-22-g.webp",
     "destacado": 0,
     "pagina_pdf": 62
@@ -8851,7 +8590,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/iqc-24.webp",
+    "imagen": "/images/productos/iqc-24.webp",
     "imagen_archivo": "iqc-24.webp",
     "destacado": 0,
     "pagina_pdf": 62
@@ -8869,7 +8608,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/iq-20-p.webp",
+    "imagen": "/images/productos/iq-20-p.webp",
     "imagen_archivo": "iq-20-p.webp",
     "destacado": 0,
     "pagina_pdf": 63
@@ -8887,7 +8626,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/iq-20-fd.webp",
+    "imagen": "/images/productos/iq-20-fd.webp",
     "imagen_archivo": "iq-20-fd.webp",
     "destacado": 0,
     "pagina_pdf": 63
@@ -8905,7 +8644,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/iq-20-f.webp",
+    "imagen": "/images/productos/iq-20-f.webp",
     "imagen_archivo": "iq-20-f.webp",
     "destacado": 0,
     "pagina_pdf": 63
@@ -8923,7 +8662,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/iq-10-f.webp",
+    "imagen": "/images/productos/iq-10-f.webp",
     "imagen_archivo": "iq-10-f.webp",
     "destacado": 0,
     "pagina_pdf": 63
@@ -8941,7 +8680,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/iq-22-s.webp",
+    "imagen": "/images/productos/iq-22-s.webp",
     "imagen_archivo": "iq-22-s.webp",
     "destacado": 0,
     "pagina_pdf": 63
@@ -8959,7 +8698,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/iq-20-s.webp",
+    "imagen": "/images/productos/iq-20-s.webp",
     "imagen_archivo": "iq-20-s.webp",
     "destacado": 0,
     "pagina_pdf": 63
@@ -8977,7 +8716,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/iq-18-s.webp",
+    "imagen": "/images/productos/iq-18-s.webp",
     "imagen_archivo": "iq-18-s.webp",
     "destacado": 0,
     "pagina_pdf": 63
@@ -8995,7 +8734,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/d-1-f.webp",
+    "imagen": "/images/productos/d-1-f.webp",
     "imagen_archivo": "d-1-f.webp",
     "destacado": 0,
     "pagina_pdf": 64
@@ -9013,7 +8752,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/d-1-t.webp",
+    "imagen": "/images/productos/d-1-t.webp",
     "imagen_archivo": "d-1-t.webp",
     "destacado": 0,
     "pagina_pdf": 64
@@ -9031,7 +8770,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/b-u.webp",
+    "imagen": "/images/productos/b-u.webp",
     "imagen_archivo": "b-u.webp",
     "destacado": 0,
     "pagina_pdf": 64
@@ -9050,7 +8789,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/de-fcm-n.webp",
+    "imagen": "/images/productos/de-fcm-n.webp",
     "imagen_archivo": "de-fcm-n.webp",
     "destacado": 0,
     "pagina_pdf": 64
@@ -9070,7 +8809,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/de-fc-s.webp",
+    "imagen": "/images/productos/de-fc-s.webp",
     "imagen_archivo": "de-fc-s.webp",
     "destacado": 0,
     "pagina_pdf": 64
@@ -9089,7 +8828,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/de-fc-d.webp",
+    "imagen": "/images/productos/de-fc-d.webp",
     "imagen_archivo": "de-fc-d.webp",
     "destacado": 0,
     "pagina_pdf": 64
@@ -9108,7 +8847,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/de-f-n.webp",
+    "imagen": "/images/productos/de-f-n.webp",
     "imagen_archivo": "de-f-n.webp",
     "destacado": 0,
     "pagina_pdf": 64
@@ -9126,7 +8865,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/de-s-20.webp",
+    "imagen": "/images/productos/de-s-20.webp",
     "imagen_archivo": "de-s-20.webp",
     "destacado": 0,
     "pagina_pdf": 64
@@ -9144,7 +8883,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/d-g-c.webp",
+    "imagen": "/images/productos/d-g-c.webp",
     "imagen_archivo": "d-g-c.webp",
     "destacado": 0,
     "pagina_pdf": 65
@@ -9162,7 +8901,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/d-c-c.webp",
+    "imagen": "/images/productos/d-c-c.webp",
     "imagen_archivo": "d-c-c.webp",
     "destacado": 0,
     "pagina_pdf": 65
@@ -9181,7 +8920,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/gm-da-n.webp",
+    "imagen": "/images/productos/gm-da-n.webp",
     "imagen_archivo": "gm-da-n.webp",
     "destacado": 0,
     "pagina_pdf": 65
@@ -9200,7 +8939,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/gm-da-c.webp",
+    "imagen": "/images/productos/gm-da-c.webp",
     "imagen_archivo": "gm-da-c.webp",
     "destacado": 0,
     "pagina_pdf": 65
@@ -9219,7 +8958,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/gm-dar-n.webp",
+    "imagen": "/images/productos/gm-dar-n.webp",
     "imagen_archivo": "gm-dar-n.webp",
     "destacado": 0,
     "pagina_pdf": 65
@@ -9238,7 +8977,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/gm-dar-c.webp",
+    "imagen": "/images/productos/gm-dar-c.webp",
     "imagen_archivo": "gm-dar-c.webp",
     "destacado": 0,
     "pagina_pdf": 65
@@ -9256,7 +8995,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/cc-rm-b.webp",
+    "imagen": "/images/productos/cc-rm-b.webp",
     "imagen_archivo": "cc-rm-b.webp",
     "destacado": 0,
     "pagina_pdf": 65
@@ -9274,7 +9013,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/cc-r-b.webp",
+    "imagen": "/images/productos/cc-r-b.webp",
     "imagen_archivo": "cc-r-b.webp",
     "destacado": 0,
     "pagina_pdf": 65
@@ -9293,7 +9032,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ba-sh-12.webp",
+    "imagen": "/images/productos/ba-sh-12.webp",
     "imagen_archivo": "ba-sh-12.webp",
     "destacado": 0,
     "pagina_pdf": 66
@@ -9312,7 +9051,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ba-sh-24.webp",
+    "imagen": "/images/productos/ba-sh-24.webp",
     "imagen_archivo": "ba-sh-24.webp",
     "destacado": 0,
     "pagina_pdf": 66
@@ -9329,7 +9068,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ba-sh-f.webp",
+    "imagen": "/images/productos/ba-sh-f.webp",
     "imagen_archivo": "ba-sh-f.webp",
     "destacado": 0,
     "pagina_pdf": 66
@@ -9347,7 +9086,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ba-sh-p.webp",
+    "imagen": "/images/productos/ba-sh-p.webp",
     "imagen_archivo": "ba-sh-p.webp",
     "destacado": 0,
     "pagina_pdf": 66
@@ -9367,7 +9106,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ba-s4-12.webp",
+    "imagen": "/images/productos/ba-s4-12.webp",
     "imagen_archivo": "ba-s4-12.webp",
     "destacado": 0,
     "pagina_pdf": 66
@@ -9387,7 +9126,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ba-s56-12.webp",
+    "imagen": "/images/productos/ba-s56-12.webp",
     "imagen_archivo": "ba-s56-12.webp",
     "destacado": 0,
     "pagina_pdf": 66
@@ -9407,7 +9146,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ba-s13-12.webp",
+    "imagen": "/images/productos/ba-s13-12.webp",
     "imagen_archivo": "ba-s13-12.webp",
     "destacado": 0,
     "pagina_pdf": 66
@@ -9427,7 +9166,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ba-s17-12.webp",
+    "imagen": "/images/productos/ba-s17-12.webp",
     "imagen_archivo": "ba-s17-12.webp",
     "destacado": 0,
     "pagina_pdf": 66
@@ -9447,7 +9186,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ba-s17-24.webp",
+    "imagen": "/images/productos/ba-s17-24.webp",
     "imagen_archivo": "ba-s17-24.webp",
     "destacado": 0,
     "pagina_pdf": 67
@@ -9465,7 +9204,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ba-s45-12.webp",
+    "imagen": "/images/productos/ba-s45-12.webp",
     "imagen_archivo": "ba-s45-12.webp",
     "destacado": 0,
     "pagina_pdf": 67
@@ -9483,7 +9222,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ba-4-12.webp",
+    "imagen": "/images/productos/ba-4-12.webp",
     "imagen_archivo": "ba-4-12.webp",
     "destacado": 0,
     "pagina_pdf": 67
@@ -9501,7 +9240,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ba-6-12.webp",
+    "imagen": "/images/productos/ba-6-12.webp",
     "imagen_archivo": "ba-6-12.webp",
     "destacado": 0,
     "pagina_pdf": 67
@@ -9519,7 +9258,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/bat-49-12.webp",
+    "imagen": "/images/productos/bat-49-12.webp",
     "imagen_archivo": "bat-49-12.webp",
     "destacado": 0,
     "pagina_pdf": 67
@@ -9537,7 +9276,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ta.webp",
+    "imagen": "/images/productos/ta.webp",
     "imagen_archivo": "ta.webp",
     "destacado": 0,
     "pagina_pdf": 67
@@ -9555,7 +9294,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tag.webp",
+    "imagen": "/images/productos/tag.webp",
     "imagen_archivo": "tag.webp",
     "destacado": 0,
     "pagina_pdf": 67
@@ -9572,7 +9311,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/lee-3.webp",
+    "imagen": "/images/productos/lee-3.webp",
     "imagen_archivo": "lee-3.webp",
     "destacado": 0,
     "pagina_pdf": 68
@@ -9589,7 +9328,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/le-3-c.webp",
+    "imagen": "/images/productos/le-3-c.webp",
     "imagen_archivo": "le-3-c.webp",
     "destacado": 0,
     "pagina_pdf": 68
@@ -9606,7 +9345,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/le-112-c.webp",
+    "imagen": "/images/productos/le-112-c.webp",
     "imagen_archivo": "le-112-c.webp",
     "destacado": 0,
     "pagina_pdf": 68
@@ -9623,7 +9362,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/le-3.webp",
+    "imagen": "/images/productos/le-3.webp",
     "imagen_archivo": "le-3.webp",
     "destacado": 0,
     "pagina_pdf": 68
@@ -9640,7 +9379,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/le-112.webp",
+    "imagen": "/images/productos/le-112.webp",
     "imagen_archivo": "le-112.webp",
     "destacado": 0,
     "pagina_pdf": 68
@@ -9657,7 +9396,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/at-le-3.webp",
+    "imagen": "/images/productos/at-le-3.webp",
     "imagen_archivo": "at-le-3.webp",
     "destacado": 0,
     "pagina_pdf": 68
@@ -9674,7 +9413,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/at-le-112.webp",
+    "imagen": "/images/productos/at-le-112.webp",
     "imagen_archivo": "at-le-112.webp",
     "destacado": 0,
     "pagina_pdf": 68
@@ -9692,7 +9431,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mt-1t.webp",
+    "imagen": "/images/productos/mt-1t.webp",
     "imagen_archivo": "mt-1t.webp",
     "destacado": 0,
     "pagina_pdf": 69
@@ -9710,7 +9449,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mt-2t.webp",
+    "imagen": "/images/productos/mt-2t.webp",
     "imagen_archivo": "mt-2t.webp",
     "destacado": 0,
     "pagina_pdf": 69
@@ -9728,7 +9467,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mt-3t.webp",
+    "imagen": "/images/productos/mt-3t.webp",
     "imagen_archivo": "mt-3t.webp",
     "destacado": 0,
     "pagina_pdf": 69
@@ -9746,7 +9485,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mt-1.webp",
+    "imagen": "/images/productos/mt-1.webp",
     "imagen_archivo": "mt-1.webp",
     "destacado": 0,
     "pagina_pdf": 69
@@ -9764,7 +9503,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mt-2.webp",
+    "imagen": "/images/productos/mt-2.webp",
     "imagen_archivo": "mt-2.webp",
     "destacado": 0,
     "pagina_pdf": 69
@@ -9782,7 +9521,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mt-3.webp",
+    "imagen": "/images/productos/mt-3.webp",
     "imagen_archivo": "mt-3.webp",
     "destacado": 0,
     "pagina_pdf": 69
@@ -9800,7 +9539,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/mt-4.webp",
+    "imagen": "/images/productos/mt-4.webp",
     "imagen_archivo": "mt-4.webp",
     "destacado": 0,
     "pagina_pdf": 69
@@ -9819,7 +9558,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ttl-112-nr.webp",
+    "imagen": "/images/productos/ttl-112-nr.webp",
     "imagen_archivo": "ttl-112-nr.webp",
     "destacado": 0,
     "pagina_pdf": 69
@@ -9837,7 +9576,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ttl-112-sb.webp",
+    "imagen": "/images/productos/ttl-112-sb.webp",
     "imagen_archivo": "ttl-112-sb.webp",
     "destacado": 0,
     "pagina_pdf": 70
@@ -9855,7 +9594,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ttl-112-b.webp",
+    "imagen": "/images/productos/ttl-112-b.webp",
     "imagen_archivo": "ttl-112-b.webp",
     "destacado": 0,
     "pagina_pdf": 70
@@ -9873,7 +9612,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/ttt-112-b.webp",
+    "imagen": "/images/productos/ttt-112-b.webp",
     "imagen_archivo": "ttt-112-b.webp",
     "destacado": 0,
     "pagina_pdf": 70
@@ -9892,7 +9631,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tt-112-nr.webp",
+    "imagen": "/images/productos/tt-112-nr.webp",
     "imagen_archivo": "tt-112-nr.webp",
     "destacado": 0,
     "pagina_pdf": 70
@@ -9910,7 +9649,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tt-112-b.webp",
+    "imagen": "/images/productos/tt-112-b.webp",
     "imagen_archivo": "tt-112-b.webp",
     "destacado": 0,
     "pagina_pdf": 70
@@ -9928,7 +9667,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tt-112-n.webp",
+    "imagen": "/images/productos/tt-112-n.webp",
     "imagen_archivo": "tt-112-n.webp",
     "destacado": 0,
     "pagina_pdf": 70
@@ -9946,7 +9685,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tab-40.webp",
+    "imagen": "/images/productos/tab-40.webp",
     "imagen_archivo": "tab-40.webp",
     "destacado": 0,
     "pagina_pdf": 70
@@ -9965,7 +9704,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tab-45.webp",
+    "imagen": "/images/productos/tab-45.webp",
     "imagen_archivo": "tab-45.webp",
     "destacado": 0,
     "pagina_pdf": 70
@@ -9983,7 +9722,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tab-55.webp",
+    "imagen": "/images/productos/tab-55.webp",
     "imagen_archivo": "tab-55.webp",
     "destacado": 0,
     "pagina_pdf": 71
@@ -10001,7 +9740,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tab-63.webp",
+    "imagen": "/images/productos/tab-63.webp",
     "imagen_archivo": "tab-63.webp",
     "destacado": 0,
     "pagina_pdf": 71
@@ -10020,7 +9759,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tab-56.webp",
+    "imagen": "/images/productos/tab-56.webp",
     "imagen_archivo": "tab-56.webp",
     "destacado": 0,
     "pagina_pdf": 71
@@ -10038,7 +9777,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tab-80.webp",
+    "imagen": "/images/productos/tab-80.webp",
     "imagen_archivo": "tab-80.webp",
     "destacado": 0,
     "pagina_pdf": 71
@@ -10057,7 +9796,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tab-90.webp",
+    "imagen": "/images/productos/tab-90.webp",
     "imagen_archivo": "tab-90.webp",
     "destacado": 0,
     "pagina_pdf": 71
@@ -10075,7 +9814,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tab-92.webp",
+    "imagen": "/images/productos/tab-92.webp",
     "imagen_archivo": "tab-92.webp",
     "destacado": 0,
     "pagina_pdf": 71
@@ -10094,7 +9833,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tab-100.webp",
+    "imagen": "/images/productos/tab-100.webp",
     "imagen_archivo": "tab-100.webp",
     "destacado": 0,
     "pagina_pdf": 71
@@ -10113,7 +9852,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tab-127.webp",
+    "imagen": "/images/productos/tab-127.webp",
     "imagen_archivo": "tab-127.webp",
     "destacado": 0,
     "pagina_pdf": 71
@@ -10131,7 +9870,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tab-130.webp",
+    "imagen": "/images/productos/tab-130.webp",
     "imagen_archivo": "tab-130.webp",
     "destacado": 0,
     "pagina_pdf": 72
@@ -10150,7 +9889,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tab-150.webp",
+    "imagen": "/images/productos/tab-150.webp",
     "imagen_archivo": "tab-150.webp",
     "destacado": 0,
     "pagina_pdf": 72
@@ -10168,7 +9907,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tab-235.webp",
+    "imagen": "/images/productos/tab-235.webp",
     "imagen_archivo": "tab-235.webp",
     "destacado": 0,
     "pagina_pdf": 72
@@ -10186,7 +9925,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tab-350.webp",
+    "imagen": "/images/productos/tab-350.webp",
     "imagen_archivo": "tab-350.webp",
     "destacado": 0,
     "pagina_pdf": 72
@@ -10205,7 +9944,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tab-450.webp",
+    "imagen": "/images/productos/tab-450.webp",
     "imagen_archivo": "tab-450.webp",
     "destacado": 0,
     "pagina_pdf": 72
@@ -10224,7 +9963,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tab-73-s.webp",
+    "imagen": "/images/productos/tab-73-s.webp",
     "imagen_archivo": "tab-73-s.webp",
     "destacado": 0,
     "pagina_pdf": 72
@@ -10244,7 +9983,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tab-125-s.webp",
+    "imagen": "/images/productos/tab-125-s.webp",
     "imagen_archivo": "tab-125-s.webp",
     "destacado": 0,
     "pagina_pdf": 72
@@ -10264,7 +10003,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tab-151-s.webp",
+    "imagen": "/images/productos/tab-151-s.webp",
     "imagen_archivo": "tab-151-s.webp",
     "destacado": 0,
     "pagina_pdf": 72
@@ -10282,7 +10021,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tan-63.webp",
+    "imagen": "/images/productos/tan-63.webp",
     "imagen_archivo": "tan-63.webp",
     "destacado": 0,
     "pagina_pdf": 73
@@ -10300,7 +10039,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tan-80.webp",
+    "imagen": "/images/productos/tan-80.webp",
     "imagen_archivo": "tan-80.webp",
     "destacado": 0,
     "pagina_pdf": 73
@@ -10318,7 +10057,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tan-90.webp",
+    "imagen": "/images/productos/tan-90.webp",
     "imagen_archivo": "tan-90.webp",
     "destacado": 0,
     "pagina_pdf": 73
@@ -10336,7 +10075,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tan-100.webp",
+    "imagen": "/images/productos/tan-100.webp",
     "imagen_archivo": "tan-100.webp",
     "destacado": 0,
     "pagina_pdf": 73
@@ -10354,7 +10093,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tan-130.webp",
+    "imagen": "/images/productos/tan-130.webp",
     "imagen_archivo": "tan-130.webp",
     "destacado": 0,
     "pagina_pdf": 73
@@ -10372,7 +10111,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tan-140.webp",
+    "imagen": "/images/productos/tan-140.webp",
     "imagen_archivo": "tan-140.webp",
     "destacado": 0,
     "pagina_pdf": 73
@@ -10390,7 +10129,7 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tan-235.webp",
+    "imagen": "/images/productos/tan-235.webp",
     "imagen_archivo": "tan-235.webp",
     "destacado": 0,
     "pagina_pdf": 73
@@ -10408,9 +10147,54 @@
     ],
     "precio": 0,
     "stock": 0,
-    "imagen": "https://rc-conversiones.vercel.app/images/productos/tan-350.webp",
+    "imagen": "/images/productos/tan-350.webp",
     "imagen_archivo": "tan-350.webp",
     "destacado": 0,
     "pagina_pdf": 73
+  },
+  {
+    "codigo": "TB.CAL.1224",
+    "nombre": "Caldera / Calefactor Diesel Total Black 12V / 24V 5KW",
+    "categoria": "Calefacción",
+    "subcategoria": "Calderas Total Black",
+    "precio": 0,
+    "stock": 0,
+    "descripcion": "Caldera/calefactor diésel Total Black para motorhomes y vehículos recreativos. Diseño compacto tipo TB-100, ideal para calefaccionar el habitáculo con instalación fija. Su formato permite una integración prolija y está orientado a uso móvil.",
+    "caracteristicas": "• Marca: Total Black\n• Tipo: caldera / calefactor diésel\n• Alimentación: 12V / 24V\n• Potencia: 5KW\n• Modelo de referencia: TB-100\n• Aplicación: motorhomes, campers y vehículos",
+    "imagen": "/images/productos/tb-caldera-totalblack.webp",
+    "destacado": 0,
+    "imagen_archivo": "tb-caldera-totalblack.webp",
+    "descripcion_original": "Caldera / Calefactor Diesel Total Black 12V / 24V 5KW",
+    "pagina_pdf": null
+  },
+  {
+    "codigo": "TB.AA.12",
+    "nombre": "Aire Acondicionado de Techo Total Black 12V",
+    "categoria": "Climatización",
+    "subcategoria": "Aires Total Black",
+    "precio": 0,
+    "stock": 0,
+    "descripcion": "Aire acondicionado de techo Total Black 12V para motorhomes. Equipo compacto de perfil bajo, pensado para montaje superior y climatización del habitáculo, con diseño limpio y adecuado para vehículos recreativos.",
+    "caracteristicas": "• Marca: Total Black\n• Tipo: aire acondicionado de techo\n• Alimentación: 12V\n• Medidas exteriores visibles: 720 x 650 x 150 mm\n• Aplicación: motorhomes y campers",
+    "imagen": "/images/productos/tb-aire-totalblack-12v.webp",
+    "destacado": 0,
+    "imagen_archivo": "tb-aire-totalblack-12v.webp",
+    "descripcion_original": "Aire Acondicionado de Techo Total Black 12V",
+    "pagina_pdf": null
+  },
+  {
+    "codigo": "TB.AA.24",
+    "nombre": "Aire Acondicionado de Techo Total Black 24V",
+    "categoria": "Climatización",
+    "subcategoria": "Aires Total Black",
+    "precio": 0,
+    "stock": 0,
+    "descripcion": "Aire acondicionado de techo Total Black 24V para motorhomes y vehículos especiales. Su formato compacto y de bajo perfil permite climatizar el interior manteniendo una estética prolija y una instalación superior.",
+    "caracteristicas": "• Marca: Total Black\n• Tipo: aire acondicionado de techo\n• Alimentación: 24V\n• Medidas exteriores visibles: 720 x 650 x 150 mm\n• Aplicación: motorhomes y campers",
+    "imagen": "/images/productos/tb-aire-totalblack-24v.webp",
+    "destacado": 0,
+    "imagen_archivo": "tb-aire-totalblack-24v.webp",
+    "descripcion_original": "Aire Acondicionado de Techo Total Black 24V",
+    "pagina_pdf": null
   }
 ]

@@ -35,6 +35,25 @@ function imagenProducto(imagen) {
         return "/images/logo.png";
     }
 
+    const valor = String(imagen).trim();
+
+    // Las imágenes del catálogo viven en el FRONTEND.
+    // Si MySQL guardó una URL absoluta de Vercel, usamos solo el pathname.
+    // Así funcionan tanto en localhost:5173 como en producción.
+    try {
+        if (valor.startsWith("http://") || valor.startsWith("https://")) {
+            const url = new URL(valor);
+
+            if (url.pathname.startsWith("/images/productos/")) {
+                return url.pathname;
+            }
+        }
+    } catch {}
+
+    if (valor.startsWith("/images/productos/")) {
+        return valor;
+    }
+
     if (
         imagen.startsWith("http://") ||
         imagen.startsWith("https://") ||
@@ -45,7 +64,11 @@ function imagenProducto(imagen) {
             API &&
             imagen.startsWith("/uploads/")
         ) {
-            return `${API}${imagen}`;
+            if (String(imagen).startsWith("/images/productos/")) {
+        return imagen;
+    }
+
+    return `${API}${imagen}`;
         }
 
         return imagen;
@@ -109,7 +132,11 @@ export default function CategoriaProductos() {
 
                 setProductos(
                     Array.isArray(datos)
-                        ? datos
+                        ? datos.filter(
+                            producto =>
+                                producto.imagen &&
+                                String(producto.imagen).trim()
+                        )
                         : []
                 );
             } catch (err) {
@@ -359,18 +386,7 @@ export default function CategoriaProductos() {
                                             )}
 
                                             <div className="categoriaProductoPie">
-                                                <strong>
-                                                    {Number(
-                                                        producto.precio ||
-                                                            0
-                                                    ) > 0
-                                                        ? `$${Number(
-                                                              producto.precio
-                                                          ).toLocaleString(
-                                                              "es-AR"
-                                                          )}`
-                                                        : "Consultar"}
-                                                </strong>
+                                                <strong className="precioConsultar">Consultar</strong>
 
                                                 <button
                                                     type="button"
