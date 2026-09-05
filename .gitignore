@@ -53,3 +53,32 @@ migrar-api.cjs
 .env*
 
 public/images/productos_backup/
+
+# ===== RC LOCAL MAINTENANCE FILES =====
+/_backup_*/
+/RC_Catalogo_Completo.zip
+/ersAleDesktoprcweb
+
+# Instaladores y diagnósticos temporales creados durante mantenimiento
+/actualizar-*.cjs
+/agregar-*.cjs
+/aplicar-*.cjs
+/arreglar-*.cjs
+/corregir-*.cjs
+/diagnosticar-*.cjs
+/finalizar-*.cjs
+/importar-*.cjs
+/instalar-*.cjs
+/limpiar-*.cjs
+/migrar-*.cjs
+/reclasificar-*.cjs
+/redisenar-*.cjs
+
+# Backups locales de código
+/src/App.antes-*.jsx
+/src/App.backup-*.jsx
+/src/components/*.backup-*
+/src/components/*.jsx.backup-*
+/src/styles/*_categorias.css
+/src/components/*_categorias.jsx
+# ===== FIN RC LOCAL MAINTENANCE FILES =====

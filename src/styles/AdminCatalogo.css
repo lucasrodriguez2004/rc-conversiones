@@ -1,0 +1,705 @@
+:root {
+  --admin-blue: #0d4f92;
+  --admin-blue-2: #0a6ecb;
+  --admin-dark: #102a45;
+  --admin-text: #203a56;
+  --admin-muted: #6f839a;
+  --admin-line: #dce7f2;
+  --admin-bg: #f4f8fc;
+  --admin-card: #ffffff;
+}
+
+.adminCatalogoPage,
+.adminCatalogoLoginPage {
+  min-height: 100vh;
+  background: var(--admin-bg);
+  color: var(--admin-text);
+  font-family: inherit;
+}
+
+.adminCatalogoLoginPage {
+  display: grid;
+  place-items: center;
+  padding: 30px 16px;
+  background:
+    radial-gradient(circle at top right, rgba(14, 118, 210, .2), transparent 36%),
+    linear-gradient(150deg, #071c33, #0b3c6e);
+}
+
+.adminCatalogoLoginCard {
+  width: min(440px, 100%);
+  background: white;
+  border-radius: 24px;
+  padding: 34px;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, .28);
+}
+
+.adminCatalogoBrand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.adminCatalogoBrand > span {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(145deg, #0b88ee, #075ca9);
+  color: white;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.adminCatalogoBrand div {
+  display: grid;
+  gap: 2px;
+}
+
+.adminCatalogoBrand strong {
+  letter-spacing: .04em;
+}
+
+.adminCatalogoBrand small {
+  color: #7690aa;
+  font-weight: 800;
+  font-size: 10px;
+  letter-spacing: .13em;
+}
+
+.adminCatalogoLoginCard h1 {
+  margin: 30px 0 8px;
+  font-size: 30px;
+  color: #163451;
+}
+
+.adminCatalogoLoginCard > p {
+  color: var(--admin-muted);
+  margin: 0 0 26px;
+}
+
+.adminCatalogoLoginCard form,
+.adminCatalogoModal form {
+  display: grid;
+  gap: 18px;
+}
+
+.adminCatalogoLoginCard label,
+.adminCatalogoModal label {
+  display: grid;
+  gap: 7px;
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.adminCatalogoLoginCard input,
+.adminCatalogoModal input,
+.adminCatalogoModal textarea,
+.adminCatalogoFilters select,
+.adminCatalogoSearch input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccdbea;
+  border-radius: 12px;
+  background: #fff;
+  color: #17324d;
+  padding: 12px 13px;
+  font: inherit;
+  outline: none;
+}
+
+.adminCatalogoLoginCard input:focus,
+.adminCatalogoModal input:focus,
+.adminCatalogoModal textarea:focus,
+.adminCatalogoFilters select:focus,
+.adminCatalogoSearch:focus-within {
+  border-color: #188be7;
+  box-shadow: 0 0 0 3px rgba(24, 139, 231, .12);
+}
+
+.adminCatalogoLoginCard form > button {
+  border: 0;
+  border-radius: 12px;
+  background: #0b7edb;
+  color: white;
+  font-weight: 900;
+  padding: 13px 16px;
+  cursor: pointer;
+}
+
+.adminCatalogoError,
+.adminCatalogoMessage {
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: #fff3f3;
+  color: #a93030;
+  border: 1px solid #f0cccc;
+}
+
+.adminCatalogoMessage {
+  margin-bottom: 18px;
+  background: #edf7ff;
+  color: #125a91;
+  border-color: #cde7fa;
+}
+
+.adminCatalogoBack {
+  margin-top: 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #176eb3;
+  font-weight: 800;
+}
+
+.adminCatalogoTopbar {
+  min-height: 72px;
+  padding: 0 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-bottom: 1px solid var(--admin-line);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.adminCatalogoTopActions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.adminCatalogoTopActions a,
+.adminCatalogoTopActions button {
+  border: 1px solid #d5e2ee;
+  border-radius: 10px;
+  background: white;
+  color: #1e517b;
+  padding: 9px 12px;
+  text-decoration: none;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.adminCatalogoTopActions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.adminCatalogoShell {
+  width: min(1380px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 36px 0 70px;
+}
+
+.adminCatalogoHeading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.adminCatalogoEyebrow {
+  color: #1684dc;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .14em;
+}
+
+.adminCatalogoHeading h1 {
+  color: #143350;
+  margin: 6px 0 6px;
+  font-size: clamp(28px, 4vw, 42px);
+}
+
+.adminCatalogoHeading p {
+  margin: 0;
+  color: var(--admin-muted);
+}
+
+.adminCatalogoPrimary {
+  border: 0 !important;
+  border-radius: 12px !important;
+  padding: 12px 16px !important;
+  background: linear-gradient(135deg, #0d8bf0, #0869c1) !important;
+  color: white !important;
+  font-weight: 900 !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.adminCatalogoTabs {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid var(--admin-line);
+  margin-bottom: 22px;
+}
+
+.adminCatalogoTabs button {
+  border: 0;
+  border-bottom: 3px solid transparent;
+  background: transparent;
+  padding: 12px 15px;
+  color: #668096;
+  font-weight: 900;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.adminCatalogoTabs button.activo {
+  color: #0b6fc8;
+  border-bottom-color: #0b83e4;
+}
+
+.adminCatalogoStats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.adminCatalogoStats article {
+  background: white;
+  border: 1px solid var(--admin-line);
+  border-radius: 16px;
+  padding: 18px 20px;
+}
+
+.adminCatalogoStats span {
+  color: var(--admin-muted);
+  display: block;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.adminCatalogoStats strong {
+  display: block;
+  margin-top: 4px;
+  color: #153955;
+  font-size: 28px;
+}
+
+.adminCatalogoFilters {
+  display: grid;
+  grid-template-columns: minmax(240px, 1fr) minmax(180px, 280px) auto;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.adminCatalogoSearch {
+  background: white;
+  border: 1px solid #ccdbea;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding-left: 13px;
+  color: #6b8298;
+}
+
+.adminCatalogoSearch input {
+  border: 0;
+  box-shadow: none !important;
+}
+
+.adminCatalogoCheck,
+.adminCatalogoSwitch {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  min-height: 44px;
+  background: white;
+  border: 1px solid #d6e3ef;
+  border-radius: 12px;
+}
+
+.adminCatalogoCheck input,
+.adminCatalogoSwitch input {
+  width: auto !important;
+  margin: 0;
+}
+
+.adminCatalogoProducts {
+  display: grid;
+  gap: 12px;
+}
+
+.adminCatalogoProduct {
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  gap: 18px;
+  align-items: center;
+  background: white;
+  border: 1px solid var(--admin-line);
+  border-radius: 18px;
+  padding: 14px;
+}
+
+.adminCatalogoProduct.oculto {
+  opacity: .62;
+}
+
+.adminCatalogoProductImage {
+  width: 120px;
+  height: 105px;
+  border-radius: 13px;
+  overflow: hidden;
+  background: #f6f9fc;
+  display: grid;
+  place-items: center;
+}
+
+.adminCatalogoProductImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.adminCatalogoBadges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.adminCatalogoBadges span {
+  background: #edf6ff;
+  color: #1773bb;
+  border-radius: 999px;
+  padding: 4px 8px;
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.adminCatalogoBadges .adminCatalogoHiddenBadge {
+  background: #f3f3f3;
+  color: #707070;
+}
+
+.adminCatalogoProduct h2 {
+  margin: 7px 0 3px;
+  color: #173550;
+  font-size: 18px;
+}
+
+.adminCatalogoProduct code {
+  color: #7890a7;
+  font-size: 12px;
+}
+
+.adminCatalogoProduct p {
+  margin: 7px 0;
+  color: #708399;
+  font-size: 13px;
+  line-height: 1.45;
+  max-width: 760px;
+}
+
+.adminCatalogoConsultar {
+  color: #0b6fc6;
+}
+
+.adminCatalogoProductActions,
+.adminCatalogoCategoryActions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 7px;
+}
+
+.adminCatalogoProductActions button,
+.adminCatalogoCategoryActions button {
+  border: 1px solid #d7e4ef;
+  background: white;
+  color: #24618f;
+  border-radius: 10px;
+  padding: 9px 11px;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.adminCatalogoProductActions .danger,
+.adminCatalogoCategoryActions .danger {
+  color: #b23d3d;
+}
+
+.adminCatalogoEmpty {
+  background: white;
+  border: 1px dashed #c9dae8;
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+  color: #6f8498;
+}
+
+.adminCatalogoCategories {
+  display: grid;
+  gap: 13px;
+}
+
+.adminCatalogoCategories > article {
+  background: white;
+  border: 1px solid var(--admin-line);
+  border-radius: 16px;
+  padding: 18px;
+  display: grid;
+  grid-template-columns: minmax(190px, .7fr) 1.5fr auto;
+  gap: 18px;
+  align-items: center;
+}
+
+.adminCatalogoCategories h2 {
+  margin: 4px 0;
+  color: #193a58;
+}
+
+.adminCatalogoCategories article > div:first-child > span,
+.adminCatalogoCategories p {
+  color: #7b8fa3;
+  font-size: 12px;
+}
+
+.adminCatalogoCategorySubs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.adminCatalogoCategorySubs span {
+  background: #f2f7fb;
+  color: #56738d;
+  border-radius: 999px;
+  padding: 5px 8px;
+  font-size: 11px;
+}
+
+.adminCatalogoModalBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(4, 20, 35, .72);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  overflow: auto;
+}
+
+.adminCatalogoModal {
+  width: min(850px, 100%);
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+  background: white;
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, .3);
+}
+
+.adminCatalogoCategoryModal {
+  width: min(600px, 100%);
+}
+
+.adminCatalogoModalTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.adminCatalogoModalTop span {
+  color: #1683d9;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+
+.adminCatalogoModalTop h2 {
+  margin: 4px 0 0;
+  color: #173650;
+}
+
+.adminCatalogoModalTop > button {
+  border: 0;
+  background: #eff5fa;
+  color: #577189;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.adminCatalogoFormGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.adminCatalogoFull {
+  grid-column: 1 / -1;
+}
+
+.adminCatalogoModal small {
+  color: #7b8fa3;
+  font-weight: 500;
+}
+
+.adminCatalogoImageField {
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  gap: 16px;
+  align-items: center;
+  border: 1px dashed #c6d9e8;
+  border-radius: 14px;
+  padding: 15px;
+}
+
+.adminCatalogoImageField p {
+  color: #70869a;
+  font-size: 12px;
+}
+
+.adminCatalogoUploadButton {
+  display: inline-flex !important;
+  width: fit-content;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 7px;
+  background: #edf6ff;
+  color: #126db5;
+  border-radius: 10px;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.adminCatalogoUploadButton input {
+  display: none;
+}
+
+.adminCatalogoPreview {
+  width: 180px;
+  height: 140px;
+  background: #f7f9fb;
+  border-radius: 12px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.adminCatalogoPreview img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.adminCatalogoModalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 9px;
+  margin-top: 8px;
+}
+
+.adminCatalogoModalActions > button {
+  border: 1px solid #d4e2ed;
+  background: white;
+  color: #47657e;
+  border-radius: 11px;
+  padding: 11px 15px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .adminCatalogoTopbar {
+    padding: 12px 16px;
+  }
+
+  .adminCatalogoTopActions > span {
+    display: none;
+  }
+
+  .adminCatalogoShell {
+    width: min(100% - 24px, 1380px);
+    padding-top: 24px;
+  }
+
+  .adminCatalogoHeading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .adminCatalogoFilters {
+    grid-template-columns: 1fr;
+  }
+
+  .adminCatalogoProduct {
+    grid-template-columns: 90px 1fr;
+  }
+
+  .adminCatalogoProductImage {
+    width: 90px;
+    height: 90px;
+  }
+
+  .adminCatalogoProductActions {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+  }
+
+  .adminCatalogoCategories > article {
+    grid-template-columns: 1fr;
+  }
+
+  .adminCatalogoCategoryActions {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 620px) {
+  .adminCatalogoTopActions a {
+    display: none;
+  }
+
+  .adminCatalogoStats {
+    grid-template-columns: 1fr;
+  }
+
+  .adminCatalogoProduct {
+    grid-template-columns: 1fr;
+  }
+
+  .adminCatalogoProductImage {
+    width: 100%;
+    height: 180px;
+  }
+
+  .adminCatalogoFormGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .adminCatalogoFull {
+    grid-column: auto;
+  }
+
+  .adminCatalogoImageField {
+    grid-template-columns: 1fr;
+  }
+
+  .adminCatalogoPreview {
+    width: 100%;
+    height: 190px;
+  }
+}

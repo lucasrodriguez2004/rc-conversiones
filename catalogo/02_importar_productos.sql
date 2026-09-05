@@ -1,6 +1,5 @@
 -- RC Conversiones - catálogo actualizado
--- 546 productos
--- Los precios existentes NO se pisan al reimportar.
+-- Heladeras Telefunken 220L corregidas a 12/24V.
 
 INSERT INTO productos
 (codigo, nombre, categoria, subcategoria, precio, stock, descripcion, caracteristicas, imagen, destacado)
@@ -553,11 +552,193 @@ VALUES
 ('TAN.130', 'Tanque de Aguas Negras 130L', 'Agua', 'Tanques de Aguas Negras', 0, 0, 'Tanque de Aguas Negras 130L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', 'Código: TAN.130,99x45x33 cm', '/images/productos/tan-130.webp', 0),
 ('TAN.140', 'Tanque de Aguas Negras 140L', 'Agua', 'Tanques de Aguas Negras', 0, 0, 'Tanque de Aguas Negras 140L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', 'Código: TAN.140,69x69x30 cm', '/images/productos/tan-140.webp', 0),
 ('TAN.235', 'Tanque de Aguas Negras 235L', 'Agua', 'Tanques de Aguas Negras', 0, 0, 'Tanque de Aguas Negras 235L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', 'Código: TAN.235,88x60x48 cm', '/images/productos/tan-235.webp', 0),
-('TAN.350', 'Tanque de Aguas Negras 350L', 'Agua', 'Tanques de Aguas Negras', 0, 0, 'Tanque de Aguas Negras 350L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', 'Código: TAN.350,116x75x49 cm', '/images/productos/tan-350.webp', 0) AS nuevo
+('TAN.350', 'Tanque de Aguas Negras 350L', 'Agua', 'Tanques de Aguas Negras', 0, 0, 'Tanque de Aguas Negras 350L. Componente para almacenamiento, circulación, medición o descarga de agua en el motorhome.', 'Código: TAN.350,116x75x49 cm', '/images/productos/tan-350.webp', 0),
+('TB.CAL.1224', 'Caldera / Calefactor Diesel Total Black 12V / 24V 5KW', 'Calefacción', 'Calderas Total Black', 0, 0, 'Caldera/calefactor diésel Total Black para motorhomes y vehículos recreativos. Diseño compacto tipo TB-100, ideal para calefaccionar el habitáculo con instalación fija. Su formato permite una integración prolija y está orientado a uso móvil.', '• Marca: Total Black
+• Tipo: caldera / calefactor diésel
+• Alimentación: 12V / 24V
+• Potencia: 5KW
+• Modelo de referencia: TB-100
+• Aplicación: motorhomes, campers y vehículos', '/images/productos/tb-caldera-totalblack.webp', 0),
+('TB.AA.12', 'Aire Acondicionado de Techo Total Black 12V', 'Climatización', 'Aires Total Black', 0, 0, 'Aire acondicionado de techo Total Black 12V para motorhomes. Equipo compacto de perfil bajo, pensado para montaje superior y climatización del habitáculo, con diseño limpio y adecuado para vehículos recreativos.', '• Marca: Total Black
+• Tipo: aire acondicionado de techo
+• Alimentación: 12V
+• Medidas exteriores visibles: 720 x 650 x 150 mm
+• Aplicación: motorhomes y campers', '/images/productos/tb-aire-totalblack-12v.webp', 0),
+('TB.AA.24', 'Aire Acondicionado de Techo Total Black 24V', 'Climatización', 'Aires Total Black', 0, 0, 'Aire acondicionado de techo Total Black 24V para motorhomes y vehículos especiales. Su formato compacto y de bajo perfil permite climatizar el interior manteniendo una estética prolija y una instalación superior.', '• Marca: Total Black
+• Tipo: aire acondicionado de techo
+• Alimentación: 24V
+• Medidas exteriores visibles: 720 x 650 x 150 mm
+• Aplicación: motorhomes y campers', '/images/productos/tb-aire-totalblack-24v.webp', 0),
+('REN.24958', 'RENOGY Adaptador Solar Renogy RCA01CRR-0745-G1-DE', 'Energía Solar', 'Accesorios P/Paneles', 0, 0, 'Equipo Renogy para monitoreo, comunicación o integración de sistemas eléctricos en motorhomes y aplicaciones off-grid.', '• Marca: Renogy
+• Tipo: Accesorio solar
+• Modelo: RCA01CRR-0745-G1-DE
+• Código de referencia: 20361
+• Precio: Consultar', '/images/productos/renogy-24958.jpg', 0),
+('REN.24951', 'Renogy Batería de Litio LiFePO4 Ultra Delgada 12V 104Ah | Serie Rego 58x29x61 cm 13 kg', 'Baterías', 'Baterias de Litio', 0, 0, 'Batería Renogy LiFePO4 de 104Ah, pensada para almacenamiento de energía en motorhomes, embarcaciones y sistemas solares autónomos.', '• Marca: Renogy
+• Tipo: Batería de litio
+• Código de referencia: 20354
+• Precio: Consultar', '/images/productos/renogy-24951.jpg', 0),
+('REN.24950', 'Renogy Batería de Litio Renogy LiFePO4 con Bluetooth 12.8V 200Ah RBT12200LFP-BT-G1-US', 'Baterías', 'Baterias de Litio', 0, 0, 'Batería Renogy LiFePO4 de 200Ah, pensada para almacenamiento de energía en motorhomes, embarcaciones y sistemas solares autónomos.', '• Marca: Renogy
+• Tipo: Batería de litio
+• Modelo: RBT12200LFP-BT-G1-US
+• Código de referencia: 20353
+• Precio: Consultar', '/images/productos/renogy-24950.jpg', 0),
+('REN.24949', 'RENOGY BATERIA LI-ION (LIFEPO4) 12V 200 AH con Bluetooth integrada', 'Baterías', 'Baterias de Litio', 0, 0, 'Batería Renogy LiFePO4 de 200Ah, pensada para almacenamiento de energía en motorhomes, embarcaciones y sistemas solares autónomos.', '• Marca: Renogy
+• Tipo: Batería de litio
+• Código de referencia: 20352
+• Precio: Consultar', '/images/productos/renogy-24949.jpg', 0),
+('REN.24948', 'Renogy Bateria LI-ION (LIFEPO4) 12V 300 AH con Proteccion Bajas Temperaturas RBT12300LFP-M-G1-US', 'Baterías', 'Baterias de Litio', 0, 0, 'Batería Renogy LiFePO4 de 300Ah, pensada para almacenamiento de energía en motorhomes, embarcaciones y sistemas solares autónomos.', '• Marca: Renogy
+• Tipo: Batería de litio
+• Modelo: RBT12300LFP-M-G1-US
+• Código de referencia: 20351
+• Precio: Consultar', '/images/productos/renogy-24948.jpg', 0),
+('REN.24957', 'RENOGY Cable de Comunicación Renogy RJ45 a Conector 7 Pines - RCA0.6CFR-43545-G1-AU', 'Electricidad', 'Monitoreo y Accesorios Renogy', 0, 0, 'Equipo Renogy para monitoreo, comunicación o integración de sistemas eléctricos en motorhomes y aplicaciones off-grid.', '• Marca: Renogy
+• Tipo: Monitoreo y control
+• Modelo: RCA0.6CFR-43545-G1-AU
+• Código de referencia: 20360
+• Precio: Consultar', '/images/productos/renogy-24957.jpg', 0),
+('REN.24933', 'Renogy CARGADOR BATERIA 12V 35A CC-CA RACC35A1W-G1-AU', 'Cargadores', 'Cargadores de Batería 220V / AC-DC', 0, 0, 'Cargador de batería Renogy de 35A diseñado para una recarga eficiente y segura del banco de servicio en instalaciones móviles y sistemas off-grid.', '• Marca: Renogy
+• Tipo: Cargador AC-DC
+• Modelo: RACC35A1W-G1-AU
+• Código de referencia: 20337
+• Precio: Consultar', '/images/productos/renogy-24933.jpg', 0),
+('REN.24931', 'Renogy CARGADOR BATERIA 12V 40A CC-CC con Bluetooth RBC40D1U-G3-UK', 'Cargadores', 'Cargadores de Batería desde Alternador', 0, 0, 'Cargador Renogy DC-DC de 40A para recargar de forma controlada la batería auxiliar desde el alternador del vehículo, ideal para motorhomes, campers y sistemas de doble batería.', '• Marca: Renogy
+• Tipo: Cargador DC-DC
+• Modelo: RBC40D1U-G3-UK
+• Código de referencia: 20336
+• Precio: Consultar', '/images/productos/renogy-24931.jpg', 0),
+('REN.24936', 'Renogy CARGADOR BATERIA 12V 60A CC-CC RBC1260DO-12B-G1-US', 'Cargadores', 'Cargadores de Batería desde Alternador', 0, 0, 'Cargador Renogy DC-DC de 60A para recargar de forma controlada la batería auxiliar desde el alternador del vehículo, ideal para motorhomes, campers y sistemas de doble batería.', '• Marca: Renogy
+• Tipo: Cargador DC-DC
+• Modelo: RBC1260DO-12B-G1-US
+• Código de referencia: 20340
+• Precio: Consultar', '/images/productos/renogy-24936.jpg', 0),
+('REN.24934', 'Renogy Cargador de Bateria Auxiliar de Alternadro y Panel Solar Doble Entrada con MPPT', 'Cargadores', 'Cargadores de Batería Renogy', 0, 0, 'Cargador de batería Renogy diseñado para una recarga eficiente y segura del banco de servicio en instalaciones móviles y sistemas off-grid.', '• Marca: Renogy
+• Tipo: Cargador de batería
+• Código de referencia: 20338
+• Precio: Consultar', '/images/productos/renogy-24934.jpg', 0),
+('REN.24935', 'Renogy Cargador de Bateria Auxiliar desde Alternador 12/24V 30A CC-CC', 'Cargadores', 'Cargadores de Batería desde Alternador', 0, 0, 'Cargador Renogy DC-DC de 30A para recargar de forma controlada la batería auxiliar desde el alternador del vehículo, ideal para motorhomes, campers y sistemas de doble batería.', '• Marca: Renogy
+• Tipo: Cargador DC-DC
+• Código de referencia: 20339
+• Precio: Consultar', '/images/productos/renogy-24935.jpg', 0),
+('REN.24937', 'Renogy Controlador de Carga de Panel Solar 12/24V 30A RNG-CTRL-RVR30-G3-US', 'Reguladores', 'Reguladores Solares MPPT', 0, 0, 'Regulador solar MPPT Renogy de 30A para optimizar la energía obtenida de los paneles y gestionar de forma eficiente la carga del banco de baterías.', '• Marca: Renogy
+• Tipo: Regulador solar MPPT
+• Modelo: RNG-CTRL-RVR30-G3-US
+• Código de referencia: 20341
+• Precio: Consultar', '/images/productos/renogy-24937.jpg', 0),
+('REN.24940', 'Renogy Controlador de Carga Solar MPPT 30A, 12-48V RCC30REGO-G1-AU', 'Reguladores', 'Reguladores Solares MPPT', 0, 0, 'Regulador solar MPPT Renogy de 30A para optimizar la energía obtenida de los paneles y gestionar de forma eficiente la carga del banco de baterías.', '• Marca: Renogy
+• Tipo: Regulador solar MPPT
+• Modelo: RCC30REGO-G1-AU
+• Código de referencia: 20344
+• Precio: Consultar', '/images/productos/renogy-24940.jpg', 0),
+('REN.24938', 'Renogy Controlador de Carga Solar MPPT Inteligente de Alta Eficiencia 12 a 48V 60A', 'Reguladores', 'Reguladores Solares MPPT', 0, 0, 'Regulador solar MPPT Renogy de 12A para optimizar la energía obtenida de los paneles y gestionar de forma eficiente la carga del banco de baterías.', '• Marca: Renogy
+• Tipo: Regulador solar MPPT
+• Código de referencia: 20342
+• Precio: Consultar', '/images/productos/renogy-24938.jpg', 0),
+('REN.RSHSN-W02W7-G1-AU', 'RENOGY CONTROLADOR IOT RSHSN-W02W7-G1-AU', 'Electricidad', 'Monitoreo y Accesorios Renogy', 0, 0, 'Controlador IoT Renogy para monitorear parámetros del sistema de energía y de las baterías desde equipos compatibles, facilitando el seguimiento del estado energético en instalaciones off-grid y motorhomes.', '• Marca: Renogy
+• Tipo: Monitoreo y control
+• Modelo: RSHSN-W02W7-G1-AU
+• Precio: Consultar', '/images/productos/renogy-rshsn-w02w7-g1-au.jpg', 0),
+('REN.24953', 'Renogy Controlador IOT para Monitoreo Remoto de Bateria RSHST-B02P300-G1-US', 'Baterías', 'Baterias de Litio', 0, 0, 'Batería Renogy LiFePO4, pensada para almacenamiento de energía en motorhomes, embarcaciones y sistemas solares autónomos.', '• Marca: Renogy
+• Tipo: Batería de litio
+• Modelo: RSHST-B02P300-G1-US
+• Código de referencia: 20356
+• Precio: Consultar', '/images/productos/renogy-24953.jpg', 0),
+('REN.24925', 'Renogy Inversor 12V 2000W de Onda Sinusoidal Pura con Interruptor Automatico y Remoto', 'Inversores', 'Inversores Inteligentes OFF GRID', 0, 0, 'Inversor/cargador Renogy de 2000W de onda sinusoidal pura, pensado para alimentar equipos de corriente alterna desde un banco de baterías.', '• Marca: Renogy
+• Tipo: Inversor/cargador
+• Código de referencia: 20330
+• Precio: Consultar', '/images/productos/renogy-24925.jpg', 0),
+('REN.24926', 'Renogy Inversor 12V 3000W 220V Onda Sinusolidal Pura con Funcion UPS', 'Inversores', 'Inversores Inteligentes OFF GRID', 0, 0, 'Inversor/cargador Renogy de 3000W de onda sinusoidal pura, pensado para alimentar equipos de corriente alterna desde un banco de baterías.', '• Marca: Renogy
+• Tipo: Inversor/cargador
+• Código de referencia: 20331
+• Precio: Consultar', '/images/productos/renogy-24926.jpg', 0),
+('REN.24929', 'Renogy Inversor 2000W + Cargaddor 12V 240V CA 50/60HZ RIV1220RCH-24S-G2-AU', 'Inversores', 'Inversores Onda Pura', 0, 0, 'Inversor Renogy de 2000W de onda sinusoidal pura, pensado para alimentar equipos de corriente alterna desde un banco de baterías.', '• Marca: Renogy
+• Tipo: Inversor de onda pura
+• Modelo: RIV1220RCH-24S-G2-AU
+• Código de referencia: 20334
+• Precio: Consultar', '/images/productos/renogy-24929.jpg', 0),
+('REN.24928', 'Renogy Inversor y Cargador de Bateria 12V 3000W 240V CA 50HZ', 'Cargadores', 'Cargadores de Batería Renogy', 0, 0, 'Cargador de batería Renogy diseñado para una recarga eficiente y segura del banco de servicio en instalaciones móviles y sistemas off-grid.', '• Marca: Renogy
+• Tipo: Cargador de batería
+• Código de referencia: 20333
+• Precio: Consultar', '/images/productos/renogy-24928.jpg', 0),
+('REN.24927', 'Renogy Inversor y Cargador de Onda Pura Sinosoidal 12V 2000W 240V CA 50HZ', 'Cargadores', 'Cargadores de Batería Renogy', 0, 0, 'Cargador de batería Renogy diseñado para una recarga eficiente y segura del banco de servicio en instalaciones móviles y sistemas off-grid.', '• Marca: Renogy
+• Tipo: Cargador de batería
+• Código de referencia: 20332
+• Precio: Consultar', '/images/productos/renogy-24927.jpg', 0),
+('REN.24930', 'Renogy Inversor y Cargador de Onda Pura Sinosoidal 12V 3000W 240V CA 50/60HZ RIV1230RCH-24S-G2-AU', 'Cargadores', 'Cargadores de Batería Renogy', 0, 0, 'Cargador de batería Renogy diseñado para una recarga eficiente y segura del banco de servicio en instalaciones móviles y sistemas off-grid.', '• Marca: Renogy
+• Tipo: Cargador de batería
+• Modelo: RIV1230RCH-24S-G2-AU
+• Código de referencia: 20335
+• Precio: Consultar', '/images/productos/renogy-24930.jpg', 0),
+('REN.24956', 'RENOGY MODULO BLUETOOTH RCM-BT2-G2-US', 'Electricidad', 'Monitoreo y Accesorios Renogy', 0, 0, 'Módulo Bluetooth Renogy para incorporar monitoreo inalámbrico a equipos compatibles y consultar información del sistema desde dispositivos móviles.', '• Marca: Renogy
+• Tipo: Monitoreo y control
+• Modelo: RCM-BT2-G2-US
+• Código de referencia: 20359
+• Precio: Consultar', '/images/productos/renogy-24956.jpg', 0),
+('REN.24952', 'Renogy ONE Core (G3) – Panel Inteligente de Monitoreo y Control de Energía', 'Electricidad', 'Monitoreo y Accesorios Renogy', 0, 0, 'Panel inteligente Renogy ONE Core para centralizar el monitoreo y control de un sistema de energía off-grid desde una interfaz compacta.', '• Marca: Renogy
+• Tipo: Monitoreo y control
+• Código de referencia: 20355
+• Precio: Consultar', '/images/productos/renogy-24952.jpg', 0),
+('REN.24939', 'Renogy PANEL CONTROL CARGADOR SOLAR 12V 60A RCC60REGO-G2-AU', 'Cargadores', 'Cargadores de Batería Renogy', 0, 0, 'Cargador de batería Renogy de 60A diseñado para una recarga eficiente y segura del banco de servicio en instalaciones móviles y sistemas off-grid.', '• Marca: Renogy
+• Tipo: Cargador de batería
+• Modelo: RCC60REGO-G2-AU
+• Código de referencia: 20343
+• Precio: Consultar', '/images/productos/renogy-24939.jpg', 0),
+('REN.24942', 'Renogy Panel Solar 200W 12/24V Rígido N-Type ShadowFlux RSP200DC-ASR-G1-DE', 'Energía Solar', 'Paneles Solares Monocristalino', 0, 0, 'Panel solar Renogy de 200W, diseñado para generar energía en motorhomes, campings y sistemas solares autónomos.', '• Marca: Renogy
+• Tipo: Panel solar
+• Modelo: RSP200DC-ASR-G1-DE
+• Código de referencia: 20345
+• Precio: Consultar', '/images/productos/renogy-24942.jpg', 0),
+('REN.24943', 'Renogy Panel Solar Flexible 12V 200W RSP200DB-72-G2-US', 'Energía Solar', 'Paneles Solares Flexibles', 0, 0, 'Panel solar Renogy de 200W, diseñado para generar energía en motorhomes, campings y sistemas solares autónomos.', '• Marca: Renogy
+• Tipo: Panel solar flexible
+• Modelo: RSP200DB-72-G2-US
+• Código de referencia: 20346
+• Precio: Consultar', '/images/productos/renogy-24943.jpg', 0),
+('REN.24946', 'Renogy Panel Solar Portátil 220W Maletín Plegable', 'Energía Solar', 'Paneles Solares Portátiles', 0, 0, 'Panel solar Renogy de 220W, diseñado para generar energía en motorhomes, campings y sistemas solares autónomos.', '• Marca: Renogy
+• Tipo: Panel solar portátil
+• Código de referencia: 20349
+• Precio: Consultar', '/images/productos/renogy-24946.jpg', 0),
+('REN.24947', 'Renogy Panel Solar Portátil 400W Maletín Plegable RSP400LSC-G1-US', 'Energía Solar', 'Paneles Solares Portátiles', 0, 0, 'Panel solar Renogy de 400W, diseñado para generar energía en motorhomes, campings y sistemas solares autónomos.', '• Marca: Renogy
+• Tipo: Panel solar portátil
+• Modelo: RSP400LSC-G1-US
+• Código de referencia: 20350
+• Precio: Consultar', '/images/productos/renogy-24947.jpg', 0),
+('REN.24944', 'Renogy Panel Solar Portátil Plegable de 200W, con protección IP65 RPP200SB-SE-G1-CA', 'Energía Solar', 'Paneles Solares Portátiles', 0, 0, 'Panel solar Renogy de 200W, diseñado para generar energía en motorhomes, campings y sistemas solares autónomos.', '• Marca: Renogy
+• Tipo: Panel solar portátil
+• Modelo: RPP200SB-SE-G1-CA
+• Código de referencia: 20347
+• Precio: Consultar', '/images/productos/renogy-24944.jpg', 0),
+('REN.24945', 'Renogy Panel Solar Portátil Plegable de 400W, con protección IP65 RSP400SB-G3-SA', 'Energía Solar', 'Paneles Solares Portátiles', 0, 0, 'Panel solar Renogy de 400W, diseñado para generar energía en motorhomes, campings y sistemas solares autónomos.', '• Marca: Renogy
+• Tipo: Panel solar portátil
+• Modelo: RSP400SB-G3-SA
+• Código de referencia: 20348
+• Precio: Consultar', '/images/productos/renogy-24945.jpg', 0),
+('REN.24959', 'RENOGY SOPORTE PARA BATERIA DE LITIO 12V 104 AH RMT12104BT-SB-G1-US', 'Baterías', 'Accesorios para Baterías Renogy', 0, 0, 'Accesorio Renogy diseñado para asegurar, montar o complementar una batería compatible dentro de una instalación eléctrica para motorhomes y sistemas off-grid.', '• Marca: Renogy
+• Tipo: Accesorio para batería
+• Modelo: RMT12104BT-SB-G1-US
+• Código de referencia: 20362
+• Precio: Consultar', '/images/productos/renogy-24959.jpg', 0),
+('REN.24954', 'Renogy Unidad de Contro y Distribución de Energia RSHCB-C02P-G2-AU', 'Electricidad', 'Monitoreo y Accesorios Renogy', 0, 0, 'Equipo Renogy para monitoreo, comunicación o integración de sistemas eléctricos en motorhomes y aplicaciones off-grid.', '• Marca: Renogy
+• Tipo: Monitoreo y control
+• Modelo: RSHCB-C02P-G2-AU
+• Código de referencia: 20357
+• Precio: Consultar', '/images/productos/renogy-24954.jpg', 0),
+('TFK.220.DISP', 'Heladera Telefunken 220L 12/24V con Freezer y Dispenser', 'Heladeras', 'Heladeras 220L con Freezer', 0, 0, 'Heladera Telefunken de 220 litros para 12/24V, con freezer superior y dispenser frontal. Una opción práctica para motorhomes y vehículos recreativos que necesitan buena capacidad de almacenamiento y acceso cómodo al agua.', '• Marca: Telefunken
+• Capacidad: 220 litros
+• Alimentación: 12/24V
+• Freezer superior
+• Dispenser frontal
+• Precio: Consultar', '/images/productos/telefunken-220l-freezer-dispenser.webp', 0),
+('TFK.220.FREEZER', 'Heladera Telefunken 220L 12/24V con Freezer', 'Heladeras', 'Heladeras 220L con Freezer', 0, 0, 'Heladera Telefunken de 220 litros para 12/24V, con freezer superior. Pensada para motorhomes y vehículos recreativos que buscan buena capacidad de refrigeración en un formato clásico y funcional.', '• Marca: Telefunken
+• Capacidad: 220 litros
+• Alimentación: 12/24V
+• Freezer superior
+• Sin dispenser
+• Precio: Consultar', '/images/productos/telefunken-220l-freezer.webp', 0) AS nuevo
 ON DUPLICATE KEY UPDATE
     nombre = nuevo.nombre,
     categoria = nuevo.categoria,
     subcategoria = nuevo.subcategoria,
     descripcion = nuevo.descripcion,
     caracteristicas = nuevo.caracteristicas,
-    imagen = nuevo.imagen;
+    imagen = nuevo.imagen,
+    destacado = nuevo.destacado;

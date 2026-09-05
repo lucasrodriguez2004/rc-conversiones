@@ -22,6 +22,7 @@ const SLUGS = {
     "Reguladores": "reguladores",
     "Inversores": "inversores",
     "Baterías": "baterias",
+    "Cargadores": "cargadores",
     "Electricidad": "electricidad",
     "Electrodomésticos": "electrodomesticos",
     "Heladeras": "heladeras",

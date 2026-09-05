@@ -1,11 +1,33 @@
 export const CATALOGO_CATEGORIAS = [
     {
+        "nombre": "Renogy",
+        "slug": "renogy",
+        "subcategorias": [
+            "Baterias de Litio",
+            "Accesorios para Baterías Renogy",
+            "Cargadores de Batería desde Alternador",
+            "Cargadores DC-DC con MPPT / Doble Entrada",
+            "Cargadores de Batería 220V / AC-DC",
+            "Cargadores de Batería Renogy",
+            "Reguladores Solares MPPT",
+            "Inversores Inteligentes OFF GRID",
+            "Inversores Onda Pura",
+            "Paneles Solares Monocristalino",
+            "Paneles Solares Flexibles",
+            "Paneles Solares Portátiles",
+            "Accesorios P/Paneles",
+            "Monitoreo y Accesorios Renogy"
+        ]
+    },
+    {
         "nombre": "Energía Solar",
         "slug": "energia-solar",
         "subcategorias": [
             "Paneles Solares Monocristalino",
             "Paneles Solares Policristalino",
-            "Accesorios P/Paneles"
+            "Accesorios P/Paneles",
+            "Paneles Solares Flexibles",
+            "Paneles Solares Portátiles"
         ]
     },
     {
@@ -32,7 +54,17 @@ export const CATALOGO_CATEGORIAS = [
             "Baterias de Litio",
             "Baterias de Gel UCG",
             "Baterias de Gel AGM",
-            "Cargadores de Bateria - Desde Alternador"
+            "Accesorios para Baterías Renogy"
+        ]
+    },
+    {
+        "nombre": "Cargadores",
+        "slug": "cargadores",
+        "subcategorias": [
+            "Cargadores de Batería desde Alternador",
+            "Cargadores DC-DC con MPPT / Doble Entrada",
+            "Cargadores de Batería 220V / AC-DC",
+            "Cargadores de Batería Renogy"
         ]
     },
     {
@@ -43,7 +75,8 @@ export const CATALOGO_CATEGORIAS = [
             "Tomas Corriente - Exterior",
             "Tomas Corriente - Interior",
             "Iliminación - Exterior",
-            "Iliminación - Interior"
+            "Iliminación - Interior",
+            "Monitoreo y Accesorios Renogy"
         ]
     },
     {
@@ -58,6 +91,7 @@ export const CATALOGO_CATEGORIAS = [
         "nombre": "Heladeras",
         "slug": "heladeras",
         "subcategorias": [
+            "Heladeras 220L con Freezer",
             "Heladeras FREUCAMP 12v 24v",
             "Heladeras FIVE OCEANS 12v 24v",
             "Heladeras 12v 24v",

@@ -11,6 +11,44 @@ import { useNavigate } from "react-router-dom";
 const API = (import.meta.env.VITE_API_URL || "").replace(/\/+$/, "");
 
 
+
+
+
+function resolverImagenCarrito(imagen) {
+    if (!imagen) return "/images/logo.png";
+
+    const valor = String(imagen).trim();
+
+    try {
+        if (
+            valor.startsWith("http://") ||
+            valor.startsWith("https://")
+        ) {
+            const url = new URL(valor);
+            if (url.pathname.startsWith("/images/")) {
+                return url.pathname;
+            }
+            return valor;
+        }
+    } catch {
+        // Continúa con las reglas siguientes.
+    }
+
+    if (valor.startsWith("/images/")) {
+        return valor;
+    }
+
+    if (valor.startsWith("/uploads/")) {
+        return `${API}${valor}`;
+    }
+
+    if (valor.startsWith("/")) {
+        return valor;
+    }
+
+    return `/images/productos/${valor}`;
+}
+
 export default function Cart({
     abierto,
     cerrar
@@ -284,17 +322,7 @@ export default function Cart({
                             >
 
                                 <img
-                                    src={
-                                        item.imagen
-                                            ? (
-                                                item.imagen.startsWith(
-                                                    "http"
-                                                )
-                                                    ? item.imagen
-                                                    : `${API}${item.imagen}`
-                                            )
-                                            : ""
-                                    }
+                                    src={resolverImagenCarrito(item.imagen)}
                                     alt={item.nombre}
                                 />
 

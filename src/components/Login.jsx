@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 
 import "../styles/Login.css";
+import "../styles/PasswordRecovery.css";
 
 const API = (import.meta.env.VITE_API_URL || "").replace(/\/+$/, "");
 
@@ -267,7 +268,14 @@ export default function Login() {
 
                     </button>
 
-                </form>
+
+                    <div className="forgotPasswordRow">
+                        <Link className="forgotPasswordLink" to="/olvide-contrasena">
+                            ¿Olvidaste tu contraseña?
+                        </Link>
+                    </div>
+
+</form>
 
 
                 <p className="registerLink">

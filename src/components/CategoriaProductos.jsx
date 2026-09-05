@@ -15,7 +15,7 @@ import {
 } from "react-icons/fa";
 
 import { useCart } from "../context/CartContext";
-import { CATALOGO_CATEGORIAS } from "../data/catalogoCategorias";
+import { useCatalogoCategorias } from "../hooks/useCatalogoCategorias";
 import "../styles/CategoriaProductos.css";
 
 const API =
@@ -80,6 +80,14 @@ function imagenProducto(imagen) {
 }
 
 export default function CategoriaProductos() {
+
+    // Fuente única de categorías:
+    // API/MySQL con respaldo en catalogoCategorias.js
+    const CATALOGO_CATEGORIAS =
+        useCatalogoCategorias();
+
+
+
     const { slug } = useParams();
     const [searchParams] = useSearchParams();
     const navigate = useNavigate();
@@ -87,8 +95,11 @@ export default function CategoriaProductos() {
 
     const [productos, setProductos] =
         useState([]);
+    // RC_BUSCADOR_GLOBAL_RESULTADOS_V1
     const [busqueda, setBusqueda] =
-        useState("");
+        useState(
+            searchParams.get("buscar") || ""
+        );
     const [cargando, setCargando] =
         useState(true);
     const [error, setError] =
@@ -107,6 +118,14 @@ export default function CategoriaProductos() {
 
     const subcategoriaActiva =
         searchParams.get("subcategoria") || "";
+
+
+    useEffect(() => {
+        const terminoUrl =
+            searchParams.get("buscar") || "";
+
+        setBusqueda(terminoUrl);
+    }, [searchParams]);
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -164,14 +183,34 @@ export default function CategoriaProductos() {
 
             return productos.filter(
                 producto => {
+                    // RC_RENOGY_CATALOGO_V1
+                    // Renogy es un catálogo virtual: el producto conserva
+                    // su categoría real y también aparece dentro de Renogy.
+                    const esProductoRenogy =
+                        String(
+                            producto.codigo || ""
+                        )
+                            .toUpperCase()
+                            .startsWith("REN.") ||
+                        normalizar(
+                            producto.nombre
+                        ).includes("renogy") ||
+                        normalizar(
+                            producto.caracteristicas
+                        ).includes("marca: renogy");
+
                     const coincideCategoria =
                         slug === "todos" ||
-                        normalizar(
-                            producto.categoria
-                        ) ===
-                            normalizar(
-                                tituloCategoria
-                            );
+                        (
+                            slug === "renogy"
+                                ? esProductoRenogy
+                                : normalizar(
+                                      producto.categoria
+                                  ) ===
+                                      normalizar(
+                                          tituloCategoria
+                                      )
+                        );
 
                     if (!coincideCategoria) {
                         return false;
@@ -193,6 +232,7 @@ export default function CategoriaProductos() {
                         return true;
                     }
 
+                    // RC_BUSCADOR_CAMPOS_COMPLETOS_V1
                     return [
                         producto.nombre,
                         producto.codigo,

@@ -4,7 +4,6 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Categories from "./components/Categories";
-
 import FeaturedProducts from "./components/FeaturedProducts";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Newsletter from "./components/Newsletter";
@@ -18,6 +17,9 @@ import Register from "./components/Register";
 import Login from "./components/Login";
 import Verificar from "./components/Verificar";
 import MiCuenta from "./components/MiCuenta";
+import ForgotPassword from "./components/ForgotPassword";
+import ResetPassword from "./components/ResetPassword";
+import CategoriaProductos from "./components/CategoriaProductos";
 
 import AdminLogin from "./components/AdminLogin";
 import AdminProtectedRoute from "./components/AdminProtectedRoute";
@@ -26,10 +28,10 @@ import AdminPresupuestos from "./components/AdminPresupuestos";
 import AdminPresupuestoDetalle from "./components/AdminPresupuestoDetalle";
 import AdminClientes from "./components/AdminClientes";
 import AdminClienteDetalle from "./components/AdminClienteDetalle";
-import ProductTable from "./components/ProductTable";
-import CategoriaProductos from "./components/CategoriaProductos";
-function Inicio() {
+import AdminCatalogo from "./components/AdminCatalogo";
+import AdminProductosAutonomo from "./components/AdminProductosAutonomo";
 
+function Inicio() {
     const [busqueda, setBusqueda] = useState("");
     const [carritoAbierto, setCarritoAbierto] = useState(false);
 
@@ -42,18 +44,12 @@ function Inicio() {
             />
 
             <Hero />
-
             <Categories />
             <FeaturedProducts />
-
             <WhyChooseUs />
-
             <Newsletter />
-
             <Contact />
-
             <About />
-
             <Footer />
 
             <Cart
@@ -67,53 +63,27 @@ function Inicio() {
 }
 
 function App() {
-
     return (
         <Routes>
-
-            {/* ================================
-                SITIO PÃšBLICO
-            ================================= */}
-
+            <Route path="/" element={<Inicio />} />
+            <Route path="/registro" element={<Register />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/verificar/:codigo" element={<Verificar />} />
+            <Route path="/mi-cuenta" element={<MiCuenta />} />
+            <Route path="/olvide-contrasena" element={<ForgotPassword />} />
             <Route
-                path="/"
-                element={<Inicio />}
+                path="/restablecer-contrasena/:token"
+                element={<ResetPassword />}
             />
-
             <Route
-                path="/registro"
-                element={<Register />}
+                path="/categoria/:slug"
+                element={<CategoriaProductos />}
             />
-
-            <Route
-                path="/login"
-                element={<Login />}
-            />
-
-            <Route
-                path="/verificar/:codigo"
-                element={<Verificar />}
-            />
-
-            <Route
-                path="/mi-cuenta"
-                element={<MiCuenta />}
-            />
-
-
-            {/* ================================
-                LOGIN ADMIN
-            ================================= */}
 
             <Route
                 path="/admin/login"
                 element={<AdminLogin />}
             />
-
-
-            {/* ================================
-                ADMIN DASHBOARD
-            ================================= */}
 
             <Route
                 path="/admin"
@@ -124,10 +94,23 @@ function App() {
                 }
             />
 
+            <Route
+                path="/admin/productos"
+                element={
+                    <AdminProtectedRoute>
+                        <AdminCatalogo />
+                    </AdminProtectedRoute>
+                }
+            />
 
-            {/* ================================
-                ADMIN PRESUPUESTOS
-            ================================= */}
+            <Route
+                path="/admin/catalogo"
+                element={
+                    <AdminProtectedRoute>
+                        <AdminCatalogo />
+                    </AdminProtectedRoute>
+                }
+            />
 
             <Route
                 path="/admin/presupuestos"
@@ -147,11 +130,6 @@ function App() {
                 }
             />
 
-
-            {/* ================================
-                ADMIN CLIENTES
-            ================================= */}
-
             <Route
                 path="/admin/clientes"
                 element={
@@ -169,22 +147,8 @@ function App() {
                     </AdminProtectedRoute>
                 }
             />
-
-<Route
-    path="/admin/productos"
-    element={
-        <AdminProtectedRoute>
-            <ProductTable />
-        </AdminProtectedRoute>
-    }
-/>
-            <Route
-        path="/categoria/:slug"
-        element={<CategoriaProductos />}
-    />
-</Routes>
+        </Routes>
     );
 }
 
 export default App;
-

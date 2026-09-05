@@ -1,6 +1,5 @@
 const express = require("express");
 const crypto = require("crypto");
-const nodemailer = require("nodemailer");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
@@ -52,18 +51,79 @@ function passwordEsValidaParaRegistro(
 // CONFIGURACIÓN DEL CORREO
 // ==========================================
 
-const transporter =
-    nodemailer.createTransport({
-        service: "gmail",
+const transporter = {
+    async sendMail({ to, subject, html }) {
+        const apiKey = String(process.env.BREVO_API_KEY || "").trim();
 
-        auth: {
-            user:
-                process.env.EMAIL_USER,
+        const senderEmail = String(
+            process.env.BREVO_SENDER_EMAIL ||
+            process.env.EMAIL_USER ||
+            ""
+        ).trim();
 
-            pass:
-                process.env.EMAIL_PASSWORD
+        const senderName = String(
+            process.env.BREVO_SENDER_NAME ||
+            "RC Conversiones"
+        ).trim();
+
+        if (!apiKey) {
+            throw new Error(
+                "Falta BREVO_API_KEY en las variables de entorno."
+            );
         }
-    });
+
+        if (!senderEmail) {
+            throw new Error(
+                "Falta BREVO_SENDER_EMAIL en las variables de entorno."
+            );
+        }
+
+        const destinatarios = Array.isArray(to)
+            ? to.map((email) => ({ email: String(email).trim() }))
+            : [{ email: String(to).trim() }];
+
+        const response = await fetch(
+            "https://api.brevo.com/v3/smtp/email",
+            {
+                method: "POST",
+                headers: {
+                    accept: "application/json",
+                    "api-key": apiKey,
+                    "content-type": "application/json"
+                },
+                body: JSON.stringify({
+                    sender: {
+                        name: senderName,
+                        email: senderEmail
+                    },
+                    to: destinatarios,
+                    subject,
+                    htmlContent: html
+                })
+            }
+        );
+
+        if (!response.ok) {
+            const detalle = await response.text();
+
+            throw new Error(
+                `Brevo respondió HTTP ${response.status}: ${detalle.slice(0, 700)}`
+            );
+        }
+
+        const texto = await response.text();
+
+        if (!texto) {
+            return { ok: true };
+        }
+
+        try {
+            return JSON.parse(texto);
+        } catch {
+            return { ok: true, respuesta: texto };
+        }
+    }
+};
 
 
 // ==========================================
@@ -1634,5 +1694,150 @@ router.put(
     }
   }
 );
+
+
+// ============================================================
+// RC_PASSWORD_RECOVERY_V1
+// Recuperación segura de contraseña con Brevo HTTPS.
+// ============================================================
+let passwordRecoveryColumnsPromise = null;
+
+async function asegurarColumnasPasswordRecovery() {
+  if (passwordRecoveryColumnsPromise) return passwordRecoveryColumnsPromise;
+  passwordRecoveryColumnsPromise = (async () => {
+    const [columnas] = await db.promise().query(`
+      SELECT COLUMN_NAME
+      FROM INFORMATION_SCHEMA.COLUMNS
+      WHERE TABLE_SCHEMA = DATABASE()
+        AND TABLE_NAME = 'clientes'
+        AND COLUMN_NAME IN ('password_reset_token_hash','password_reset_expires_at')
+    `);
+    const existentes = new Set(columnas.map((fila) => fila.COLUMN_NAME));
+    if (!existentes.has("password_reset_token_hash")) {
+      await db.promise().query(`ALTER TABLE clientes ADD COLUMN password_reset_token_hash VARCHAR(64) NULL`);
+    }
+    if (!existentes.has("password_reset_expires_at")) {
+      await db.promise().query(`ALTER TABLE clientes ADD COLUMN password_reset_expires_at DATETIME NULL`);
+    }
+  })().catch((error) => {
+    passwordRecoveryColumnsPromise = null;
+    throw error;
+  });
+  return passwordRecoveryColumnsPromise;
+}
+
+router.post("/password/forgot", async (req, res) => {
+  const email = String(req.body?.email || "").trim().toLowerCase();
+  const respuestaGenerica = {
+    ok: true,
+    mensaje: "Si existe una cuenta con ese correo, te enviamos un enlace para recuperar tu contraseña."
+  };
+
+  if (!email || !emailEsValido(email)) return res.json(respuestaGenerica);
+
+  try {
+    await asegurarColumnasPasswordRecovery();
+    const [rows] = await db.promise().query(`
+      SELECT id, nombre, email
+      FROM clientes
+      WHERE LOWER(email) = ?
+      LIMIT 1
+    `, [email]);
+
+    if (!rows.length) return res.json(respuestaGenerica);
+    const cliente = rows[0];
+    const token = crypto.randomBytes(32).toString("hex");
+    const tokenHash = crypto.createHash("sha256").update(token).digest("hex");
+
+    await db.promise().query(`
+      UPDATE clientes
+      SET password_reset_token_hash = ?,
+          password_reset_expires_at = DATE_ADD(NOW(), INTERVAL 30 MINUTE)
+      WHERE id = ?
+    `, [tokenHash, cliente.id]);
+
+    const frontendUrl = String(
+      process.env.FRONTEND_URL || process.env.CLIENT_URL || "http://localhost:5173"
+    ).trim().replace(/\/+$/, "");
+    const enlace = `${frontendUrl}/restablecer-contrasena/${token}`;
+
+    try {
+      await transporter.sendMail({
+        from: `"RC Conversiones" <${process.env.BREVO_SENDER_EMAIL || process.env.EMAIL_USER || ""}>`,
+        to: cliente.email,
+        subject: "Recuperá tu contraseña - RC Conversiones",
+        html: `
+          <div style="max-width:600px;margin:0 auto;font-family:Arial,sans-serif;color:#17324d;line-height:1.6;">
+            <div style="background:#124f91;color:white;padding:22px 26px;border-radius:14px 14px 0 0;"><h2 style="margin:0;">RC Conversiones</h2></div>
+            <div style="border:1px solid #dbe7f3;border-top:0;padding:28px 26px;border-radius:0 0 14px 14px;">
+              <h2>Recuperar contraseña</h2>
+              <p>Hola ${String(cliente.nombre || "").replace(/[<>]/g, "")}.</p>
+              <p>Recibimos una solicitud para cambiar la contraseña de tu cuenta.</p>
+              <p style="margin:28px 0;"><a href="${enlace}" style="display:inline-block;background:#0d8cff;color:white;text-decoration:none;padding:12px 20px;border-radius:9px;font-weight:bold;">Crear contraseña nueva</a></p>
+              <p>Este enlace vence en <strong>30 minutos</strong>.</p>
+              <p>Si vos no solicitaste el cambio, podés ignorar este correo.</p>
+            </div>
+          </div>
+        `
+      });
+    } catch (mailError) {
+      console.error("Error enviando recuperación de contraseña:", mailError);
+      await db.promise().query(`
+        UPDATE clientes
+        SET password_reset_token_hash = NULL,
+            password_reset_expires_at = NULL
+        WHERE id = ?
+      `, [cliente.id]);
+    }
+
+    return res.json(respuestaGenerica);
+  } catch (error) {
+    console.error("Error solicitando recuperación de contraseña:", error);
+    return res.json(respuestaGenerica);
+  }
+});
+
+router.post("/password/reset", async (req, res) => {
+  const token = String(req.body?.token || "").trim();
+  const password = String(req.body?.password || "");
+
+  if (token.length < 32 || token.length > 256) {
+    return res.status(400).json({ ok:false, mensaje:"El enlace de recuperación no es válido o ya venció." });
+  }
+  if (password.length < 8 || password.length > 128) {
+    return res.status(400).json({ ok:false, mensaje:"La contraseña debe tener entre 8 y 128 caracteres." });
+  }
+
+  try {
+    await asegurarColumnasPasswordRecovery();
+    const tokenHash = crypto.createHash("sha256").update(token).digest("hex");
+    const [rows] = await db.promise().query(`
+      SELECT id
+      FROM clientes
+      WHERE password_reset_token_hash = ?
+        AND password_reset_expires_at IS NOT NULL
+        AND password_reset_expires_at > NOW()
+      LIMIT 1
+    `, [tokenHash]);
+
+    if (!rows.length) {
+      return res.status(400).json({ ok:false, mensaje:"El enlace de recuperación no es válido o ya venció." });
+    }
+
+    const nuevoHash = await bcrypt.hash(password, 12);
+    await db.promise().query(`
+      UPDATE clientes
+      SET password = ?,
+          password_reset_token_hash = NULL,
+          password_reset_expires_at = NULL
+      WHERE id = ?
+    `, [nuevoHash, rows[0].id]);
+
+    return res.json({ ok:true, mensaje:"Tu contraseña fue actualizada correctamente. Ya podés iniciar sesión." });
+  } catch (error) {
+    console.error("Error restableciendo contraseña:", error);
+    return res.status(500).json({ ok:false, mensaje:"No se pudo cambiar la contraseña. Intentá nuevamente." });
+  }
+});
 
 module.exports = router;

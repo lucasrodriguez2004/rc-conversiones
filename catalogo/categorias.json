@@ -1,110 +1,252 @@
 [
   {
+    "nombre": "Renogy",
+    "slug": "renogy",
+    "subcategorias": [
+      "Baterias de Litio",
+      "Accesorios para Baterías Renogy",
+      "Cargadores de Batería desde Alternador",
+      "Cargadores DC-DC con MPPT / Doble Entrada",
+      "Cargadores de Batería 220V / AC-DC",
+      "Cargadores de Batería Renogy",
+      "Reguladores Solares MPPT",
+      "Inversores Inteligentes OFF GRID",
+      "Inversores Onda Pura",
+      "Paneles Solares Monocristalino",
+      "Paneles Solares Flexibles",
+      "Paneles Solares Portátiles",
+      "Accesorios P/Paneles",
+      "Monitoreo y Accesorios Renogy"
+    ]
+  },
+  {
     "nombre": "Energía Solar",
     "slug": "energia-solar",
-    "cantidad": 27,
-    "imagen": "/images/productos/pm-50.webp"
+    "subcategorias": [
+      "Paneles Solares Monocristalino",
+      "Paneles Solares Policristalino",
+      "Accesorios P/Paneles",
+      "Paneles Solares Flexibles",
+      "Paneles Solares Portátiles"
+    ]
   },
   {
     "nombre": "Reguladores",
     "slug": "reguladores",
-    "cantidad": 16,
-    "imagen": "/images/productos/rm-15-l.webp"
+    "subcategorias": [
+      "Reguladores Solares MPPT",
+      "Reguladores Solares PWM"
+    ]
   },
   {
     "nombre": "Inversores",
     "slug": "inversores",
-    "cantidad": 34,
-    "imagen": "/images/productos/ii-1000-12.webp"
+    "subcategorias": [
+      "Inversores Inteligentes OFF GRID",
+      "Inversores Onda Pura",
+      "Inversores Onda Modificada"
+    ]
   },
   {
     "nombre": "Baterías",
     "slug": "baterias",
-    "cantidad": 23,
-    "imagen": "/images/productos/bl-100-b24.webp"
+    "subcategorias": [
+      "Baterias de Litio",
+      "Baterias de Gel UCG",
+      "Baterias de Gel AGM",
+      "Accesorios para Baterías Renogy"
+    ]
+  },
+  {
+    "nombre": "Cargadores",
+    "slug": "cargadores",
+    "subcategorias": [
+      "Cargadores de Batería desde Alternador",
+      "Cargadores DC-DC con MPPT / Doble Entrada",
+      "Cargadores de Batería 220V / AC-DC",
+      "Cargadores de Batería Renogy"
+    ]
   },
   {
     "nombre": "Electricidad",
     "slug": "electricidad",
-    "cantidad": 29,
-    "imagen": "/images/productos/gea-12.webp"
+    "subcategorias": [
+      "Generadores de Corriente - Nafteros",
+      "Tomas Corriente - Exterior",
+      "Tomas Corriente - Interior",
+      "Iliminación - Exterior",
+      "Iliminación - Interior",
+      "Monitoreo y Accesorios Renogy"
+    ]
   },
   {
     "nombre": "Electrodomésticos",
     "slug": "electrodomesticos",
-    "cantidad": 11,
-    "imagen": "/images/productos/plt-12.webp"
+    "subcategorias": [
+      "Televisores 12v",
+      "Accesorios para Televisores"
+    ]
   },
   {
     "nombre": "Heladeras",
     "slug": "heladeras",
-    "cantidad": 13,
-    "imagen": "/images/productos/h80-12-f.webp"
+    "subcategorias": [
+      "Heladeras 220L con Freezer",
+      "Heladeras FREUCAMP 12v 24v",
+      "Heladeras FIVE OCEANS 12v 24v",
+      "Heladeras 12v 24v",
+      "Heladeras Portátiles 12v 24v",
+      "Fabricadora de Hielo 12v 24v"
+    ]
   },
   {
     "nombre": "Climatización",
     "slug": "climatizacion",
-    "cantidad": 18,
-    "imagen": "/images/productos/aa-220-d.webp"
+    "subcategorias": [
+      "Aires Acondicionados 220v FRIO-CALOR - INVERTER",
+      "Aires Acondicionados 24v",
+      "Climatizadores 12v",
+      "Climatizadores 24v",
+      "Repuestos Climatizadores NEIL"
+    ]
   },
   {
     "nombre": "Calefacción",
     "slug": "calefaccion",
-    "cantidad": 45,
-    "imagen": "/images/productos/c-6-kge.webp"
+    "subcategorias": [
+      "Calefones y Ventilación",
+      "Calentadores 12v",
+      "Calderas Diesel 12v",
+      "Calderas Diesel 24v",
+      "Repuestos Calefactor Diesel ACTECMAX"
+    ]
   },
   {
     "nombre": "Cocina",
     "slug": "cocina",
-    "cantidad": 25,
-    "imagen": "/images/productos/sp-12.webp"
+    "subcategorias": [
+      "Accesorios",
+      "Cocinas con Horno Verticales",
+      "Cocinas con Horno para Embutir",
+      "Bachas y Anafes con Tapa de Vidrio",
+      "Anafes 2 Hornallas",
+      "Bachas de Acero Inoxidable"
+    ]
   },
   {
     "nombre": "Aberturas",
     "slug": "aberturas",
-    "cantidad": 93,
-    "imagen": "/images/productos/bai-o.webp"
+    "subcategorias": [
+      "Puertas de Acceso",
+      "Marcos para Puertas",
+      "Puertas Bauleras",
+      "Marco Bauleras",
+      "Ventanas de Doble Acrilico - Planas",
+      "Ventanas de Doble Acrilico - Planas Tipo Burbuja",
+      "Ventanas de Doble Acrilico - Curvas",
+      "Ventanas Levadizas Plus",
+      "Ventanas Levadizas",
+      "Ventanas Dobles Corredizas",
+      "Ventanas Simples Corredizas",
+      "Ventanas Fijas",
+      "Ventanas Ojo de Buey"
+    ]
   },
   {
     "nombre": "Ventilación",
     "slug": "ventilacion",
-    "cantidad": 27,
-    "imagen": "/images/productos/v8-12.webp"
+    "subcategorias": [
+      "Ventiladores 12v",
+      "Aireadores con Extractor y Ventilador",
+      "Aireadores con Extractor",
+      "Aireadores con Cortina Black Out",
+      "Aireadores Expulsables",
+      "Aireadores Simples de Vidrio",
+      "Aireadores Simples de Acrilico",
+      "Aireadores Simples de Chapa",
+      "Aireadores Simples de Plastico",
+      "Extractores",
+      "Rejillas"
+    ]
   },
   {
     "nombre": "Herrajes",
     "slug": "herrajes",
-    "cantidad": 11,
-    "imagen": "/images/productos/c-b-ai.webp"
+    "subcategorias": [
+      "Cerraduras para Puertas de Acceso",
+      "Cerraduras para Bauleras",
+      "Cerradura Levantapiso",
+      "Cerraduras para Baños",
+      "Cerraduras para Muebles"
+    ]
   },
   {
     "nombre": "Mobiliario",
     "slug": "mobiliario",
-    "cantidad": 32,
-    "imagen": "/images/productos/bb-18-e.webp"
+    "subcategorias": [
+      "Bases de Butacas Giratorias",
+      "Pies de Mesa Electricos",
+      "Pies de Mesa Mecanicos",
+      "Pies de Mesa Manuales",
+      "Pies de Mesa Fijos"
+    ]
   },
   {
     "nombre": "Seguridad",
     "slug": "seguridad",
-    "cantidad": 8,
-    "imagen": "/images/productos/er-s-n.webp"
+    "subcategorias": [
+      "Escalones",
+      "Matafuegos",
+      "Tapas de Tanque de Combustible",
+      "Bidones para Combustible",
+      "Lingas y Sunchos"
+    ]
   },
   {
     "nombre": "Sanitarios",
     "slug": "sanitarios",
-    "cantidad": 70,
-    "imagen": "/images/productos/ti-lc-b.webp"
+    "subcategorias": [
+      "Tapas de Inspección - Con Llave",
+      "Tapas de Inspección - Con Traba",
+      "Tapas de Inspección - Simples",
+      "Modulos de Baño - Fibra de Vidrio",
+      "Pisos/Receptaculos de Ducha",
+      "Inodoros Electricos 12v o 24v - TMC",
+      "Inodoros Electricos 12v o 24v - SEAFLO",
+      "Inodoros a Pedal",
+      "Inodoros a Quimicos a Cassette",
+      "Inodoros Quimicos",
+      "Inodoros Quimicos SEAFLO",
+      "Disgregantes para Aguas Negras",
+      "Bidets",
+      "Duchadores para Exterior",
+      "Duchadores para Interior",
+      "Completas Canilla + Duchador"
+    ]
   },
   {
     "nombre": "Grifería",
     "slug": "griferia",
-    "cantidad": 2,
-    "imagen": "/images/productos/cc-rm-b.webp"
+    "subcategorias": [
+      "Canillas Rebatibles"
+    ]
   },
   {
     "nombre": "Agua",
     "slug": "agua",
-    "cantidad": 62,
-    "imagen": "/images/productos/ba-sh-12.webp"
+    "subcategorias": [
+      "Bombas de Agua SHURFLO",
+      "Bombas de Agua SEAFLO",
+      "Bombas de Agua SINGFLO",
+      "Tanques Acumuladores",
+      "Llaves Exclusas Electricas",
+      "Llaves Exclusas con Cable",
+      "Llaves Exclusas",
+      "Acoples para Llaves Exclusas",
+      "Medidores para Tanques de Agua",
+      "Tapas de Tanque para Ingreso de Agua",
+      "Tanques de Aguas Blancas",
+      "Tanques de Aguas Negras"
+    ]
   }
 ]

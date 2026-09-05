@@ -1,4 +1,5 @@
 import "../styles/Navbar.css";
+import { useEffect as useCatalogEffect, useState as useCatalogState } from "react";
 import {
     FaShoppingCart,
     FaUser,
@@ -13,7 +14,15 @@ import {
 } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext";
-import { CATALOGO_CATEGORIAS } from "../data/catalogoCategorias";
+import { useCatalogoCategorias } from "../hooks/useCatalogoCategorias";
+
+
+// RC_CATALOGO_DINAMICO_V1
+const CATALOGO_API =
+  (
+    import.meta.env.VITE_API_URL ||
+    "http://localhost:5000"
+  ).replace(/\/+$/, "");
 
 export default function Navbar({
     busqueda = "",
@@ -21,7 +30,57 @@ export default function Navbar({
     abrirCarrito
 }) {
     const navigate = useNavigate();
-    const { carrito } = useCart();
+    const CATALOGO_CATEGORIAS = useCatalogoCategorias();
+        const [
+        catalogoDinamico,
+        setCatalogoDinamico
+    ] = useCatalogState(
+        CATALOGO_CATEGORIAS
+    );
+
+    useCatalogEffect(() => {
+        let activo = true;
+
+        fetch(
+            CATALOGO_API +
+            "/catalogo-categorias"
+        )
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(
+                        "No se pudo cargar el catálogo."
+                    );
+                }
+
+                return response.json();
+            })
+            .then(data => {
+                if (
+                    activo &&
+                    data?.ok &&
+                    Array.isArray(
+                        data.categorias
+                    ) &&
+                    data.categorias.length
+                ) {
+                    setCatalogoDinamico(
+                        data.categorias
+                    );
+                }
+            })
+            .catch(error => {
+                console.warn(
+                    "Usando categorías locales:",
+                    error.message
+                );
+            });
+
+        return () => {
+            activo = false;
+        };
+    }, []);
+
+const { carrito } = useCart();
 
     const [menuAbierto, setMenuAbierto] =
         useState(false);
@@ -120,6 +179,23 @@ export default function Navbar({
         );
     }
 
+    // RC_BUSCADOR_GLOBAL_V1
+    function ejecutarBusqueda(texto = busqueda) {
+        const termino =
+            String(texto || "").trim();
+
+        if (!termino) {
+            return;
+        }
+
+        navigate(
+            `/categoria/todos?buscar=${encodeURIComponent(
+                termino
+            )}`
+        );
+    }
+
+
     return (
         <>
             <header className="navbar">
@@ -204,9 +280,9 @@ export default function Navbar({
                         <FaSearch />
 
                         <input
-                            type="text"
+                            type="search"
                             placeholder="Buscar productos..."
-                            value={busqueda}
+                            value={busqueda || ""}
                             onChange={(e) => {
                                 if (
                                     typeof setBusqueda ===
@@ -217,6 +293,15 @@ export default function Navbar({
                                     );
                                 }
                             }}
+                            onKeyDown={(e) => {
+                                if (e.key === "Enter") {
+                                    e.preventDefault();
+                                    ejecutarBusqueda(
+                                        e.currentTarget.value
+                                    );
+                                }
+                            }}
+                            aria-label="Buscar productos"
                         />
                     </div>
 
@@ -315,7 +400,7 @@ export default function Navbar({
                     </div>
 
                     <div className="megaCategoriasColumns">
-                        {CATALOGO_CATEGORIAS.map(
+                        {catalogoDinamico.map(
                             categoria => (
                                 <div
                                     className="megaCategoriaGrupo"

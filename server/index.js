@@ -1,3 +1,7 @@
+const adminJwt = require("jsonwebtoken");
+const adminBcrypt = require("bcryptjs");
+const adminCrypto = require("crypto");
+const adminFs = require("fs");
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
@@ -11,9 +15,107 @@ dotenv.config();
 
 const db = require("./config/db");
 const multer = require("./config/multer");
+const fs = require("fs");
+const { v2: cloudinary } = require("cloudinary");
 const clientesRoutes = require("./routes/clientes");
+const adminProductosAutonomoRoutes = require("./routes/adminProductosAutonomo");
 
 const app = express();
+
+// ============================================================
+// RC_CLOUDINARY_PRODUCTOS_V1
+// Las imágenes nuevas del panel se almacenan fuera de Railway.
+// ============================================================
+
+function rcCloudinaryConfigurado() {
+    return Boolean(
+        process.env.CLOUDINARY_CLOUD_NAME &&
+        process.env.CLOUDINARY_API_KEY &&
+        process.env.CLOUDINARY_API_SECRET
+    );
+}
+
+if (
+    rcCloudinaryConfigurado()
+) {
+    cloudinary.config({
+        cloud_name:
+            process.env.CLOUDINARY_CLOUD_NAME,
+
+        api_key:
+            process.env.CLOUDINARY_API_KEY,
+
+        api_secret:
+            process.env.CLOUDINARY_API_SECRET,
+
+        secure: true
+    });
+}
+
+async function rcBorrarArchivoTemporal(
+    archivo
+) {
+    if (!archivo) {
+        return;
+    }
+
+    try {
+        await fs.promises.unlink(
+            archivo
+        );
+    } catch (error) {
+        if (
+            error?.code !==
+            "ENOENT"
+        ) {
+            console.warn(
+                "No se pudo borrar archivo temporal:",
+                error.message
+            );
+        }
+    }
+}
+
+async function rcSubirProductoCloudinary(
+    archivo
+) {
+    if (
+        !rcCloudinaryConfigurado()
+    ) {
+        const error =
+            new Error(
+                "Cloudinary no está configurado en el servidor."
+            );
+
+        error.codigo =
+            "CLOUDINARY_NO_CONFIGURADO";
+
+        throw error;
+    }
+
+    return await cloudinary.uploader.upload(
+        archivo,
+        {
+            folder:
+                "rc-conversiones/productos",
+
+            resource_type:
+                "image",
+
+            unique_filename:
+                true,
+
+            overwrite:
+                false
+        }
+    );
+}
+
+
+// Railway/Vercel pasan la IP real mediante X-Forwarded-For.
+// Express debe confiar en el primer proxy para que express-rate-limit
+// identifique correctamente a cada cliente.
+app.set("trust proxy", 1);
 
 
 // =====================================================
@@ -459,6 +561,7 @@ app.use(
     "/clientes",
     clientesRoutes
 );
+app.use(adminProductosAutonomoRoutes);
 
 
 // =====================================================
@@ -487,41 +590,1648 @@ app.use(
 // SUBIR IMAGEN
 // =====================================================
 
+
+// ============================================================
+// RC_ADMIN_CATALOGO_V1
+// Panel de catálogo autónomo para producción.
+// ============================================================
+
+const RC_ADMIN_SECRET =
+    process.env.ADMIN_JWT_SECRET ||
+    process.env.JWT_SECRET;
+
+function rcAdminQuery(sql, params = []) {
+    return new Promise((resolve, reject) => {
+        db.query(sql, params, (error, rows) => {
+            if (error) {
+                reject(error);
+                return;
+            }
+
+            resolve(rows);
+        });
+    });
+}
+
+function rcSlug(texto) {
+    return String(texto || "")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "")
+        .slice(0, 140);
+}
+
+function rcParseSubcategorias(valor) {
+    if (Array.isArray(valor)) {
+        return valor
+            .map(x => String(x || "").trim())
+            .filter(Boolean)
+            .filter(
+                (x, index, array) =>
+                    array.findIndex(
+                        y =>
+                            y.toLowerCase() ===
+                            x.toLowerCase()
+                    ) === index
+            );
+    }
+
+    if (!valor) {
+        return [];
+    }
+
+    try {
+        const parsed = JSON.parse(valor);
+
+        return rcParseSubcategorias(parsed);
+    } catch {
+        return String(valor)
+            .split(/\r?\n|,/)
+            .map(x => x.trim())
+            .filter(Boolean);
+    }
+}
+
+async function rcAsegurarCategoriaProducto(
+    categoria,
+    subcategoria
+) {
+    const nombre = String(categoria || "").trim();
+
+    if (!nombre) {
+        return;
+    }
+
+    let slug = rcSlug(nombre);
+
+    if (!slug) {
+        slug = "categoria-" + Date.now();
+    }
+
+    const rows = await rcAdminQuery(
+        `
+          SELECT
+            id,
+            subcategorias_json
+          FROM catalogo_categorias
+          WHERE LOWER(nombre) = LOWER(?)
+             OR slug = ?
+          LIMIT 1
+        `,
+        [nombre, slug]
+    );
+
+    if (!rows.length) {
+        await rcAdminQuery(
+            `
+              INSERT INTO catalogo_categorias
+              (
+                nombre,
+                slug,
+                subcategorias_json,
+                orden,
+                activo
+              )
+              VALUES (
+                ?,
+                ?,
+                ?,
+                (
+                  SELECT COALESCE(MAX(c.orden), -1) + 1
+                  FROM catalogo_categorias c
+                ),
+                1
+              )
+            `,
+            [
+                nombre,
+                slug,
+                JSON.stringify(
+                    subcategoria
+                        ? [String(subcategoria).trim()]
+                        : []
+                )
+            ]
+        );
+
+        return;
+    }
+
+    if (!subcategoria) {
+        return;
+    }
+
+    const subs = rcParseSubcategorias(
+        rows[0].subcategorias_json
+    );
+
+    const nueva = String(subcategoria).trim();
+
+    if (
+        nueva &&
+        !subs.some(
+            x =>
+                x.toLowerCase() ===
+                nueva.toLowerCase()
+        )
+    ) {
+        subs.push(nueva);
+
+        await rcAdminQuery(
+            `
+              UPDATE catalogo_categorias
+              SET subcategorias_json = ?
+              WHERE id = ?
+            `,
+            [
+                JSON.stringify(subs),
+                rows[0].id
+            ]
+        );
+    }
+}
+
+function rcVerificarAdmin(req, res, next) {
+    try {
+        const auth = String(
+            req.headers.authorization || ""
+        );
+
+        const token = auth.startsWith("Bearer ")
+            ? auth.slice(7).trim()
+            : "";
+
+        if (!token || !RC_ADMIN_SECRET) {
+            return res.status(401).json({
+                ok: false,
+                mensaje: "Sesión de administrador requerida."
+            });
+        }
+
+        const datos = adminJwt.verify(
+            token,
+            RC_ADMIN_SECRET
+        );
+
+        if (datos.tipo !== "admin") {
+            throw new Error("Tipo de token inválido");
+        }
+
+        req.admin = datos;
+        next();
+    } catch {
+        return res.status(401).json({
+            ok: false,
+            mensaje:
+                "La sesión de administrador venció o no es válida."
+        });
+    }
+}
+
+async function rcLoginAdmin(req, res) {
+    try {
+        if (!RC_ADMIN_SECRET) {
+            return res.status(500).json({
+                ok: false,
+                mensaje:
+                    "Falta ADMIN_JWT_SECRET o JWT_SECRET en el servidor."
+            });
+        }
+
+        const usuario = String(
+            req.body?.usuario || ""
+        ).trim();
+
+        const password = String(
+            req.body?.password || ""
+        );
+
+        if (!usuario || !password) {
+            return res.status(400).json({
+                ok: false,
+                mensaje:
+                    "Ingresá usuario y contraseña."
+            });
+        }
+
+        const rows = await rcAdminQuery(
+            `
+              SELECT
+                id,
+                usuario,
+                password
+              FROM administradores
+              WHERE usuario = ?
+              LIMIT 1
+            `,
+            [usuario]
+        );
+
+        const generico = {
+            ok: false,
+            mensaje:
+                "Usuario o contraseña incorrectos."
+        };
+
+        if (!rows.length) {
+            return res.status(401).json(generico);
+        }
+
+        const admin = rows[0];
+
+        const guardada = String(
+            admin.password || ""
+        );
+
+        const esBcrypt =
+            /^\$2[aby]\$\d{2}\$/.test(
+                guardada
+            );
+
+        const valida = esBcrypt
+            ? await adminBcrypt.compare(
+                  password,
+                  guardada
+              )
+            : password === guardada;
+
+        if (!valida) {
+            return res.status(401).json(generico);
+        }
+
+        // Migra automáticamente los administradores históricos
+        // que todavía tengan contraseña en texto plano.
+        if (!esBcrypt) {
+            const hash =
+                await adminBcrypt.hash(
+                    password,
+                    12
+                );
+
+            await rcAdminQuery(
+                `
+                  UPDATE administradores
+                  SET password = ?
+                  WHERE id = ?
+                `,
+                [hash, admin.id]
+            );
+        }
+
+        const token = adminJwt.sign(
+            {
+                id: admin.id,
+                usuario: admin.usuario,
+                tipo: "admin"
+            },
+            RC_ADMIN_SECRET,
+            {
+                expiresIn: "12h"
+            }
+        );
+
+        return res.json({
+            ok: true,
+            token,
+            administrador: {
+                id: admin.id,
+                usuario: admin.usuario
+            }
+        });
+    } catch (error) {
+        console.error(
+            "Error login admin:",
+            error
+        );
+
+        return res.status(500).json({
+            ok: false,
+            mensaje:
+                "No se pudo iniciar sesión."
+        });
+    }
+}
+
+// Login nuevo + alias compatible con el login antiguo.
+// Al responder acá, la antigua ruta /login ya no se ejecuta.
+app.post("/admin/login", rcLoginAdmin);
+app.post("/login", rcLoginAdmin);
+
+// Protege las mutaciones históricas aunque alguna pantalla vieja
+// todavía intente utilizarlas.
+app.post(
+    "/productos",
+    rcVerificarAdmin,
+    (req, res, next) => next()
+);
+
+app.put(
+    "/productos/:id",
+    rcVerificarAdmin,
+    (req, res, next) => next()
+);
+
+app.delete(
+    "/productos/:id",
+    rcVerificarAdmin,
+    (req, res, next) => next()
+);
+
+// LISTADO PÚBLICO: solo productos visibles.
+app.get("/productos", async (req, res) => {
+    try {
+        const rows = await rcAdminQuery(
+            `
+              SELECT *
+              FROM productos
+              WHERE COALESCE(activo, 1) = 1
+              ORDER BY id DESC
+            `
+        );
+
+        return res.json(rows);
+    } catch (error) {
+        console.error(
+            "Error obteniendo productos públicos:",
+            error
+        );
+
+        return res.status(500).json({
+            ok: false,
+            mensaje:
+                "No se pudieron obtener los productos."
+        });
+    }
+});
+
+// CATEGORÍAS PÚBLICAS DINÁMICAS.
+app.get(
+    "/catalogo-categorias",
+    async (req, res) => {
+        try {
+            const rows =
+                await rcAdminQuery(
+                    `
+                      SELECT
+                        id,
+                        nombre,
+                        slug,
+                        subcategorias_json,
+                        orden
+                      FROM catalogo_categorias
+                      WHERE activo = 1
+                      ORDER BY orden ASC, id ASC
+                    `
+                );
+
+            return res.json({
+                ok: true,
+                categorias:
+                    rows.map(row => ({
+                        id: row.id,
+                        nombre: row.nombre,
+                        slug: row.slug,
+                        subcategorias:
+                            rcParseSubcategorias(
+                                row.subcategorias_json
+                            )
+                    }))
+            });
+        } catch (error) {
+            console.error(
+                "Error cargando categorías:",
+                error
+            );
+
+            return res.status(500).json({
+                ok: false,
+                mensaje:
+                    "No se pudieron cargar las categorías."
+            });
+        }
+    }
+);
+
+// ============================================================
+// UPLOAD PERSISTENTE
+// Producción: Cloudinary.
+// Desarrollo local: /uploads como respaldo.
+// ============================================================
+
+app.post(
+    "/upload",
+    rcVerificarAdmin,
+    multer.single("imagen"),
+    async (req, res) => {
+        if (!req.file) {
+            return res.status(400).json({
+                ok: false,
+                mensaje:
+                    "Seleccioná una imagen."
+            });
+        }
+
+        const limpiarTemporal = () => {
+            try {
+                if (
+                    req.file?.path &&
+                    adminFs.existsSync(
+                        req.file.path
+                    )
+                ) {
+                    adminFs.unlinkSync(
+                        req.file.path
+                    );
+                }
+            } catch {}
+        };
+
+        if (
+            !String(
+                req.file.mimetype || ""
+            ).startsWith("image/")
+        ) {
+            limpiarTemporal();
+
+            return res.status(400).json({
+                ok: false,
+                mensaje:
+                    "El archivo debe ser una imagen."
+            });
+        }
+
+        if (
+            Number(req.file.size || 0) >
+            8 * 1024 * 1024
+        ) {
+            limpiarTemporal();
+
+            return res.status(400).json({
+                ok: false,
+                mensaje:
+                    "La imagen no puede superar 8 MB."
+            });
+        }
+
+        const cloudName =
+            String(
+                process.env.CLOUDINARY_CLOUD_NAME ||
+                ""
+            ).trim();
+
+        const apiKey =
+            String(
+                process.env.CLOUDINARY_API_KEY ||
+                ""
+            ).trim();
+
+        const apiSecret =
+            String(
+                process.env.CLOUDINARY_API_SECRET ||
+                ""
+            ).trim();
+
+        const cloudinaryListo =
+            cloudName &&
+            apiKey &&
+            apiSecret;
+
+        if (cloudinaryListo) {
+            try {
+                const timestamp =
+                    Math.floor(
+                        Date.now() / 1000
+                    );
+
+                const folder =
+                    "rc-conversiones/productos";
+
+                const toSign =
+                    `folder=${folder}&timestamp=${timestamp}`;
+
+                const signature =
+                    adminCrypto
+                        .createHash("sha1")
+                        .update(
+                            toSign +
+                            apiSecret
+                        )
+                        .digest("hex");
+
+                const bytes =
+                    adminFs.readFileSync(
+                        req.file.path
+                    );
+
+                const form =
+                    new FormData();
+
+                form.append(
+                    "file",
+                    new Blob(
+                        [bytes],
+                        {
+                            type:
+                                req.file.mimetype
+                        }
+                    ),
+                    req.file.originalname ||
+                    "producto"
+                );
+
+                form.append(
+                    "api_key",
+                    apiKey
+                );
+
+                form.append(
+                    "timestamp",
+                    String(timestamp)
+                );
+
+                form.append(
+                    "folder",
+                    folder
+                );
+
+                form.append(
+                    "signature",
+                    signature
+                );
+
+                const response =
+                    await fetch(
+                        `https://api.cloudinary.com/v1_1/${encodeURIComponent(
+                            cloudName
+                        )}/image/upload`,
+                        {
+                            method: "POST",
+                            body: form
+                        }
+                    );
+
+                const data =
+                    await response.json();
+
+                limpiarTemporal();
+
+                if (
+                    !response.ok ||
+                    !data.secure_url
+                ) {
+                    console.error(
+                        "Cloudinary:",
+                        data
+                    );
+
+                    return res.status(502).json({
+                        ok: false,
+                        mensaje:
+                            "No se pudo guardar la imagen en el almacenamiento."
+                    });
+                }
+
+                return res.json({
+                    ok: true,
+                    ruta: data.secure_url,
+                    provider: "cloudinary"
+                });
+            } catch (error) {
+                limpiarTemporal();
+
+                console.error(
+                    "Error Cloudinary:",
+                    error
+                );
+
+                return res.status(502).json({
+                    ok: false,
+                    mensaje:
+                        "No se pudo subir la imagen."
+                });
+            }
+        }
+
+        const enRailway =
+            Boolean(
+                process.env.RAILWAY_ENVIRONMENT ||
+                process.env.RAILWAY_PROJECT_ID
+            );
+
+        if (enRailway) {
+            limpiarTemporal();
+
+            return res.status(503).json({
+                ok: false,
+                codigo:
+                    "CLOUDINARY_NO_CONFIGURADO",
+                mensaje:
+                    "Falta configurar Cloudinary en Railway para guardar imágenes de forma permanente."
+            });
+        }
+
+        // En localhost seguimos pudiendo probar sin Cloudinary.
+        return res.json({
+            ok: true,
+            ruta:
+                `/uploads/${req.file.filename}`,
+            provider: "local"
+        });
+    }
+);
+
+// ============================================================
+// PRODUCTOS - ADMIN
+// ============================================================
+
+app.get(
+    "/admin/productos",
+    rcVerificarAdmin,
+    async (req, res) => {
+        try {
+            const rows =
+                await rcAdminQuery(
+                    `
+                      SELECT *
+                      FROM productos
+                      ORDER BY id DESC
+                    `
+                );
+
+            const total = rows.length;
+
+            const visibles =
+                rows.filter(
+                    p =>
+                        Number(
+                            p.activo ?? 1
+                        ) === 1
+                ).length;
+
+            return res.json({
+                ok: true,
+                productos: rows,
+                resumen: {
+                    total,
+                    visibles,
+                    ocultos:
+                        total - visibles
+                }
+            });
+        } catch (error) {
+            console.error(
+                "Admin productos:",
+                error
+            );
+
+            return res.status(500).json({
+                ok: false,
+                mensaje:
+                    "No se pudieron cargar los productos."
+            });
+        }
+    }
+);
+
+app.post(
+    "/admin/productos",
+    rcVerificarAdmin,
+    async (req, res) => {
+        try {
+            const nombre =
+                String(
+                    req.body?.nombre || ""
+                ).trim();
+
+            const categoria =
+                String(
+                    req.body?.categoria || ""
+                ).trim();
+
+            const subcategoria =
+                String(
+                    req.body?.subcategoria ||
+                    ""
+                ).trim();
+
+            if (!nombre || !categoria) {
+                return res.status(400).json({
+                    ok: false,
+                    mensaje:
+                        "Nombre y categoría son obligatorios."
+                });
+            }
+
+            let codigo =
+                String(
+                    req.body?.codigo || ""
+                )
+                    .trim()
+                    .toUpperCase();
+
+            if (!codigo) {
+                codigo =
+                    "ADM." +
+                    Date.now()
+                        .toString(36)
+                        .toUpperCase();
+            }
+
+            const duplicados =
+                await rcAdminQuery(
+                    `
+                      SELECT id
+                      FROM productos
+                      WHERE codigo = ?
+                      LIMIT 1
+                    `,
+                    [codigo]
+                );
+
+            if (duplicados.length) {
+                return res.status(409).json({
+                    ok: false,
+                    mensaje:
+                        "Ya existe un producto con ese código."
+                });
+            }
+
+            await rcAsegurarCategoriaProducto(
+                categoria,
+                subcategoria
+            );
+
+            const result =
+                await rcAdminQuery(
+                    `
+                      INSERT INTO productos
+                      (
+                        codigo,
+                        nombre,
+                        categoria,
+                        subcategoria,
+                        precio,
+                        stock,
+                        descripcion,
+                        caracteristicas,
+                        imagen,
+                        destacado,
+                        activo
+                      )
+                      VALUES (
+                        ?, ?, ?, ?, 0, 0,
+                        ?, ?, ?, ?, ?
+                      )
+                    `,
+                    [
+                        codigo,
+                        nombre,
+                        categoria,
+                        subcategoria || null,
+                        String(
+                            req.body?.descripcion ||
+                            ""
+                        ).trim(),
+                        String(
+                            req.body?.caracteristicas ||
+                            ""
+                        ).trim(),
+                        String(
+                            req.body?.imagen ||
+                            ""
+                        ).trim() || null,
+                        Number(
+                            req.body?.destacado ||
+                            0
+                        )
+                            ? 1
+                            : 0,
+                        Number(
+                            req.body?.activo ?? 1
+                        )
+                            ? 1
+                            : 0
+                    ]
+                );
+
+            return res.status(201).json({
+                ok: true,
+                mensaje:
+                    "Producto agregado correctamente.",
+                id:
+                    result.insertId
+            });
+        } catch (error) {
+            console.error(
+                "Crear producto admin:",
+                error
+            );
+
+            return res.status(500).json({
+                ok: false,
+                mensaje:
+                    "No se pudo agregar el producto."
+            });
+        }
+    }
+);
+
+app.put(
+    "/admin/productos/:id",
+    rcVerificarAdmin,
+    async (req, res) => {
+        try {
+            const id =
+                Number(req.params.id);
+
+            const nombre =
+                String(
+                    req.body?.nombre || ""
+                ).trim();
+
+            const categoria =
+                String(
+                    req.body?.categoria || ""
+                ).trim();
+
+            const subcategoria =
+                String(
+                    req.body?.subcategoria ||
+                    ""
+                ).trim();
+
+            const codigo =
+                String(
+                    req.body?.codigo || ""
+                )
+                    .trim()
+                    .toUpperCase();
+
+            if (
+                !id ||
+                !nombre ||
+                !categoria ||
+                !codigo
+            ) {
+                return res.status(400).json({
+                    ok: false,
+                    mensaje:
+                        "Código, nombre y categoría son obligatorios."
+                });
+            }
+
+            const duplicados =
+                await rcAdminQuery(
+                    `
+                      SELECT id
+                      FROM productos
+                      WHERE codigo = ?
+                        AND id <> ?
+                      LIMIT 1
+                    `,
+                    [codigo, id]
+                );
+
+            if (duplicados.length) {
+                return res.status(409).json({
+                    ok: false,
+                    mensaje:
+                        "Ese código pertenece a otro producto."
+                });
+            }
+
+            await rcAsegurarCategoriaProducto(
+                categoria,
+                subcategoria
+            );
+
+            const result =
+                await rcAdminQuery(
+                    `
+                      UPDATE productos
+                      SET
+                        codigo = ?,
+                        nombre = ?,
+                        categoria = ?,
+                        subcategoria = ?,
+                        precio = 0,
+                        stock = 0,
+                        descripcion = ?,
+                        caracteristicas = ?,
+                        imagen = ?,
+                        destacado = ?,
+                        activo = ?
+                      WHERE id = ?
+                    `,
+                    [
+                        codigo,
+                        nombre,
+                        categoria,
+                        subcategoria || null,
+                        String(
+                            req.body?.descripcion ||
+                            ""
+                        ).trim(),
+                        String(
+                            req.body?.caracteristicas ||
+                            ""
+                        ).trim(),
+                        String(
+                            req.body?.imagen ||
+                            ""
+                        ).trim() || null,
+                        Number(
+                            req.body?.destacado ||
+                            0
+                        )
+                            ? 1
+                            : 0,
+                        Number(
+                            req.body?.activo ?? 1
+                        )
+                            ? 1
+                            : 0,
+                        id
+                    ]
+                );
+
+            if (!result.affectedRows) {
+                return res.status(404).json({
+                    ok: false,
+                    mensaje:
+                        "Producto no encontrado."
+                });
+            }
+
+            return res.json({
+                ok: true,
+                mensaje:
+                    "Producto actualizado."
+            });
+        } catch (error) {
+            console.error(
+                "Editar producto admin:",
+                error
+            );
+
+            return res.status(500).json({
+                ok: false,
+                mensaje:
+                    "No se pudo editar el producto."
+            });
+        }
+    }
+);
+
+app.patch(
+    "/admin/productos/:id/activo",
+    rcVerificarAdmin,
+    async (req, res) => {
+        try {
+            const id =
+                Number(req.params.id);
+
+            const activo =
+                Number(
+                    req.body?.activo
+                )
+                    ? 1
+                    : 0;
+
+            const result =
+                await rcAdminQuery(
+                    `
+                      UPDATE productos
+                      SET activo = ?
+                      WHERE id = ?
+                    `,
+                    [activo, id]
+                );
+
+            if (!result.affectedRows) {
+                return res.status(404).json({
+                    ok: false,
+                    mensaje:
+                        "Producto no encontrado."
+                });
+            }
+
+            return res.json({
+                ok: true,
+                activo
+            });
+        } catch (error) {
+            return res.status(500).json({
+                ok: false,
+                mensaje:
+                    "No se pudo cambiar la visibilidad."
+            });
+        }
+    }
+);
+
+app.delete(
+    "/admin/productos/:id",
+    rcVerificarAdmin,
+    async (req, res) => {
+        try {
+            const result =
+                await rcAdminQuery(
+                    `
+                      DELETE FROM productos
+                      WHERE id = ?
+                    `,
+                    [
+                        Number(
+                            req.params.id
+                        )
+                    ]
+                );
+
+            if (!result.affectedRows) {
+                return res.status(404).json({
+                    ok: false,
+                    mensaje:
+                        "Producto no encontrado."
+                });
+            }
+
+            return res.json({
+                ok: true,
+                mensaje:
+                    "Producto eliminado."
+            });
+        } catch (error) {
+            return res.status(500).json({
+                ok: false,
+                mensaje:
+                    "No se pudo eliminar el producto."
+            });
+        }
+    }
+);
+
+// ============================================================
+// CATEGORÍAS - ADMIN
+// ============================================================
+
+app.get(
+    "/admin/catalogo-categorias",
+    rcVerificarAdmin,
+    async (req, res) => {
+        try {
+            const rows =
+                await rcAdminQuery(
+                    `
+                      SELECT
+                        id,
+                        nombre,
+                        slug,
+                        subcategorias_json,
+                        orden,
+                        activo
+                      FROM catalogo_categorias
+                      ORDER BY orden ASC, id ASC
+                    `
+                );
+
+            return res.json({
+                ok: true,
+                categorias:
+                    rows.map(row => ({
+                        ...row,
+                        subcategorias:
+                            rcParseSubcategorias(
+                                row.subcategorias_json
+                            )
+                    }))
+            });
+        } catch (error) {
+            return res.status(500).json({
+                ok: false,
+                mensaje:
+                    "No se pudieron cargar las categorías."
+            });
+        }
+    }
+);
+
+app.post(
+    "/admin/catalogo-categorias",
+    rcVerificarAdmin,
+    async (req, res) => {
+        try {
+            const nombre =
+                String(
+                    req.body?.nombre || ""
+                ).trim();
+
+            if (!nombre) {
+                return res.status(400).json({
+                    ok: false,
+                    mensaje:
+                        "El nombre es obligatorio."
+                });
+            }
+
+            let slug =
+                rcSlug(
+                    req.body?.slug ||
+                    nombre
+                );
+
+            if (!slug) {
+                slug =
+                    "categoria-" +
+                    Date.now();
+            }
+
+            const subs =
+                rcParseSubcategorias(
+                    req.body?.subcategorias
+                );
+
+            const result =
+                await rcAdminQuery(
+                    `
+                      INSERT INTO catalogo_categorias
+                      (
+                        nombre,
+                        slug,
+                        subcategorias_json,
+                        orden,
+                        activo
+                      )
+                      VALUES (
+                        ?,
+                        ?,
+                        ?,
+                        (
+                          SELECT COALESCE(MAX(c.orden), -1) + 1
+                          FROM catalogo_categorias c
+                        ),
+                        1
+                      )
+                    `,
+                    [
+                        nombre,
+                        slug,
+                        JSON.stringify(subs)
+                    ]
+                );
+
+            return res.status(201).json({
+                ok: true,
+                id:
+                    result.insertId
+            });
+        } catch (error) {
+            if (
+                String(error?.code) ===
+                "ER_DUP_ENTRY"
+            ) {
+                return res.status(409).json({
+                    ok: false,
+                    mensaje:
+                        "Ya existe una categoría con ese slug."
+                });
+            }
+
+            return res.status(500).json({
+                ok: false,
+                mensaje:
+                    "No se pudo crear la categoría."
+            });
+        }
+    }
+);
+
+app.put(
+    "/admin/catalogo-categorias/:id",
+    rcVerificarAdmin,
+    async (req, res) => {
+        try {
+            const id =
+                Number(req.params.id);
+
+            const actuales =
+                await rcAdminQuery(
+                    `
+                      SELECT nombre
+                      FROM catalogo_categorias
+                      WHERE id = ?
+                      LIMIT 1
+                    `,
+                    [id]
+                );
+
+            if (!actuales.length) {
+                return res.status(404).json({
+                    ok: false,
+                    mensaje:
+                        "Categoría no encontrada."
+                });
+            }
+
+            const nombre =
+                String(
+                    req.body?.nombre || ""
+                ).trim();
+
+            const slug =
+                rcSlug(
+                    req.body?.slug ||
+                    nombre
+                );
+
+            if (!nombre || !slug) {
+                return res.status(400).json({
+                    ok: false,
+                    mensaje:
+                        "Nombre y slug son obligatorios."
+                });
+            }
+
+            const subs =
+                rcParseSubcategorias(
+                    req.body?.subcategorias
+                );
+
+            await rcAdminQuery(
+                `
+                  UPDATE catalogo_categorias
+                  SET
+                    nombre = ?,
+                    slug = ?,
+                    subcategorias_json = ?,
+                    activo = ?
+                  WHERE id = ?
+                `,
+                [
+                    nombre,
+                    slug,
+                    JSON.stringify(subs),
+                    Number(
+                        req.body?.activo ?? 1
+                    )
+                        ? 1
+                        : 0,
+                    id
+                ]
+            );
+
+            const anterior =
+                actuales[0].nombre;
+
+            if (
+                anterior &&
+                anterior !== nombre
+            ) {
+                await rcAdminQuery(
+                    `
+                      UPDATE productos
+                      SET categoria = ?
+                      WHERE categoria = ?
+                    `,
+                    [nombre, anterior]
+                );
+            }
+
+            return res.json({
+                ok: true,
+                mensaje:
+                    "Categoría actualizada."
+            });
+        } catch (error) {
+            if (
+                String(error?.code) ===
+                "ER_DUP_ENTRY"
+            ) {
+                return res.status(409).json({
+                    ok: false,
+                    mensaje:
+                        "Ese slug ya está en uso."
+                });
+            }
+
+            return res.status(500).json({
+                ok: false,
+                mensaje:
+                    "No se pudo editar la categoría."
+            });
+        }
+    }
+);
+
+app.delete(
+    "/admin/catalogo-categorias/:id",
+    rcVerificarAdmin,
+    async (req, res) => {
+        try {
+            const id =
+                Number(req.params.id);
+
+            const rows =
+                await rcAdminQuery(
+                    `
+                      SELECT nombre
+                      FROM catalogo_categorias
+                      WHERE id = ?
+                      LIMIT 1
+                    `,
+                    [id]
+                );
+
+            if (!rows.length) {
+                return res.status(404).json({
+                    ok: false,
+                    mensaje:
+                        "Categoría no encontrada."
+                });
+            }
+
+            const productos =
+                await rcAdminQuery(
+                    `
+                      SELECT COUNT(*) AS total
+                      FROM productos
+                      WHERE categoria = ?
+                    `,
+                    [rows[0].nombre]
+                );
+
+            if (
+                Number(
+                    productos[0]?.total ||
+                    0
+                ) > 0
+            ) {
+                return res.status(409).json({
+                    ok: false,
+                    mensaje:
+                        "No podés borrar una categoría que todavía tiene productos. Movelos primero."
+                });
+            }
+
+            await rcAdminQuery(
+                `
+                  DELETE FROM catalogo_categorias
+                  WHERE id = ?
+                `,
+                [id]
+            );
+
+            return res.json({
+                ok: true
+            });
+        } catch (error) {
+            return res.status(500).json({
+                ok: false,
+                mensaje:
+                    "No se pudo eliminar la categoría."
+            });
+        }
+    }
+);
+
 app.post(
     "/upload",
     autenticarAdmin,
     multer.single("imagen"),
-    (req, res) => {
-
+    async (req, res) => {
         if (!req.file) {
-
             return res.status(400).json({
-
                 ok: false,
-
                 mensaje:
                     "No se subió ninguna imagen."
-
             });
-
         }
 
-        res.json({
+        try {
+            const resultado =
+                await rcSubirProductoCloudinary(
+                    req.file.path
+                );
 
-            ok: true,
+            await rcBorrarArchivoTemporal(
+                req.file.path
+            );
 
-            ruta:
-                `/uploads/${req.file.filename}`
+            return res.json({
+                ok: true,
 
-        });
+                ruta:
+                    resultado.secure_url,
 
+                public_id:
+                    resultado.public_id,
+
+                almacenamiento:
+                    "cloudinary"
+            });
+        } catch (error) {
+            await rcBorrarArchivoTemporal(
+                req.file?.path
+            );
+
+            console.error(
+                "Error subiendo imagen del catálogo:",
+                error
+            );
+
+            if (
+                error?.codigo ===
+                "CLOUDINARY_NO_CONFIGURADO"
+            ) {
+                return res.status(503).json({
+                    ok: false,
+                    codigo:
+                        "CLOUDINARY_NO_CONFIGURADO",
+                    mensaje:
+                        "El almacenamiento permanente de imágenes todavía no está configurado."
+                });
+            }
+
+            return res.status(500).json({
+                ok: false,
+                mensaje:
+                    "No se pudo guardar la imagen del producto."
+            });
+        }
     }
 );
+
 
 
 // =====================================================
 // INICIO
 // =====================================================
+
+
+// ============================================================
+// RC_CATALOGO_PUBLICO_DINAMICO_V1
+// Permite que categorías/subcategorías de productos nuevos
+// aparezcan sin recompilar el frontend.
+// ============================================================
+
+app.get(
+    "/catalogo-publico",
+    async (req, res) => {
+        function crearRespuesta(
+            filas
+        ) {
+            const mapa =
+                new Map();
+
+            for (
+                const fila of filas
+            ) {
+                const nombre =
+                    String(
+                        fila.categoria ||
+                        ""
+                    ).trim();
+
+                if (!nombre) {
+                    continue;
+                }
+
+                const key =
+                    nombre.toLocaleLowerCase(
+                        "es"
+                    );
+
+                if (
+                    !mapa.has(key)
+                ) {
+                    mapa.set(
+                        key,
+                        {
+                            nombre,
+                            slug:
+                                rcSlug(
+                                    nombre
+                                ),
+                            subcategorias:
+                                []
+                        }
+                    );
+                }
+
+                const sub =
+                    String(
+                        fila.subcategoria ||
+                        ""
+                    ).trim();
+
+                if (
+                    sub &&
+                    !mapa
+                        .get(key)
+                        .subcategorias
+                        .some(
+                            item =>
+                                item
+                                    .toLocaleLowerCase(
+                                        "es"
+                                    ) ===
+                                sub
+                                    .toLocaleLowerCase(
+                                        "es"
+                                    )
+                        )
+                ) {
+                    mapa
+                        .get(key)
+                        .subcategorias
+                        .push(sub);
+                }
+            }
+
+            return Array.from(
+                mapa.values()
+            );
+        }
+
+        try {
+            let filas;
+
+            try {
+                filas =
+                    await rcAdminQuery(
+                        `
+                          SELECT
+                            categoria,
+                            subcategoria
+                          FROM productos
+                          WHERE
+                            COALESCE(
+                              activo,
+                              1
+                            ) = 1
+                            AND categoria IS NOT NULL
+                            AND TRIM(categoria) <> ''
+                          GROUP BY
+                            categoria,
+                            subcategoria
+                          ORDER BY
+                            categoria,
+                            subcategoria
+                        `
+                    );
+            } catch (error) {
+                if (
+                    error?.code !==
+                    "ER_BAD_FIELD_ERROR"
+                ) {
+                    throw error;
+                }
+
+                // Compatibilidad si una instalación antigua
+                // todavía no tiene la columna activo.
+                filas =
+                    await rcAdminQuery(
+                        `
+                          SELECT
+                            categoria,
+                            subcategoria
+                          FROM productos
+                          WHERE
+                            categoria IS NOT NULL
+                            AND TRIM(categoria) <> ''
+                          GROUP BY
+                            categoria,
+                            subcategoria
+                          ORDER BY
+                            categoria,
+                            subcategoria
+                        `
+                    );
+            }
+
+            return res.json({
+                ok: true,
+                categorias:
+                    crearRespuesta(
+                        filas
+                    )
+            });
+        } catch (error) {
+            console.error(
+                "Catálogo público dinámico:",
+                error
+            );
+
+            return res.status(500).json({
+                ok: false,
+                mensaje:
+                    "No se pudieron obtener las categorías."
+            });
+        }
+    }
+);
 
 app.get("/", (req, res) => {
 

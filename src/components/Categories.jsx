@@ -3,6 +3,13 @@ import "../styles/Categories.css";
 
 const categories = [
   {
+    title: "Renogy",
+    slug: "renogy",
+    description: "Energía solar, baterías, inversores y control inteligente Renogy.",
+    image: "/images/productos/renogy-24942.jpg"
+  },
+
+  {
     title: "Energía Solar",
     slug: "energia-solar",
     description: "Paneles solares, reguladores y soluciones de energía.",
