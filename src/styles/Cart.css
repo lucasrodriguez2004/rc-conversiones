@@ -33,6 +33,29 @@
     flex-direction:column;
     color:#102947;
     border-left:1px solid rgba(13,140,255,.12);
+
+    overflow-y:auto;
+    overflow-x:hidden;
+
+    scrollbar-width:thin;
+    scrollbar-color:#9aabc0 transparent;
+}
+
+.cart::-webkit-scrollbar{
+    width:8px;
+}
+
+.cart::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+.cart::-webkit-scrollbar-thumb{
+    background:#9aabc0;
+    border-radius:999px;
+}
+
+.cart::-webkit-scrollbar-thumb:hover{
+    background:#71869f;
 }
 
 .cart.open{
@@ -48,6 +71,11 @@
     gap:16px;
     background:linear-gradient(135deg,#0c326b,#0d59a8);
     border-bottom:1px solid rgba(255,255,255,.12);
+
+    position:sticky;
+    top:0;
+    z-index:20;
+    flex-shrink:0;
 }
 
 .cartHeader h2{
@@ -119,6 +147,7 @@
     border:1px solid #e1eaf4;
     border-radius:18px;
     box-shadow:0 8px 24px rgba(18,55,97,.06);
+    flex-shrink:0;
 }
 
 .cartItem img{
@@ -179,7 +208,12 @@
     padding:20px 22px 24px;
     background:#fff;
     border-top:1px solid #e4ebf3;
-    box-shadow:0 -12px 35px rgba(17,45,80,.06);
+    box-shadow:0 -12px 35px rgba(17,45,80,.08);
+
+    position:sticky;
+    bottom:0;
+    z-index:20;
+    flex-shrink:0;
 }
 
 .cartFooter h3{
@@ -248,7 +282,6 @@
     transform:none;
 }
 
-/* Confirmación de ticket, si esta versión del carrito la usa */
 .ticketExitoOverlay{
     position:fixed;
     inset:0;
@@ -325,5 +358,88 @@
     .cartItem img{
         width:72px;
         height:72px;
+    }
+
+    .cartFooter{
+        padding:16px 16px 18px;
+    }
+}
+
+/* =====================================================
+   NOTIFICACIÓN GLOBAL DEL CARRITO / SESIÓN
+===================================================== */
+
+.rcToast{
+    position:fixed;
+    top:22px;
+    right:22px;
+    z-index:12000;
+    width:min(390px,calc(100vw - 32px));
+    display:grid;
+    grid-template-columns:42px 1fr 34px;
+    align-items:center;
+    gap:12px;
+    padding:14px;
+    border:1px solid #dbe7f3;
+    border-radius:16px;
+    background:#fff;
+    color:#18324f;
+    box-shadow:0 18px 50px rgba(15,42,74,.18);
+}
+
+.rcToastIcon{
+    width:42px;
+    height:42px;
+    display:grid;
+    place-items:center;
+    border-radius:12px;
+    background:#eaf5ff;
+    color:#0d78d7;
+    font-weight:900;
+    font-size:18px;
+}
+
+.rcToastContenido{
+    display:flex;
+    flex-direction:column;
+    gap:3px;
+    line-height:1.35;
+}
+
+.rcToastContenido strong{
+    font-size:14px;
+}
+
+.rcToastContenido span{
+    color:#64748b;
+    font-size:13px;
+}
+
+.rcToastCerrar{
+    width:32px;
+    height:32px;
+    padding:0;
+    border:0;
+    border-radius:9px;
+    background:#f1f5f9;
+    color:#475569;
+    cursor:pointer;
+    font-size:19px;
+}
+
+.rcToast-error .rcToastIcon{
+    background:#fee2e2;
+    color:#b91c1c;
+}
+
+.rcToast-aviso .rcToastIcon{
+    background:#fff7ed;
+    color:#c2410c;
+}
+
+@media(max-width:560px){
+    .rcToast{
+        top:14px;
+        right:16px;
     }
 }

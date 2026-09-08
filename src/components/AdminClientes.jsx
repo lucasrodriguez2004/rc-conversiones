@@ -22,6 +22,9 @@ export default function AdminClientes() {
     const [error, setError] =
         useState("");
 
+    const [eliminandoId, setEliminandoId] =
+        useState(null);
+
 
     // ============================
     // CARGAR CLIENTES
@@ -88,6 +91,88 @@ export default function AdminClientes() {
         cargarClientes();
 
     }, []);
+
+
+    // ============================
+    // ELIMINAR CLIENTE
+    // ============================
+
+    async function eliminarCliente(
+        cliente
+    ) {
+
+        const confirmado =
+            window.confirm(
+                `¿Eliminar a ${cliente.nombre}?\n\nTambién se eliminarán todos sus tickets e historiales asociados. Esta acción no se puede deshacer.`
+            );
+
+        if (!confirmado) {
+            return;
+        }
+
+
+        try {
+
+            setEliminandoId(
+                cliente.id
+            );
+
+            setError("");
+
+            const response =
+                await fetch(
+                    `${API}/admin/clientes/${cliente.id}`,
+                    {
+                        method: "DELETE"
+                    }
+                );
+
+            const datos =
+                await response.json();
+
+
+            if (
+                !response.ok ||
+                !datos.ok
+            ) {
+
+                throw new Error(
+                    datos.mensaje ||
+                    "No se pudo eliminar el cliente."
+                );
+
+            }
+
+
+            setClientes(
+                (actuales) =>
+                    actuales.filter(
+                        (item) =>
+                            item.id !== cliente.id
+                    )
+            );
+
+
+        } catch (err) {
+
+            console.error(
+                "Error eliminando cliente:",
+                err
+            );
+
+            setError(
+                err.message ||
+                "No se pudo eliminar el cliente."
+            );
+
+
+        } finally {
+
+            setEliminandoId(null);
+
+        }
+
+    }
 
 
     // ============================
@@ -435,19 +520,40 @@ export default function AdminClientes() {
 
                                 {/* ACCIÓN */}
 
-                                <button
-                                    type="button"
-                                    className="verCliente"
-                                    onClick={() =>
-                                        navigate(
-                                            `/admin/clientes/${cliente.id}`
-                                        )
-                                    }
-                                >
+                                <div className="clienteAcciones">
 
-                                    Ver cliente
+                                    <button
+                                        type="button"
+                                        className="verCliente"
+                                        onClick={() =>
+                                            navigate(
+                                                `/admin/clientes/${cliente.id}`
+                                            )
+                                        }
+                                    >
+                                        Ver cliente
+                                    </button>
 
-                                </button>
+                                    <button
+                                        type="button"
+                                        className="eliminarCliente"
+                                        disabled={
+                                            eliminandoId ===
+                                            cliente.id
+                                        }
+                                        onClick={() =>
+                                            eliminarCliente(
+                                                cliente
+                                            )
+                                        }
+                                    >
+                                        {eliminandoId === cliente.id
+                                            ? "Eliminando..."
+                                            : "Eliminar"
+                                        }
+                                    </button>
+
+                                </div>
 
 
                             </div>

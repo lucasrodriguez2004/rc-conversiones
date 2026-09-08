@@ -8,6 +8,8 @@ import {
     Navigate
 } from "react-router-dom";
 
+import AdminLayout from "./AdminLayout";
+
 
 const API =
     (
@@ -456,6 +458,10 @@ export default function AdminProtectedRoute({
     // SESIÓN ADMIN VÁLIDA
     // ==========================================
 
-    return children;
+    return (
+        <AdminLayout>
+            {children}
+        </AdminLayout>
+    );
 
 }

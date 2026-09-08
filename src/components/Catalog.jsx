@@ -43,21 +43,22 @@ export default function Catalog({ busqueda }) {
 
     function agregarProducto(producto) {
 
-        agregarAlCarrito({
+        const agregado =
+            agregarAlCarrito({
 
-            ...producto,
+                ...producto,
 
-            imagen: producto.imagen
-                ? `${API}${producto.imagen}`
-                : "",
+                imagen: producto.imagen
+                    ? `${API}${producto.imagen}`
+                    : "",
 
-            cantidad: 1
+                cantidad: 1
 
-        });
+            });
 
-        alert(
-            `${producto.nombre} fue agregado al carrito.`
-        );
+        if (!agregado) {
+            return;
+        }
 
     }
 

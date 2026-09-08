@@ -157,3 +157,25 @@
     text-decoration:none;
 
 }
+/* Aviso cuando el cliente llega desde un producto */
+.loginAccessNotice{
+    margin:18px 0 20px;
+    padding:14px 16px;
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    border:1px solid #cfe5fb;
+    border-radius:12px;
+    background:#eef7ff;
+    color:#174a7e;
+    line-height:1.45;
+}
+
+.loginAccessNotice strong{
+    font-size:14px;
+}
+
+.loginAccessNotice span{
+    font-size:13px;
+    color:#416b91;
+}

@@ -110,7 +110,7 @@ export default function AdminLogin() {
             );
 
             navigate(
-                "/admin/presupuestos",
+                "/admin",
                 {
                     replace: true
                 }

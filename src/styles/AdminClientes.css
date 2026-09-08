@@ -269,3 +269,29 @@
     background:#f8fafc;
 
 }
+/* Acciones de cliente */
+.clienteAcciones{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
+.eliminarCliente{
+    border:1px solid #fecaca;
+    background:#fff1f2;
+    color:#b42318;
+    padding:9px 12px;
+    border-radius:8px;
+    font-weight:700;
+    cursor:pointer;
+}
+
+.eliminarCliente:hover:not(:disabled){
+    background:#fee2e2;
+}
+
+.eliminarCliente:disabled{
+    opacity:.55;
+    cursor:not-allowed;
+}

@@ -1,0 +1,133 @@
+.adminLayout{
+    min-height:100vh;
+    background:#f8fafc;
+}
+
+.adminTopNav{
+    position:sticky;
+    top:0;
+    z-index:1100;
+    min-height:72px;
+    padding:12px 4%;
+    display:flex;
+    align-items:center;
+    gap:22px;
+    background:#0f2748;
+    border-bottom:1px solid rgba(255,255,255,.09);
+    box-shadow:0 8px 24px rgba(7,25,49,.15);
+}
+
+.adminTopBrand{
+    display:flex;
+    flex-direction:column;
+    min-width:max-content;
+    color:#fff;
+}
+
+.adminTopBrand strong{
+    font-size:15px;
+}
+
+.adminTopBrand span{
+    margin-top:2px;
+    color:#91b7dc;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+}
+
+.adminTopLinks{
+    display:flex;
+    align-items:center;
+    gap:7px;
+    flex:1;
+}
+
+.adminTopLinks a{
+    padding:10px 13px;
+    border-radius:10px;
+    color:#c9daeb;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:700;
+    transition:.18s ease;
+}
+
+.adminTopLinks a:hover{
+    background:rgba(255,255,255,.08);
+    color:#fff;
+}
+
+.adminTopLinks a.active{
+    background:#0d8cff;
+    color:#fff;
+}
+
+.adminTopActions{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.adminTopActions button{
+    min-height:40px;
+    padding:9px 13px;
+    border-radius:10px;
+    font-weight:700;
+    cursor:pointer;
+}
+
+.adminViewSite{
+    border:1px solid rgba(255,255,255,.18);
+    background:rgba(255,255,255,.06);
+    color:#fff;
+}
+
+.adminLogout{
+    border:1px solid #fecaca;
+    background:#fff;
+    color:#b42318;
+}
+
+.adminLayoutContent{
+    min-width:0;
+}
+
+@media(max-width:920px){
+    .adminTopNav{
+        position:relative;
+        align-items:flex-start;
+        flex-wrap:wrap;
+        gap:10px;
+    }
+
+    .adminTopLinks{
+        order:3;
+        width:100%;
+        overflow-x:auto;
+        padding-bottom:2px;
+    }
+
+    .adminTopActions{
+        margin-left:auto;
+    }
+}
+
+@media(max-width:560px){
+    .adminTopNav{
+        padding:12px 16px;
+    }
+
+    .adminTopBrand{
+        width:100%;
+    }
+
+    .adminTopActions{
+        width:100%;
+        margin-left:0;
+    }
+
+    .adminTopActions button{
+        flex:1;
+    }
+}

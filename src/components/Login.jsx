@@ -1,11 +1,14 @@
 import { useState } from "react";
 import {
     Link,
+    useLocation,
     useNavigate
 } from "react-router-dom";
 
 import "../styles/Login.css";
 import "../styles/PasswordRecovery.css";
+
+import { useCart } from "../context/CartContext";
 
 const API = (import.meta.env.VITE_API_URL || "").replace(/\/+$/, "");
 
@@ -14,6 +17,17 @@ export default function Login() {
 
     const navigate =
         useNavigate();
+
+    const location =
+        useLocation();
+
+    const { agregarAlCarrito } =
+        useCart();
+
+    const productoPendiente =
+        sessionStorage.getItem(
+            "rc_producto_pendiente"
+        );
 
     const [email, setEmail] =
         useState("");
@@ -156,11 +170,77 @@ export default function Login() {
 
 
             // ==================================
-            // IR A MI CUENTA
+            // SI VENÍA DE AGREGAR UN PRODUCTO
+            // LO SUMAMOS AHORA QUE YA HAY SESIÓN
+            // ==================================
+
+            let destino =
+                sessionStorage.getItem(
+                    "rc_volver_despues_login"
+                ) || "/mi-cuenta";
+
+            if (
+                !destino.startsWith("/") ||
+                destino.startsWith("//") ||
+                destino === "/login" ||
+                destino === "/registro"
+            ) {
+                destino = "/";
+            }
+
+
+            const pendienteGuardado =
+                sessionStorage.getItem(
+                    "rc_producto_pendiente"
+                );
+
+            if (pendienteGuardado) {
+
+                try {
+
+                    const pendiente =
+                        JSON.parse(
+                            pendienteGuardado
+                        );
+
+                    if (
+                        pendiente &&
+                        pendiente.id
+                    ) {
+
+                        agregarAlCarrito(
+                            pendiente
+                        );
+
+                    }
+
+                } catch (error) {
+
+                    console.error(
+                        "No se pudo recuperar el producto pendiente:",
+                        error
+                    );
+
+                }
+
+            }
+
+
+            sessionStorage.removeItem(
+                "rc_producto_pendiente"
+            );
+
+            sessionStorage.removeItem(
+                "rc_volver_despues_login"
+            );
+
+
+            // ==================================
+            // VOLVER A DONDE ESTABA EL CLIENTE
             // ==================================
 
             navigate(
-                "/mi-cuenta",
+                destino,
                 {
                     replace:
                         true
@@ -205,6 +285,21 @@ export default function Login() {
                 <p className="loginSubtitle">
                     Ingresá a tu cuenta de RC Conversiones.
                 </p>
+
+
+                {(
+                    location.state?.motivo === "carrito" ||
+                    productoPendiente
+                ) && (
+
+                    <div className="loginAccessNotice">
+                        <strong>Para continuar con tu solicitud</strong>
+                        <span>
+                            Iniciá sesión o registrate para agregar productos al carrito y generar un ticket. El producto que elegiste se agregará después de ingresar.
+                        </span>
+                    </div>
+
+                )}
 
 
                 <form

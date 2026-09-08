@@ -3051,6 +3051,54 @@ app.post(
 );
 
 // =====================================================
+// BORRADO COMPLETO DE UN TICKET
+// Usado por las herramientas administrativas.
+// =====================================================
+
+async function eliminarTicketCompleto(
+    connection,
+    presupuestoId
+) {
+
+    await connection.query(
+        `
+            DELETE FROM presupuesto_contactos
+            WHERE presupuesto_id = ?
+        `,
+        [presupuestoId]
+    );
+
+    await connection.query(
+        `
+            DELETE FROM presupuesto_historial
+            WHERE presupuesto_id = ?
+        `,
+        [presupuestoId]
+    );
+
+    await connection.query(
+        `
+            DELETE FROM presupuesto_seguimientos
+            WHERE presupuesto_id = ?
+        `,
+        [presupuestoId]
+    );
+
+    const [resultado] =
+        await connection.query(
+            `
+                DELETE FROM presupuestos
+                WHERE id = ?
+            `,
+            [presupuestoId]
+        );
+
+    return resultado.affectedRows || 0;
+
+}
+
+
+// =====================================================
 // LISTADO DE TICKETS PARA ADMINISTRACIÓN
 // =====================================================
 
@@ -3410,6 +3458,127 @@ app.get(
 
             }
         );
+
+    }
+);
+
+
+// =====================================================
+// ELIMINAR TICKET - ADMIN
+// =====================================================
+
+app.delete(
+    "/presupuestos-admin/:id",
+    autenticarAdmin,
+    async (req, res) => {
+
+        const id =
+            Number(req.params.id);
+
+        if (
+            !Number.isInteger(id) ||
+            id <= 0
+        ) {
+
+            return res.status(400).json({
+                ok: false,
+                mensaje:
+                    "El ticket indicado no es válido."
+            });
+
+        }
+
+
+        let connection;
+
+        try {
+
+            connection =
+                await db.promise()
+                    .getConnection();
+
+            await connection
+                .beginTransaction();
+
+
+            const [tickets] =
+                await connection.query(
+                    `
+                        SELECT id, codigo
+                        FROM presupuestos
+                        WHERE id = ?
+                        LIMIT 1
+                    `,
+                    [id]
+                );
+
+
+            if (
+                !tickets ||
+                tickets.length === 0
+            ) {
+
+                await connection.rollback();
+
+                return res.status(404).json({
+                    ok: false,
+                    mensaje:
+                        "Ticket no encontrado."
+                });
+
+            }
+
+
+            await eliminarTicketCompleto(
+                connection,
+                id
+            );
+
+            await connection.commit();
+
+
+            return res.json({
+                ok: true,
+                mensaje:
+                    "Ticket eliminado correctamente.",
+                id,
+                codigo:
+                    tickets[0].codigo
+            });
+
+
+        } catch (error) {
+
+            if (connection) {
+                try {
+                    await connection.rollback();
+                } catch (rollbackError) {
+                    console.error(
+                        "Error haciendo rollback al eliminar ticket:",
+                        rollbackError
+                    );
+                }
+            }
+
+            console.error(
+                "Error eliminando ticket:",
+                error
+            );
+
+            return res.status(500).json({
+                ok: false,
+                mensaje:
+                    "No se pudo eliminar el ticket. No se realizó ningún cambio."
+            });
+
+
+        } finally {
+
+            if (connection) {
+                connection.release();
+            }
+
+        }
 
     }
 );
@@ -3937,6 +4106,168 @@ app.get(
 
     }
 );
+
+// =====================================================
+// ELIMINAR CLIENTE - ADMIN
+// Elimina también sus tickets y todos los historiales asociados.
+// =====================================================
+
+app.delete(
+    "/admin/clientes/:id",
+    autenticarAdmin,
+    async (req, res) => {
+
+        const id =
+            Number(req.params.id);
+
+        if (
+            !Number.isInteger(id) ||
+            id <= 0
+        ) {
+
+            return res.status(400).json({
+                ok: false,
+                mensaje:
+                    "El cliente indicado no es válido."
+            });
+
+        }
+
+
+        let connection;
+
+        try {
+
+            connection =
+                await db.promise()
+                    .getConnection();
+
+            await connection
+                .beginTransaction();
+
+
+            const [clientes] =
+                await connection.query(
+                    `
+                        SELECT id, nombre
+                        FROM clientes
+                        WHERE id = ?
+                        LIMIT 1
+                    `,
+                    [id]
+                );
+
+
+            if (
+                !clientes ||
+                clientes.length === 0
+            ) {
+
+                await connection.rollback();
+
+                return res.status(404).json({
+                    ok: false,
+                    mensaje:
+                        "Cliente no encontrado."
+                });
+
+            }
+
+
+            const [tickets] =
+                await connection.query(
+                    `
+                        SELECT id
+                        FROM presupuestos
+                        WHERE cliente_id = ?
+                    `,
+                    [id]
+                );
+
+
+            for (
+                const ticket of
+                tickets || []
+            ) {
+
+                await eliminarTicketCompleto(
+                    connection,
+                    ticket.id
+                );
+
+            }
+
+
+            const [resultadoCliente] =
+                await connection.query(
+                    `
+                        DELETE FROM clientes
+                        WHERE id = ?
+                    `,
+                    [id]
+                );
+
+
+            if (
+                !resultadoCliente.affectedRows
+            ) {
+
+                throw new Error(
+                    "El cliente no pudo ser eliminado."
+                );
+
+            }
+
+
+            await connection.commit();
+
+
+            return res.json({
+                ok: true,
+                mensaje:
+                    "Cliente eliminado correctamente.",
+                id,
+                tickets_eliminados:
+                    (tickets || []).length
+            });
+
+
+        } catch (error) {
+
+            if (connection) {
+                try {
+                    await connection.rollback();
+                } catch (rollbackError) {
+                    console.error(
+                        "Error haciendo rollback al eliminar cliente:",
+                        rollbackError
+                    );
+                }
+            }
+
+            console.error(
+                "Error eliminando cliente:",
+                error
+            );
+
+            return res.status(500).json({
+                ok: false,
+                mensaje:
+                    "No se pudo eliminar el cliente. No se realizó ningún cambio."
+            });
+
+
+        } finally {
+
+            if (connection) {
+                connection.release();
+            }
+
+        }
+
+    }
+);
+
 
 // =====================================================
 // DASHBOARD ADMIN
@@ -5103,6 +5434,87 @@ app.use(
     }
 );
 
+app.post("/newsletter", async (req, res) => {
+    try {
+        const email = String(req.body?.email || "")
+            .trim()
+            .toLowerCase();
+
+        const emailValido =
+            /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+        if (!emailValido) {
+            return res.status(400).json({
+                ok: false,
+                mensaje: "Ingresá un correo electrónico válido.",
+            });
+        }
+
+        const apiKey =
+            String(process.env.BREVO_API_KEY || "").trim();
+
+        if (!apiKey) {
+            console.error("❌ Falta BREVO_API_KEY");
+
+            return res.status(500).json({
+                ok: false,
+                mensaje: "El servicio de suscripción no está disponible.",
+            });
+        }
+
+        const respuestaBrevo = await fetch(
+            "https://api.brevo.com/v3/contacts",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                    "api-key": apiKey,
+                },
+                body: JSON.stringify({
+                    email,
+                    updateEnabled: true,
+                }),
+            }
+        );
+
+        if (!respuestaBrevo.ok) {
+            const detalle = await respuestaBrevo
+                .text()
+                .catch(() => "");
+
+            console.error(
+                "❌ Error Brevo newsletter:",
+                respuestaBrevo.status,
+                detalle
+            );
+
+            return res.status(502).json({
+                ok: false,
+                mensaje: "No pudimos completar la suscripción.",
+            });
+        }
+
+        console.log(
+            `✅ Newsletter: ${email} agregado a Brevo`
+        );
+
+        return res.json({
+            ok: true,
+            mensaje: "Suscripción realizada correctamente.",
+        });
+    } catch (error) {
+        console.error(
+            "❌ Error en /newsletter:",
+            error
+        );
+
+        return res.status(500).json({
+            ok: false,
+            mensaje: "Ocurrió un error al procesar la suscripción.",
+        });
+    }
+});
 
 app.listen(
     process.env.PORT || 5000,

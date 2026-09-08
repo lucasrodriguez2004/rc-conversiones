@@ -54,6 +54,9 @@ export default function AdminPresupuestos() {
     const [registrandoContactoId, setRegistrandoContactoId] =
         useState(null);
 
+    const [eliminandoId, setEliminandoId] =
+        useState(null);
+
 
     // ==========================================
     // CONTACTO DESDE URL
@@ -149,6 +152,86 @@ export default function AdminPresupuestos() {
         } finally {
 
             setCargando(false);
+
+        }
+
+    }
+
+
+    // ==========================================
+    // ELIMINAR TICKET
+    // ==========================================
+
+    async function eliminarTicket(
+        presupuesto
+    ) {
+
+        const confirmado =
+            window.confirm(
+                `¿Eliminar el ticket ${presupuesto.codigo}?\n\nSe borrarán también su historial, contactos y seguimientos. Esta acción no se puede deshacer.`
+            );
+
+        if (!confirmado) {
+            return;
+        }
+
+
+        try {
+
+            setEliminandoId(
+                presupuesto.id
+            );
+
+            const response =
+                await fetch(
+                    `${API}/presupuestos-admin/${presupuesto.id}`,
+                    {
+                        method: "DELETE"
+                    }
+                );
+
+            const datos =
+                await response.json();
+
+
+            if (
+                !response.ok ||
+                !datos.ok
+            ) {
+
+                throw new Error(
+                    datos.mensaje ||
+                    "No se pudo eliminar el ticket."
+                );
+
+            }
+
+
+            setPresupuestos(
+                (actuales) =>
+                    actuales.filter(
+                        (item) =>
+                            item.id !== presupuesto.id
+                    )
+            );
+
+
+        } catch (err) {
+
+            console.error(
+                "Error eliminando ticket:",
+                err
+            );
+
+            alert(
+                err.message ||
+                "No se pudo eliminar el ticket."
+            );
+
+
+        } finally {
+
+            setEliminandoId(null);
 
         }
 
@@ -2116,6 +2199,25 @@ const presupuestosFiltrados =
                                             </button>
 
                                         )}
+
+                                        <button
+                                            type="button"
+                                            className="eliminarTicketAdmin"
+                                            disabled={
+                                                eliminandoId ===
+                                                presupuesto.id
+                                            }
+                                            onClick={() =>
+                                                eliminarTicket(
+                                                    presupuesto
+                                                )
+                                            }
+                                        >
+                                            {eliminandoId === presupuesto.id
+                                                ? "Eliminando..."
+                                                : "Eliminar ticket"
+                                            }
+                                        </button>
 
                                     </div>
 
