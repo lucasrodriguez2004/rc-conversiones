@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import ReactDOM from "react-dom/client";
 
 import {
@@ -14,13 +14,15 @@ import {
     CartProvider
 } from "./context/CartContext";
 
+import "./styles/mobile-rc.css";
+
 
 // =====================================================
 // FETCH CON SESIONES SEGURAS
 // =====================================================
 //
-// Conserva los fetch() existentes y agrega automáticamente
-// el JWT correcto según la API que se esté llamando.
+// Conserva los fetch() existentes y agrega automÃ¡ticamente
+// el JWT correcto segÃºn la API que se estÃ© llamando.
 
 const API_ORIGIN = (import.meta.env.VITE_API_URL || "").replace(/\/+$/, "");
 
@@ -75,7 +77,7 @@ function obtenerDatosPeticion(
 
 
 // =====================================================
-// DETERMINAR QUÉ SESIÓN NECESITA UNA API
+// DETERMINAR QUÃ‰ SESIÃ“N NECESITA UNA API
 // =====================================================
 
 function tipoSesionParaPeticion(
@@ -98,7 +100,7 @@ function tipoSesionParaPeticion(
 
 
     // ------------------------------------------
-    // RUTAS PÚBLICAS
+    // RUTAS PÃšBLICAS
     // ------------------------------------------
 
     if (
@@ -372,3 +374,4 @@ ReactDOM.createRoot(
         </CartProvider>
     </BrowserRouter>
 );
+
