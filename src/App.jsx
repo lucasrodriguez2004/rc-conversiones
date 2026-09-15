@@ -30,6 +30,7 @@ import AdminClientes from "./components/AdminClientes";
 import AdminClienteDetalle from "./components/AdminClienteDetalle";
 import AdminCatalogo from "./components/AdminCatalogo";
 import AdminProductosAutonomo from "./components/AdminProductosAutonomo";
+import Conversiones from "./components/Conversiones";
 
 function Inicio() {
     const [busqueda, setBusqueda] = useState("");
@@ -147,6 +148,7 @@ function App() {
                     </AdminProtectedRoute>
                 }
             />
+                    <Route path="/conversiones" element={<Conversiones />} />
         </Routes>
     );
 }

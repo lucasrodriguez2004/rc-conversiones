@@ -1,4 +1,5 @@
 import "../styles/Navbar.css";
+import DolarBluePublico from "./DolarBluePublico";
 import { useEffect as useCatalogEffect, useState as useCatalogState } from "react";
 import {
     FaShoppingCart,
@@ -273,9 +274,21 @@ const { carrito } = useCart();
                     >
                         Contacto
                     </button>
+
+                    <button
+                        type="button"
+                        className="navLinkButton"
+                        onClick={() =>
+                            navigate("/conversiones")
+                        }
+                    >
+                        Conversiones
+                    </button>
                 </nav>
 
                 <div className="navbarRight">
+                    {/* RC_DOLAR_PUBLICO_V1 */}
+                    <DolarBluePublico />
                     <div className="search">
                         <FaSearch />
 

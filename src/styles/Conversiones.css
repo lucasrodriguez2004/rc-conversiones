@@ -1,0 +1,562 @@
+.conversionesPage {
+    min-height: 100vh;
+    background: #f4f8fd;
+    color: #10233f;
+}
+
+.conversionesPage main {
+    overflow: hidden;
+}
+
+.conversionesHero {
+    position: relative;
+    min-height: 560px;
+    margin: 0 20px;
+    border-radius: 0 0 34px 34px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(circle at 80% 25%, rgba(30, 144, 255, .22), transparent 34%),
+        linear-gradient(135deg, #071d38 0%, #0b315b 58%, #0a2444 100%);
+}
+
+.conversionesHero::after {
+    content: "12/24V";
+    position: absolute;
+    right: -30px;
+    bottom: -72px;
+    font-size: clamp(110px, 18vw, 280px);
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: -12px;
+    color: rgba(255, 255, 255, .035);
+    pointer-events: none;
+}
+
+.conversionesHeroGlow {
+    position: absolute;
+    width: 460px;
+    height: 460px;
+    border-radius: 50%;
+    right: 10%;
+    top: 8%;
+    background: rgba(22, 139, 255, .12);
+    filter: blur(30px);
+}
+
+.conversionesHeroContent {
+    position: relative;
+    z-index: 2;
+    width: min(1160px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 72px 0;
+}
+
+.conversionesEyebrow,
+.conversionesSectionHeading > span,
+.conversionesBookingInfo > span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .15em;
+    color: #2299ff;
+}
+
+.conversionesHero h1 {
+    max-width: 780px;
+    margin: 16px 0 18px;
+    font-size: clamp(42px, 5vw, 74px);
+    line-height: 1.02;
+    letter-spacing: -.04em;
+    color: #fff;
+}
+
+.conversionesHero h1 span {
+    color: #2d9cff;
+}
+
+.conversionesHero p {
+    max-width: 670px;
+    margin: 0;
+    color: #c9d8e9;
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+.conversionesHeroActions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 34px;
+}
+
+.conversionesPrimaryButton,
+.conversionesSecondaryButton {
+    min-height: 50px;
+    padding: 0 24px;
+    border-radius: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 800;
+    transition: transform .2s ease, background .2s ease, border-color .2s ease;
+}
+
+.conversionesPrimaryButton {
+    background: #168df1;
+    color: #fff;
+    box-shadow: 0 12px 30px rgba(22, 141, 241, .28);
+}
+
+.conversionesSecondaryButton {
+    color: #fff;
+    border: 1px solid rgba(255,255,255,.26);
+    background: rgba(255,255,255,.06);
+}
+
+.conversionesPrimaryButton:hover,
+.conversionesSecondaryButton:hover {
+    transform: translateY(-2px);
+}
+
+.conversionesIntro,
+.conversionesBooking,
+.conversionesCompatibility {
+    width: min(1160px, calc(100% - 40px));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conversionesIntro {
+    padding: 92px 0;
+}
+
+.conversionesSectionHeading {
+    max-width: 720px;
+    margin-bottom: 34px;
+}
+
+.conversionesSectionHeading h2,
+.conversionesBookingInfo h2 {
+    margin: 9px 0 12px;
+    font-size: clamp(30px, 3vw, 44px);
+    letter-spacing: -.035em;
+    color: #0c2b50;
+}
+
+.conversionesSectionHeading p,
+.conversionesBookingInfo > p {
+    margin: 0;
+    color: #60748b;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.conversionesFeatureGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.conversionesFeatureGrid article {
+    min-height: 235px;
+    padding: 30px;
+    border-radius: 22px;
+    background: #fff;
+    border: 1px solid #e1eaf4;
+    box-shadow: 0 16px 40px rgba(9, 38, 70, .06);
+}
+
+.conversionesFeatureNumber {
+    display: inline-block;
+    margin-bottom: 34px;
+    color: #1c91ef;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.conversionesFeatureGrid h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #0c2b50;
+}
+
+.conversionesFeatureGrid p {
+    margin: 0;
+    color: #687b90;
+    line-height: 1.65;
+}
+
+.conversionesPrices {
+    padding: 86px max(20px, calc((100vw - 1160px) / 2));
+    background: #081f3b;
+}
+
+.conversionesSectionHeadingLight h2 {
+    color: #fff;
+}
+
+.conversionesSectionHeadingLight p {
+    color: #adbed1;
+}
+
+.conversionesPriceGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    align-items: stretch;
+}
+
+.conversionesPriceCard {
+    position: relative;
+    padding: 30px;
+    border-radius: 24px;
+    background: #0c2b50;
+    border: 1px solid rgba(255,255,255,.1);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 380px;
+}
+
+.conversionesPriceCardFeatured {
+    background: linear-gradient(160deg, #0d3c6c 0%, #0d2e54 100%);
+    border-color: rgba(38, 155, 255, .65);
+    box-shadow: 0 20px 60px rgba(0, 118, 224, .15);
+}
+
+.conversionesPopular {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    padding: 7px 10px;
+    border-radius: 999px;
+    background: #168df1;
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: .1em;
+}
+
+.conversionesCapacity {
+    margin-top: 10px;
+    color: #b8cae0;
+    font-weight: 700;
+}
+
+.conversionesPriceCard > strong {
+    margin: 10px 0 24px;
+    font-size: clamp(34px, 3vw, 48px);
+    letter-spacing: -.04em;
+}
+
+.conversionesPriceIncludes {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 28px;
+    color: #c7d6e7;
+    font-size: 14px;
+}
+
+.conversionesPriceCard button {
+    width: 100%;
+    min-height: 48px;
+    margin-top: auto;
+    border: 0;
+    border-radius: 13px;
+    background: #168df1;
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.conversionesInflationNote {
+    max-width: 850px;
+    margin: 24px auto 0;
+    text-align: center;
+    color: #91a6bd;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.conversionesCompatibility {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    padding: 88px 0;
+}
+
+.conversionesCompatibilityCard {
+    padding: 36px;
+    border-radius: 24px;
+    background: #fff;
+    border: 1px solid #e0e9f3;
+    box-shadow: 0 16px 40px rgba(9, 38, 70, .055);
+}
+
+.conversionesCompatibilityBadge {
+    display: inline-flex;
+    padding: 7px 10px;
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: .12em;
+}
+
+.conversionesCompatible .conversionesCompatibilityBadge {
+    background: #e8f7ef;
+    color: #1c8252;
+}
+
+.conversionesNotCompatible .conversionesCompatibilityBadge {
+    background: #fff0f0;
+    color: #bd4444;
+}
+
+.conversionesCompatibilityCard h2 {
+    margin: 18px 0 10px;
+    font-size: 26px;
+    color: #0c2b50;
+}
+
+.conversionesCompatibilityCard p {
+    margin: 0;
+    color: #657990;
+    line-height: 1.7;
+}
+
+.conversionesBooking {
+    display: grid;
+    grid-template-columns: .92fr 1.08fr;
+    gap: 52px;
+    padding: 20px 0 100px;
+    align-items: start;
+}
+
+.conversionesBookingInfo {
+    position: sticky;
+    top: 120px;
+}
+
+.conversionesBookingNotice {
+    margin-top: 28px;
+    padding: 20px;
+    border-radius: 16px;
+    background: #eaf4ff;
+    border: 1px solid #cfe6fb;
+}
+
+.conversionesBookingNotice strong {
+    display: block;
+    margin-bottom: 6px;
+    color: #0d5f9f;
+}
+
+.conversionesBookingNotice p {
+    margin: 0;
+    color: #496b87;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.conversionesBookingForm {
+    padding: 32px;
+    border-radius: 24px;
+    background: #fff;
+    border: 1px solid #dce7f2;
+    box-shadow: 0 22px 55px rgba(8, 38, 72, .08);
+    display: grid;
+    gap: 18px;
+}
+
+.conversionesBookingForm label {
+    display: grid;
+    gap: 8px;
+    color: #203d5d;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.conversionesBookingForm input,
+.conversionesBookingForm select,
+.conversionesBookingForm textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #d5e0eb;
+    border-radius: 12px;
+    background: #f9fbfd;
+    color: #173553;
+    font: inherit;
+    font-weight: 500;
+    outline: none;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.conversionesBookingForm input,
+.conversionesBookingForm select {
+    min-height: 48px;
+    padding: 0 14px;
+}
+
+.conversionesBookingForm textarea {
+    padding: 13px 14px;
+    resize: vertical;
+}
+
+.conversionesBookingForm input:focus,
+.conversionesBookingForm select:focus,
+.conversionesBookingForm textarea:focus {
+    border-color: #2497f2;
+    box-shadow: 0 0 0 3px rgba(36, 151, 242, .12);
+}
+
+.conversionesFormRow {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.conversionesSelectedPrice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 17px 18px;
+    border-radius: 14px;
+    background: #0d2e54;
+    color: #fff;
+}
+
+.conversionesSelectedPrice span {
+    color: #aec3d9;
+    font-size: 13px;
+}
+
+.conversionesSelectedPrice strong {
+    font-size: 22px;
+}
+
+.conversionesMessage {
+    padding: 13px 15px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.conversionesMessage.exito {
+    background: #e9f8f0;
+    color: #24754e;
+    border: 1px solid #c6ead5;
+}
+
+.conversionesMessage.error {
+    background: #fff0f0;
+    color: #a63e3e;
+    border: 1px solid #f1cccc;
+}
+
+.conversionesMessage.info {
+    background: #edf6ff;
+    color: #246392;
+    border: 1px solid #d0e8fb;
+}
+
+.conversionesSubmit {
+    min-height: 52px;
+    border: 0;
+    border-radius: 13px;
+    background: linear-gradient(135deg, #168df1, #0b73cf);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 12px 26px rgba(22, 141, 241, .2);
+}
+
+.conversionesSubmit:disabled {
+    opacity: .65;
+    cursor: wait;
+}
+
+.conversionesLoginHint {
+    text-align: center;
+    color: #8494a6;
+    line-height: 1.5;
+}
+
+@media (max-width: 980px) {
+    .conversionesFeatureGrid,
+    .conversionesPriceGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .conversionesCompatibility,
+    .conversionesBooking {
+        grid-template-columns: 1fr;
+    }
+
+    .conversionesBookingInfo {
+        position: static;
+    }
+
+    .conversionesPriceCard {
+        min-height: 330px;
+    }
+}
+
+@media (max-width: 640px) {
+    .conversionesHero {
+        min-height: 520px;
+        margin: 0 8px;
+        border-radius: 0 0 24px 24px;
+    }
+
+    .conversionesHeroContent {
+        width: calc(100% - 34px);
+        padding: 58px 0;
+    }
+
+    .conversionesHero h1 {
+        font-size: 42px;
+    }
+
+    .conversionesHero p {
+        font-size: 16px;
+    }
+
+    .conversionesHeroActions {
+        flex-direction: column;
+    }
+
+    .conversionesPrimaryButton,
+    .conversionesSecondaryButton {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .conversionesIntro {
+        padding: 68px 0;
+    }
+
+    .conversionesCompatibility {
+        padding: 66px 0;
+    }
+
+    .conversionesBooking {
+        padding-bottom: 72px;
+    }
+
+    .conversionesFormRow {
+        grid-template-columns: 1fr;
+    }
+
+    .conversionesBookingForm,
+    .conversionesCompatibilityCard,
+    .conversionesFeatureGrid article,
+    .conversionesPriceCard {
+        padding: 23px;
+    }
+}

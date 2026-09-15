@@ -627,3 +627,72 @@ nav{
 .search input[type="search"]::-webkit-search-cancel-button {
     cursor: pointer;
 }
+
+
+/* ==========================================
+   RC_DOLAR_PUBLICO_V1_CSS
+   Dólar Blue venta - visible para todos
+========================================== */
+
+.rcDolarPublico{
+    height:46px;
+    min-width:126px;
+    padding:6px 14px;
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:16px;
+    background:rgba(255,255,255,.07);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    line-height:1.05;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.04);
+    flex-shrink:0;
+}
+
+.rcDolarPublico span{
+    color:#a9c9eb;
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:.035em;
+    text-transform:uppercase;
+}
+
+.rcDolarPublico strong{
+    margin-top:4px;
+    color:#fff;
+    font-size:17px;
+    font-weight:900;
+    letter-spacing:-.02em;
+    white-space:nowrap;
+}
+
+@media(max-width:1320px){
+    .rcDolarPublico{
+        min-width:112px;
+        padding-left:11px;
+        padding-right:11px;
+    }
+
+    .rcDolarPublico strong{
+        font-size:16px;
+    }
+}
+
+@media(max-width:650px){
+    .rcDolarPublico{
+        min-width:96px;
+        height:42px;
+        padding:5px 9px;
+        border-radius:14px;
+    }
+
+    .rcDolarPublico span{
+        font-size:9px;
+    }
+
+    .rcDolarPublico strong{
+        margin-top:3px;
+        font-size:14px;
+    }
+}
