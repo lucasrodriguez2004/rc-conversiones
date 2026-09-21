@@ -2063,7 +2063,217 @@ app.post(
     }
 );
 
+// =====================================================
+// WHATSAPP - NOTIFICACION DE NUEVO TICKET
+// =====================================================
 
+function rcWhatsAppConfigurado() {
+    return Boolean(
+        process.env.WHATSAPP_ACCESS_TOKEN &&
+        process.env.WHATSAPP_PHONE_NUMBER_ID &&
+        process.env.WHATSAPP_ADMIN_NUMBER &&
+        process.env.WHATSAPP_TEMPLATE_NAME &&
+        process.env.WHATSAPP_TEMPLATE_LANGUAGE
+    );
+}
+
+
+function rcResumenProductosWhatsApp(productos) {
+
+    if (!Array.isArray(productos) || productos.length === 0) {
+        return "Sin detalle de productos";
+    }
+
+    const lineas = productos
+        .slice(0, 8)
+        .map((producto) => {
+
+            const cantidad =
+                Number(producto?.cantidad || 1);
+
+            const nombre =
+                String(
+                    producto?.nombre ||
+                    producto?.producto ||
+                    producto?.titulo ||
+                    "Producto"
+                ).trim();
+
+            return `${cantidad}x ${nombre}`;
+        });
+
+    if (productos.length > 8) {
+        lineas.push(
+            `y ${productos.length - 8} producto(s) más`
+        );
+    }
+
+    return lineas.join(", ").slice(0, 900);
+}
+
+
+async function rcNotificarNuevoTicketWhatsApp({
+    codigo,
+    cliente,
+    productos,
+    total
+}) {
+
+    if (!rcWhatsAppConfigurado()) {
+        console.warn(
+            "⚠️ WhatsApp no está completamente configurado."
+        );
+        return;
+    }
+
+    const telefonoCliente =
+        String(
+            cliente?.telefono ||
+            cliente?.celular ||
+            "No informado"
+        ).trim();
+
+    const nombreCliente =
+        String(
+            cliente?.nombre ||
+            cliente?.nombre_completo ||
+            "Cliente"
+        ).trim();
+
+    const detalleProductos =
+        rcResumenProductosWhatsApp(productos);
+
+    const totalNumero =
+        Number(total || 0);
+
+    const totalFormateado =
+        new Intl.NumberFormat(
+            "es-AR",
+            {
+                style: "currency",
+                currency: "ARS",
+                maximumFractionDigits: 0
+            }
+        ).format(totalNumero);
+
+    const phoneNumberId =
+        String(
+            process.env.WHATSAPP_PHONE_NUMBER_ID
+        ).trim();
+
+    const destinatario =
+        String(
+            process.env.WHATSAPP_ADMIN_NUMBER
+        )
+            .replace(/\D/g, "");
+
+    /*
+     * La versión de Graph API se configura aparte para
+     * no dejar una versión de Meta fija dentro del código.
+     */
+    const graphVersion =
+        String(
+            process.env.WHATSAPP_GRAPH_VERSION ||
+            "v24.0"
+        ).trim();
+
+    const url =
+        `https://graph.facebook.com/${graphVersion}/${phoneNumberId}/messages`;
+
+    const respuesta =
+        await fetch(
+            url,
+            {
+                method: "POST",
+
+                headers: {
+                    Authorization:
+                        `Bearer ${process.env.WHATSAPP_ACCESS_TOKEN}`,
+
+                    "Content-Type":
+                        "application/json"
+                },
+
+                body: JSON.stringify({
+                    messaging_product:
+                        "whatsapp",
+
+                    to:
+                        destinatario,
+
+                    type:
+                        "template",
+
+                    template: {
+                        name:
+                            process.env.WHATSAPP_TEMPLATE_NAME,
+
+                        language: {
+                            code:
+                                process.env.WHATSAPP_TEMPLATE_LANGUAGE
+                        },
+
+                        components: [
+                            {
+                                type:
+                                    "body",
+
+                                parameters: [
+                                    {
+                                        type: "text",
+                                        text:
+                                            String(codigo)
+                                    },
+                                    {
+                                        type: "text",
+                                        text:
+                                            nombreCliente
+                                    },
+                                    {
+                                        type: "text",
+                                        text:
+                                            telefonoCliente
+                                    },
+                                    {
+                                        type: "text",
+                                        text:
+                                            detalleProductos
+                                    },
+                                    {
+                                        type: "text",
+                                        text:
+                                            totalFormateado
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                })
+            }
+        );
+
+    const datos =
+        await respuesta
+            .json()
+            .catch(() => ({}));
+
+    if (!respuesta.ok) {
+
+        console.error(
+            "❌ Error enviando WhatsApp:",
+            JSON.stringify(datos)
+        );
+
+        throw new Error(
+            datos?.error?.message ||
+            "Meta rechazó el mensaje de WhatsApp."
+        );
+    }
+
+    console.log(
+        `✅ WhatsApp enviado para ticket ${codigo}`
+    );
+}
 
 // =====================================================
 // INICIO
@@ -2972,15 +3182,40 @@ app.post(
             );
 
 
-            await connection.commit();
+          await connection.commit();
 
 
-            console.log(
-                `✅ Ticket ${codigo} guardado para cliente ${clienteReal.id}`
-            );
+console.log(
+    `✅ Ticket ${codigo} guardado para cliente ${clienteReal.id}`
+);
 
 
-            return res.json({
+// =====================================================
+// NOTIFICAR NUEVO TICKET POR WHATSAPP
+// El ticket YA fue guardado antes de intentar el envío.
+// Si WhatsApp falla, el ticket sigue existiendo.
+// =====================================================
+
+try {
+
+    await rcNotificarNuevoTicketWhatsApp({
+        codigo,
+        cliente: clienteReal,
+        productos,
+        total: Number(total) || 0
+    });
+
+} catch (whatsappError) {
+
+    console.error(
+        `⚠️ Ticket ${codigo} guardado, pero no se pudo enviar la notificación de WhatsApp:`,
+        whatsappError.message
+    );
+
+}
+
+
+return res.json({
                 ok: true,
                 mensaje:
                     "Solicitud recibida correctamente.",
