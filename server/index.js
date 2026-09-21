@@ -3206,14 +3206,16 @@ try {
     });
 
 } catch (whatsappError) {
-
     console.error(
         `⚠️ Ticket ${codigo} guardado, pero no se pudo enviar la notificación de WhatsApp:`,
-        whatsappError.message
+        whatsappError
     );
 
+    console.error(
+        "🔎 Causa interna del error de WhatsApp:",
+        whatsappError?.cause
+    );
 }
-
 
 return res.json({
                 ok: true,
