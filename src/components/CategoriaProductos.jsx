@@ -425,18 +425,22 @@ export default function CategoriaProductos() {
                                                 </p>
                                             )}
 
-                                            <div className="categoriaProductoPie">
-                                                <strong className="precioConsultar">Consultar</strong>
+                                         <div className="categoriaProductoPie">
+  <strong className="precioConsultar">
+    {Number(producto.precio || 0).toLocaleString("es-AR", {
+      style: "currency",
+      currency: "ARS",
+      maximumFractionDigits: 0
+    })}
+  </strong>
 
-                                                <button
-                                                    type="button"
-                                                    onClick={() =>
-                                                        agregarAlCarrito(
-                                                            producto
-                                                        )
-                                                    }
-                                                >
-                                                    <FaShoppingCart />
+  <button
+    type="button"
+    onClick={() =>
+      agregarAlCarrito(producto)
+    }
+  >
+    <FaShoppingCart />
                                                     Agregar
                                                 </button>
                                             </div>

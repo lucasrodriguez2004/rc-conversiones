@@ -1316,11 +1316,32 @@ app.post(
                     ""
                 ).trim();
 
+            // =====================================================
+            // PRECIO
+            // =====================================================
+            const precio =
+                Number(
+                    String(
+                        req.body?.precio ?? "0"
+                    ).replace(",", ".")
+                );
+
             if (!nombre || !categoria) {
                 return res.status(400).json({
                     ok: false,
                     mensaje:
                         "Nombre y categoría son obligatorios."
+                });
+            }
+
+            if (
+                !Number.isFinite(precio) ||
+                precio < 0
+            ) {
+                return res.status(400).json({
+                    ok: false,
+                    mensaje:
+                        "El precio debe ser un número válido mayor o igual a 0."
                 });
             }
 
@@ -1381,7 +1402,7 @@ app.post(
                         activo
                       )
                       VALUES (
-                        ?, ?, ?, ?, 0, 0,
+                        ?, ?, ?, ?, ?, 0,
                         ?, ?, ?, ?, ?
                       )
                     `,
@@ -1390,24 +1411,32 @@ app.post(
                         nombre,
                         categoria,
                         subcategoria || null,
+
+                        // PRECIO
+                        precio,
+
                         String(
                             req.body?.descripcion ||
                             ""
                         ).trim(),
+
                         String(
                             req.body?.caracteristicas ||
                             ""
                         ).trim(),
+
                         String(
                             req.body?.imagen ||
                             ""
                         ).trim() || null,
+
                         Number(
                             req.body?.destacado ||
                             0
                         )
                             ? 1
                             : 0,
+
                         Number(
                             req.body?.activo ?? 1
                         )
@@ -1469,6 +1498,16 @@ app.put(
                     .trim()
                     .toUpperCase();
 
+            // =====================================================
+            // PRECIO
+            // =====================================================
+            const precio =
+                Number(
+                    String(
+                        req.body?.precio ?? "0"
+                    ).replace(",", ".")
+                );
+
             if (
                 !id ||
                 !nombre ||
@@ -1479,6 +1518,17 @@ app.put(
                     ok: false,
                     mensaje:
                         "Código, nombre y categoría son obligatorios."
+                });
+            }
+
+            if (
+                !Number.isFinite(precio) ||
+                precio < 0
+            ) {
+                return res.status(400).json({
+                    ok: false,
+                    mensaje:
+                        "El precio debe ser un número válido mayor o igual a 0."
                 });
             }
 
@@ -1516,7 +1566,7 @@ app.put(
                         nombre = ?,
                         categoria = ?,
                         subcategoria = ?,
-                        precio = 0,
+                        precio = ?,
                         stock = 0,
                         descripcion = ?,
                         caracteristicas = ?,
@@ -1530,29 +1580,38 @@ app.put(
                         nombre,
                         categoria,
                         subcategoria || null,
+
+                        // PRECIO
+                        precio,
+
                         String(
                             req.body?.descripcion ||
                             ""
                         ).trim(),
+
                         String(
                             req.body?.caracteristicas ||
                             ""
                         ).trim(),
+
                         String(
                             req.body?.imagen ||
                             ""
                         ).trim() || null,
+
                         Number(
                             req.body?.destacado ||
                             0
                         )
                             ? 1
                             : 0,
+
                         Number(
                             req.body?.activo ?? 1
                         )
                             ? 1
                             : 0,
+
                         id
                     ]
                 );
@@ -1664,6 +1723,11 @@ app.delete(
                     "Producto eliminado."
             });
         } catch (error) {
+            console.error(
+                "Eliminar producto admin:",
+                error
+            );
+
             return res.status(500).json({
                 ok: false,
                 mensaje:
@@ -1672,7 +1736,6 @@ app.delete(
         }
     }
 );
-
 // ============================================================
 // CATEGORÍAS - ADMIN
 // ============================================================

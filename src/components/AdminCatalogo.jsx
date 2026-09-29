@@ -78,6 +78,7 @@ const FORM_VACIO = {
   nombre: "",
   categoria: "",
   subcategoria: "",
+  precio: "",
   descripcion: "",
   caracteristicas: "",
   imagen: "",
@@ -458,21 +459,22 @@ export default function AdminCatalogo() {
     setMensaje("");
   }
 
-  function editarProducto(producto) {
-    setForm({
-      id: producto.id,
-      codigo:
-        producto.codigo || "",
-      nombre:
-        producto.nombre || "",
-      categoria:
-        producto.categoria || "",
-      subcategoria:
-        producto.subcategoria ||
-        "",
-      descripcion:
-        producto.descripcion ||
-        "",
+function editarProducto(producto) {
+  setForm({
+    id: producto.id,
+    codigo:
+      producto.codigo || "",
+    nombre:
+      producto.nombre || "",
+    categoria:
+      producto.categoria || "",
+    subcategoria:
+      producto.subcategoria || "",
+    precio:
+      producto.precio ?? "",
+    descripcion:
+      producto.descripcion ||
+      "",
       caracteristicas:
         producto.caracteristicas ||
         "",
@@ -583,29 +585,41 @@ export default function AdminCatalogo() {
         await subirImagen();
 
       const payload = {
-        ...form,
-        codigo:
-          form.codigo.trim(),
-        nombre:
-          form.nombre.trim(),
-        categoria:
-          form.categoria.trim(),
-        subcategoria:
-          form.subcategoria.trim(),
-        descripcion:
-          form.descripcion.trim(),
-        caracteristicas:
-          form.caracteristicas.trim(),
-        imagen,
-        destacado:
-          form.destacado
-            ? 1
-            : 0,
-        activo:
-          form.activo
-            ? 1
-            : 0
-      };
+  ...form,
+
+  codigo:
+    form.codigo.trim(),
+
+  nombre:
+    form.nombre.trim(),
+
+  categoria:
+    form.categoria.trim(),
+
+  subcategoria:
+    form.subcategoria.trim(),
+
+  precio:
+    Number(form.precio) || 0,
+
+  descripcion:
+    form.descripcion.trim(),
+
+  caracteristicas:
+    form.caracteristicas.trim(),
+
+  imagen,
+
+  destacado:
+    form.destacado
+      ? 1
+      : 0,
+
+  activo:
+    form.activo
+      ? 1
+      : 0
+};
 
       if (form.id) {
         await request(
@@ -1547,6 +1561,25 @@ export default function AdminCatalogo() {
                 </label>
 
                 <label className="adminCatalogoFull">
+<label>
+  Precio
+  <input
+    type="number"
+    min="0"
+    step="1"
+    value={form.precio}
+    placeholder="Ej: 1250000"
+    onChange={e =>
+      setForm(actual => ({
+        ...actual,
+        precio: e.target.value
+      }))
+    }
+  />
+  <small>
+    Ingresá el precio en pesos. Ejemplo: 1250000
+  </small>
+</label>
                   Descripción breve
                   <textarea
                     rows="4"
@@ -1566,7 +1599,26 @@ export default function AdminCatalogo() {
                   />
                 </label>
 
-                <label className="adminCatalogoFull">
+               <label>
+  Precio
+  <input
+    type="number"
+    min="0"
+    step="1"
+    value={form.precio}
+    placeholder="Ej: 1250000"
+    onChange={(e) =>
+      setForm((actual) => ({
+        ...actual,
+        precio: e.target.value
+      }))
+    }
+  />
+  <small>
+    Ingresá el precio en pesos. Ejemplo: 1250000
+  </small>
+</label>
+<label className="adminCatalogoFull">
                   Características
                   <textarea
                     rows="5"
