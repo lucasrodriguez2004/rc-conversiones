@@ -2252,27 +2252,31 @@ async function rcNotificarNuevoTicketWhatsApp({
             }
         );
 
-    const datos =
-        await respuesta
-            .json()
-            .catch(() => ({}));
+   const datos =
+    await respuesta
+        .json()
+        .catch(() => ({}));
 
-    if (!respuesta.ok) {
-
-        console.error(
-            "❌ Error enviando WhatsApp:",
-            JSON.stringify(datos)
-        );
-
-        throw new Error(
-            datos?.error?.message ||
-            "Meta rechazó el mensaje de WhatsApp."
-        );
-    }
-
-    console.log(
-        `✅ WhatsApp enviado para ticket ${codigo}`
+if (!respuesta.ok) {
+    console.error(
+        "❌ Error enviando WhatsApp:",
+        JSON.stringify(datos)
     );
+
+    throw new Error(
+        datos?.error?.message ||
+        "Meta rechazó el mensaje de WhatsApp."
+    );
+}
+
+console.log(
+    "📲 Respuesta de Meta:",
+    JSON.stringify(datos, null, 2)
+);
+
+console.log(
+    `✅ WhatsApp enviado para ticket ${codigo}`
+);
 }
 
 // =====================================================
